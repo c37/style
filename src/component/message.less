@@ -1,0 +1,122 @@
+// Color variables (appears count calculates by raw css)
+@messagecolor0: #d19a5f; // Appears 1 time
+@color1: #a1882b; // Appears 1 time
+@color2: #e2cc7a; // Appears 1 time
+@color3: #f4cdcb; // Appears 1 time
+@color4: #e99291; // Appears 1 time
+@color5: #c65f5f; // Appears 1 time
+@color6: #ca534d; // Appears 1 time
+@color7: #f8eec7; // Appears 1 time
+@color8: #5f9fc6; // Appears 1 time
+@color9: #5d8a4a; // Appears 1 time
+@color10: #95c97e; // Appears 1 time
+@color11: #75a962; // Appears 1 time
+@color12: #d0e3ef; // Appears 1 time
+@color13: #264c72; // Appears 1 time
+@color14: #97c1da; // Appears 1 time
+@color15: #d8f5cd; // Appears 1 time
+.message {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: table;
+    font-size: 11px;
+    margin-bottom: 11px;
+    outline: none;
+    padding: 2px 9px 2px 9px;
+    position: relative;
+    width: 100%;
+    ul {
+        li {
+            float: none;
+        }
+    }
+    .header {
+        margin: 2px 0 2px 0;
+    }
+    .content {
+        position: relative;
+    }
+    .close {
+        margin-top: -8px;
+        cursor: pointer;
+        opacity: .6;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+    .action {
+        float: right;
+        margin-left: 20px;
+        margin-top: -4px;
+        margin-top: 5px;
+    }
+    a {
+        font-weight: bold;
+    }
+    p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+.message.center {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: table;
+    font-size: 11px;
+    margin: 0 auto;
+    padding: 2px 9px 2px 9px;
+    position: relative;
+    width: 0px;
+}
+
+.message.hide {
+    display: none;
+}
+
+.message.success {
+    background: @color15;
+    border: 1px solid @color10;
+    color: @color9;
+    &:hover {
+        border: 1px solid @color11;
+    }
+}
+
+.message.info {
+    background-color: @color12;
+    border: 1px solid @color14;
+    color: @color13;
+    &:hover {
+        border-color: @color8;
+    }
+}
+
+.message.warn {
+    background: @color7;
+    border: 1px solid @color2;
+    color: @color1;
+    &:hover {
+        border-color: @messagecolor0;
+    }
+}
+
+.message.danger {
+    background: @color3;
+    border: 1px solid @color4;
+    color: @color6;
+    &:hover {
+        border-color: @color5;
+    }
+}
+
+.message.close {
+    &:hover {
+        opacity: 1;
+    }
+}

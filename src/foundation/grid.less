@@ -16,7 +16,10 @@ body {
 
 div.grid {
     margin: 0px auto 0px;
-    background-color: rgb(251, 207, 207); // debug
+}
+
+div.grid.debug {
+    background-color: rgb(251, 207, 207);
 }
 /* grid */
 /* rows */
@@ -25,7 +28,10 @@ div.row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 9px 0;
-    background-color: rgb(153, 212, 153); // debug
+}
+
+div.row.debug {
+    background-color: rgb(153, 212, 153);
 }
 
 div.row:last-child {
@@ -36,49 +42,38 @@ div.row:last-child {
 
 div[class*="column-"] {
     margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
+}
+
+div[class*="column-"].debug {
+    background-color: rgb(111, 155, 224);
 }
 
 div.column-1 {
     flex: 1 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div.column-2 {
     flex: 2 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div.column-3 {
     flex: 3 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div.column-4 {
     flex: 4 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div.column-5 {
     flex: 5 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div.column-6 {
     flex: 6 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div.column-7 {
     flex: 7 1 auto;
-    margin-left: 9px;
-    background-color: rgb(111, 155, 224); // debug
 }
 
 div[class*="column-"]:first-child {

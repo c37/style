@@ -1,0 +1,85 @@
+// Color variables (appears count calculates by raw css)
+@color0: #cccccc; // Appears 4 times
+@color1: #fafafa; // Appears 3 times
+@color2: #eaeaea; // Appears 2 times
+@color3: #393b3e; // Appears 2 times
+@color4: #dadada; // Appears 2 times
+@color5: #3d3b36; // Appears 1 time
+@color6: #dddddd; // Appears 1 time
+ul.menu {
+    display: flex;
+    width: 100%;
+}
+
+ul.menu>li {
+    background-color: @color2;
+    background-image: linear-gradient(@color1, @color2);
+    border: 1px solid @color6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    color: @color5;
+    cursor: pointer;
+    flex-grow: 1;
+    padding: 3px 0 3px 0;
+    &:hover {
+        background-color: @color0;
+        background-image: linear-gradient(@color1, @color4);
+        background-repeat: repeat-x;
+        border-color: @color0;
+        color: @color3;
+    }
+    &:hover>i {
+        opacity: 1;
+    }
+}
+
+ul.menu>li.selected {
+    background-color: @color0;
+    background-image: linear-gradient(@color1, @color4);
+    background-repeat: repeat-x;
+    border-color: @color0;
+    color: @color3;
+}
+
+ul.menu>li>i {
+    margin: 1px;
+    opacity: .6;
+    vertical-align: middle;
+}
+
+ul.menu>li.selected>i {
+    opacity: 1;
+}
+
+ul.menu.horizontal {
+    flex-direction: row;
+}
+
+ul.menu.horizontal>li {
+    margin-left: -1px;
+    margin-top: -1px;
+    text-align: center;
+    &:first-child {
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+    }
+    &:last-child {
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+}
+
+ul.menu.vertical {
+    flex-direction: column;
+}
+
+ul.menu.vertical>li {
+    text-align: center;
+    &:first-child {
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+    }
+    &:last-child {
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+}
