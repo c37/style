@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                     compress: false
                 },
                 files: {
-                    '<%= dirs.dist %>/style-<%= pkg.version %>.css': '<%= dirs.src %>/style.less'
+                    '<%= dirs.dist %>/style.css': '<%= dirs.src %>/style.less'
                 }
             },
             production: {
@@ -63,18 +63,24 @@ module.exports = function (grunt) {
                     compress: true
                 },
                 files: {
-                    '<%= dirs.dist %>/style-<%= pkg.version %>.css': '<%= dirs.src %>/style.less'
+                    '<%= dirs.dist %>/style-v<%= pkg.version %>.css': '<%= dirs.src %>/style.less'
                 }
             }
         },
         autoprefixer: {
             options: {
                 browsers: ['last 2 versions', 'ie 8', 'ie 9'],
-                diff: '<%= dirs.dist %>/style-<%= pkg.version %>.css.diff'
             },
-            files: {
-                src: '<%= dirs.dist %>/style-<%= pkg.version %>.css',
-                dest: '<%= dirs.dist %>/style-<%= pkg.version %>.css'
+            development: {
+                options: {
+                    diff: true
+                },
+                src: '<%= dirs.dist %>/style.css',
+                dest: '<%= dirs.dist %>/style.css'
+            },
+            production: {
+                src: '<%= dirs.dist %>/style-v<%= pkg.version %>.css',
+                dest: '<%= dirs.dist %>/style-v<%= pkg.version %>.css'
             },
         }
 
@@ -87,6 +93,6 @@ module.exports = function (grunt) {
     });
 
     // Tasks
-    grunt.registerTask('dist', ['bump', 'less:production', 'autoprefixer']);
-    grunt.registerTask('default', ['less:development', 'autoprefixer']);
+    grunt.registerTask('dist', ['bump', 'less:production', 'autoprefixer:production']);
+    grunt.registerTask('default', ['less:development', 'autoprefixer:development']);
 };
