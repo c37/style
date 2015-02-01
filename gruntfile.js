@@ -16,13 +16,13 @@ module.exports = function (grunt) {
         },
         meta: {
             banner: '/*!\n' +
-                ' * C37 in <%= grunt.template.today("dd-mm-yyyy") %> at <%= grunt.template.today("HH:MM:ss") %> \n' +
-                ' *\n' +
-                ' * <%= pkg.name %> version: <%= pkg.version %>\n' +
-                ' * licensed by Creative Commons Attribution-ShareAlike 3.0\n' +
-                ' *\n' +
-                ' * Copyright - C37 - http://ww.c37.co - <%= grunt.template.today("yyyy") %>\n' +
-                ' */\n',
+            ' * C37 in <%= grunt.template.today("dd-mm-yyyy") %> at <%= grunt.template.today("HH:MM:ss") %> \n' +
+            ' *\n' +
+            ' * <%= pkg.name %> version: <%= pkg.version %>\n' +
+            ' * licensed by Creative Commons Attribution-ShareAlike 3.0\n' +
+            ' *\n' +
+            ' * Copyright - C37 - http://ww.c37.co - <%= grunt.template.today("yyyy") %>\n' +
+            ' */\n'
         },
         bump: {
             options: {
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
         },
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+                browsers: ['last 2 versions', 'ie 8', 'ie 9']
             },
             development: {
                 options: {
@@ -81,10 +81,8 @@ module.exports = function (grunt) {
             production: {
                 src: '<%= dirs.dist %>/style-v<%= pkg.version %>.css',
                 dest: '<%= dirs.dist %>/style-v<%= pkg.version %>.css'
-            },
+            }
         }
-
-
     });
 
     // Events
