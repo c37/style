@@ -16,6 +16,11 @@ http://lesscss.org/
 
 http://css2less.co/
 
+https://jakearchibald.github.io/svgomg/
+http://b64.io/
+https://www.base64decode.org/
+http://www.grumpicon.com/
+
 https://github.com/styleguide
 https://www.mozilla.org/en-US/styleguide/  
 http://www.yelp.com/styleguide  
