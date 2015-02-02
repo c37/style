@@ -1,7 +1,7 @@
-http://daringfireball.net/projects/markdown/syntax  
+http://daringfireball.net/projects/markdown/syntax <br/>
 
-https://www.npmjs.com/package/grunt  
-https://www.npmjs.com/package/grunt-cli  
+https://www.npmjs.com/package/grunt <br/>
+https://www.npmjs.com/package/grunt-cli <br/>
 
 https://www.npmjs.com/package/grunt-contrib-watch  
 https://www.npmjs.com/package/grunt-contrib-concat  
@@ -24,7 +24,7 @@ http://www.grumpicon.com/
 https://github.com/styleguide
 https://www.mozilla.org/en-US/styleguide/
 http://www.yelp.com/styleguide
-http://getbootstrap.com/  
+http://getbootstrap.com/
 
 - .success = Indicates a successful or positive action
 - .info = Indicates a neutral informative change or action
