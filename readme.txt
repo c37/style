@@ -1,6 +1,3 @@
-Packages
---------
-
 https://www.npmjs.com/package/grunt
 https://www.npmjs.com/package/grunt-cli
 
