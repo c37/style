@@ -30,3 +30,4 @@ http://getbootstrap.com/
 - .info = Indicates a neutral informative change or action
 - .warn = Indicates a warning that might need attention
 - .danger = Indicates a dangerous or potentially negative action
+
