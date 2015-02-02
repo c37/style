@@ -22,8 +22,8 @@ https://www.base64decode.org/
 http://www.grumpicon.com/
 
 https://github.com/styleguide
-https://www.mozilla.org/en-US/styleguide/  
-http://www.yelp.com/styleguide  
+https://www.mozilla.org/en-US/styleguide/
+http://www.yelp.com/styleguide
 http://getbootstrap.com/  
 
 - .success = Indicates a successful or positive action
