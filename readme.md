@@ -1,7 +1,7 @@
-http://daringfireball.net/projects/markdown/syntax <br/>
+http://daringfireball.net/projects/markdown/syntax  
 
-https://www.npmjs.com/package/grunt <br/>
-https://www.npmjs.com/package/grunt-cli <br/>
+https://www.npmjs.com/package/grunt  
+https://www.npmjs.com/package/grunt-cli  
 
 https://www.npmjs.com/package/grunt-contrib-watch  
 https://www.npmjs.com/package/grunt-contrib-concat  
@@ -16,10 +16,10 @@ http://lesscss.org/
 
 http://css2less.co/
 
-https://jakearchibald.github.io/svgomg/
-http://b64.io/
-https://www.base64decode.org/
-http://www.grumpicon.com/
+https://jakearchibald.github.io/svgomg/  
+http://b64.io/  
+https://www.base64decode.org/  
+http://www.grumpicon.com/  
 
 https://github.com/styleguide
 https://www.mozilla.org/en-US/styleguide/
@@ -30,4 +30,3 @@ http://getbootstrap.com/
 - .info = Indicates a neutral informative change or action
 - .warn = Indicates a warning that might need attention
 - .danger = Indicates a dangerous or potentially negative action
-
