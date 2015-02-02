@@ -1,9 +1,14 @@
-http://daringfireball.net/projects/markdown/syntax  
+[markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
 
-https://www.npmjs.com/package/grunt  
-https://www.npmjs.com/package/grunt-cli  
+Packages
+--------
 
-https://www.npmjs.com/package/grunt-contrib-watch  
+[Grunt](https://www.npmjs.com/package/grunt)
+[Grunt - CLI](https://www.npmjs.com/package/grunt-cli)
+[Grunt - Watch](https://www.npmjs.com/package/grunt-contrib-watch)
+
+
+
 https://www.npmjs.com/package/grunt-contrib-concat  
 https://www.npmjs.com/package/grunt-bump  
 https://www.npmjs.com/package/grunt-contrib-less  
