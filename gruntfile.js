@@ -28,22 +28,19 @@ module.exports = function (grunt) {
             options: {
                 files: ['package.json'],
                 updateConfigs: ['pkg'],
-                commit: true,
+                commit: false,
                 commitMessage: 'Release v%VERSION%',
                 commitFiles: ['package.json'],
-                createTag: true,
+                createTag: false,
                 tagName: 'v%VERSION%',
                 tagMessage: 'Version %VERSION%',
-                push: false,
-                pushTo: 'upstream',
-                gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
-                globalReplace: false
+                push: false
             }
         },
         watch: {
             src: {
                 files: ['<%= dirs.src %>/**/*.less'],
-                tasks: ['default']
+                tasks: ['development']
             }
         },
         less: {
@@ -91,6 +88,7 @@ module.exports = function (grunt) {
     });
 
     // Tasks
-    grunt.registerTask('dist', ['bump', 'less:production', 'autoprefixer:production']);
-    grunt.registerTask('default', ['less:development', 'autoprefixer:development']);
+    grunt.registerTask('production', ['bump', 'less:production', 'autoprefixer:production']);
+    grunt.registerTask('development', ['less:development', 'autoprefixer:development']);
+    grunt.registerTask('default', ['watch']);
 };

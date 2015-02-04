@@ -1,0 +1,76 @@
+// Color variables (appears count calculates by raw css)
+@boxcolor0: #c5c5c5;
+// Appears 2 times
+@boxcolor1: #eeeeee;
+// Appears 2 times
+@boxcolor2: #fefefe;
+// Appears 1 time
+@boxcolor3: #fafafa;
+// Appears 1 time
+@boxcolor4: rgb(197, 197, 197);
+// Appears 1 time
+@boxcolor5: rgb(255, 255, 255);
+// Appears 1 time
+
+div.box {
+    border-radius: 2px;
+    border: 1px solid @boxcolor4;
+    box-shadow: @global-box-shadow;
+    * {
+        cursor: default;
+    }
+    &.size-200 {
+        width: 200px;
+    }
+    &.size-300 {
+        width: 300px;
+    }
+    & > .header {
+        background-color: @boxcolor1;
+        background-image: linear-gradient(@boxcolor3, @boxcolor1);
+        padding: 5px;
+        & > i {
+            cursor: inherit;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 1;
+            &.right {
+                cursor: pointer;
+            }
+        }
+        &.padding-2 {
+            padding: 2px 3px 1px 1px;
+        }
+        &.motion {
+            cursor: move;
+        }
+    }
+    & > .body {
+        background-color: @boxcolor5;
+        border-radius: 0 0 2px 2px;
+        border-top: 1px solid @boxcolor0;
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
+        &.padding-0 {
+            padding: 0;
+        }
+        &.padding-3 {
+            padding: 3px;
+        }
+    }
+    & > .footer {
+        background-color: @boxcolor2;
+        border-radius: 0 0 2px 2px;
+        border-top: 1px solid @boxcolor0;
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
+        &.padding-0 {
+            padding: 0;
+        }
+        & > p {
+            margin: 0;
+        }
+    }
+}

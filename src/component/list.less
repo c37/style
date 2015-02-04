@@ -1,0 +1,108 @@
+// Color variables (appears count calculates by raw css)
+@listcolor0: #c5c5c5;
+// Appears 3 times
+@listcolor1: rgb(248, 248, 248);
+// Appears 2 times
+@listcolor2: rgb(0, 0, 0);
+// Appears 1 time
+@listcolor3: rgb(255, 255, 255);
+// Appears 1 time
+
+// Width variables (appears count calculates by raw css)
+@listwidth0: 100%;
+// Appears 2 times
+
+ul.list {
+    background-color: @listcolor3;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: @listwidth0;
+}
+
+ul.list.border {
+    border-radius: 2px;
+    border: 1px solid @listcolor0;
+}
+
+ul.list > li {
+    cursor: default !important;
+    &:hover {
+        background-color: @listcolor1;
+        cursor: pointer !important;
+    }
+    &:hover > div > .list-move {
+        display: inline-block;
+        margin: -1px 5px 0 0;
+        padding: 0;
+    }
+    &:hover > div > .list-order {
+        display: none;
+    }
+}
+
+ul.list > li > div {
+    cursor: inherit;
+    padding: 4px 0 5px 3px;
+}
+
+ul.list.padding-plus > li > div {
+    cursor: inherit;
+    padding: 9px;
+}
+
+ul.list > li.selected {
+    background-color: @listcolor1;
+    cursor: pointer !important;
+}
+
+ul.list > li > div > i.hide {
+    opacity: 0;
+}
+
+ul.list > li:hover > div > i,
+ul.list > li:hover > div > span,
+ul.list > li.selected {
+    color: @listcolor2;
+    cursor: inherit;
+    font-weight: 500;
+    opacity: 1;
+}
+
+ul.list.vertical {
+    display: inline-block;
+}
+
+ul.list.vertical > li {
+    border-bottom: 1px solid @listcolor0;
+    display: block;
+    width: @listwidth0;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+ul.list.horizontal {
+    display: flex;
+}
+
+ul.list.horizontal > li {
+    border-right: 1px solid @listcolor0;
+    flex: 1 0 0;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.list-move {
+    display: none;
+}
+
+.list-order {
+    display: inline-block;
+    margin: 2px 0 0 2px;
+}
+
+.list-order::after {
+    content: " -";
+}

@@ -1,0 +1,52 @@
+// Color variables (appears count calculates by raw css)
+@dialogcolor0: #c5c5c5;
+// Appears 4 times
+@dialogcolor1: #fefefe;
+// Appears 2 times
+@dialogcolor2: #eeeeee;
+// Appears 2 times
+@dialogcolor3: #fafafa;
+// Appears 1 time
+
+dialog.dialog {
+    border-radius: 2px;
+    border: 1px solid @dialogcolor0;
+    padding: 0;
+    box-shadow: @global-box-shadow;
+    * {
+        cursor: default;
+    }
+    &.size-400 {
+        width: 400px;
+    }
+    &.size-500 {
+        width: 500px;
+    }
+    & > .header {
+        background-color: @dialogcolor2;
+        background-image: linear-gradient(@dialogcolor3, @dialogcolor2);
+        border-bottom: 1px solid @dialogcolor0;
+        padding: 5px;
+        & > i {
+            cursor: inherit;
+            margin-left: 0;
+            margin-right: 0;
+            opacity: 1;
+        }
+    }
+    & .body {
+        height: auto;
+        overflow: hidden;
+        padding: 13px;
+        &.padding-0 {
+            padding: 0;
+        }
+    }
+    & > .footer {
+        background-color: @dialogcolor1;
+        border-top: 1px solid @dialogcolor0;
+        height: auto;
+        overflow: hidden;
+        padding: 5px;
+    }
+}

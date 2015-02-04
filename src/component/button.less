@@ -1,11 +1,12 @@
 /* default */
 
-.button {
+button.button {
     font: inherit;
     display: inline-block;
-    padding: 4px 7px;
+    padding: 2px 5px;
+    margin: 0 3px;
     color: #3d3b36;
-    box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.4);
+    box-shadow: @global-box-shadow;
     background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
     border: 1px solid rgb(197, 197, 197);
     border-radius: 2px;
@@ -19,14 +20,14 @@
     }
 }
 
-.button:hover,
-.button:active {
+button.button:hover,
+button.button:active {
     color: #393b3e;
     background-image: linear-gradient(rgb(250, 250, 250), rgb(217, 217, 217));
     border-color: rgb(189, 189, 189);
 }
 
-.button.disabled {
+button.button.disabled {
     opacity: .5;
     color: rgb(102, 102, 102);
     background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));;
@@ -41,84 +42,84 @@
 /* default */
 /* success */
 
-.button.success {
+button.button.success {
     color: rgb(255, 255, 255);
     background-color: rgb(96, 176, 68);
     background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
     border-color: rgb(92, 169, 65);
 }
 
-.button.success:hover,
-.button.success:active {
+button.button.success:hover,
+button.button.success:active {
     background-color: rgb(86, 158, 61);
     background-image: linear-gradient(rgb(138, 221, 109), rgb(86, 158, 61));
     border-color: rgb(86, 158, 61);
 }
 
-.button.success.disabled {
+button.button.success.disabled {
     background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
 }
 
 /* success */
 /* info */
 
-.button.info {
+button.button.info {
     color: rgb(255, 255, 255);
     background-color: rgb(48, 114, 179);
     background-image: linear-gradient(rgb(89, 155, 205), rgb(48, 114, 179));
     border-color: rgb(42, 101, 160);
 }
 
-.button.info:hover,
-.button.info:active {
+button.button.info:hover,
+button.button.info:active {
     background-color: rgb(41, 95, 150);
     background-image: linear-gradient(rgb(89, 155, 205), rgb(41, 95, 150));
     border-color: rgb(41, 95, 150);
 }
 
-.button.info.disabled {
+button.button.info.disabled {
     background-image: linear-gradient(rgb(89, 155, 205), rgb(48, 114, 179));
 }
 
 /* info */
 /* warn */
 
-.button.warn {
+button.button.warn {
     color: rgb(161, 136, 43);
     background-color: rgb(248, 238, 199);
     background-image: linear-gradient(rgb(248, 238, 199), rgb(240, 216, 137));
     border-color: rgb(226, 204, 122);
 }
 
-.button.warn:hover,
-.button.warn:active {
+button.button.warn:hover,
+button.button.warn:active {
     background-color: rgb(222, 180, 132);
     background-image: linear-gradient(rgb(248, 238, 199), rgb(226, 193, 155));
     border-color: rgb(226, 193, 155);
 }
 
-.button.warn.disabled {
+button.button.warn.disabled {
     background-image: linear-gradient(rgb(248, 238, 199), rgb(240, 216, 137));
 }
 
 /* warn */
 /* danger */
 
-.button.danger {
+button.button.danger {
     color: rgb(255, 255, 255);
     background-color: rgb(179, 54, 48);
     background-image: linear-gradient(rgb(220, 95, 89), rgb(179, 54, 48));
     border-color: rgb(213, 92, 86);
 }
 
-.button.danger:hover,
-.button.danger:active {
+button.button.danger:hover,
+button.button.danger:active {
     background-color: rgb(153, 0, 0);
     background-image: linear-gradient(rgb(220, 95, 89), rgb(153, 0, 0));
     border-color: rgb(213, 80, 73);
 }
 
-.button.danger.disabled {
+button.button.danger.disabled {
     background-image: linear-gradient(rgb(220, 95, 89), rgb(179, 54, 48));
 }
 
