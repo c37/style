@@ -47,6 +47,7 @@ module.exports = function (grunt) {
         less: {
             dev: {
                 options: {
+                    banner: '/* <%= grunt.template.today("HH:MM:ss") %> */\n',
                     compress: false
                 },
                 files: {
