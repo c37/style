@@ -1,6 +1,6 @@
 {
     "name": "styleguide",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "description": "C37 - Style Guide",
     "keywords": ["C37", "styleguide"],
     "private": true,
@@ -14,6 +14,7 @@
         "email": "ser@c37.co"
     }],
     "directories": {
+        "dev": "./dev",
         "dist": "./dist",
         "doc": "./doc",
         "src": "./src"

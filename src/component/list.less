@@ -26,7 +26,10 @@ ul.list.border {
 }
 
 ul.list > li {
-    cursor: default !important;
+    cursor: pointer !important;
+    * {
+        cursor: pointer !important;
+    }
     &:hover {
         background-color: @listcolor1;
         cursor: pointer !important;
@@ -70,7 +73,7 @@ ul.list > li.selected {
 }
 
 ul.list.vertical {
-    display: inline-block;
+    display: block;
 }
 
 ul.list.vertical > li {

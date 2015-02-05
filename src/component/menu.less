@@ -1,41 +1,50 @@
 // Color variables (appears count calculates by raw css)
-@menucolor0: #cccccc; // Appears 4 times
-@menucolor1: #fafafa; // Appears 3 times
-@menucolor2: #eaeaea; // Appears 2 times
-@menucolor3: #393b3e; // Appears 2 times
-@menucolor4: #dadada; // Appears 2 times
-@menucolor5: #3d3b36; // Appears 1 time
-@menucolor6: #dddddd; // Appears 1 time
+@menucolor0: #cccccc;
+// Appears 4 times
+@menucolor1: #fafafa;
+// Appears 3 times
+@menucolor2: #eaeaea;
+// Appears 2 times
+@menucolor3: #393b3e;
+// Appears 2 times
+@menucolor4: #dadada;
+// Appears 2 times
+@menucolor5: #3d3b36;
+// Appears 1 time
+@menucolor6: #dddddd;
+// Appears 1 time
 ul.menu {
     display: flex;
     width: 100%;
 }
 
-ul.menu>li {
-    position: relative;
+ul.menu > li {
+    display: block;
     background-color: @menucolor2;
     background-image: linear-gradient(@menucolor1, @menucolor2);
-    border: 1px solid @menucolor6;
+    border: 1px solid @menucolor0;
     box-shadow: @global-box-shadow;
     color: @menucolor5;
-    cursor: pointer;
     flex-grow: 1;
     padding: 3px 0 3px 0;
     z-index: 1;
+    cursor: pointer !important;
+    * {
+        cursor: pointer !important;
+    }
     &:hover {
-        background-color: @menucolor0;
-        background-image: linear-gradient(@menucolor1, @menucolor4);
-        background-repeat: repeat-x;
-        border-color: @menucolor0;
-        color: @menucolor3;
+        color: #393b3e;
+        background-image: linear-gradient(rgb(250, 250, 250), rgb(217, 217, 217));
+        border-color: rgb(189, 189, 189);
+
         z-index: 2;
     }
-    &:hover>i {
+    &:hover > i {
         opacity: 1;
     }
 }
 
-ul.menu>li.selected {
+ul.menu > li.selected {
     background-color: @menucolor0;
     background-image: linear-gradient(@menucolor1, @menucolor4);
     background-repeat: repeat-x;
@@ -43,13 +52,13 @@ ul.menu>li.selected {
     color: @menucolor3;
 }
 
-ul.menu>li>i {
+ul.menu > li > i {
     margin: 1px;
     opacity: .6;
     vertical-align: middle;
 }
 
-ul.menu>li.selected>i {
+ul.menu > li.selected > i {
     opacity: 1;
 }
 
@@ -57,10 +66,15 @@ ul.menu.horizontal {
     flex-direction: row;
 }
 
-ul.menu.horizontal>li {
+ul.menu.horizontal > li {
     margin-left: -1px;
     margin-top: -1px;
     text-align: center;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: 0 1px 2px rgba(100, 100, 100, 0.4);
+    }
     &:first-child {
         border-bottom-left-radius: 2px;
         border-top-left-radius: 2px;
@@ -75,7 +89,7 @@ ul.menu.vertical {
     flex-direction: column;
 }
 
-ul.menu.vertical>li {
+ul.menu.vertical > li {
     text-align: center;
     margin-top: -1px;
     &:first-child {

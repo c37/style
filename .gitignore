@@ -1,4 +1,11 @@
 /.idea/
+/dev/*/
+/dev/*.*
+!/dev/.gitkeep
+/dist/*/
+/dist/*.*
+!/dist/.gitkeep
+/doc/*/
+/doc/*.*
+!/doc/.gitkeep
 /node_modules/
-dist/style.css.diff
-dist/style.css

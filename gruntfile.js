@@ -10,6 +10,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         dirs: {
+            dev: '<%= pkg.directories.dev %>',
             dist: '<%= pkg.directories.dist %>',
             doc: '<%= pkg.directories.doc %>',
             src: '<%= pkg.directories.src %>'
@@ -40,23 +41,21 @@ module.exports = function (grunt) {
         watch: {
             src: {
                 files: ['<%= dirs.src %>/**/*.less'],
-                tasks: ['development']
+                tasks: ['dev']
             }
         },
         less: {
-            options: {
-                banner: '<%= meta.banner %> \n'
-            },
-            development: {
+            dev: {
                 options: {
                     compress: false
                 },
                 files: {
-                    '<%= dirs.dist %>/style.css': '<%= dirs.src %>/style.less'
+                    '<%= dirs.dev %>/style.css': '<%= dirs.src %>/style.less'
                 }
             },
-            production: {
+            dist: {
                 options: {
+                    banner: '<%= meta.banner %> \n',
                     compress: true
                 },
                 files: {
@@ -68,14 +67,14 @@ module.exports = function (grunt) {
             options: {
                 browsers: ['last 2 versions', 'ie 8', 'ie 9']
             },
-            development: {
+            dev: {
                 options: {
                     diff: true
                 },
-                src: '<%= dirs.dist %>/style.css',
-                dest: '<%= dirs.dist %>/style.css'
+                src: '<%= dirs.dev %>/style.css',
+                dest: '<%= dirs.dev %>/style.css'
             },
-            production: {
+            dist: {
                 src: '<%= dirs.dist %>/style-v<%= pkg.version %>.css',
                 dest: '<%= dirs.dist %>/style-v<%= pkg.version %>.css'
             }
@@ -88,7 +87,7 @@ module.exports = function (grunt) {
     });
 
     // Tasks
-    grunt.registerTask('production', ['bump', 'less:production', 'autoprefixer:production']);
-    grunt.registerTask('development', ['less:development', 'autoprefixer:development']);
+    grunt.registerTask('dist', ['bump', 'less:dist', 'autoprefixer:dist']);
+    grunt.registerTask('dev', ['less:dev', 'autoprefixer:dev']);
     grunt.registerTask('default', ['watch']);
 };
