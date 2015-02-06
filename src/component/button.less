@@ -3,9 +3,10 @@
 button.button {
     font: inherit;
     display: inline-block;
-    padding: 2px 5px;
+    padding: 3px 5px;
     margin: 0 3px;
     color: #3d3b36;
+    text-align: left;
     box-shadow: @global-box-shadow;
     background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
     border: 1px solid rgb(197, 197, 197);
@@ -30,7 +31,7 @@ button.button:active {
 button.button.disabled {
     opacity: .5;
     color: rgb(102, 102, 102);
-    background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));;
+    background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
     background-color: rgb(229, 229, 229);
     border-color: rgb(197, 197, 197);
     cursor: default !important;
@@ -38,7 +39,6 @@ button.button.disabled {
         cursor: default !important;
     }
 }
-
 /* default */
 /* success */
 
@@ -59,7 +59,6 @@ button.button.success:active {
 button.button.success.disabled {
     background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
 }
-
 /* success */
 /* info */
 
@@ -80,7 +79,6 @@ button.button.info:active {
 button.button.info.disabled {
     background-image: linear-gradient(rgb(89, 155, 205), rgb(48, 114, 179));
 }
-
 /* info */
 /* warn */
 
@@ -101,7 +99,6 @@ button.button.warn:active {
 button.button.warn.disabled {
     background-image: linear-gradient(rgb(248, 238, 199), rgb(240, 216, 137));
 }
-
 /* warn */
 /* danger */
 
@@ -122,5 +119,4 @@ button.button.danger:active {
 button.button.danger.disabled {
     background-image: linear-gradient(rgb(220, 95, 89), rgb(179, 54, 48));
 }
-
 /* danger */
