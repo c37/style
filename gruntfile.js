@@ -10,20 +10,19 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         dirs: {
-            dev: '<%= pkg.directories.dev %>',
             dist: '<%= pkg.directories.dist %>',
             doc: '<%= pkg.directories.doc %>',
             src: '<%= pkg.directories.src %>'
         },
         meta: {
             banner: '/*!\n' +
-            ' * C37 in <%= grunt.template.today("dd-mm-yyyy") %> at <%= grunt.template.today("HH:MM:ss") %> \n' +
-            ' *\n' +
-            ' * <%= pkg.name %> version: <%= pkg.version %>\n' +
-            ' * licensed by Creative Commons Attribution-ShareAlike 3.0\n' +
-            ' *\n' +
-            ' * Copyright - C37 - http://ww.c37.co - <%= grunt.template.today("yyyy") %>\n' +
-            ' */\n'
+                ' * C37 in <%= grunt.template.today("dd-mm-yyyy") %> at <%= grunt.template.today("HH:MM:ss") %> \n' +
+                ' *\n' +
+                ' * <%= pkg.name %> version: <%= pkg.version %>\n' +
+                ' * licensed by Creative Commons Attribution-ShareAlike 3.0\n' +
+                ' *\n' +
+                ' * Copyright - C37 - http://ww.c37.co - <%= grunt.template.today("yyyy") %>\n' +
+                ' */\n'
         },
         bump: {
             options: {
@@ -51,7 +50,7 @@ module.exports = function (grunt) {
                     compress: false
                 },
                 files: {
-                    '<%= dirs.dev %>/style.css': '<%= dirs.src %>/style.less'
+                    '<%= dirs.dist %>/style.css': '<%= dirs.src %>/style.less'
                 }
             },
             dist: {
@@ -72,8 +71,8 @@ module.exports = function (grunt) {
                 options: {
                     diff: true
                 },
-                src: '<%= dirs.dev %>/style.css',
-                dest: '<%= dirs.dev %>/style.css'
+                src: '<%= dirs.dist %>/style.css',
+                dest: '<%= dirs.dist %>/style.css'
             },
             dist: {
                 src: '<%= dirs.dist %>/style-v<%= pkg.version %>.css',

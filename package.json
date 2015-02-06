@@ -1,6 +1,6 @@
 {
     "name": "styleguide",
-    "version": "1.0.8",
+    "version": "0.0.11",
     "description": "C37 - Style Guide",
     "keywords": ["C37", "styleguide"],
     "private": true,
@@ -14,7 +14,6 @@
         "email": "ser@c37.co"
     }],
     "directories": {
-        "dev": "./dev",
         "dist": "./dist",
         "doc": "./doc",
         "src": "./src"
@@ -29,6 +28,7 @@
         "grunt-autoprefixer": "latest"
     },
     "scripts": {
-        "install": "grunt"
+        "install": "grunt",
+        "test": ""
     }
 }
