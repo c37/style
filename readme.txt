@@ -26,6 +26,8 @@ https://www.mozilla.org/en-US/styleguide/
 http://www.yelp.com/styleguide
 http://getbootstrap.com/
 
+http://blog.trello.com/refining-the-way-we-structure-our-css-at-trello/
+
 .success = Indicates a successful or positive action
 .info = Indicates a neutral informative change or action
 .warn = Indicates a warning that might need attention
