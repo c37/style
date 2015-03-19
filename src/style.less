@@ -1,25 +1,35 @@
-// variable
+/* global variables */
 @base: #f938ab;
-@global-box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.4);
+@global-box-shadow: 1px 1px 2px rgba(100,100,100,.4);
+/* global variables */
 
+/* global visual class */
+.shadow {
+    box-shadow: @global-box-shadow;
+}
+/* global visual class */
 
-// foundation
+/* foundation */
 @import "foundation/grid.less";
 @import "foundation/responsive.less";
 @import "foundation/typography.less";
+/* foundation */
 
-// theme
+/* theme */
 @import "theme/light.less";
+/* theme */
 
-// layout
+/* layout */
 @import "layout/header.less";
 @import "layout/footer.less";
+/* layout */
 
-// graphic
+/* graphic */
 @import "graphic/icon.less";
 @import "graphic/image.less";
+/* graphic */
 
-// component
+/* component */
 @import "component/alert.less";
 @import "component/button.less";
 @import "component/message.less";
@@ -32,8 +42,9 @@
 @import "component/pagination.less";
 @import "component/popover.less";
 @import "component/progress.less";
+/* component */
 
-// container
+/* container */
 @import "container/accordion.less";
 @import "container/box.less";
 @import "container/button.less";
@@ -42,3 +53,4 @@
 @import "container/panel.less";
 @import "container/tab.less";
 @import "container/table.less";
+/* container */

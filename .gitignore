@@ -9,3 +9,4 @@
 /doc/*.*
 !/doc/.gitkeep
 /node_modules/
+/nbproject/
