@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         less: {
             dev: {
                 options: {
-                    banner: '/* <%= grunt.template.today("HH:MM:ss") %> */\n',
+                    banner: '/* <%= grunt.template.today("dd/mm/yyyy HH:MM:ss") %> */\n',
                     compress: false
                 },
                 files: {
@@ -89,5 +89,5 @@ module.exports = function (grunt) {
     // Tasks
     grunt.registerTask('dist', ['bump', 'less:dist', 'autoprefixer:dist']);
     grunt.registerTask('dev', ['less:dev', 'autoprefixer:dev']);
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default');
 };
