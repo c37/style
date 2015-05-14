@@ -28,7 +28,7 @@
         "grunt-autoprefixer": "latest"
     },
     "scripts": {
-        "install": "grunt",
+        "install": "",
         "test": ""
     }
 }
