@@ -5,8 +5,5 @@
 /dist/*/
 /dist/*.*
 !/dist/.gitkeep
-/doc/*/
-/doc/*.*
-!/doc/.gitkeep
 /node_modules/
 /nbproject/
