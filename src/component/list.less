@@ -42,6 +42,27 @@ ul.list > li {
     &:hover > div > .list-order {
         display: none;
     }
+    &:hover > div > i, &:hover > div > strong {
+        color: @listcolor2;
+        cursor: pointer !important;
+        font-weight: 500;
+        opacity: 1;
+    }
+    &.disabled {
+        >div {
+            background-color: #FCFCFC;
+            >i, >strong {
+                cursor: default !important;
+                color: @listcolor2 !important;
+                opacity: .6 !important;
+            }
+        }
+        &:hover {
+            * {
+                cursor: default !important;
+            }
+        }
+    }
 }
 
 ul.list > li > div {
@@ -54,22 +75,8 @@ ul.list.padding-plus > li > div {
     padding: 9px;
 }
 
-ul.list > li.selected {
-    background-color: @listcolor1;
-    cursor: pointer !important;
-}
-
 ul.list > li > div > i.hide {
     opacity: 0;
-}
-
-ul.list > li:hover > div > i,
-ul.list > li:hover > div > span,
-ul.list > li.selected {
-    color: @listcolor2;
-    cursor: inherit;
-    font-weight: 500;
-    opacity: 1;
 }
 
 ul.list.vertical {
