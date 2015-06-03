@@ -34,14 +34,6 @@ ul.list > li {
         background-color: @listcolor1;
         cursor: pointer !important;
     }
-    &:hover > div > .list-move {
-        display: inline-block;
-        margin: -1px 5px 0 0;
-        padding: 0;
-    }
-    &:hover > div > .list-order {
-        display: none;
-    }
     &:hover > div > i, &:hover > div > strong {
         color: @listcolor2;
         cursor: pointer !important;
@@ -102,17 +94,4 @@ ul.list.horizontal > li {
     &:last-child {
         border-right: none;
     }
-}
-
-.list-move {
-    display: none;
-}
-
-.list-order {
-    display: inline-block;
-    margin: 2px 0 0 2px;
-}
-
-.list-order::after {
-    content: " -";
 }
