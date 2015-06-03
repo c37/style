@@ -40,6 +40,16 @@ ul.list > li {
         font-weight: 500;
         opacity: 1;
     }
+    &.selected {
+        >div {
+            background-color: @listcolor1;
+            >i, >strong {
+                cursor: default !important;
+                color: @listcolor2 !important;
+                opacity: 1 !important;
+            }
+        }
+    }
     &.disabled {
         >div {
             background-color: #FCFCFC;
