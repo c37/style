@@ -7,7 +7,7 @@ button.button {
     margin: 0 3px;
     color: #3d3b36;
     text-align: left;
-//    box-shadow: @global-box-shadow;
+    //    box-shadow: @global-box-shadow;
     background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
     border: 1px solid rgb(197, 197, 197);
     border-radius: 2px;
@@ -37,6 +37,18 @@ button.button.disabled {
     cursor: default !important;
     * {
         cursor: default !important;
+    }
+}
+
+button.button.selected {
+    color: #393b3e;
+    background-image: linear-gradient(rgb(250, 250, 250), rgb(217, 217, 217));
+    border-color: rgb(189, 189, 189);
+    cursor: default !important;
+    opacity: 1 !important;
+    *{
+        cursor: default !important;
+        opacity: 1 !important;
     }
 }
 /* default */
