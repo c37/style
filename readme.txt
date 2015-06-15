@@ -32,3 +32,12 @@ http://blog.trello.com/refining-the-way-we-structure-our-css-at-trello/
 .info = Indicates a neutral informative change or action
 .warn = Indicates a warning that might need attention
 .danger = Indicates a dangerous or potentially negative action
+
+
+NOVOS PROCESSOS PARA IMPLEMENTAR
+https://github.com/jkphl/svg-sprite
+https://github.com/filamentgroup/grunticon
+https://www.npmjs.com/package/grunt-datauri-variables
+https://github.com/davemo/grunt-datauri-variables
+http://www.grumpicon.com/
+https://github.com/gavro/gulp-iconify
