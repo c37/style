@@ -1,0 +1,10 @@
+/dist/src/*
+!/dist/src/.gitkeep
+
+/node_modules/
+/nbproject/*
+
+*.log
+
+.vscode/*
+
