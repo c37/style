@@ -34,7 +34,7 @@ var config = {
 
 function clean() {
     return del([
-        './doc/**/*',
+        './docs/**/*',
     ]);
 }
 
@@ -47,7 +47,7 @@ function template() {
             path: ['src/templates/']
         }))
         // output files in developer folder
-        .pipe(gulp.dest('./doc'));
+        .pipe(gulp.dest('./docs'));
 
 }
 
@@ -61,7 +61,7 @@ function css() {
         .pipe(header(config.banner, {
             pkg: config.pkg
         }))
-        .pipe(gulp.dest('./doc/assets/css/'));
+        .pipe(gulp.dest('./docs/assets/css/'));
 
 }
 
@@ -74,7 +74,7 @@ function js() {
         .pipe(header(config.banner, {
             pkg: config.pkg
         }))
-        .pipe(gulp.dest('./doc/assets/js/'));
+        .pipe(gulp.dest('./docs/assets/js/'));
 }
 
 function assets() {
@@ -86,7 +86,7 @@ function assets() {
             '!./src/assets/js',
             '!./src/assets/js/**'
         ])
-        .pipe(gulp.dest('./doc/assets/'));
+        .pipe(gulp.dest('./docs/assets/'));
 
 }
 
@@ -98,7 +98,7 @@ function reload(done) {
 function serve(done) {
   browserSync.init({
     server: {
-      baseDir: './doc/'
+      baseDir: './docs/'
     }
   });
   done();
@@ -109,5 +109,5 @@ const watch = () => gulp.watch('./src/**/*', gulp.series(clean, template, css, j
 
 
 
-gulp.task('doc', gulp.series(clean, template, css, js, assets));
+gulp.task('docs', gulp.series(clean, template, css, js, assets));
 gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
