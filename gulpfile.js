@@ -1,18 +1,11 @@
 var del = require('del'),
     gulp = require('gulp'),
-    less = require('gulp-less'),
+    sass = require('gulp-sass'),
     babel = require('gulp-babel'),
     header = require('gulp-header'),
+    autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
-    nunjucksRender = require('gulp-nunjucks-render'),
-    LessPluginAutoPrefix = require('less-plugin-autoprefix'),
-    autoPrefix = new LessPluginAutoPrefix({
-        // https://github.com/ai/browserslist#queries
-        // https://github.com/postcss/autoprefixer#options
-        browsers: ["last 3 versions", "> 5%", "ie 6-8", "IE 10"],
-    });
-
-
+    nunjucksRender = require('gulp-nunjucks-render');
 
 
 var config = {
@@ -35,6 +28,7 @@ var config = {
 function clean() {
     return del([
         './docs/**/*',
+        '!./docs/CNAME'
     ]);
 }
 
@@ -53,10 +47,10 @@ function template() {
 
 function css() {
 
-    // return gulp.src('./src/assets/less/**/*.less')
-    return gulp.src('./src/assets/less/style.less')
-        .pipe(less({
-            plugins: [autoPrefix]
+    return gulp.src('./src/assets/scss/style.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ["last 3 versions", "> 5%", "ie 6-8", "IE 10"]
         }))
         .pipe(header(config.banner, {
             pkg: config.pkg
@@ -81,8 +75,8 @@ function assets() {
 
     return gulp.src([
             './src/assets/**/*',
-            '!./src/assets/less',
-            '!./src/assets/less/**',
+            '!./src/assets/scss',
+            '!./src/assets/scss/**',
             '!./src/assets/js',
             '!./src/assets/js/**'
         ])
@@ -91,17 +85,17 @@ function assets() {
 }
 
 function reload(done) {
-  browserSync.reload();
-  done();
+    browserSync.reload();
+    done();
 }
 
 function serve(done) {
-  browserSync.init({
-    server: {
-      baseDir: './docs/'
-    }
-  });
-  done();
+    browserSync.init({
+        server: {
+            baseDir: './docs/'
+        }
+    });
+    done();
 }
 
 

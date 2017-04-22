@@ -1,16 +1,16 @@
 // Color variables (appears count calculates by raw css)
-@dialogcolor0: #c5c5c5;
+$dialogcolor0: #c5c5c5;
 // Appears 4 times
-@dialogcolor1: #fefefe;
+$dialogcolor1: #fefefe;
 // Appears 2 times
-@dialogcolor2: #eeeeee;
+$dialogcolor2: #eeeeee;
 // Appears 2 times
-@dialogcolor3: #fafafa;
+$dialogcolor3: #fafafa;
 // Appears 1 time
 
 dialog.dialog {
     border-radius: 2px;
-    border: 1px solid @dialogcolor0;
+    border: 1px solid $dialogcolor0;
     padding: 0;
     &.size-200 {
         width: 200px;
@@ -34,9 +34,9 @@ dialog.dialog {
         width: 550px;
     }
     & > .header {
-        background-color: @dialogcolor2;
-        background-image: linear-gradient(@dialogcolor3, @dialogcolor2);
-        border-bottom: 1px solid @dialogcolor0;
+        background-color: $dialogcolor2;
+        background-image: linear-gradient($dialogcolor3, $dialogcolor2);
+        border-bottom: 1px solid $dialogcolor0;
         padding-top: 9px;
         padding-bottom: 5px;
         padding-right: 8px;
@@ -58,8 +58,8 @@ dialog.dialog {
         }
     }
     & > .footer {
-        background-color: @dialogcolor1;
-        border-top: 1px solid @dialogcolor0;
+        background-color: $dialogcolor1;
+        border-top: 1px solid $dialogcolor0;
         height: auto;
         overflow: hidden;
         padding: 5px;

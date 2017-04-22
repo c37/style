@@ -1,11 +1,20 @@
 
  
- var moment = require('moment');
- let utility = require('utility') ;
+ let utility = require('option-group') ;
+ import {work, Person} from 'button';
+ import Children from 'button';
+
+
+var edgar = new Children('Edgar');
+console.log(edgar.doWork());
+
+
 
 console.log(window)
 console.log(utility.square(7))
-console.log(moment().format('LLLL'))
+console.log(work('Andrea'));
+
+
 
 window.onload = function(){
 

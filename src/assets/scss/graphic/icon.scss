@@ -1,9 +1,9 @@
 // Width variables (appears count calculates by raw css)
-@iconwidth0: 12px;
+$iconwidth0: 12px;
 // Appears 3 times
 
 // Height variables (appears count calculates by raw css)
-@iconheight0: 12px;
+$iconheight0: 12px;
 // Appears 3 times
 
 [class^="icon-"] {
@@ -33,25 +33,25 @@
 /* window - state */
 .icon-window-minimize {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRUJFMTEiLz48L3N2Zz4=);
-    height: @iconheight0;
+    height: $iconheight0;
     opacity: 1;
-    width: @iconwidth0;
+    width: $iconwidth0;
     cursor: pointer !important;
 }
 
 .icon-window-maximize {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiM0N0I2NDkiLz48L3N2Zz4=);
-    height: @iconheight0;
+    height: $iconheight0;
     opacity: 1;
-    width: @iconwidth0;
+    width: $iconwidth0;
     cursor: pointer !important;
 }
 
 .icon-window-close {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGMTYwNTUiLz48L3N2Zz4=);
-    height: @iconheight0;
+    height: $iconheight0;
     opacity: 1;
-    width: @iconwidth0;
+    width: $iconwidth0;
     cursor: pointer !important;
 }
 

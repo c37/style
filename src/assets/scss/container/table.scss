@@ -1,7 +1,7 @@
 // Color variables (appears count calculates by raw css)
-@tablecolor0: rgb(248, 248, 248); // Appears 1 time
-@tablecolor1: #c5c5c5; // Appears 1 time
-@tablecolor2: #fefefe; // Appears 1 time
+$tablecolor0: rgb(248, 248, 248); // Appears 1 time
+$tablecolor1: #c5c5c5; // Appears 1 time
+$tablecolor2: #fefefe; // Appears 1 time
 
 
 
@@ -9,8 +9,8 @@ table.table-fit {
     border-collapse: collapse;
     width: 100%;
     thead {
-        background-color: @tablecolor2;
-        border-bottom: 1px solid @tablecolor1;
+        background-color: $tablecolor2;
+        border-bottom: 1px solid $tablecolor1;
         text-align: center;
     }
     tbody{
@@ -19,7 +19,7 @@ table.table-fit {
                 padding: 5px 0;
             }
             &:hover {
-                background-color: @tablecolor0;
+                background-color: $tablecolor0;
                 cursor: pointer !important;
             }
         }

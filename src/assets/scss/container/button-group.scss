@@ -1,9 +1,9 @@
 // Width variables (appears count calculates by raw css)
-@buttonwidth0: 100%;
+$buttonwidth0: 100%;
 // Appears 2 times
 
 div.button {
-    width: @buttonwidth0;
+    width: $buttonwidth0;
     &:before {
         content: " ";
         display: table;
@@ -29,7 +29,7 @@ div.button {
         display: block;
         & > .button {
             float: none;
-            width: @buttonwidth0;
+            width: $buttonwidth0;
             &:first-child {
                 border-radius: 2px 2px 0 0;
             }

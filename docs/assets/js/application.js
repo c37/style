@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Fri Apr 21 2017 02:13:15 GMT-0300 (BRT)
+ * Static Here - in Fri Apr 21 2017 22:44:58 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -10,22 +10,33 @@
  */
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(['moment', 'utility'], factory);
+    define(['button', 'option-group'], factory);
   } else if (typeof exports !== "undefined") {
-    factory(require('moment'), require('utility'));
+    factory(require('button'), require('option-group'));
   } else {
     var mod = {
       exports: {}
     };
-    factory(global.moment, global.utility);
+    factory(global.button, global.optionGroup);
     global.application = mod.exports;
   }
-})(this, function (moment, utility) {
+})(this, function (_button, utility) {
   'use strict';
+
+  var _button2 = _interopRequireDefault(_button);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  var edgar = new _button2.default('Edgar');
+  console.log(edgar.doWork());
 
   console.log(window);
   console.log(utility.square(7));
-  console.log(moment().format('LLLL'));
+  console.log((0, _button.work)('Andrea'));
 
   window.onload = function () {
 

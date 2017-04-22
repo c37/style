@@ -1,28 +1,28 @@
 // Color variables (appears count calculates by raw css)
-@listcolor0: #c5c5c5;
+$listcolor0: #c5c5c5;
 // Appears 3 times
-@listcolor1: rgb(248, 248, 248);
+$listcolor1: rgb(248, 248, 248);
 // Appears 2 times
-@listcolor2: rgb(0, 0, 0);
+$listcolor2: rgb(0, 0, 0);
 // Appears 1 time
-@listcolor3: rgb(255, 255, 255);
+$listcolor3: rgb(255, 255, 255);
 // Appears 1 time
 
 // Width variables (appears count calculates by raw css)
-@listwidth0: 100%;
+$listwidth0: 100%;
 // Appears 2 times
 
 ul.list {
-    background-color: @listcolor3;
+    background-color: $listcolor3;
     height: auto;
     overflow-x: hidden;
     overflow-y: auto;
-    width: @listwidth0;
+    width: $listwidth0;
 }
 
 ul.list.border {
     border-radius: 2px;
-    border: 1px solid @listcolor0;
+    border: 1px solid $listcolor0;
 }
 
 ul.list > li {
@@ -31,21 +31,21 @@ ul.list > li {
         cursor: pointer !important;
     }
     &:hover {
-        background-color: @listcolor1;
+        background-color: $listcolor1;
         cursor: pointer !important;
     }
     &:hover > div > i, &:hover > div > strong {
-        color: @listcolor2;
+        color: $listcolor2;
         cursor: pointer !important;
         font-weight: 500;
         opacity: 1;
     }
     &.selected {
         >div {
-            background-color: @listcolor1;
+            background-color: $listcolor1;
             cursor: default !important;
             >i, >strong {
-                color: @listcolor2 !important;
+                color: $listcolor2 !important;
                 cursor: default !important;
                 opacity: 1 !important;
             }
@@ -56,7 +56,7 @@ ul.list > li {
             background-color: #FBFBFB;
             >i, >strong {
                 cursor: default !important;
-                color: @listcolor2 !important;
+                color: $listcolor2 !important;
                 opacity: .4 !important;
             }
         }
@@ -91,9 +91,9 @@ ul.list.vertical {
 }
 
 ul.list.vertical > li {
-    border-bottom: 1px solid @listcolor0;
+    border-bottom: 1px solid $listcolor0;
     display: block;
-    width: @listwidth0;
+    width: $listwidth0;
     &:last-child {
         border-bottom: none;
     }
@@ -104,7 +104,7 @@ ul.list.horizontal {
 }
 
 ul.list.horizontal > li {
-    border-right: 1px solid @listcolor0;
+    border-right: 1px solid $listcolor0;
     flex: 1 0 0;
     &:last-child {
         border-right: none;
