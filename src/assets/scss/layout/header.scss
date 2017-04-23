@@ -199,7 +199,7 @@ header.web-site .nav-mobile.active .line:nth-child(3){
     font-size: 15px;
     margin-left: 16px;
     padding: 2px 16px;
-    border-radius: 3px;
+    border-radius: $border-radius;
     border: 1px solid rgba(28, 134, 242, 0.5); }
     #subnav .action-button a:hover {
       background: #1c86f2;

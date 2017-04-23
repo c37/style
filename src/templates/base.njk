@@ -6,10 +6,10 @@
     <meta charset="utf-8">
 
     <title>
-        {% if title %}
-            {{title}} | Static Here
+        {% if pageTitle %}
+            {{pageTitle}} &#8226; C37 - Style
         {% else %}
-            Static Here
+            Style &#8226; C37 - Style
         {% endif %}
     </title>
 
@@ -32,11 +32,13 @@
 </head>
 
 <body>
-    {% import 'macros/header.njk' as header %}
+
+    {% include "partials/header.njk" %}
 
     {% block content %} {% endblock %}
 
     {% include "partials/footer.njk" %}
+
 </body>
 
 </html>

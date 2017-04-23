@@ -48,6 +48,7 @@ function template() {
 function css() {
 
     return gulp.src('./src/assets/scss/style.scss')
+    // return gulp.src('./src/assets/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ["last 3 versions", "> 5%", "ie 6-8", "IE 10"]

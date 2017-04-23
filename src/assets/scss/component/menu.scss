@@ -1,20 +1,3 @@
-// Color variables (appears count calculates by raw css)
-$menucolor0: #cccccc;
-// Appears 4 times
-$menucolor1: #fafafa;
-// Appears 3 times
-$menucolor2: #eaeaea;
-// Appears 2 times
-$menucolor3: #393b3e;
-// Appears 2 times
-$menucolor4: #dadada;
-// Appears 2 times
-$menucolor5: #3d3b36;
-// Appears 1 time
-$menucolor6: #dddddd;
-// Appears 1 time
-
-$listcolor2: rgb(0, 0, 0);
 
 ul.menu {
     display: flex;
@@ -26,7 +9,6 @@ ul.menu > li {
     background-color: $menucolor2;
     background-image: linear-gradient($menucolor1, $menucolor2);
     border: 1px solid $menucolor0;
-    //    box-shadow: $global-box-shadow;
     color: $menucolor5;
     flex-grow: 1;
     padding: 3px 0 3px 0;

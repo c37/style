@@ -1,15 +1,6 @@
-// Color variables (appears count calculates by raw css)
-$dialogcolor0: #c5c5c5;
-// Appears 4 times
-$dialogcolor1: #fefefe;
-// Appears 2 times
-$dialogcolor2: #eeeeee;
-// Appears 2 times
-$dialogcolor3: #fafafa;
-// Appears 1 time
 
 dialog.dialog {
-    border-radius: 2px;
+    border-radius: $border-radius;
     border: 1px solid $dialogcolor0;
     padding: 0;
     &.size-200 {

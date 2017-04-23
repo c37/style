@@ -1,21 +1,7 @@
-// Color variables (appears count calculates by raw css)
-$boxcolor0: #c5c5c5;
-// Appears 2 times
-$boxcolor1: #eeeeee;
-// Appears 2 times
-$boxcolor2: #fefefe;
-// Appears 1 time
-$boxcolor3: #fafafa;
-// Appears 1 time
-$boxcolor4: rgb(197, 197, 197);
-// Appears 1 time
-$boxcolor5: rgb(255, 255, 255);
-// Appears 1 time
 
 div.box {
-    border-radius: 2px;
+    border-radius: $border-radius;
     border: 1px solid $boxcolor4;
-//    box-shadow: $global-box-shadow;
     * {
         cursor: default;
     }
@@ -51,7 +37,7 @@ div.box {
     }
     & > .body {
         background-color: $boxcolor5;
-        border-radius: 0 0 2px 2px;
+        border-radius: $border-radius-bottom;
         border-top: 1px solid $boxcolor0;
         height: auto;
         overflow: hidden;
@@ -71,7 +57,7 @@ div.box {
     }
     & > .footer {
         background-color: $boxcolor2;
-        border-radius: 0 0 2px 2px;
+        border-radius: $border-radius-bottom;
         border-top: 1px solid $boxcolor0;
         height: auto;
         overflow: hidden;

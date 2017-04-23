@@ -1,28 +1,35 @@
-/* global variables */
-$base: #f938ab;
-$global-box-shadow: 1px 1px 2px rgba(100,100,100,.4);
-/* global variables */
 
-/* global visual class */
-.shadow {
-    box-shadow: $global-box-shadow;
-    border-radius: 2px;
-}
-/* global visual class */
+
+/* variables & functions */
+@import "variables.scss";
+@import "functions.scss";
+/* variables & functions */
+
+
+/* mixin */
+@import "mixin/breakpoints.scss";
+@import "mixin/flex.scss";
+/* mixin */
+
 
 /* foundation */
+@import "foundation/grid.scss";
 @import "foundation/typography.scss";
 /* foundation */
 
+
 /* layout */
-@import "layout/grid.scss";
 @import "layout/header.scss";
 @import "layout/footer.scss";
+@import "layout/nav-section.scss";
+@import "layout/nav-menu.scss";
 /* layout */
+
 
 /* graphic */
 @import "graphic/icon.scss";
 /* graphic */
+
 
 /* component */
 @import "component/alert.scss";
@@ -33,26 +40,19 @@ $global-box-shadow: 1px 1px 2px rgba(100,100,100,.4);
 @import "component/menu.scss";
 @import "component/location.scss";
 @import "component/navigation.scss";
-@import "component/option-group.scss";
+@import "component/option.scss";
 @import "component/pagination.scss";
 @import "component/popover.scss";
 @import "component/progress.scss";
 @import "component/tab.scss";
 /* component */
 
+
 /* container */
 @import "container/accordion.scss";
 @import "container/box.scss";
-@import "container/button-group.scss";
 @import "container/dialog.scss";
 @import "container/form.scss";
 @import "container/panel.scss";
 @import "container/table.scss";
 /* container */
-
-
-/* functions */
-
-
-
-/* functions */

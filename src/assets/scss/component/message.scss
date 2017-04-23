@@ -1,23 +1,6 @@
-// Color variables (appears count calculates by raw css)
-$messagecolor0: #d19a5f; // Appears 1 time
-$messagecolor1: #a1882b; // Appears 1 time
-$messagecolor2: #e2cc7a; // Appears 1 time
-$messagecolor3: #f4cdcb; // Appears 1 time
-$messagecolor4: #e99291; // Appears 1 time
-$messagecolor5: #c65f5f; // Appears 1 time
-$messagecolor6: #ca534d; // Appears 1 time
-$messagecolor7: #f8eec7; // Appears 1 time
-$messagecolor8: #5f9fc6; // Appears 1 time
-$messagecolor9: #5d8a4a; // Appears 1 time
-$messagecolor10: #95c97e; // Appears 1 time
-$messagecolor11: #75a962; // Appears 1 time
-$messagecolor12: #d0e3ef; // Appears 1 time
-$messagecolor13: #264c72; // Appears 1 time
-$messagecolor14: #97c1da; // Appears 1 time
-$messagecolor15: #d8f5cd; // Appears 1 time
+
 .message {
-    border-radius: 2px;
-//    box-shadow: $global-box-shadow;
+    border-radius: $border-radius;
     box-sizing: border-box;
     display: table;
     font-size: 11px;
@@ -64,7 +47,7 @@ $messagecolor15: #d8f5cd; // Appears 1 time
 }
 
 .message.center {
-    border-radius: 2px;
+    border-radius: $border-radius;
 //    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     display: table;
     font-size: 11px;

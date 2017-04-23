@@ -1,12 +1,35 @@
-{% extends "base.njk" %}
+{% extends "base.njk" %} 
 
-{% set title = "Foundation" %}
-
+{% set pageTitle = "Foundation" %} 
+{% set urlHeader = "foundation" %} 
 
 {% block content %}
 
-    {{header.active('foundation')}}
+
+<nav class="nav-section">
+    <ul>
+        <li>
+            <a href="/foundation/grid.html">
+                <i class="icon-nav-cad"></i>
+                <span>Grid</span>
+            </a>
+        </li>
+        <li>
+            <a href="/foundation/typography.html">
+                <i class="icon-nav-cam"></i>
+                <span>Typography</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="grid fixed">
 
     <h1>Foundation</h1>
+
+
+</div>
+
+
 
 {% endblock %}
