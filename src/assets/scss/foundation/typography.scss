@@ -13,8 +13,9 @@
 html,
 body {
     height: 100%;
-    color: #666665;
-    font: 14px 'lucida grande', tahoma, verdana, arial, sans-serif;
+    color: $color-text;
+    font-family : $font-family;
+    font-size: $font-size;
     margin: auto !important;
     line-height: 22px;
     padding: 0px;
@@ -93,8 +94,9 @@ hr {
 
 a {
     color: #599bcd;
-    // text-decoration: none;
+    text-decoration: none;
     background: transparent;
+    outline: none;
     cursor: pointer;
 }
 
@@ -218,18 +220,60 @@ progress {
 /* html structure */
 
 /* header */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    // display: block;
-    padding-bottom: 0px;
+h1.title, h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+	font-weight: bold;
+	color: $color-headings;
+	text-rendering: optimizeLegibility;
+    margin-bottom: $heading-margin-bottom;
 }
+h1.title {
+    font-size: $heading-font-size-title;
+    line-height: $heading-base-line-title;
+    margin-top: $heading-margin-top-title;
+    margin-bottom: $heading-margin-bottom;
+}
+h1 {
+    font-size: $heading-font-size-1;
+    line-height: $heading-base-line-1;
+    margin-top: $heading-margin-top-1;
+    margin-bottom: $heading-margin-bottom;
+}
+h2 {
+    font-size: $heading-font-size-2;
+    line-height: $heading-base-line-2;
+    margin-top: $heading-margin-top-2;
+    margin-bottom: $heading-margin-bottom;
+}
+h3 {
+    font-size: $heading-font-size-3;
+    line-height: $heading-base-line-3;
+    margin-top: $heading-margin-top-3;
+    margin-bottom: $heading-margin-bottom;
+}
+h4 {
+    font-size: $heading-font-size-4;
+    line-height: $heading-base-line-4;
+    margin-top: $heading-margin-top-4;
+    margin-bottom: $heading-margin-bottom;
+}
+h5 {
+    font-size: $heading-font-size-5;
+    line-height: $heading-base-line-5;
+    margin-top: $heading-margin-top-5;
+    margin-bottom: $heading-margin-bottom;
+    
+}
+h6 {
+    font-size: $heading-font-size-6;
+    line-height: $heading-base-line-6;
+    margin-top: $heading-margin-top-6;
+    margin-bottom: $heading-margin-bottom;
+}
+
+
+
+
 h1>a,
 h2>a,
 h3>a,
@@ -248,34 +292,34 @@ h6>a:hover{
     transition: all linear 0.2s !important;
 }
 
-h1.title {
-  font-size: 60px;
-  line-height: 64px;
-  margin-bottom: 8px; 
-}
+// h1.title {
+//   font-size: 60px;
+//   line-height: 64px;
+//   margin-bottom: 8px; 
+// }
 
-h1 {
-    font-size: 48px;
-    line-height: 52px;
-}
-h2 {
-    font-size: 36px;
-    line-height: 40px;
-}
-h3 {
-    font-size: 24px;
-    line-height: 32px;    
-}
+// h1 {
+//     font-size: 48px;
+//     line-height: 52px;
+// }
+// h2 {
+//     font-size: 36px;
+//     line-height: 40px;
+// }
+// h3 {
+//     font-size: 24px;
+//     line-height: 32px;    
+// }
 
-h4 {
-    font-size: 21px;
-    line-height: 32px;
-}
+// h4 {
+//     font-size: 21px;
+//     line-height: 32px;
+// }
 
-h5 {
-    font-size: 18px;
-    line-height: 28px;
-}
+// h5 {
+//     font-size: 18px;
+//     line-height: 28px;
+// }
 // @media (min-width: 768px) {
 //     h1.title,
 //     h1,

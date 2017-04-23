@@ -17,12 +17,37 @@ $grid-space: 2% !default;
 // grid
 
 
+
+
+
+// logo
+@mixin logo-header() {
+    display: block;
+    background: url('/assets/img/logo.svg') no-repeat center / 100% !important;
+    width: 46px;
+    height: 46px;   
+}
+@mixin logo-footer() {
+    display: block;
+    background: url('/assets/img/logo.svg') no-repeat center / 100% !important;
+    width: 46px;
+    height: 46px;   
+}
+
+
+// logo
+
+
+
+
+
 // width
 $width-large: 1440px !default;
 $width-big: 1024px !default;
 $width-medium: 720px !default;
 $width-small: 360px !default;
 // width
+
 
 // break points
 $sm: 768px !default;
@@ -231,21 +256,16 @@ $z-over-all: 500 !default;
 
 
 
-// FONT FAMILY
-// ---------------------------------------------------------------------------
-$text-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
-$monospace-font-family: Consolas, Monaco, 'Courier New', monospace !default;
-$headings-font-family: $text-font-family !default;
-$buttons-font-family: $text-font-family !default;
-$input-font-family: $text-font-family !default;
 
 
 // COLORS
 // ---------------------------------------------------------------------------
 
+
+
 // Text
-$color-text: #313439 !default;
-$color-headings: #0d0d0e !default;
+$color-text: #666665 !default;
+$color-headings: #676b72 !default;
 
 // Links
 $color-link: #3794de !default;
@@ -277,15 +297,22 @@ $color-silver: #e0e1e1 !default;
 $color-aluminum: #f8f8f8 !default;
 
 
+// FONT FAMILY
+// ---------------------------------------------------------------------------
+$font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-family-monospace: Consolas, Monaco, 'Courier New', monospace !default;
+
+
 // TEXT
 // ---------------------------------------------------------------------------
 
 // Font Size
-$font-size: 16px !default;
-$font-size-smaller: $font-size - 4px !default;
-$font-size-small: $font-size - 2px !default;
-$font-size-big: $font-size + 2px !default;
+$font-size: 14px !default;
 $font-size-large: $font-size + 4px !default;
+$font-size-big: $font-size + 2px !default;
+$font-size-small: $font-size - 2px !default;
+$font-size-smaller: $font-size - 4px !default;
+
 
 // Baseline
 $base-line: 24px !default;
@@ -321,7 +348,15 @@ $heading-base-line-5: 28px !default;
 $heading-base-line-6: 24px !default;
 
 // Margin
-$heading-margin-bottom: $font-size !default;
+$heading-margin-top-title: $heading-base-line-1 - 10px;
+$heading-margin-top-1: $heading-base-line-1 - 10px;
+$heading-margin-top-2: $heading-base-line-2 - 10px;
+$heading-margin-top-3: $heading-base-line-3 - 10px;
+$heading-margin-top-4: $heading-base-line-4 - 10px;
+$heading-margin-top-5: $heading-base-line-5 - 10px;
+$heading-margin-top-6: $heading-base-line-6 - 10px;
+
+$heading-margin-bottom: $font-size - 4px !default;
 
 
 // TABLES
@@ -434,3 +469,20 @@ $input-border-radius: 3px !default;
 // OVERLAY
 // ---------------------------------------------------------------------------
 $overlay-background-color: rgba(#fff, .95);
+
+
+
+
+
+			div.example {
+				border: 1px solid rgba(0, 0, 0, 0.07);
+				padding: 32px;
+				margin-bottom: 16px;
+			}
+
+			.example pre.code {
+				margin-top: 40px;
+				margin-bottom: 0;
+				background: none;
+				padding: 0;
+			}  

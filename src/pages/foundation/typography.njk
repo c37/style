@@ -1,39 +1,122 @@
-{% extends "base.njk" %}
+{% extends "base.njk" %} 
 
-{% set pageTitle = "Foundation" %} 
+{% set pageTitle = "Typography • Foundation" %}
 {% set urlHeader = "foundation" %} 
 
 {% block content %}
 
+<div class="grid fixed">
 
-    <div class="grid fixed">
+    <div class="row">
+        <div class="column-12">
 
-        <div class="row">
-            <div class="column-12">
-                <h1>Typography</h1>
-                <p>
+            <div class="nav-self">
+                <div class="left">
+                    <h3><a href="/page/layout/grid.html">Typography</a></h3>
 
-                </p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#headings">Headings</a>
+                        </li>
+                        <li>
+                            <a href="#paragraphs">Paragraphs</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            <p>
+                Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed.
+                The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing (leading),
+                and letter-spacing (tracking), and adjusting the space between pairs of letters. The term typography is also
+                applied to the style, arrangement, and appearance of the letters, numbers, and symbols created by the process.<sub><a href="https://en.wikipedia.org/wiki/Typography" target="_blank">wikipedia</a></sup> 
+            </p>
+
         </div>
-
-        <div class="grid fixed debug">
-            <div class="row">
-                <div class="column-12">
-                    column-12
-                </div>
-            </div>
-            <div class="row">
-                <div class="column-6">
-                    column-6
-                </div>
-                <div class="column-6">
-                    column-6
-                </div>
-            </div>
-        </div>
-
     </div>
+
+    <div class="row">
+        <div class="column-12">
+
+            <h3>
+                <a id="headings" class="mark" href="#headings">Headings</a>
+            </h3>
+            <p>
+                Use h1-h6 tags to define headers and class="title" for the title, which is suitable for the most important inscriptions, for example, in the hero or covers.
+           </p>
+
+            <div class="example">
+                <h1 class="title">Title</h1>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+
+                <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></pre>
+
+            </div>
+
+            <h3>
+                <a id="paragraphs" class="mark" href="#paragraphs">Paragraphs</a>
+            </h3>
+            <p>
+                The base pragraph has an ideal ratio of font size and baseline. This text is easy to read in most cases.
+           </p>
+            
+            <div class="example">
+                <p class="section-item-desc">16px/24px</p>
+                <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+                <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+            </div>
+
+            <p>
+                In special cases, you can use modifiers which increase or decrease the text size.
+                It is useful for building a variety of websites and UI, when you need to make a lead text or signatures with a small font size .
+            </p>
+
+
+            <div class="example">
+                <p class="section-item-desc">20px/32px</p>
+                <p class="large">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+                <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"large"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+            </div>
+
+            <div class="example">
+                <p class="section-item-desc">18px/28px</p>
+                <p class="big">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+                <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"big"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+            </div>
+
+            <div class="example">
+                <p class="section-item-desc">14px/20px</p>
+                <p class="small">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+                <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+            </div>
+
+            <div class="example">
+                <p class="section-item-desc">12px/20px</p>
+                <p class="smaller">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
+                <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"smaller"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+            </div>                
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
 
 
 

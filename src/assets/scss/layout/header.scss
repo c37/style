@@ -1,7 +1,90 @@
 // http://jsbin.com/ - para applicativos
-header.application {
-  margin: 0px;
+header {
+    &.application {
+        margin: 0px;
+    }
+    &.site{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        >.container{
+            max-width: 1024px;
+            height: 47px;
+            margin: 0 auto;
+            padding: 0 5px;
+            >nav{
+                width: 100%;
+                >ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    >li a{
+                        >.logo {
+                            @include logo-header();
+                        }
+                        color: #666665;
+                        // color: #3b4854;
+                        &:hover,
+                        &.selected{
+                            color: #599bcd;
+                            transition: all linear 0.2s;
+                        }
+                        &.selected{
+                            font-weight: bold;
+                        }
+                    }                    
+                }                
+            }
+        }
+    }
 }
+
+header.site .nav-mobile{
+    margin-left: 9px;
+}
+header.site .nav-mobile .line{
+  width: 20px;
+  height: 2px;
+  background-color: #666665;
+  display: block;
+  margin: 3px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header.site .nav-mobile:hover{
+  cursor: pointer;
+}
+header.site .nav-mobile.active .line:nth-child(2){
+  opacity: 0;
+}
+header.site .nav-mobile.active .line:nth-child(1){
+  transform: translateY(5px) rotate(45deg);
+}
+header.site .nav-mobile.active .line:nth-child(3){
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 header.web-site{
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -49,6 +132,9 @@ header.web-site>.container ul>li a.selected{
 }
 
 
+
+
+
 header .button:hover,
 header .button:active,
 header .button,
@@ -60,33 +146,6 @@ header .option-group:hover {
     background-image: none;
     outline: none;
     -webkit-app-region: no-drag;
-}
-
-
-header.web-site .nav-mobile{
-    margin-left: 9px;
-}
-header.web-site .nav-mobile .line{
-  width: 20px;
-  height: 2px;
-  background-color: #666665;
-  display: block;
-  margin: 3px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-header.web-site .nav-mobile:hover{
-  cursor: pointer;
-}
-header.web-site .nav-mobile.active .line:nth-child(2){
-  opacity: 0;
-}
-header.web-site .nav-mobile.active .line:nth-child(1){
-  transform: translateY(5px) rotate(45deg);
-}
-header.web-site .nav-mobile.active .line:nth-child(3){
-  transform: translateY(-5px) rotate(-45deg);
 }
 
 

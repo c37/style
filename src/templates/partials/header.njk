@@ -1,4 +1,6 @@
-<header>
-    {% import 'macros/header.njk' as header %}
-    {{header.active(urlHeader)}}
+<header class="site">
+    <div class="container">
+        {% import 'macros/nav.njk' as nav %}
+        {{nav.active(urlHeader)}}
+    </div>
 </header>

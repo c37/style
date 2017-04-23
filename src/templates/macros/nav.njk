@@ -1,40 +1,4 @@
-<!doctype html>
-<html lang="pt-BR">
-
-<head>
-
-    <meta charset="utf-8">
-
-    <title>
-        
-            Component &#8226; C37 - Style
-        
-    </title>
-
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-
-    <!-- build:css /assets/css/style.css -->
-    <link rel="stylesheet" media="all" href="/assets/css/style.css">
-    <!-- endbuild -->
- 
-        <!-- build:jsLibrary /assets/js/library.js -->
-    <script type="text/javascript" src="/assets/js/library/option-group.js"></script>
-    <script type="text/javascript" src="/assets/js/library/button.js"></script>
-    <!--endbuild-->
-
-    <!-- build:jsApp /assets/js/app.js -->
-    <script type="text/javascript" src="/assets/js/application.js"></script>
-    <!-- endbuild -->
-</head>
-
-<body>
-
-    <header class="site">
-    <div class="container">
-        
-        
+{% macro active(selected="") %}
 
 <nav class="show-mobile">
   <ul>
@@ -118,19 +82,19 @@
       </a>
     </li>
     <li>
-      <a href="/foundation" class="">Foundation</a>
+      <a href="/foundation" class="{%if selected == 'foundation' %}selected{% endif %}">Foundation</a>
     </li>
     <li>
-      <a href="/layout" class="">Layout</a>
+      <a href="/layout" class="{%if selected == 'layout' %}selected{% endif %}">Layout</a>
     </li>
     <li>
-      <a href="/graphic" class="">Graphic</a>
+      <a href="/graphic" class="{%if selected == 'graphic' %}selected{% endif %}">Graphic</a>
     </li>
     <li>
-      <a href="/container" class="">Container</a>
+      <a href="/container" class="{%if selected == 'container' %}selected{% endif %}">Container</a>
     </li>
     <li>
-      <a href="/component" class="selected">Component</a>
+      <a href="/component" class="{%if selected == 'component' %}selected{% endif %}">Component</a>
     </li>
     <li>
         <i class="icon-search-20"></i>
@@ -138,23 +102,4 @@
     
   </ul>
 </nav>
-
-    </div>
-</header>
-
-    
-
-
-
-    <h1>Component</h1>
-
-
-
-
-    <footer>
-    Footer
-</footer>
-
-</body>
-
-</html>
+{% endmacro %}

@@ -29,10 +29,23 @@ div {
 }
 // grid
 
+@media (min-width: 768px) {
+  div.grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  div.grid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 
 // grid row
 div.row {
-    margin: 3px 0;
+    margin: 1px 0 1px 0;
 
     &.debug {
         @include debug-row;
@@ -101,7 +114,7 @@ div.row {
 div[class^='column'],
 div[class*=' column'] {
     box-sizing: border-box;
-    padding: 7px;
+    padding: 0px;
 }
 
 
