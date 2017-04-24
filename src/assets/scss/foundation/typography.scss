@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
 }
 
 // html structure
@@ -16,7 +15,8 @@ body {
     font-family: $font-family;
     font-size: $font-size;
     margin: auto !important;
-    line-height: 22px;
+    line-height: $base-line;
+    box-sizing: border-box;
     padding: 0px;
 }
 
@@ -105,28 +105,32 @@ h6>a:hover {
 
 // paragraphs
 p.large {
-    font-size: 20px !important;
+    font-size: $font-size-large !important;
     line-height: 32px;
 }
 
 p.big {
-    font-size: 18px !important;
+    font-size: $font-size-big !important;
     line-height: 28px;
 }
 
 p {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: $text-margin-bottom;
 }
 
 p.small {
-    font-size: 13px !important;
+    font-size: $font-size-small !important;
     line-height: 20px;
 }
 
 p.smaller {
-    font-size: 12px !important;
+    font-size: $font-size-smaller !important;
     line-height: 20px;
+}
+
+p.end {
+    margin-bottom: 0 !important;
 }
 
 // link
@@ -157,105 +161,158 @@ a.mark::after {
     top: -1px;
 }
 
-
-
-
-
-
-
-
-
-
-
+// block tags
+p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
+	margin-bottom: $text-margin-bottom;
+}
 hr {
+    border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	margin-top: -1px;
+}
+
+// blockquote
+blockquote {
+	padding-left: 1rem;
+	border-left: 4px solid rgba(0, 0, 0, .1);
+	font-style: italic;
+	color: rgba($color-text, .65);
+	& p {
+    	margin-bottom: .5rem;
+	}
+}
+
+
+
+// preformatted
+pre, code, samp, var, kbd {
+	font-family: $font-family-monospace;
+}
+pre, code, samp, var, kbd, mark {
+	font-size: 87.5%;
+}
+pre,
+pre code {
+    background: $color-aluminum;
+	padding: 0;
+	top: 0;
     display: block;
-    margin-bottom: 9px;
+    line-height: $base-line-small;
+    color: rgba($color-text, .85);
+	overflow: none;
+	white-space: pre-wrap;
+}
+pre {
+    padding: 1rem;
 }
 
-
-
-
-
-
-
-input,
-input:focus,
-textarea {
-    height: 26px;
-    width: 100%;
-    font-size: 11px;
-    border: 1px solid #cccccc;
-    padding: 3px 3px 3px 5px !important;
-    margin: 0 0 11px 0 !important;
-    box-sizing: border-box;
-    outline: none;
-    resize: none;
+// Figure
+figcaption {
+	opacity: .6;
 }
-
-
-/* text */
-
-input[type="text"] {
-    margin: 0 0 11px 0 !important;
-}
-
-input[type="text"].required,
-input[type="password"].required,
-{
-    border: 1px solid firebrick;
-    background-color: #FFD5D5;
-}
-
-
-/* text */
-
-
-/* range */
-
-input[type="range"] {
-    margin: 5px 0 7px 0;
-}
-
-
-/* range */
-
-
-/* checkbox */
-
-input[type="checkbox"] {
-    display: inline-block;
-    width: 13px;
-    margin: 0 3px 0 0;
-    padding: 0;
-    height: 14px;
-}
-
-span.checkbox {
+figure figcaption {
     position: relative;
-    top: -3px;
+    top: -1rem/2;
+}
+figure pre {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+}
+figure {
+    & .video-container,
+    & pre {
+        margin-bottom: $text-margin-bottom/2;
+    }
 }
 
 
-/* checkbox */
 
-p[contenteditable="true"] {
-    width: 100%;
-    font-size: 11px;
-    border: 1px solid #cccccc;
-    padding: 3px 3px 3px 5px;
-    margin: 0 0 11px 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-    resize: none;
+
+
+
+
+
+
+// lists
+
+ul.unstyled {
+    & {
+        margin-left: 0;
+    }
+    &,
+    & ul {
+        list-style: none;
+    }
 }
 
-label {
-    display: block;
-    text-align: left;
-    margin: 0 0 5px 0;
+ul,
+ol {
+    &,
+    & ul,
+    & ol {
+	    margin: 0 0 0 $base-line;
+	}
 }
+ol ol li {
+	list-style-type: lower-alpha;
+}
+ol ol ol li {
+	list-style-type: lower-roman;
+}
+nav {
+    & ul,
+    & ol {
+        margin: 0;
+	    list-style: none;
+	    & ul,
+	    & ol {
+    	    margin-left: $base-line;
+	    }
+	}
+}
+dl dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: $base-line;
+}
+
+
+ul.square-inside>li {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+
+
+
+ul.square-inside>li {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+ul.smaller {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 strong {
     display: inline-block;
@@ -377,14 +434,7 @@ progress {
 
 /* lista */
 
-ul.square-inside>li {
-    list-style-position: inside;
-    list-style-type: square;
-}
 
-ul.smaller {
-    font-size: 12px;
-}
 
 
 /* lista */

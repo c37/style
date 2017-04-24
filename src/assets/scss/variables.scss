@@ -14,12 +14,6 @@ $grid-space: 2% !default;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-// grid
-
-
-
-
-
 // logo
 @mixin logo-header() {
     display: block;
@@ -34,20 +28,11 @@ $grid-space: 2% !default;
     height: 48px;   
 }
 
-
-// logo
-
-
-
-
-
 // width
 $width-large: 1440px !default;
 $width-big: 1024px !default;
 $width-medium: 720px !default;
 $width-small: 360px !default;
-// width
-
 
 // break points
 $sm: 768px !default;
@@ -58,7 +43,106 @@ $break-large: 1440px !default;
 $break-big: 1024px !default;
 $break-medium: 720px !default;
 $break-small: 360px !default;
-// break points
+$break-small: 360px !default;
+
+// font family
+$font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+$font-family-monospace: Consolas, Monaco, 'Courier New', monospace !default;
+
+// font size
+$font-size: 14px !default;
+$font-size-large: $font-size + 6px !default;
+$font-size-big: $font-size + 4px !default;
+$font-size-small: $font-size - 2px !default;
+$font-size-smaller: $font-size - 4px !default;
+
+// baseline
+$base-line-large: 32px !default;
+$base-line-big: 28px !default;
+$base-line: 22px !default;
+$base-line-small: 20px !default;
+$base-line-smaller: 20px !default;
+
+// margin
+$text-margin-bottom: 9px !default;
+
+// headings
+
+// font size
+$heading-font-size-title: 60px !default;
+$heading-font-size-1: 48px !default;
+$heading-font-size-2: 36px !default;
+$heading-font-size-3: 24px !default;
+$heading-font-size-4: 21px !default;
+$heading-font-size-5: 18px !default;
+$heading-font-size-6: 16px !default;
+
+// baseline
+$heading-base-line-title: 64px !default;
+$heading-base-line-1: 52px !default;
+$heading-base-line-2: 40px !default;
+$heading-base-line-3: 32px !default;
+$heading-base-line-4: 32px !default;
+$heading-base-line-5: 28px !default;
+$heading-base-line-6: 24px !default;
+
+// margin
+$heading-margin-top-title: $heading-base-line-1 - 10px;
+$heading-margin-top-1: $heading-base-line-1 - 10px;
+$heading-margin-top-2: $heading-base-line-2 - 10px;
+$heading-margin-top-3: $heading-base-line-3 - 10px;
+$heading-margin-top-4: $heading-base-line-4 - 10px;
+$heading-margin-top-5: $heading-base-line-5 - 10px;
+$heading-margin-top-6: $heading-base-line-6 - 10px;
+
+$heading-margin-bottom: $font-size - 4px !default;
+
+
+// colors
+
+// text
+$color-text: #666665 !default;
+$color-headings: #676b72 !default;
+
+// links
+$color-link: #599bcd !default;
+$color-link-hover: #666665 !default;
+$color-link-selected: #599bcd !default;
+$color-link-mark: rgba(0, 0, 0, 0.3)!default;
+
+
+// button
+$color-button-primary: #1c86f2 !default;
+$color-button-primary-text: #fff !default;
+$color-button-secondary: #313439 !default;
+$color-button-secondary-text: #fff !default;
+
+// atates
+$color-error: #f03c69 !default;
+$color-success: #35beb1 !default;
+$color-warning: #f7ba45 !default;
+$color-focus: #1c86f2 !default;
+
+// extra
+$color-inverted: #fff !default;
+$color-highlight: #edf2ff !default; // color-focus 15% opacity
+
+// grayscale
+$color-black: #0d0d0e !default;
+$color-darkgray: #313439 !default;
+$color-midgray: #676b72 !default;
+$color-gray: #bdbdbd !default;
+$color-lightgray: #d4d4d4 !default;
+$color-silver: #e0e1e1 !default;
+$color-aluminum: #f8f8f8 !default;
+
+
+
+
+
+
+
+
 
 
 
@@ -258,107 +342,7 @@ $z-over-all: 500 !default;
 
 
 
-// COLORS
-// ---------------------------------------------------------------------------
 
-
-
-// Text
-$color-text: #666665 !default;
-$color-headings: #676b72 !default;
-
-// Links
-$color-link: #599bcd !default;
-$color-link-hover: #666665 !default;
-$color-link-selected: #599bcd !default;
-$color-link-mark: rgba(0, 0, 0, 0.3)!default;
-
-// Button
-$color-button-primary: #1c86f2 !default;
-$color-button-primary-text: #fff !default;
-$color-button-secondary: #313439 !default;
-$color-button-secondary-text: #fff !default;
-
-// States
-$color-error: #f03c69 !default;
-$color-success: #35beb1 !default;
-$color-warning: #f7ba45 !default;
-$color-focus: #1c86f2 !default;
-
-// Extra
-$color-inverted: #fff !default;
-$color-highlight: #edf2ff !default; // color-focus 15% opacity
-
-// Grayscale
-$color-black: #0d0d0e !default;
-$color-darkgray: #313439 !default;
-$color-midgray: #676b72 !default;
-$color-gray: #bdbdbd !default;
-$color-lightgray: #d4d4d4 !default;
-$color-silver: #e0e1e1 !default;
-$color-aluminum: #f8f8f8 !default;
-
-
-// FONT FAMILY
-// ---------------------------------------------------------------------------
-$font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
-$font-family-monospace: Consolas, Monaco, 'Courier New', monospace !default;
-
-
-// TEXT
-// ---------------------------------------------------------------------------
-
-// Font Size
-$font-size: 14px !default;
-$font-size-large: $font-size + 4px !default;
-$font-size-big: $font-size + 2px !default;
-$font-size-small: $font-size - 2px !default;
-$font-size-smaller: $font-size - 4px !default;
-
-
-// Baseline
-$base-line: 24px !default;
-$base-line-smaller: 20px !default;
-$base-line-small: 20px !default;
-$base-line-big: 28px !default;
-$base-line-large: 32px !default;
-
-// Margin
-$text-margin-bottom: $font-size !default;
-
-
-// HEADINGS
-// ---------------------------------------------------------------------------
-
-// Font Size
-// By default: 60, 48, 36, 24, 21, 18, 16
-$heading-font-size-title: 60px !default;
-$heading-font-size-1: 48px !default;
-$heading-font-size-2: 36px !default;
-$heading-font-size-3: 24px !default;
-$heading-font-size-4: 21px !default;
-$heading-font-size-5: 18px !default;
-$heading-font-size-6: 16px !default;
-
-// Baseline
-$heading-base-line-title: 64px !default;
-$heading-base-line-1: 52px !default;
-$heading-base-line-2: 40px !default;
-$heading-base-line-3: 32px !default;
-$heading-base-line-4: 32px !default;
-$heading-base-line-5: 28px !default;
-$heading-base-line-6: 24px !default;
-
-// Margin
-$heading-margin-top-title: $heading-base-line-1 - 10px;
-$heading-margin-top-1: $heading-base-line-1 - 10px;
-$heading-margin-top-2: $heading-base-line-2 - 10px;
-$heading-margin-top-3: $heading-base-line-3 - 10px;
-$heading-margin-top-4: $heading-base-line-4 - 10px;
-$heading-margin-top-5: $heading-base-line-5 - 10px;
-$heading-margin-top-6: $heading-base-line-6 - 10px;
-
-$heading-margin-bottom: $font-size - 4px !default;
 
 
 // TABLES

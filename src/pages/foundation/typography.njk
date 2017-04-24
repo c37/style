@@ -5,7 +5,7 @@
 
 {% block content %}
 
-<div class="grid fixed">
+<div class="grid w-840">
 
     <div class="row">
         <div class="column-12">
@@ -23,6 +23,19 @@
                         <li>
                             <a href="#paragraphs">Paragraphs</a>
                         </li>
+                        <li>
+                            <a href="#quotes">Quotes</a>
+                        </li>
+                        <li>
+                            <a href="#pre-formatted">Pre-formatted</a>
+                        </li>
+                        <li>
+                            <a href="#figure">Figure</a>
+                        </li>
+                        <li>
+                            <a href="#lists">Lists</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -71,7 +84,6 @@
            </p>
             
             <div class="example">
-                <p class="section-item-desc">16px/24px</p>
                 <p>By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
                 <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
             </div>
@@ -83,28 +95,267 @@
 
 
             <div class="example">
-                <p class="section-item-desc">20px/32px</p>
                 <p class="large">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
                 <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"large"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
             </div>
 
             <div class="example">
-                <p class="section-item-desc">18px/28px</p>
                 <p class="big">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
                 <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"big"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
             </div>
 
             <div class="example">
-                <p class="section-item-desc">14px/20px</p>
                 <p class="small">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
                 <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
             </div>
 
             <div class="example">
-                <p class="section-item-desc">12px/20px</p>
                 <p class="smaller">By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.</p>
                 <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"smaller"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
             </div>                
+
+
+            <h3>
+                <a id="quotes" class="mark" href="#quotes">Quotes</a>
+            </h3>
+<p>
+            Quotes in the text stand out for contrast and added variety to the text. In the quotes you can mark text as a paragraph tag and without it.
+        </p>
+
+<div class="example">
+            <blockquote>
+                <p>No, she'll probably make me do it. Goodbye, friends. I never thought I'd die like this. But I always really hoped. I saw you with those two "ladies of the evening" at Elzars. Explain that. I never loved you.</p>
+            </blockquote>
+            <pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></pre>
+        </div>
+<p>Use <code>small</code> tag for attribution. It's a prefer way for semantic code.</p>
+
+<div class="example">
+            <blockquote>
+                <p>Who's brave enough to fly into something we all keep calling a death sphere? Yes. You gave me a dollar and some candy. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.</p>
+                <small>— Bender</small>
+            </blockquote>
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Quotation content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Author attribution<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+</pre>
+        </div>
+
+
+            <h3>
+                <a id="pre-formatted" class="mark" href="#pre-formatted">Pre-formatted</a>
+            </h3>
+            <p>Pre-formatted text most often used to display code snippets or other text elements, for which you wish to preserve the exact formatting they've got.</p>
+
+            <div class="example">
+<pre>Function.prototype.inherits = function(parent)
+{
+    for (var key in parent.prototype)
+    {
+        this.prototype[key] = parent.prototype[key];
+    }
+};
+</pre>
+<pre class="code"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></pre>
+            </div>
+
+            <p>You feel free to use <code>code</code> tag inside <code>pre</code>.</p>
+
+<div class="example">
+<pre class="demo-pre"><code>Function.prototype.inherits = function(parent)
+{
+    for (var key in parent.prototype)
+    {
+        this.prototype[key] = parent.prototype[key];
+    }
+};
+</code></pre>
+
+<pre class="code">&lt;pre&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></span></pre>
+    </div>
+
+
+
+            <h3>
+                <a id="figure" class="mark" href="#figure">Figure</a>
+            </h3>
+            <h5>Images</h5>            
+            <p>
+                A figure tag features an image, a video or a code plus a caption. It is a good accessibility practice.
+                It also helps serve responsive video to various devices when you wrap video into <code>.video-container</code> class.
+            </p>
+
+
+            <figure>
+                <img src="http://placehold.it/400x150" alt="Image" data-pin-nopin="true">
+                <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</figcaption>
+            </figure>
+
+            <p class="end"><var>HTML</var></p>            
+
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"image.jpg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+</pre>
+
+            <h5>Video</h5>            
+            <figure>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q3ur8wzzhBU" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <figcaption>Intel IoT -- What Does The Internet of Things Mean?</figcaption>
+            </figure>
+
+            <p class="end"><var>HTML</var></p>
+
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"video-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+</pre>
+
+            <h5>Code</h5>
+
+<figure>
+<pre>Function.prototype.inherits = function(parent)
+{
+    for (var key in parent.prototype)
+    {
+        this.prototype[key] = parent.prototype[key];
+    }
+};
+</pre>
+<figcaption>One of the implementations of inheritance</figcaption>
+</figure>
+
+        <p class="end"><var>HTML</var></p>
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+</pre>
+
+
+            <h3>
+                <a id="lists" class="mark" href="#lists">Lists</a>
+            </h3>
+            <p>Although you most likely will not ever need to do so, you can still nest as many list levels as you like.</p>
+
+<div class="row space">
+        	<div class="column column-6">
+            	<div class="example">
+            		<ul>
+            		    <li>list item 1</li>
+            		    <li>list item 2
+            		        <ul>
+            		            <li>list item 2.1</li>
+            		            <li>list item 2.2
+            		                <ul>
+            		                    <li>list item 2.2.1</li>
+            		                    <li>list item 2.2.2</li>
+            		                </ul>
+            		            </li>
+            		            <li>list item 2.3</li>
+            		            <li>list item 2.4</li>
+            		        </ul>
+            		    </li>
+            		    <li>list item 3</li>
+            		    <li>list item 4</li>
+            		</ul>
+
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</pre>
+            	</div>
+
+        	</div>
+        	<div class="column column-6">
+            	<div class="example">
+            		<ol>
+            		    <li>list item 1</li>
+            		    <li>list item 2
+            		        <ol>
+            		            <li>list item 2.1</li>
+            		            <li>list item 2.2
+            		                <ol>
+            		                    <li>list item 2.2.1</li>
+            		                    <li>list item 2.2.2</li>
+            		                </ol>
+            		            </li>
+            		            <li>list item 2.3</li>
+            		            <li>list item 2.4</li>
+            		        </ol>
+            		    </li>
+            		    <li>list item 3</li>
+            		    <li>list item 4</li>
+            		</ol>
+
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</pre>
+            	</div>
+
+        	</div>
+        </div>
+
+
+<h5>Unstyled List</h5>
+<p>To remove default list styling, use <code>.unstyled</code>.</p>
+<div class="example">
+        	<ul class="unstyled">
+        	    <li>list item 1</li>
+        	    <li>list item 2
+        	        <ul>
+        	            <li>list item 2.1</li>
+        	            <li>list item 2.2</li>
+        	        </ul>
+        	    </li>
+        	    <li>list item 3</li>
+        	    <li>list item 4</li>
+        	</ul>
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unstyled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</pre>
+        </div>
+
+
+<h5>Definition List</h5>
+
+<p>From time to time, you may need to produce a list of definitions, and there's one nicely built-in into Kube. We love semantic things. And lists. We love lists.</p>
+
+<div class="example">
+            <dl>
+                <dt>Term 1</dt>
+                <dd>Description 1</dd>
+                <dt>Term 2</dt>
+                <dd>Description 2</dd>
+                <dt>Term 3</dt>
+                <dd>Description 3</dd>
+            </dl>
+<pre class="code skip"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Term<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</pre>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

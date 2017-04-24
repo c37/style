@@ -1,0 +1,81 @@
+
+
+
+input,
+input:focus,
+textarea {
+    height: 26px;
+    width: 100%;
+    font-size: 11px;
+    border: 1px solid #cccccc;
+    padding: 3px 3px 3px 5px !important;
+    margin: 0 0 11px 0 !important;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+
+/* text */
+
+input[type="text"] {
+    margin: 0 0 11px 0 !important;
+}
+
+input[type="text"].required,
+input[type="password"].required,
+{
+    border: 1px solid firebrick;
+    background-color: #FFD5D5;
+}
+
+
+/* text */
+
+
+/* range */
+
+input[type="range"] {
+    margin: 5px 0 7px 0;
+}
+
+
+/* range */
+
+
+/* checkbox */
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 13px;
+    margin: 0 3px 0 0;
+    padding: 0;
+    height: 14px;
+}
+
+span.checkbox {
+    position: relative;
+    top: -3px;
+}
+
+
+/* checkbox */
+
+p[contenteditable="true"] {
+    width: 100%;
+    font-size: 11px;
+    border: 1px solid #cccccc;
+    padding: 3px 3px 3px 5px;
+    margin: 0 0 11px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 0 0 5px 0;
+}

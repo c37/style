@@ -7,3 +7,5 @@
 - https://css-tricks.com/rems-ems/
 
 - http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+
+- http://placehold.it/

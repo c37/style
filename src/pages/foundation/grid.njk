@@ -5,45 +5,11 @@
 
 {% block content %}
 
-		<style>
-
-			.nav-self {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-				margin-bottom: 11px;
-				font-size: 13px ! important;
-			}
-
-			.nav-self .right {
-				position: relative;
-				top: 5px;
-			}
-
-			.nav-self h3 {
-				margin-bottom: 5px;
-				margin-top: 15px;
-			}
-
-			.nav-self ul {
-				/*margin-top: auto;*/
-				display: flex;
-				align-items: center;
-			}
-
-			.nav-self ul li {
-				float: left;
-				padding: 0 7px
-			}
-
-          
-		</style>
 
 
 
 
-    <div class="grid fixed">
+    <div class="grid w-840">
 
        <div class="row">
             <div class="column-12">
@@ -432,9 +398,9 @@
 
 		<h5>Align Middle</h5>
 		<div class="example">
-			<div class="row align-middle debug" style="height: 60px; border: 1px solid rgb(251, 207, 207)">
+			<div class="row align-middle debug" style="height: 40px;">
 				<div class="column column-4">4</div>
-				<div class="column column-4" style="height: 40px;">4</div>
+				<div class="column column-4">4</div>
 				<div class="column column-4">4</div>
 			</div>
 			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row align-middle"</span>&gt;
@@ -475,8 +441,8 @@
 
 		<h5>Push Middle</h5>
 		<div class="example">
-			<div class="row debug" style="height: 60px; border: 1px solid rgb(251, 207, 207)">
-				<div class="column column-8 push-middle" style="height: 40px">8</div>
+			<div class="row debug" style="height: 40px;">
+				<div class="column column-8 push-middle">8</div>
 			</div>
 			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
     &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8 push-middle"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
@@ -486,7 +452,7 @@
 
 		<h5>Push Mixed</h5>
 		<div class="example">
-			<div class="row debug" style="height: 60px; border: 1px solid rgb(251, 207, 207)">
+			<div class="row debug" style="height: 40px;">
 				<div class="column column-8 push-middle push-center">8</div>
 			</div>
 			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
@@ -497,8 +463,8 @@
 
 		<h5>Push Bottom</h5>
 		<div class="example">
-			<div class="row debug" style="height: 60px; border: 1px solid rgb(251, 207, 207)">
-				<div class="column column-8 push-bottom" style="height: 40px">8</div>
+			<div class="row debug" style="height: 40px;">
+				<div class="column column-8 push-bottom">8</div>
 			</div>
 			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
     &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8 push-bottom"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;

@@ -10,9 +10,10 @@
 @import "mixin/breakpoints.scss";
 @import "mixin/flex.scss";
 /* mixin */
-
+ 
 
 /* foundation */
+@import "foundation/positioning.scss";
 @import "foundation/grid.scss";
 @import "foundation/typography.scss";
 /* foundation */

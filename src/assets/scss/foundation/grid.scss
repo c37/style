@@ -19,8 +19,14 @@ div {
             }
             
         }
-        &.fixed {
-            max-width: $width-big;
+        &.w-1024{
+            max-width: 1024px;
+        }
+        &.w-960{
+            max-width: 960px;
+        }
+        &.w-840 {
+            max-width: 840px;
         }
         &.fluid {
             width: 100%;
@@ -140,11 +146,11 @@ div[class*=' column'] {
                 margin-left: 0;
                 width: 100%;
             }
-            &.space {
-                & div.column {
-                    margin-bottom: $text-margin-bottom;
-                }
-            }
+            // &.space {
+            //     & div.column {
+            //         margin-bottom: $text-margin-bottom;
+            //     }
+            // }
         }
     }
     // media
@@ -168,6 +174,13 @@ div[class*=' column'] {
 .first    { order: -1; }
 .last     { order: 1;  }
 // ordering
+
+
+
+
+
+
+
 
 
 // grid media - columns
