@@ -182,8 +182,6 @@ blockquote {
 	}
 }
 
-
-
 // preformatted
 pre, code, samp, var, kbd {
 	font-family: $font-family-monospace;
@@ -226,16 +224,7 @@ figure {
     }
 }
 
-
-
-
-
-
-
-
-
 // lists
-
 ul.unstyled {
     & {
         margin-left: 0;
@@ -248,6 +237,11 @@ ul.unstyled {
 
 ul,
 ol {
+    &.inside{
+        >li{
+            list-style-position: inside;
+        }
+    }
     &,
     & ul,
     & ol {
@@ -278,80 +272,84 @@ dd {
 	margin-left: $base-line;
 }
 
-
-ul.square-inside>li {
-    list-style-position: inside;
-    list-style-type: square;
+/* font sizes */
+.large {
+	font-size: $font-size-large;
+	line-height: $base-line-large;
+}
+.big {
+	font-size: $font-size-big;
+	line-height: $base-line-big;
+}
+.small {
+	font-size: $font-size-small;
+	line-height: $base-line-small;
+}
+.smaller {
+	font-size: $font-size-smaller;
+	line-height: $base-line-smaller;
 }
 
-
-
-
-ul.square-inside>li {
-    list-style-position: inside;
-    list-style-type: square;
-}
-
-ul.smaller {
-    font-size: 12px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-strong {
-    display: inline-block;
-    text-align: left;
-    font-weight: bold !important;
-    line-height: 16px;
-    margin-bottom: 1px;
-}
-
-span {
-    line-height: 16px;
-}
-
+// small
 small {
     display: inline-block;
     position: relative;
-    font-size: 12px;
-    text-align: left;
-    margin: 0 0 2px 0;
+	font-size: $font-size-small;
+	line-height: $base-line-small;
+    // text-align: left;
+    // margin: 0 0 2px 0;
 }
 
-small.smaller {
-    font-size: 10px;
+// modifiers
+.monospace {
+   font-family: $font-family-monospace;
+}
+.upper {
+    text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+.italic {
+    font-style: italic !important;
+}
+.strong {
+    font-weight: bold !important;
+}
+.normal {
+    font-weight: normal !important;
+}
+.muted {
+    opacity: .55;
+}
+a.muted {
+    color: $color-black;
+}
+a.muted:hover {
+    opacity: 1;
 }
 
-hr {
-    border: 1px solid #eee;
-    width: auto
+// top space
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+figure {
+	+ h2,
+	+ h3,
+	+ h4,
+	+ h5,
+	+ h6 {
+		margin-top: $base-line;
+	}
 }
 
-progress {
-    width: 100%;
-}
-
-
-/* html structure */
-
-
-/* visibility */
+// visibility
 
 .hide {
     display: none !important;
@@ -361,12 +359,7 @@ progress {
     display: inline-block;
 }
 
-
-/* visibility */
-
-
-/* text */
-
+// text alignment
 .text-left {
     text-align: left !important;
 }
@@ -384,12 +377,7 @@ progress {
     ;
 }
 
-
-/* text */
-
-
-/* positions */
-
+// positions
 .left {
     float: left;
 }
@@ -399,85 +387,37 @@ progress {
 }
 
 
-/* positions */
 
-
-/* font sizes */
-
-.font-9 {
-    font-size: 9px
-}
-
-.font-10 {
-    font-size: 10px
-}
-
-.font-12 {
-    font-size: 12px;
-}
-
-.font-13 {
-    font-size: 13px;
-}
-
-.font-23 {
-    font-size: 23px;
-}
-
-.font-21 {
-    font-size: 21px;
+// size
+.w-100{
+    width: 100%;
 }
 
 
-/* font sizes */
-
-
-/* lista */
-
-
-
-
-/* lista */
-
-
-/* para quando simplesmente clicavel */
-
+// clicavel
 .clickable {
     cursor: pointer !important;
 }
 
 
-/* para quando simplesmente clicavel */
-
-
-/* para quando simplesmente block */
-
+// block
 .block {
     display: block !important;
 }
 
 
-/* para quando simplesmente block */
-
-
-/* para quando simplesmente in-line */
-
+// inline
 .inline {
     display: inline !important;
 }
 
 
-/* para quando simplesmente in-line */
 
 
-/* para quando simplesmente padding-right-0 */
-
-.padding-right-0 {
-    padding-right: 0px !important;
-}
 
 
-/* para quando simplesmente padding-right-0 */
+
+
 
 #hero {
     padding-top: 0px;
@@ -534,39 +474,4 @@ progress {
         font-size: 16px;
         line-height: 24px;
     }
-}
-
-// http://www.freeformatter.com/html-escape.html
-pre,
-code,
-samp,
-var,
-kbd {
-    font-family: Consolas, Monaco, "Courier New", monospace;
-}
-
-pre,
-code,
-samp,
-var,
-kbd,
-mark {
-    font-size: 87.5%;
-}
-
-pre,
-pre code {
-    background: #f8f8f8;
-    padding: 0;
-    top: 0;
-    display: block;
-    line-height: 20px;
-    color: rgba(49, 52, 57, 0.85);
-    overflow: none;
-    white-space: pre-wrap;
-    unicode-bidi: embed;
-}
-
-pre {
-    padding: 1rem;
 }

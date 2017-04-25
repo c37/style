@@ -1,12 +1,12 @@
 
 
-footer.web-site{
+footer.site{
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     font-size: 12px;
     padding-top: 7px;
 }
 
-footer.web-site>.container{
+footer.site>.container{
     display: flex;
     flex-flow: row wrap;
     max-width: 1024px;
@@ -14,71 +14,71 @@ footer.web-site>.container{
     
 }
 
-footer.web-site>.container > * {
+footer.site>.container > * {
   padding: 10px;
   flex: 1 auto;
 }
 
 
-footer.web-site>.container>.left,
-footer.web-site>.container>.right{
+footer.site>.container>.left,
+footer.site>.container>.right{
       flex-grow: 1;
       align-self: center;
 }
 
-footer.web-site>.container>.right{
+footer.site>.container>.right{
     text-align: right;
     padding-top: 0px !important;
 }
 
-footer.web-site>.container>.right>table{
+footer.site>.container>.right>table{
     float: right;
 }
 
 
 
-footer.web-site .logo {
+footer.site .logo {
     display: block;
     top: -5px;
     position: relative;
-    background: url('/img/logo.svg') no-repeat center/100%;
+    background: url('/assets/img/logo.svg') no-repeat center/100%;
     width: 50px;
     height: 60px;
     cursor: pointer;
     margin: 0 auto;
 }
-footer.web-site .logo-caption {
+footer.site .logo-caption {
     display: block;
     top: -15px;
     position: relative;
 }
 
 
-footer.web-site .social.facebook {
+footer.site .social.facebook {
     display: inline-block;
-    background: url('/img/social/facebook.svg') no-repeat center/100%;
+    background: url('/assets/img/social/facebook.svg') no-repeat center/100%;
     width: 20px;
     height: 20px;
     vertical-align: middle;
 }
-footer.web-site .social.pinterest {
+footer.site .social.pinterest {
     display: inline-block;
-    background: url('/img/social/pinterest.svg') no-repeat center/100%;
+    background: url('/assets/img/social/pinterest.svg') no-repeat center/100%;
     width: 20px;
     height: 20px;
     vertical-align: middle;   
 }
-footer.web-site .social.instagram {
+footer.site .social.instagram {
     display: inline-block;
-    background: url('/img/social/instagram.svg') no-repeat center/95%;
+    background: url('/assets/img/social/instagram.svg') no-repeat center/95%;
     width: 20px;
     height: 20px;
     vertical-align: middle;
 }
 
-footer.web-site .social.youtube {
+footer.site .social.youtube {
     display: inline-block;
-    background: url('/img/social/youtube.svg') no-repeat center/100%;
+    background: url('/assets/img/social/youtube.svg') no-repeat center/100%;
     width: 20px;
     height: 20px;
     vertical-align: middle;
@@ -88,22 +88,22 @@ footer.web-site .social.youtube {
 
 @media all and (max-width: 768px) {
 
-  footer.web-site>.container>.left,
-  footer.web-site>.container>.right{ 
+  footer.site>.container>.left,
+  footer.site>.container>.right{ 
       flex: 1 100%; 
       padding-bottom: 0px;
   }
 
-  footer.web-site>.container>.left>p>strong{
+  footer.site>.container>.left>p>strong{
       display: block;
       text-align: center;
   }
 
-  footer.web-site>.container>.left>p{
+  footer.site>.container>.left>p{
       text-align: center;
   }
 
-  footer.web-site>.container>.right>table{
+  footer.site>.container>.right>table{
       float: none;
       margin: 0 auto;
   }

@@ -20,13 +20,13 @@
                     <div class="right">
                         <ul>
                             <li>
-                                <a href="#headings">Header</a>
+                                <a href="#header">Header</a>
                             </li>
                             <li>
-                                <a href="#paragraphs">Footer</a>
+                                <a href="#footer">Footer</a>
                             </li>
                             <li>
-                                <a href="#quotes">Navigation</a>
+                                <a href="#navigation">Navigation</a>
                             </li>
                         </ul>
                     </div>
@@ -39,6 +39,203 @@
 
             </div>
         </div>
+
+        <div class="row">
+            <div class="column-12">
+
+                <h3>
+                    <a id="header" class="mark" href="#header">Header</a>
+                </h3>
+
+        		<h5>Site</h5>
+                <header class="site">
+                    <div class="container">
+
+                        <nav class="show-mobile">
+                            <ul>
+                                <li>
+
+                                <div class="nav-mobile">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+
+                                <script>
+                                    window.addEventListener('load', function () {
+                                        document.querySelector('.nav-mobile').onclick = function () {
+                                            this.classList.toggle('active');
+                                        };
+                                    });
+                                </script>
+
+                                </li>
+                                <li>
+                                <a href="/">
+                                    <i class="logo"></i>
+                                </a>
+                                </li>
+                                <li>
+                                    <i class="icon-search-20"></i>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav class="hide-mobile">
+                            <ul>
+                                <li>
+                                <a href="/">
+                                    <i class="logo"></i>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" class="{%if selected == 'foundation' %}selected{% endif %}">Item 01</a>
+                                </li>
+                                <li>
+                                <a href="#" class="{%if selected == 'layout' %}selected{% endif %}">Item 02</a>
+                                </li>
+                                <li>
+                                <a href="#" class="{%if selected == 'graphic' %}selected{% endif %}">Item 03</a>
+                                </li>
+                                <li>
+                                <a href="#" class="{%if selected == 'container' %}selected{% endif %}">Item 04</a>
+                                </li>
+                                <li>
+                                <a href="#" class="{%if selected == 'component' %}selected{% endif %}">Item 05</a>
+                                </li>
+                                <li>
+                                    <i class="icon-search-20"></i>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+
+                    </div>
+                </header>                
+
+        		<h5>Application</h5>
+                <header class="site">
+                    <div class="container">
+                        {% import 'macros/nav.njk' as nav %}
+                        {{nav.active(urlHeader)}}
+                    </div>
+                </header>                
+
+
+                <br>
+
+
+                <h3>
+                    <a id="footer" class="mark" href="#footer">Footer</a>
+                </h3>
+
+                <footer class="site">
+                    <div class="container">
+                        <div class="left">
+                            <p>
+                                <strong>Comunidade</strong>&nbsp;
+                                <a href="#">Item 01</a>&nbsp;●
+                                <a href="#">Item 02</a>&nbsp;●
+                                <a href="#">Item 03</a>
+                            </p>
+                            <p>
+                                <strong>Social</strong> &nbsp;
+                                <a href="https://www.facebook.com/c37.cnc/" target="_blank">
+                                    <i class="social facebook"></i>
+                                </a>
+                                &nbsp;
+                                <a href="https://br.pinterest.com/c37cnc/" target="_blank">
+                                    <i class="social pinterest"></i>
+                                </a>
+                                &nbsp;
+                                <a href="https://www.instagram.com/c37.cnc/" target="_blank">
+                                    <i class="social instagram"></i>
+                                </a>
+                                &nbsp;
+                                <a href="https://www.youtube.com/c/c37cnc" target="_blank">
+                                    <i class="social youtube"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="right">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <i class="logo"></i>
+                                            <strong class="logo-caption">C37&reg; - 2017</strong>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </footer>
+
+
+
+
+
+                <h3>
+                    <a id="navigation" class="mark" href="#navigation">Navigation</a>
+                </h3>
+
+                <nav class="nav-section">
+                    <ul>
+                        <li>
+                            <a href="/graphic/icon.html">
+                                <i class="icon-nav-cad"></i>
+                                <span>Item 01</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/graphic/logo.html">
+                                <i class="icon-nav-cam"></i>
+                                <span>Item 02</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/graphic/logo.html">
+                                <i class="icon-nav-cam"></i>
+                                <span>Item 03</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/graphic/logo.html">
+                                <i class="icon-nav-cam"></i>
+                                <span>Item 04</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/graphic/logo.html">
+                                <i class="icon-nav-cam"></i>
+                                <span>Item 05</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/graphic/logo.html">
+                                <i class="icon-nav-cam"></i>
+                                <span>Item 06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/graphic/logo.html">
+                                <i class="icon-nav-cam"></i>
+                                <span>Item 07</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+
+
+
+
+            </div>
+        </div>        
 
        
     </div>
