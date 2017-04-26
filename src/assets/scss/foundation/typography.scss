@@ -244,7 +244,7 @@ ol {
     &,
     & ul,
     & ol {
-	    margin: 0 0 0 $base-line;
+	    margin-bottom: $base-line;
 	}
 }
 ol ol li {

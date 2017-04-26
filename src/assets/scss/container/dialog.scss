@@ -3,6 +3,7 @@ dialog.dialog {
     border-radius: $border-radius;
     border: 1px solid $dialogcolor0;
     padding: 0;
+    margin: auto;
     &.size-200 {
         width: 200px;
     }
