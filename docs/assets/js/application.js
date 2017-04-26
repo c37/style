@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue Apr 25 2017 22:19:30 GMT-0300 (BRT)
+ * Static Here - in Wed Apr 26 2017 02:04:39 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -10,14 +10,14 @@
  */
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(['button', 'option-group'], factory);
+    define(['button', 'option'], factory);
   } else if (typeof exports !== "undefined") {
-    factory(require('button'), require('option-group'));
+    factory(require('button'), require('option'));
   } else {
     var mod = {
       exports: {}
     };
-    factory(global.button, global.optionGroup);
+    factory(global.button, global.option);
     global.application = mod.exports;
   }
 })(this, function (_button, utility) {

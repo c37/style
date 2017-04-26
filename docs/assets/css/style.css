@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue Apr 25 2017 22:19:29 GMT-0300 (BRT)
+ * Static Here - in Wed Apr 26 2017 02:04:39 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -15,14 +15,27 @@
 
 div.example {
   border: 1px solid rgba(0, 0, 0, 0.07);
-  padding: 32px;
-  margin-bottom: 16px; }
+  padding: 30px; }
+  div.example pre.code {
+    margin-top: 40px;
+    margin-bottom: 0;
+    background: none;
+    padding: 0; }
 
-.example pre.code {
-  margin-top: 40px;
-  margin-bottom: 0;
-  background: none;
-  padding: 0; }
+div.code {
+  padding: 9px 14px !important;
+  margin-bottom: 0px;
+  background-color: #f7f7f9;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-top: none !important;
+  border-radius: 0 0 2px 2px; }
+  div.code > pre {
+    margin-bottom: 0 !important; }
+    div.code > pre code {
+      color: #313439;
+      margin-bottom: 0;
+      background: none;
+      padding: 0; }
 
 /* variables & functions */
 /* mixin */
@@ -542,7 +555,6 @@ pre code {
   padding: 0;
   top: 0;
   display: block;
-  line-height: 20px;
   color: rgba(102, 102, 101, 0.85);
   overflow: none;
   white-space: pre-wrap; }
@@ -1720,7 +1732,8 @@ a.option {
   padding: 2px 5px;
   font-size: inherit;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 20px;
+  height: 20px;
   color: #333;
   vertical-align: middle;
   background-color: #fff;
