@@ -1,6 +1,11 @@
 (function (window) {
     'use strict';
 
+    if (NodeList.prototype.forEach === undefined) {
+        NodeList.prototype.forEach = Array.prototype.forEach
+    }
+
+
     function registerCollapse() {
 
         var collapses = document.querySelectorAll('.collapse');
