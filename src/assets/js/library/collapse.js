@@ -14,6 +14,7 @@
 
         collapses.forEach(function (collapse) {
 
+
             // para o set do valor
             collapse.setSelected = setSelected;
 

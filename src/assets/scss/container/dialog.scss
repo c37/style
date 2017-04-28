@@ -4,27 +4,6 @@ dialog.dialog {
     border: 1px solid $dialogcolor0;
     padding: 0;
     margin: auto;
-    &.size-200 {
-        width: 200px;
-    }
-    &.size-250 {
-        width: 250px;
-    }
-    &.size-300 {
-        width: 300px;
-    }
-    &.size-400 {
-        width: 400px;
-    }
-    &.size-450 {
-        width: 450px;
-    }
-    &.size-500 {
-        width: 500px;
-    }
-    &.size-550 {
-        width: 550px;
-    }
     & > .header {
         background-color: $dialogcolor2;
         background-image: linear-gradient($dialogcolor3, $dialogcolor2);

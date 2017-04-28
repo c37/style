@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Wed Apr 26 2017 22:03:28 GMT-0300 (BRT)
+ * Static Here - in Thu Apr 27 2017 23:25:55 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -746,6 +746,39 @@ figure + h6 {
 
 .w-100 {
   width: 100%; }
+
+.w-200 {
+  width: 200px; }
+
+.w-250 {
+  width: 250px; }
+
+.w-300 {
+  width: 300px; }
+
+.w-350 {
+  width: 350px; }
+
+.w-400 {
+  width: 400px; }
+
+.w-450 {
+  width: 450px; }
+
+.w-500 {
+  width: 500px; }
+
+.w-550 {
+  width: 550px; }
+
+.w-600 {
+  width: 600px; }
+
+.w-650 {
+  width: 650px; }
+
+.w-700 {
+  width: 700px; }
 
 .clickable {
   cursor: pointer !important; }
@@ -2288,22 +2321,31 @@ div.box {
   border: 1px solid #c5c5c5; }
   div.box * {
     cursor: default; }
-  div.box.size-200 {
-    width: 200px; }
-  div.box.size-300 {
-    width: 300px; }
   div.box > .header {
     background-color: #eeeeee;
     background-image: linear-gradient(#fafafa, #eeeeee);
-    padding: 5px; }
+    padding: 7px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    div.box > .header > .item {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      div.box > .header > .item.right {
+        cursor: pointer;
+        margin-left: auto; }
     div.box > .header > i {
       cursor: inherit;
       margin-left: 0;
       margin-right: 0;
       opacity: 1; }
       div.box > .header > i.right {
-        cursor: pointer;
-        margin-right: 3px !important; }
+        position: relative;
+        top: 3px; }
     div.box > .header.padding-3 {
       padding: 3px 5px; }
     div.box > .header.padding-2 {
@@ -2367,20 +2409,6 @@ dialog.dialog {
   border: 1px solid #c5c5c5;
   padding: 0;
   margin: auto; }
-  dialog.dialog.size-200 {
-    width: 200px; }
-  dialog.dialog.size-250 {
-    width: 250px; }
-  dialog.dialog.size-300 {
-    width: 300px; }
-  dialog.dialog.size-400 {
-    width: 400px; }
-  dialog.dialog.size-450 {
-    width: 450px; }
-  dialog.dialog.size-500 {
-    width: 500px; }
-  dialog.dialog.size-550 {
-    width: 550px; }
   dialog.dialog > .header {
     background-color: #eeeeee;
     background-image: linear-gradient(#fafafa, #eeeeee);
