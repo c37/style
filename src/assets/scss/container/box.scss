@@ -7,27 +7,21 @@ div.box {
     &>.header {
         background-color: $boxcolor1;
         background-image: linear-gradient($boxcolor3, $boxcolor1);
-        padding: 7px 5px; 
-        // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+        padding: 7px 5px; // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
         // https://css-tricks.com/snippets/css/a-guide-to-flexbox/
         display: flex;
         >.item {
             align-items: center;
             display: flex;
             &.right {
-                cursor: pointer;
                 margin-left: auto;
-            }
-        }
-        &>i {
-            cursor: inherit;
-            margin-left: 0;
-            margin-right: 0;
-            opacity: 1;
-            &.right {
-                // border: 1px solid red;
-                position: relative;
-                top: 3px;
+                &>i {
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1;
+                        transition: all linear 0.2s;
+                    }
+                }
             }
         }
         &.padding-3 {

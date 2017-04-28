@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Thu Apr 27 2017 23:25:55 GMT-0300 (BRT)
+ * Static Here - in Thu Apr 27 2017 23:33:29 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2336,16 +2336,12 @@ div.box {
       display: -ms-flexbox;
       display: flex; }
       div.box > .header > .item.right {
-        cursor: pointer;
         margin-left: auto; }
-    div.box > .header > i {
-      cursor: inherit;
-      margin-left: 0;
-      margin-right: 0;
-      opacity: 1; }
-      div.box > .header > i.right {
-        position: relative;
-        top: 3px; }
+        div.box > .header > .item.right > i {
+          cursor: pointer; }
+          div.box > .header > .item.right > i:hover {
+            opacity: 1;
+            transition: all linear 0.2s; }
     div.box > .header.padding-3 {
       padding: 3px 5px; }
     div.box > .header.padding-2 {
