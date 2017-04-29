@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Fri Apr 28 2017 21:17:00 GMT-0300 (BRT)
+ * Static Here - in Fri Apr 28 2017 21:36:01 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2504,13 +2504,18 @@ div.modal {
 
 div.overlay {
   position: fixed;
-  top: 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;

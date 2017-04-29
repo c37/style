@@ -64,9 +64,13 @@ div.modal {
 
 div.overlay {
     position: fixed;
+
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+
+
     top: 0px;
-    align-items: center;
-    display: flex;
     right: 0px;
     bottom: 0px;
     left: 0px;
