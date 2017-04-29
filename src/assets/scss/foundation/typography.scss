@@ -333,7 +333,7 @@ small {
     position: relative;
     font-size: $font-size-small;
     line-height: $base-line-small; // text-align: left;
-    // margin: 0 0 2px 0;
+    // margin: 0;
 }
 
 // modifiers
@@ -433,12 +433,21 @@ figure {
     margin: auto !important;
 }
 
+.w-middle {
+    display: flex;
+    align-items: center;
+}
+
 // margin
 .margin-0 {
     margin: 0 !important;
 }
 
 // padding
+.padding-0 {
+    padding: 0;
+}
+
 .padding-20 {
     padding: 20px !important;
 }
@@ -453,10 +462,6 @@ figure {
 
 .padding-2 {
     padding: 2px 5px;
-}
-
-.padding-0 {
-    padding: 0;
 }
 
 .padding-3 {
@@ -478,51 +483,79 @@ figure {
 
 // size
 .w-100 {
-    width: 100%;
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 50px !important;
+}
+
+.w-60 {
+    width: 60px !important;
+}
+
+.w-70 {
+    width: 70px !important;
+}
+
+.w-80 {
+    width: 80px !important;
+}
+
+.w-90 {
+    width: 90px !important;
+}
+
+.w-110 {
+    width: 110px !important;
+}
+
+.w-150 {
+    width: 150px !important;
 }
 
 .w-200 {
-    width: 200px;
+    width: 200px !important;
 }
 
 .w-250 {
-    width: 250px;
+    width: 250px !important;
 }
 
 .w-300 {
-    width: 300px;
+    width: 300px !important;
 }
 
 .w-350 {
-    width: 350px;
+    width: 350px !important;
 }
 
 .w-400 {
-    width: 400px;
+    width: 400px !important;
 }
 
 .w-450 {
-    width: 450px;
+    width: 450px !important;
 }
 
 .w-500 {
-    width: 500px;
+    width: 500px !important;
 }
 
 .w-550 {
-    width: 550px;
+    width: 550px !important;
 }
 
 .w-600 {
-    width: 600px;
+    width: 600px !important;
 }
 
 .w-650 {
-    width: 650px;
+    width: 650px !important;
 }
 
 .w-700 {
-    width: 700px;
+    width: 700px !important;
 }
 
 // clicavel
@@ -540,6 +573,7 @@ figure {
     display: inline !important;
 }
 
+// hero
 #hero {
     padding-top: 0px;
     padding-bottom: 40px;

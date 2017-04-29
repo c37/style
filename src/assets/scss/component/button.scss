@@ -220,9 +220,9 @@ div.button {
         &:focus {
             z-index: 2;
         }
-        > small {
-            margin: 2px 0;
-        }
+        // > small {
+        //     margin: 2px 0;
+        // }
     }
     &.vertical {
         display: block;

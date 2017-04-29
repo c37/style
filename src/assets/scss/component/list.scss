@@ -15,6 +15,7 @@ ul.list.border {
 
 ul.list > li {
     cursor: pointer !important;
+    list-style: none;
     * {
         cursor: pointer !important;
     }

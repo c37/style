@@ -60,8 +60,8 @@ $font-size-smaller: $font-size - 4px !default;
 $base-line-large: 32px !default;
 $base-line-big: 28px !default;
 $base-line: 22px !default;
-$base-line-small: 20px !default;
-$base-line-smaller: 20px !default;
+$base-line-small: 20px - 2px !default;
+$base-line-smaller: 20px - 6px !default;
 
 // margin
 $text-margin-bottom: 9px !default;

@@ -12,11 +12,13 @@ div.box {
         >.item {
             align-items: center;
             display: flex;
+            margin-right: 5px;
             &>i{
                 margin: 0px;
             }
             &.right {
                 margin-left: auto;
+                margin-right: 0px;
                 &>i {
                     cursor: pointer;
                     &:hover {

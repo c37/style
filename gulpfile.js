@@ -8,6 +8,9 @@ var del = require('del'),
     nunjucksRender = require('gulp-nunjucks-render');
 
 
+// for cache error - https://github.com/BrowserSync/browser-sync/issues/955
+
+
 var config = {
     pkg: require('./package.json'),
     banner: [
@@ -22,8 +25,24 @@ var config = {
         ' *',
         ' */',
         ''
-    ].join('\n')
+    ].join('\n'),
+    // https://github.com/akmur/WPGulp/blob/master/gulpfile.js
+    autoPrefixer: [
+        'last 3 version',
+        '> 1%',
+        'ie >= 9',
+        'ie_mob >= 10',
+        'ff >= 30',
+        'chrome >= 34',
+        'safari >= 7',
+        'opera >= 23',
+        'ios >= 7',
+        'android >= 4',
+        'bb >= 10'
+    ]
 };
+
+
 
 function clean() {
     return del([
@@ -45,13 +64,15 @@ function template() {
 
 }
 
+
+// browsers: ["last 3 versions", "> 5%", "ie 6-8", "IE 10"]
 function css() {
 
     return gulp.src('./src/assets/scss/style.scss')
-    // return gulp.src('./src/assets/scss/**/*.scss')
+        // return gulp.src('./src/assets/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ["last 3 versions", "> 5%", "ie 6-8", "IE 10"]
+            browsers: config.autoPrefixer
         }))
         .pipe(header(config.banner, {
             pkg: config.pkg
@@ -92,6 +113,8 @@ function reload(done) {
 
 function serve(done) {
     browserSync.init({
+        // For more options
+        // @link http://www.browsersync.io/docs/options/        
         server: {
             baseDir: './docs/'
         }
@@ -100,7 +123,8 @@ function serve(done) {
 }
 
 
-const watch = () => gulp.watch('./src/**/*', gulp.series(clean, template, css, js, assets, reload));
+const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk'], gulp.series(clean, template, css, js, assets, reload));
+// const watch = () => gulp.watch('./src/**/*', gulp.series(clean, template, css, js, assets, reload));
 
 
 

@@ -16,6 +16,9 @@
                             <a href="#button">Button</a>
                         </li>
                         <li>
+                            <a href="#switch">Switch</a>
+                        </li>
+                        <li>
                             <a href="#list">List</a>
                         </li>
                         <li>
@@ -179,6 +182,28 @@
             </div>
 
 
+            <h3>
+                <a id="switch" class="mark" href="#switch">Switch</a>
+            </h3>
+            <p>
+                Columns are building blocks for many websites. Here's how columns are formed, and here's how you can use them right away.
+            </p>
+            <div class="example">
+
+                <div class="w-middle">
+
+                    <span>Controle de ventilação</span>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+
+
+                </div>
+
+            </div>
+
 
             <h3>
                 <a id="list" class="mark" href="#list">List</a>
@@ -266,9 +291,9 @@
                     </li>
                 </ul>
 
-                <div style="background-color: red;">
+                <div class="w-400">
 
-                    <ul class="menu horizontal" style="width:350px;">
+                    <ul class="menu horizontal">
                         <li>
                             menu item 001
                         </li>
@@ -295,20 +320,68 @@
                 <div class="message warn">teste rápido de conversão</div>
                 <div class="message danger">teste rápido de conversão</div>
 
-
-                <pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-
-
             </div>
 
             <h3>
                 <a id="option" class="mark" href="#option">Option</a>
             </h3>
             <div class="example">
+
+                <div class="option w-50" data-selected="">
+                    <div>
+                        <strong>Mês</strong>
+                    </div>
+                    <div class="menu left w-70">
+                        <div class="content">
+                            <div class="header">
+                                <strong>Header</strong>
+                            </div>
+                            <ul class="body">
+                                <li data-value="01">
+                                    <span>01</span>
+                                </li>
+                                <li data-value="02">
+                                    <span>02</span>
+                                </li>
+                                <li data-value="03">
+                                    <span>03</span>
+                                </li>
+                                <li data-value="04">
+                                    <span>04</span>
+                                </li>
+                                <li data-value="05">
+                                    <span>05</span>
+                                </li>
+                                <li data-value="06">
+                                    <span>06</span>
+                                </li>
+                                <li data-value="07">
+                                    <span>07</span>
+                                </li>
+                                <li data-value="08">
+                                    <span>08</span>
+                                </li>
+                                <li data-value="09">
+                                    <span>09</span>
+                                </li>
+                                <li data-value="10">
+                                    <span>10</span>
+                                </li>
+                                <li data-value="11">
+                                    <span>11</span>
+                                </li>
+                                <li data-value="12">
+                                    <span>12</span>
+                                </li>
+                            </ul>
+                            <div class="footer">
+                                <strong>Footer</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -326,6 +399,99 @@
             </h3>
             <div class="example">
 
+                <div class="box shadow w-250">
+                    <div class="header">
+                        <div class="item">
+                            <i class="icon-control"></i>
+                        </div>
+                        <div class="item">
+                            <strong data-i18n="controls.box.header.text">Controles</strong>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div>
+                            <strong id="label-position" data-i18n="controls.box.body.displace-tool.text">Deslocamento da Ferramenta</strong>
+                            <small class="right">mm</small>
+                            <div class="button horizontal checkbox" data-selected="1">
+                                <button class="button text-center" data-value="3">
+                                    <small class="smaller">3</small>
+                                </button>
+                                <button class="button text-center" data-value="2">
+                                    <small class="smaller">2</small>
+                                </button>
+                                <button class="button text-center" data-value="1">
+                                    <small class="smaller">1</small>
+                                </button>
+                                <button class="button text-center" data-value="0.1">
+                                    <small class="smaller">0.1</small>
+                                </button>
+                                <button class="button text-center" data-value="0.01">
+                                    <small class="smaller">0.01</small>
+                                </button>
+                            </div>
+                        </div>
+                        <div style="height: 9px"></div>
+                        <table id="table-control-motion" class="w-100">
+                            <tr>
+                                <td style="width: 20px"></td>
+                                <td style="text-align: right">
+                                    <button id="button-command-x-left" class="button text-center" style="margin-left: 0px" data-i18n="[data-hint-title]controls.box.body.movement.x-.hint.title;[data-hint-text]controls.box.body.movementx-.hint.text">
+                                    <i class="icon-control-left"></i>
+                                </button>
+                                </td>
+                                <td>
+                                    <div class="button vertical">
+                                        <button id="button-command-y-left" class="button text-center" data-i18n="[data-hint-title]controls.box.body.movement.y+.hint.title;[data-hint-text]controls.box.body.movement.y+.hint.text">
+                                        <i class="icon-control-up"></i>
+                                    </button>
+                                        <button id="button-command-y-right" class="button text-center" data-i18n="[data-hint-title]controls.box.body.movement.y-.hint.title;[data-hint-text]controls.box.body.movement.y-.hint.text">
+                                        <i class="icon-control-down"></i>
+                                    </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button id="button-command-x-right" class="button text-center" data-i18n="[data-hint-title]controls.box.body.movement.x+.hint.title;[data-hint-text]controls.box.body.movement.x+.hint.text">
+                                    <i class="icon-control-right"></i>
+                                </button>
+                                </td>
+                                <td style="width: 30px"></td>
+                                <td style="width: 30px">
+                                    <div class="button vertical">
+                                        <button id="button-command-z-up" class="button text-center" data-i18n="[data-hint-title]controls.box.body.movement.z+.hint.title;[data-hint-text]controls.box.body.movement.z+.hint.text">
+                                        <i class="icon-control-up"></i>
+                                    </button>
+                                        <button id="button-command-z-down" class="button text-center" data-i18n="[data-hint-title]controls.box.body.movement.z-.hint.title;[data-hint-text]controls.box.body.movement.z-.hint.text">
+                                        <i class="icon-control-down"></i>
+                                    </button>
+                                    </div>
+                                </td>
+                                <td style="width: 20px"></td>
+                            </tr>
+                        </table>
+                        <div>
+                            <div class="left">
+                                <div class="w-middle">
+                                    <small>Spindle</small>
+                                    <label class="switch">
+                                        <input type="checkbox" id="checkbox-toggle-spindle">
+                                        <div class="slider round" id="button-toggle-spindle"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="w-middle">
+                                    <small>Refrigeração</small>
+                                    <label class="switch">
+                                        <input type="checkbox" id="checkbox-toggle-coolant">
+                                        <div class="slider round" id="button-toggle-coolant"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
 
@@ -333,6 +499,8 @@
                 <a id="progress" class="mark" href="#progress">Progress</a>
             </h3>
             <div class="example">
+
+                <progress id="progress-command-process" value="70" max="100"></progress>
 
             </div>
 

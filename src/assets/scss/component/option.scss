@@ -1,53 +1,50 @@
-
-.option-group {
-   background-color: $option-color2;
-   background-image: -moz-linear-gradient($option-color0, $option-color2);
-   background-image: -webkit-linear-gradient($option-color0, $option-color2);
-   background-image: linear-gradient($option-color0, $option-color2);
-   background-repeat: repeat-x;
-   border-radius: $border-radius;
-   border: 1px solid $option-color10;
-   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-   box-sizing: border-box;
-   color: $option-color7;
-   cursor: pointer;
+.option {
+    background-color: $option-color2;
+    background-image: linear-gradient($option-color0, $option-color2);
+    background-repeat: repeat-x;
+    border-radius: $border-radius;
+    border: 1px solid $option-color10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    color: $option-color7;
+    cursor: pointer;
     margin-bottom: 9px;
-   display: inline-block;
-   font-weight: 500; 
-   height: 26px;
-   padding: 1px 9px;
-   position: relative;
-   &:hover {
-       background-color: $option-color1;
-       background-image: -moz-linear-gradient($option-color0, $option-color1);
-       background-image: -webkit-linear-gradient($option-color0, $option-color1);
-       background-image: linear-gradient($option-color0, $option-color1);
-       background-repeat: repeat-x;
-       border-color: $option-color11;
-   }
-   &.width-100{
-        width: 100% !important;
-    } 
-    &.required, {
+    display: inline-block;
+    font-weight: 500;
+    height: 26px;
+    padding: 1px 9px;
+    position: relative;
+    &:hover {
+        background-color: $option-color1;
+        background-image: -moz-linear-gradient($option-color0, $option-color1);
+        background-image: -webkit-linear-gradient($option-color0, $option-color1);
+        background-image: linear-gradient($option-color0, $option-color1);
+        background-repeat: repeat-x;
+        border-color: $option-color11;
+    }
+    &.required,
+    {
         border: 1px solid firebrick;
         background-color: #FFD5D5;
         background-image: none;
     }
-    &.text-center{
+    &.text-center {
         text-align: center;
-    }    
-//    &:hover>.menu {
-//        display: block;
-//        hover {
-//            display: block;
-//        }
-//    }
+    }
+    //    &:hover>.menu {
+    //        display: block;
+    //        hover {
+    //            display: block;
+    //        }
+    //    }
 }
-.option-group>i {
-   margin: 0px;
-   padding: 0px;
+
+.option>i {
+    margin: 0px;
+    padding: 0px;
 }
-.option-group>strong {
+
+.option>strong {
     // http://apps.eky.hk/css-triangle-generator/
     &:after {
         content: '';
@@ -61,111 +58,122 @@
         border-style: solid;
         border-width: 6px 5.5px 0 5.5px;
         border-color: #43484d transparent transparent transparent;
-
-        
     }
-        padding-top: 2px;
+    padding-top: 2px;
     padding-right: 7px;
 }
-.option-group.press {
-   background-color: $option-color1;
-   background-image: -moz-linear-gradient($option-color2, $option-color1);
-   background-image: -webkit-linear-gradient($option-color2, $option-color1);
-   background-image: linear-gradient($option-color2, $option-color1);
-   background-repeat: repeat-x;
-   border-color: $option-color9;
-   box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.15);
-   color: $option-color7;
+
+.option.press {
+    background-color: $option-color1;
+    background-image: -moz-linear-gradient($option-color2, $option-color1);
+    background-image: -webkit-linear-gradient($option-color2, $option-color1);
+    background-image: linear-gradient($option-color2, $option-color1);
+    background-repeat: repeat-x;
+    border-color: $option-color9;
+    box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.15);
+    color: $option-color7;
 }
-.option-group>.menu {
-   display: none;
-   left: -1px; 
-   padding-top: 6px;
-   position: absolute;
-   width: 175px;
-   z-index: 3337;
+
+.option>.menu {
+    display: none;
+    left: -1px;
+    padding-top: 6px;
+    position: absolute;
+    width: 175px;
+    z-index: 99933379;
 }
-.option-group>.menu.right {
-   left: auto;
-   right: -1px;
+
+.option>.menu.right {
+    left: auto;
+    right: -1px;
 }
-.option-group>.menu.left {
-   left: -1px;
+
+.option>.menu.left {
+    left: -1px;
 }
-.option-group>.menu>.content {
-   background: $option-color12;
-   border-radius: $border-radius;
-   box-shadow: 0 0 13px rgba(0, 0, 0, 0.31);
+
+.option>.menu>.content {
+    background: $option-color12;
+    border-radius: $border-radius;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.31);
 }
-.option-group>.menu>.content>.header {
-   background-color: $option-color3;
-   background-image: -moz-linear-gradient($option-color0, $option-color3);
-   background-image: -webkit-linear-gradient($option-color0, $option-color3);
-   background-image: linear-gradient($option-color0, $option-color3);
-   background-repeat: repeat-x;
-   border-top-left-radius: 2px;
-   border-top-right-radius: 2px;
-   border: 1px solid $option-color6;
-   border-bottom: none;
-   font-weight: bold;
-   padding: 8px 6px;
+
+.option>.menu>.content>.header {
+    background-color: $option-color3;
+    background-image: -moz-linear-gradient($option-color0, $option-color3);
+    background-image: -webkit-linear-gradient($option-color0, $option-color3);
+    background-image: linear-gradient($option-color0, $option-color3);
+    background-repeat: repeat-x;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border: 1px solid $option-color6;
+    border-bottom: none;
+    font-weight: bold;
+    padding: 8px 6px;
 }
-.option-group>.menu>.content>.option {
-//    border-top: none;
-   cursor: pointer;
-   display: block !important;
-//    padding: 8px 10px;
-   &:first-child{
-       border-top: none !important;
-       border-top-left-radius: 2px;
-       border-top-right-radius: 2px;
-   }
-   &:last-child {
-       border-bottom: 1px solid $option-color6;
-       border-bottom-left-radius: 2px;
-       border-bottom-right-radius: 2px;
-   }
+
+.option>.menu>.content>.body {
+    margin: 0px;
+    cursor: pointer;
+    display: block !important;
+        list-style: none;
+    //    padding: 8px 10px;
+    &:first-child {
+        border-top: none !important;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    &:last-child {
+        border-bottom: 1px solid $option-color6;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
 }
-.option-group>.menu>.content>.option>li {
-   &:hover {
-       background: $option-color4;
-       color: white;
-       >a{
-           transition: none;
+
+.option>.menu>.content>.body>li {
+    &:hover {
+        background: $option-color4;
+        color: white;
+        >a {
+            transition: none;
             color: white;
-       }
-   }
-   border-top: 1px solid $option-color6;
-   border-left: 1px solid $option-color6;
-   border-right: 1px solid $option-color6;
-   cursor: pointer;
-   padding: 6px 10px;
-   font-size: 13px;
-   float: none !important;
-   >a{
-           transition: none;
+        }
+    }
+    border-top: 1px solid $option-color6;
+    border-left: 1px solid $option-color6;
+    border-right: 1px solid $option-color6;
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 13px;
+    float: none !important;
+    >a {
+        transition: none;
         color: $option-color8;
         display: block;
-   }
+    }
 }
-// .option-group>.menu>.content>.option>li>a {
+
+// .option>.menu>.content>.option>li>a {
 //    &:hover {
 //        color: white !important;
 //    }
 // }
-.option-group>.menu>.content>.option>.icon {
-   display: table-cell;
-   width: 24px;
+.option>.menu>.content>.body>.icon {
+    display: table-cell;
+    width: 24px;
 }
-.option-group>.menu>.content>.option>.text {
-   display: table-cell;
-   padding: 0 0 0 3px;
+
+.option>.menu>.content>.body>.text {
+    display: table-cell;
+    padding: 0 0 0 3px;
 }
-.option-group>.menu>.content>.option>.selected {
-   background: $option-color4;
-   color: $option-color5;
+
+.option>.menu>.content>.body>.selected {
+    background: $option-color4;
+    color: $option-color5;
 }
-.option-group>.menu>.content>.footer {
+
+.option>.menu>.content>.footer {
     font-weight: 300;
     padding: 6px;
     border: 1px solid $option-color6;
