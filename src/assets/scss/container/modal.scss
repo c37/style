@@ -1,8 +1,10 @@
 div.modal {
     display: none;
     position: absolute;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border-radius: $border-radius;
     border: 1px solid $dialogcolor0;
     padding: 0;
