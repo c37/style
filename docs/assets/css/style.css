@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Fri Apr 28 2017 21:44:37 GMT-0300 (BRT)
+ * Static Here - in Fri Apr 28 2017 22:00:45 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2403,9 +2403,9 @@ div.box {
 input,
 input:focus,
 textarea {
-  height: 26px;
+  height: 27px;
   width: 100%;
-  font-size: 11px;
+  font-size: 14px;
   border: 1px solid #cccccc;
   padding: 3px 3px 3px 5px !important;
   margin: 0 0 11px 0 !important;
@@ -2442,8 +2442,8 @@ span.checkbox {
 
 /* checkbox */
 p[contenteditable="true"] {
+  min-height: 27px;
   width: 100%;
-  font-size: 11px;
   border: 1px solid #cccccc;
   padding: 3px 3px 3px 5px;
   margin: 0 0 11px 0;

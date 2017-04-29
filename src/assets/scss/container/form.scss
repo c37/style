@@ -4,9 +4,9 @@
 input,
 input:focus,
 textarea {
-    height: 26px;
+    height: 27px;
     width: 100%;
-    font-size: 11px;
+    font-size: $font-size;
     border: 1px solid #cccccc;
     padding: 3px 3px 3px 5px !important;
     margin: 0 0 11px 0 !important;
@@ -62,13 +62,11 @@ span.checkbox {
 /* checkbox */
 
 p[contenteditable="true"] {
+    min-height: 27px;
     width: 100%;
-    font-size: 11px;
     border: 1px solid #cccccc;
     padding: 3px 3px 3px 5px;
     margin: 0 0 11px 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
     resize: none;
