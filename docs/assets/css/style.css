@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Thu Apr 27 2017 23:33:29 GMT-0300 (BRT)
+ * Static Here - in Fri Apr 28 2017 21:17:00 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2400,39 +2400,6 @@ div.box {
 .collapse .collapse-toggle.selected {
   color: #599bcd !important; }
 
-dialog.dialog {
-  border-radius: 2px;
-  border: 1px solid #c5c5c5;
-  padding: 0;
-  margin: auto; }
-  dialog.dialog > .header {
-    background-color: #eeeeee;
-    background-image: linear-gradient(#fafafa, #eeeeee);
-    border-bottom: 1px solid #c5c5c5;
-    padding-top: 9px;
-    padding-bottom: 5px;
-    padding-right: 8px;
-    padding-left: 8px; }
-    dialog.dialog > .header > i {
-      cursor: inherit;
-      margin-left: 0;
-      margin-right: 0;
-      opacity: 1; }
-  dialog.dialog .body {
-    height: auto;
-    overflow: hidden;
-    padding: 13px;
-    cursor: default; }
-    dialog.dialog .body.padding-0 {
-      padding: 0; }
-  dialog.dialog > .footer {
-    background-color: #fefefe;
-    border-top: 1px solid #c5c5c5;
-    height: auto;
-    overflow: hidden;
-    padding: 5px;
-    cursor: default; }
-
 input,
 input:focus,
 textarea {
@@ -2488,6 +2455,66 @@ label {
   display: block;
   text-align: left;
   margin: 0 0 5px 0; }
+
+div.modal {
+  display: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border-radius: 2px;
+  border: 1px solid #c5c5c5;
+  padding: 0;
+  margin: auto;
+  background-color: white; }
+  div.modal > .header {
+    background-color: #eeeeee;
+    background-image: linear-gradient(#fafafa, #eeeeee);
+    padding: 7px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    div.modal > .header > .item {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      div.modal > .header > .item.right {
+        margin-left: auto; }
+        div.modal > .header > .item.right > i {
+          cursor: pointer; }
+          div.modal > .header > .item.right > i:hover {
+            opacity: 1;
+            transition: all linear 0.2s; }
+  div.modal .body {
+    height: auto;
+    overflow: hidden;
+    padding: 13px;
+    cursor: default; }
+    div.modal .body.padding-0 {
+      padding: 0; }
+  div.modal > .footer {
+    background-color: #fefefe;
+    border-top: 1px solid #c5c5c5;
+    height: auto;
+    overflow: hidden;
+    padding: 9px;
+    cursor: default; }
+
+div.overlay {
+  position: fixed;
+  top: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.0980392); }
 
 .tab {
   width: 100%;

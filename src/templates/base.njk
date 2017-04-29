@@ -21,13 +21,11 @@
     <link rel="stylesheet" media="all" href="/assets/css/style.css">
     <!-- endbuild -->
  
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
-
     <!-- build:jsLibrary /assets/js/library.js -->
     <script src="/assets/js/library/option.js"></script>
     <script src="/assets/js/library/button.js"></script>
-    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script-->
-    <script async defer src="/assets/js/library/collapse.js"></script>
+    <script src="/assets/js/library/collapse.js"></script>
+    <script src="/assets/js/library/modal.js"></script>
     <!--endbuild-->
 
     <!-- build:jsApp /assets/js/app.js -->
@@ -35,17 +33,14 @@
     <!-- endbuild -->
 </head>
 
-<body>
+    <body>
 
-    {% include "partials/header.njk" %}
+        {% include "partials/header.njk" %}
 
-    {% block content %} {% endblock %}
+        {% block content %} {% endblock %}
 
-    {% include "partials/footer.njk" %}
+        {% include "partials/footer.njk" %}
 
-</body>
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
+    </body>
 
 </html>

@@ -1,0 +1,75 @@
+div.modal {
+    display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-radius: $border-radius;
+    border: 1px solid $dialogcolor0;
+    padding: 0;
+    margin: auto;
+    // z-index: 3;
+    background-color: white;
+    &>.header {
+        background-color: $boxcolor1;
+        background-image: linear-gradient($boxcolor3, $boxcolor1);
+        padding: 7px 5px;
+        display: flex;
+        >.item {
+            align-items: center;
+            display: flex;
+            &.right {
+                margin-left: auto;
+                &>i {
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1;
+                        transition: all linear 0.2s;
+                    }
+                }
+            }
+        }
+    } // &>.header {
+    //     background-color: $dialogcolor2;
+    //     background-image: linear-gradient($dialogcolor3, $dialogcolor2);
+    //     border-bottom: 1px solid $dialogcolor0;
+    //     padding-top: 9px;
+    //     padding-bottom: 5px;
+    //     padding-right: 8px;
+    //     padding-left: 8px;
+    //     &>i {
+    //         cursor: inherit;
+    //         margin-left: 0;
+    //         margin-right: 0;
+    //         opacity: 1;
+    //     }
+    // }
+    & .body {
+        height: auto;
+        overflow: hidden;
+        padding: 13px;
+        cursor: default;
+        &.padding-0 {
+            padding: 0;
+        }
+    }
+    &>.footer {
+        background-color: $dialogcolor1;
+        border-top: 1px solid $dialogcolor0;
+        height: auto;
+        overflow: hidden;
+        padding: 9px;
+        cursor: default;
+    }
+}
+
+div.overlay {
+    position: fixed;
+    top: 0px;
+    align-items: center;
+    display: flex;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.0980392);
+    // z-index: 1;
+}
