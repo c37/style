@@ -1,15 +1,23 @@
 
 
 
+
+form{
+    margin: 0px;
+}
+
+
+
+
 input,
 input:focus,
 textarea {
     height: 27px;
     width: 100%;
-    font-size: $font-size;
+    font-size: $font-size - 1px;
     border: 1px solid #cccccc;
-    padding: 3px 3px 3px 5px !important;
-    margin: 0 0 11px 0 !important;
+    padding: 3px 3px 3px 5px;
+    margin: 0 0 11px 0;
     box-sizing: border-box;
     outline: none;
     resize: none;
@@ -19,7 +27,7 @@ textarea {
 /* text */
 
 input[type="text"] {
-    margin: 0 0 11px 0 !important;
+    margin: 0 0 11px 0;
 }
 
 input[type="text"].required,
@@ -64,6 +72,7 @@ span.checkbox {
 p[contenteditable="true"] {
     min-height: 27px;
     width: 100%;
+    font-size: $font-size - 1px;
     border: 1px solid #cccccc;
     padding: 3px 3px 3px 5px;
     margin: 0 0 11px 0;

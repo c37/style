@@ -91,7 +91,7 @@ h3>a,
 h4>a,
 h5>a,
 h6>a {
-    color:$color-link-hover !important;
+    color: $color-link-hover !important;
 }
 
 h1>a:hover,
@@ -163,60 +163,87 @@ a.mark::after {
 }
 
 // block tags
-p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
-	margin-bottom: $text-margin-bottom;
+p,
+blockquote,
+hr,
+pre,
+ol,
+ul,
+dl,
+table,
+fieldset,
+figure,
+address,
+form {
+    margin-bottom: $text-margin-bottom;
 }
+
 hr {
     border: none;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	margin-top: -1px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-top: -1px;
 }
 
 // blockquote
 blockquote {
-	padding-left: 1rem;
-	border-left: 4px solid rgba(0, 0, 0, .1);
-	font-style: italic;
-	color: rgba($color-text, .65);
-	& p {
-    	margin-bottom: .5rem;
-	}
+    padding-left: 1rem;
+    border-left: 4px solid rgba(0, 0, 0, .1);
+    font-style: italic;
+    color: rgba($color-text, .65);
+    & p {
+        margin-bottom: .5rem;
+    }
 }
 
 // preformatted
-pre, code, samp, var, kbd {
-	font-family: $font-family-monospace;
+pre,
+code,
+samp,
+var,
+kbd {
+    font-family: $font-family-monospace;
 }
-pre, code, samp, var, kbd, mark {
-	font-size: 87.5%;
+
+pre,
+code,
+samp,
+var,
+kbd,
+mark {
+    font-size: 87.5%;
 }
+
 pre,
 pre code {
     background: $color-aluminum;
-	padding: 0;
-	top: 0;
+    padding: 0;
+    top: 0;
     display: block;
     color: rgba($color-text, .85);
-	overflow: none;
-	white-space: pre-wrap;
+    overflow: none;
+    white-space: pre-wrap;
 }
+
 pre {
     padding: 1rem;
 }
 
 // Figure
 figcaption {
-	opacity: .6;
+    opacity: .6;
 }
+
 figure figcaption {
     position: relative;
     top: -1rem/2;
 }
+
 figure pre {
     background: none;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 4px;
 }
+
 figure {
     & .video-container,
     & pre {
@@ -237,94 +264,111 @@ ul.unstyled {
 
 ul,
 ol {
-    &.inside{
-        >li{
+    &.inside {
+        >li {
             list-style-position: inside;
         }
     }
     &,
     & ul,
     & ol {
-	    margin-bottom: $base-line;
-	}
+        margin-bottom: $base-line;
+    }
 }
+
 ol ol li {
-	list-style-type: lower-alpha;
+    list-style-type: lower-alpha;
 }
+
 ol ol ol li {
-	list-style-type: lower-roman;
+    list-style-type: lower-roman;
 }
+
 nav {
     & ul,
     & ol {
         margin: 0;
-	    list-style: none;
-	    & ul,
-	    & ol {
-    	    margin-left: $base-line;
-	    }
-	}
-}
-dl dt {
-	font-weight: bold;
-}
-dd {
-	margin-left: $base-line;
+        list-style: none;
+        & ul,
+        & ol {
+            margin-left: $base-line;
+        }
+    }
 }
 
+dl dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: $base-line;
+}
+
+
 /* font sizes */
+
 .large {
-	font-size: $font-size-large;
-	line-height: $base-line-large;
+    font-size: $font-size-large;
+    line-height: $base-line-large;
 }
+
 .big {
-	font-size: $font-size-big;
-	line-height: $base-line-big;
+    font-size: $font-size-big;
+    line-height: $base-line-big;
 }
+
 .small {
-	font-size: $font-size-small;
-	line-height: $base-line-small;
+    font-size: $font-size-small;
+    line-height: $base-line-small;
 }
+
 .smaller {
-	font-size: $font-size-smaller;
-	line-height: $base-line-smaller;
+    font-size: $font-size-smaller;
+    line-height: $base-line-smaller;
 }
 
 // small
 small {
     display: inline-block;
     position: relative;
-	font-size: $font-size-small;
-	line-height: $base-line-small;
-    // text-align: left;
+    font-size: $font-size-small;
+    line-height: $base-line-small; // text-align: left;
     // margin: 0 0 2px 0;
 }
 
 // modifiers
 .monospace {
-   font-family: $font-family-monospace;
+    font-family: $font-family-monospace;
 }
+
 .upper {
     text-transform: uppercase;
 }
+
 .lower {
     text-transform: lowercase;
 }
+
 .italic {
     font-style: italic !important;
 }
+
 .strong {
     font-weight: bold !important;
 }
+
 .normal {
     font-weight: normal !important;
 }
+
 .muted {
     opacity: .55;
 }
+
 a.muted {
     color: $color-black;
 }
+
 a.muted:hover {
     opacity: 1;
 }
@@ -340,17 +384,16 @@ pre,
 table,
 form,
 figure {
-	+ h2,
-	+ h3,
-	+ h4,
-	+ h5,
-	+ h6 {
-		margin-top: $base-line;
-	}
+    +h2,
+    +h3,
+    +h4,
+    +h5,
+    +h6 {
+        margin-top: $base-line;
+    }
 }
 
 // visibility
-
 .hide {
     display: none !important;
 }
@@ -386,71 +429,116 @@ figure {
     float: right;
 }
 
+.w-center {
+    margin: auto !important;
+}
 
+// margin
+.margin-0 {
+    margin: 0 !important;
+}
+
+// padding
+.padding-20 {
+    padding: 20px !important;
+}
+
+.padding-9 {
+    padding: 9px 5px;
+}
+
+.padding-3 {
+    padding: 3px 5px;
+}
+
+.padding-2 {
+    padding: 2px 5px;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-3 {
+    padding: 3px;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.padding-7 {
+    padding: 7px;
+}
+
+// cursor
+.cursor-motion {
+    cursor: move;
+}
 
 // size
-.w-100{
+.w-100 {
     width: 100%;
 }
+
 .w-200 {
     width: 200px;
 }
+
 .w-250 {
     width: 250px;
 }
+
 .w-300 {
     width: 300px;
 }
+
 .w-350 {
     width: 350px;
 }
+
 .w-400 {
     width: 400px;
 }
+
 .w-450 {
     width: 450px;
 }
+
 .w-500 {
     width: 500px;
 }
+
 .w-550 {
     width: 550px;
 }
+
 .w-600 {
     width: 600px;
 }
+
 .w-650 {
     width: 650px;
 }
+
 .w-700 {
     width: 700px;
 }
-
 
 // clicavel
 .clickable {
     cursor: pointer !important;
 }
 
-
 // block
 .block {
     display: block !important;
 }
 
-
 // inline
 .inline {
     display: inline !important;
 }
-
-
-
-
-
-
-
-
 
 #hero {
     padding-top: 0px;

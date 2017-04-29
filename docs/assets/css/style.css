@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Fri Apr 28 2017 22:00:45 GMT-0300 (BRT)
+ * Static Here - in Sat Apr 29 2017 00:21:56 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -526,7 +526,18 @@ a.mark::after {
   position: relative;
   top: -1px; }
 
-p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
+p,
+blockquote,
+hr,
+pre,
+ol,
+ul,
+dl,
+table,
+fieldset,
+figure,
+address,
+form {
   margin-bottom: 9px; }
 
 hr {
@@ -542,10 +553,19 @@ blockquote {
   blockquote p {
     margin-bottom: .5rem; }
 
-pre, code, samp, var, kbd {
+pre,
+code,
+samp,
+var,
+kbd {
   font-family: Consolas, Monaco, "Courier New", monospace; }
 
-pre, code, samp, var, kbd, mark {
+pre,
+code,
+samp,
+var,
+kbd,
+mark {
   font-size: 87.5%; }
 
 pre,
@@ -743,6 +763,39 @@ figure + h6 {
 
 .right {
   float: right; }
+
+.w-center {
+  margin: auto !important; }
+
+.margin-0 {
+  margin: 0 !important; }
+
+.padding-20 {
+  padding: 20px !important; }
+
+.padding-9 {
+  padding: 9px 5px; }
+
+.padding-3 {
+  padding: 3px 5px; }
+
+.padding-2 {
+  padding: 2px 5px; }
+
+.padding-0 {
+  padding: 0; }
+
+.padding-3 {
+  padding: 3px; }
+
+.padding-5 {
+  padding: 5px; }
+
+.padding-7 {
+  padding: 7px; }
+
+.cursor-motion {
+  cursor: move; }
 
 .w-100 {
   width: 100%; }
@@ -2012,7 +2065,8 @@ ul.list {
   height: auto;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 100%; }
+  width: 100%;
+  margin: 0px; }
 
 ul.list.border {
   border-radius: 2px;
@@ -2324,7 +2378,7 @@ div.box {
   div.box > .header {
     background-color: #eeeeee;
     background-image: linear-gradient(#fafafa, #eeeeee);
-    padding: 7px 5px;
+    padding: 7px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -2335,6 +2389,8 @@ div.box {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+      div.box > .header > .item > i {
+        margin: 0px; }
       div.box > .header > .item.right {
         margin-left: auto; }
         div.box > .header > .item.right > i {
@@ -2342,12 +2398,6 @@ div.box {
           div.box > .header > .item.right > i:hover {
             opacity: 1;
             transition: all linear 0.2s; }
-    div.box > .header.padding-3 {
-      padding: 3px 5px; }
-    div.box > .header.padding-2 {
-      padding: 2px 5px; }
-    div.box > .header.motion {
-      cursor: move; }
   div.box > .body {
     background-color: white;
     border-radius: 0 0 2px 2px;
@@ -2355,14 +2405,6 @@ div.box {
     height: auto;
     overflow: hidden;
     padding: 10px; }
-    div.box > .body.padding-0 {
-      padding: 0; }
-    div.box > .body.padding-3 {
-      padding: 3px; }
-    div.box > .body.padding-5 {
-      padding: 5px; }
-    div.box > .body.padding-7 {
-      padding: 7px; }
   div.box > .footer {
     background-color: #fefefe;
     border-radius: 0 0 2px 2px;
@@ -2400,22 +2442,25 @@ div.box {
 .collapse .collapse-toggle.selected {
   color: #599bcd !important; }
 
+form {
+  margin: 0px; }
+
 input,
 input:focus,
 textarea {
   height: 27px;
   width: 100%;
-  font-size: 14px;
+  font-size: 13px;
   border: 1px solid #cccccc;
-  padding: 3px 3px 3px 5px !important;
-  margin: 0 0 11px 0 !important;
+  padding: 3px 3px 3px 5px;
+  margin: 0 0 11px 0;
   box-sizing: border-box;
   outline: none;
   resize: none; }
 
 /* text */
 input[type="text"] {
-  margin: 0 0 11px 0 !important; }
+  margin: 0 0 11px 0; }
 
 input[type="text"].required,
 input[type="password"].required {
@@ -2444,6 +2489,7 @@ span.checkbox {
 p[contenteditable="true"] {
   min-height: 27px;
   width: 100%;
+  font-size: 13px;
   border: 1px solid #cccccc;
   padding: 3px 3px 3px 5px;
   margin: 0 0 11px 0;

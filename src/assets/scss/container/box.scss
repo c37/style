@@ -7,11 +7,14 @@ div.box {
     &>.header {
         background-color: $boxcolor1;
         background-image: linear-gradient($boxcolor3, $boxcolor1);
-        padding: 7px 5px; 
+        padding: 7px; 
         display: flex;
         >.item {
             align-items: center;
             display: flex;
+            &>i{
+                margin: 0px;
+            }
             &.right {
                 margin-left: auto;
                 &>i {
@@ -23,15 +26,6 @@ div.box {
                 }
             }
         }
-        &.padding-3 {
-            padding: 3px 5px;
-        }
-        &.padding-2 {
-            padding: 2px 5px;
-        }
-        &.motion {
-            cursor: move;
-        }
     }
     &>.body {
         background-color: $boxcolor5;
@@ -40,18 +34,6 @@ div.box {
         height: auto;
         overflow: hidden;
         padding: 10px;
-        &.padding-0 {
-            padding: 0;
-        }
-        &.padding-3 {
-            padding: 3px;
-        }
-        &.padding-5 {
-            padding: 5px;
-        }
-        &.padding-7 {
-            padding: 7px;
-        }
     }
     &>.footer {
         background-color: $boxcolor2;
