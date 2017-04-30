@@ -23,6 +23,7 @@
     <script src="/assets/js/library/code.js"></script>
 
     <script src="/assets/js/library/tab.js"></script>
+    <script src="/assets/js/library/slider.js"></script>
     <script src="/assets/js/library/hint.js"></script>
     <script src="/assets/js/library/option.js"></script>
     <script src="/assets/js/library/button.js"></script>
@@ -128,7 +129,7 @@
                             <a href="#list">List</a>
                         </li>
                         <li>
-                            <a href="#location">Location</a>
+                            <a href="#slider">Slider</a>
                         </li>
                         <li>
                             <a href="#menu">Menu</a>
@@ -360,9 +361,15 @@
 
 
             <h3>
-                <a id="location" class="mark" href="#location">Location</a>
+                <a id="slider" class="mark" href="#slider">Slider</a>
             </h3>
             <div class="example">
+
+                <div style="height: 160px" data-slider>
+                    <img class="hide" src="https://unsplash.it/778/160?random=1" />
+                    <img class="hide" src="https://unsplash.it/778/160?random=2" />
+                    <img class="hide" src="https://unsplash.it/778/160?random=3" />
+                </div>
 
             </div>
 
@@ -493,14 +500,6 @@
 
 
             <h3>
-                <a id="pagination" class="mark" href="#pagination">Pagination</a>
-            </h3>
-            <div class="example">
-
-            </div>
-
-
-            <h3>
                 <a id="hint" class="mark" href="#hint">Hint</a>
             </h3>
             <div class="example">
@@ -539,7 +538,7 @@
                         <div style="height: 9px"></div>
                         <table id="table-control-motion" class="w-100">
                             <tr>
-                                <td style="width: 20px"></td> 
+                                <td style="width: 20px"></td>
                                 <td style="text-align: right">
                                     <button id="button-command-x-left" class="button text-center hint" data-hint-title="Title" data-hint-text="Text Text Text Text Text Text">
                                     <i class="icon-control-left"></i>
@@ -560,7 +559,7 @@
                                     <i class="icon-control-right"></i>
                                 </button>
                                 </td>
-                                <td style="width: 30px"></td> 
+                                <td style="width: 30px"></td>
                                 <td style="width: 30px">
                                     <div class="button vertical">
                                         <button id="button-command-z-up" class="button text-center hint" data-hint-title="Title" data-hint-text="Text Text Text Text Text Text">
