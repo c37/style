@@ -20,8 +20,8 @@
 	};
 
 	Hint.reset = function () {
-		this.xOffset = 15;
-		this.yOffset = 15;
+		this.xOffset = 10;
+		this.yOffset = 30;
 		this.backColor = '#E5F6FE';
 		this.borderColor = '#ADD9ED';
 		this.textColor = '#5E99BD';
@@ -43,6 +43,9 @@
 		// debugger;
 
 		var targets = document.querySelectorAll(".hint");
+
+		console.log(targets);
+
 		var targetCount = targets.length;
 		for (var i = 0; i < targetCount; i++) {
 			// targets[i].addEventListener('mouseover', function () {
@@ -348,9 +351,12 @@
 	}
 
 	// quando todo o load de window
-	window.addEventListener('load', function () {
+	window.addEventListener('DOMContentLoaded', function () {
 
 		var hints = document.querySelectorAll("[data-i18n*='data-hint-title'][data-i18n*='data-hint-text']");
+
+		console.log(hints);
+
 		[].forEach.call(hints, function (hint) {
 
 			hint.classList.add('hint');
