@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sun Apr 30 2017 20:26:46 GMT-0300 (BRT)
+ * Static Here - in Sun Apr 30 2017 20:46:32 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1435,7 +1435,7 @@ nav.nav-section {
   height: 16px;
   margin: 0 2px;
   opacity: .6;
-  vertical-align: middle;
+  vertical-align: sub;
   width: 16px; }
 
 [class$="-white"] {
@@ -1903,14 +1903,7 @@ nav.nav-section {
 /* default */
 button.button {
   font: inherit;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   padding: 1px 7px;
   margin: 0 3px;
   color: #3d3b36;
