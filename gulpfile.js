@@ -123,7 +123,7 @@ function serve(done) {
 }
 
 
-const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk'], gulp.series(clean, template, css, js, assets, reload));
+const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk', './src/**/*.js'], gulp.series(clean, template, css, js, assets, reload));
 // const watch = () => gulp.watch('./src/**/*', gulp.series(clean, template, css, js, assets, reload));
 
 

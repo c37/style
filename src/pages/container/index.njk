@@ -370,20 +370,34 @@
             </h3>
             <div class="example">
 
-                <div class="tab">
 
+                <div class="tab w-400">
                     <ul class="header">
-                        <li class="item">Tab 1</li>
-                        <li class="item">Tab 2</li>
-                        <li class="item active">Tab 3</li>
+                        <li class="item active" data-ref="signin">Entrar</li>
+                        <li class="item" data-ref="signup">Criar uma nova conta</li>
                     </ul>
-
-                    <div class="body">
-                        <div class="item">(1) Lorem ipsum dolor</div>
-                        <div class="item ">(2) Lorem ipsum dolor</div>
-                        <div class="item active">(3) Lorem ipsum dolor</div>
+                    <div class="body" style="padding-bottom: 0">
+                        <div class="item active" data-ref="signin">
+                            <form id="form-user-signin" onsubmit="return false;" data-buttercup-form-id="bcup-form:1" data-buttercup="attached">
+                                <label for="">Preencha suas informações</label>
+                                <input id="text-user-signin-email" type="text" value="" placeholder="E-mail">
+                                <input id="text-user-signin-password" type="password" name="" value="" placeholder="Senha">
+                                <div class="text-right">
+                                    <input id="checkbox-user-signin" type="checkbox" checked="">
+                                    <span class="checkbox" onclick="document.getElementById('checkbox-user-signin').checked = !document.getElementById('checkbox-user-signin').checked"> Permanecer conectado </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item" data-ref="signup">
+                            <form id="form-user-signup" onsubmit="return false;" data-buttercup-form-id="bcup-form:2" data-buttercup="attached">
+                                <label for="">Preencha os campos abaixo</label>
+                                <input id="text-user-signup-first-name" type="text" value="" placeholder="Nome">
+                                <input id="text-user-signup-last-name" type="text" name="" value="" placeholder="Sobrenome">
+                                <input id="text-user-signup-email" type="text" name="" value="" placeholder="E-mail">
+                                <input id="text-user-signup-password" type="password" name="" value="" placeholder="Senha">
+                            </form>
+                        </div>
                     </div>
-
                 </div>
 
             </div>

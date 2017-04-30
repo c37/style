@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sun Apr 30 2017 11:36:07 GMT-0300 (BRT)
+ * Static Here - in Sun Apr 30 2017 14:48:02 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -31,6 +31,7 @@
 
 
 		// estudar para melhorias
+		// https://github.com/tlindig/position-calculator
 		// https://github.com/FezVrasta/popper.js
 
 		var Hint = Hint || {

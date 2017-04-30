@@ -6,6 +6,7 @@
 
 
 	// estudar para melhorias
+	// https://github.com/tlindig/position-calculator
 	// https://github.com/FezVrasta/popper.js
 
 	var Hint = Hint || {
@@ -52,7 +53,7 @@
 			targets[i].addEventListener('mouseenter', function () {
 				var title, text, options;
 
-// debugger
+				// debugger
 
 				if (this.hasAttribute('data-hint-title')) {
 					title = this.getAttribute('data-hint-title');
@@ -84,7 +85,7 @@
 		// targets[i].addEventListener('mouseover', function () {
 		el.addEventListener('mouseenter', function () {
 
-            // debugger
+			// debugger
 
 
 			var title, text, options;
