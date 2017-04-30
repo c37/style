@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sun Apr 30 2017 17:28:57 GMT-0300 (BRT)
+ * Static Here - in Sun Apr 30 2017 20:22:10 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -423,12 +423,19 @@ html {
   padding: 0px; }
 
 h1.title,
+.h1.title,
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   font-weight: bold;
   color: #676b72;
@@ -438,44 +445,74 @@ h6 {
 h1.title {
   font-size: 60px;
   line-height: 64px;
-  margin-top: 42px;
-  margin-bottom: 10px; }
+  margin-top: 42px; }
 
 h1 {
   font-size: 48px;
   line-height: 52px;
-  margin-top: 42px;
-  margin-bottom: 10px; }
+  margin-top: 42px; }
 
 h2 {
   font-size: 36px;
   line-height: 40px;
-  margin-top: 30px;
-  margin-bottom: 10px; }
+  margin-top: 30px; }
 
 h3 {
   font-size: 24px;
   line-height: 32px;
-  margin-top: 22px;
-  margin-bottom: 10px; }
+  margin-top: 22px; }
 
 h4 {
   font-size: 21px;
   line-height: 32px;
-  margin-top: 22px;
-  margin-bottom: 10px; }
+  margin-top: 22px; }
 
 h5 {
   font-size: 18px;
   line-height: 28px;
-  margin-top: 18px;
-  margin-bottom: 10px; }
+  margin-top: 18px; }
 
 h6 {
   font-size: 16px;
   line-height: 24px;
-  margin-top: 14px;
-  margin-bottom: 10px; }
+  margin-top: 14px; }
+
+.h1.title {
+  font-size: 60px;
+  line-height: 64px; }
+
+.h1 {
+  font-size: 48px;
+  line-height: 52px; }
+
+.h2 {
+  font-size: 36px;
+  line-height: 40px; }
+
+.h3 {
+  font-size: 24px;
+  line-height: 32px; }
+
+.h4 {
+  font-size: 21px;
+  line-height: 32px; }
+
+.h5 {
+  font-size: 18px;
+  line-height: 28px; }
+
+.h6 {
+  font-size: 16px;
+  line-height: 24px; }
+
+.h1.title,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  display: block; }
 
 h1 > a,
 h2 > a,
@@ -1396,7 +1433,7 @@ nav.nav-section {
   cursor: inherit;
   display: inline-block;
   height: 16px;
-  margin: 0 2px 0 2px;
+  margin: 0 2px;
   opacity: .6;
   vertical-align: middle;
   width: 16px; }
@@ -1866,7 +1903,14 @@ nav.nav-section {
 /* default */
 button.button {
   font: inherit;
-  display: inline-block;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 1px 7px;
   margin: 0 3px;
   color: #3d3b36;
@@ -1880,8 +1924,8 @@ button.button {
   button.button * {
     cursor: pointer !important; }
   button.button > i {
-    margin: 0; }
-  button.button.count {
+    margin: 0 3px 0 0; }
+  button.button.detail {
     float: left;
     margin-right: 0px;
     border-top-right-radius: 0;
@@ -1889,7 +1933,7 @@ button.button {
   button.button:hover > i {
     opacity: 1; }
 
-a.option {
+a.detail {
   float: left;
   padding: 2px 5px;
   font-size: inherit;
@@ -1901,18 +1945,18 @@ a.option {
   background-color: #fff;
   border: 1px solid #c5c5c5;
   border-left: 0; }
-  a.option:hover, a.option:active {
+  a.detail:hover, a.detail:active {
     text-decoration: none; }
-  a.option:hover {
+  a.detail:hover {
     color: #4078c0;
     cursor: pointer; }
-  a.option:last-child {
+  a.detail.last {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     margin-right: 3px; }
-  a.option > i {
+  a.detail > i {
     padding-top: 1px; }
-    a.option > i:hover {
+    a.detail > i:hover {
       cursor: pointer !important;
       opacity: 1; }
 
@@ -2414,18 +2458,16 @@ ul.menu.vertical > li {
 .option > strong {
   padding-top: 2px;
   padding-right: 7px; }
-  .option > strong:after {
-    content: '';
-    margin-left: 3px;
-    display: inline-block;
-    position: relative;
-    margin-left: 5px;
-    top: -2px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 5.5px 0 5.5px;
-    border-color: #43484d transparent transparent transparent; }
+
+.option i.caret {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4.5px 0 4.5px;
+  border-color: #000000 transparent transparent transparent; }
 
 .option.press {
   background-color: #dadada;

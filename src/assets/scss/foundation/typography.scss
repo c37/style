@@ -23,12 +23,19 @@ html {
 
 // headings
 h1.title,
+.h1.title,
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
     font-family: $font-family;
     font-weight: bold;
     color: $color-headings;
@@ -40,49 +47,87 @@ h1.title {
     font-size: $heading-font-size-title;
     line-height: $heading-base-line-title;
     margin-top: $heading-margin-top-title;
-    margin-bottom: $heading-margin-bottom;
 }
 
 h1 {
     font-size: $heading-font-size-1;
     line-height: $heading-base-line-1;
     margin-top: $heading-margin-top-1;
-    margin-bottom: $heading-margin-bottom;
 }
 
 h2 {
     font-size: $heading-font-size-2;
     line-height: $heading-base-line-2;
     margin-top: $heading-margin-top-2;
-    margin-bottom: $heading-margin-bottom;
 }
 
 h3 {
     font-size: $heading-font-size-3;
     line-height: $heading-base-line-3;
     margin-top: $heading-margin-top-3;
-    margin-bottom: $heading-margin-bottom;
 }
 
 h4 {
     font-size: $heading-font-size-4;
     line-height: $heading-base-line-4;
     margin-top: $heading-margin-top-4;
-    margin-bottom: $heading-margin-bottom;
 }
 
 h5 {
     font-size: $heading-font-size-5;
     line-height: $heading-base-line-5;
     margin-top: $heading-margin-top-5;
-    margin-bottom: $heading-margin-bottom;
 }
 
 h6 {
     font-size: $heading-font-size-6;
     line-height: $heading-base-line-6;
     margin-top: $heading-margin-top-6;
-    margin-bottom: $heading-margin-bottom;
+}
+
+.h1.title {
+    font-size: $heading-font-size-title;
+    line-height: $heading-base-line-title;
+}
+
+.h1 {
+    font-size: $heading-font-size-1;
+    line-height: $heading-base-line-1;
+}
+
+.h2 {
+    font-size: $heading-font-size-2;
+    line-height: $heading-base-line-2;
+}
+
+.h3 {
+    font-size: $heading-font-size-3;
+    line-height: $heading-base-line-3;
+}
+
+.h4 {
+    font-size: $heading-font-size-4;
+    line-height: $heading-base-line-4;
+}
+
+.h5 {
+    font-size: $heading-font-size-5;
+    line-height: $heading-base-line-5;
+}
+
+.h6 {
+    font-size: $heading-font-size-6;
+    line-height: $heading-base-line-6;
+}
+
+.h1.title,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    display: block;
 }
 
 h1>a,

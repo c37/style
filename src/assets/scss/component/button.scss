@@ -2,7 +2,11 @@
 
 button.button {
     font: inherit;
-    display: inline-block;
+
+            align-items: center;
+            display: inline-flex;
+
+    // display: inline-block;
     padding: 1px 7px;
     margin: 0 3px;
     color: #3d3b36;
@@ -16,10 +20,11 @@ button.button {
         cursor: pointer !important;
     }
     & > i {
-        margin: 0;
+        margin: 0 3px 0 0;
     }
-    &.count{
+    &.detail{
         float: left;
+        // height: 26px;
         margin-right: 0px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -30,7 +35,7 @@ button.button {
         }
     }
 }
-a.option{
+a.detail{
     float: left;
     padding: 2px 5px;
     font-size: inherit;
@@ -54,7 +59,7 @@ a.option{
         cursor: pointer;
     }
 
-    &:last-child{
+    &.last{
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
         margin-right: 3px;
