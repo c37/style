@@ -1,513 +1,519 @@
-{% extends "base.njk" %}
+{% extends "base.njk" %} {% set pageTitle = "Grid • Foundation" %} {% set urlHeader = "foundation" %} {% block content %}
 
-{% set pageTitle = "Grid • Foundation" %} 
-{% set urlHeader = "foundation" %} 
+<div class="grid w-840">
 
-{% block content %}
+	<div class="row">
+		<div class="column-12">
 
+			<div class="nav-self">
+				<div class="left">
+					<h3><a href="/foundation/index.html">Grid</a></h3>
 
-
-
-
-    <div class="grid w-840">
-
-       <div class="row">
-            <div class="column-12">
-
-                <div class="nav-self">
-                    <div class="left">
-                        <h3><a href="/foundation/index.html">Grid</a></h3>
-
-                    </div>
-                    <!--<div class="" style="margin-top: auto;">-->
-                    <div class="right">
-                        <ul>
-                            <li>
-                                <a href="#spaces">Spaces</a>
-                            </li>
-                            <li>
-                                <a href="#auto">Auto</a>
-                            </li>
-                            <li>
-                                <a href="#bricks">Bricks</a>
-                            </li>
-                            <li>
-                                <a href="#offset">Offset</a>
-                            </li>
-                            <li>
-                                <a href="#nested">Nested</a>
-                            </li>
-                            <li>
-                                <a href="#reordering">Reordering</a>
-                            </li>
-                            <li>
-                                <a href="#around">Around</a>
-                            </li>
-                            <li>
-                                <a href="#between">Between</a>
-                            </li>
-                            <li>
-                                <a href="#alignment">Alignment</a>
-                            </li>
-                            <li>
-                                <a href="#push">Push</a>
-                            </li>
-                            <li>
-                                <a href="#media-grid">Media Grid</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p>
-                    CSS grid poderá ser usado para obter uma infinidade de difirentes layouts. O diferencial desse método de criação de layouts reside na possibilidade de se dividir uma página em grandes regiões e de se definir o relacionamento em termos de medidas, posicionamento e camadas entre os diferentes componentes da marcação HTML.
-
-                </p>
-
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <div class="row">
-            <div class="column-12">
-
-
-
-		<h3>
-			<a id="columns" class="mark" href="#columns">Columns</a>
-		</h3>
-		<p>
-			Columns are building blocks for many websites. Here's how columns are formed, and here's how you can use them right
-			away.
-		</p>
-		<div class="example">
-			<div class="row debug">
-				<div class="column-1">1</div>
-				<div class="column-11">11</div>
-			</div>
-			<div class="row debug">
-				<div class="column-2">2</div>
-				<div class="column-10">10</div>
-			</div>
-			<div class="row debug">
-				<div class="column-3">3</div>
-				<div class="column-9">9</div>
-			</div>
-			<div class="row debug">
-				<div class="column-4">4</div>
-				<div class="column-8">8</div>
-			</div>
-			<div class="row debug">
-				<div class="column-5">5</div>
-				<div class="column-7">7</div>
-			</div>
-			<div class="row debug">
-				<div class="column-6">6</div>
-				<div class="column-6">6</div>
-			</div>
-			<div class="row debug">
-				<div class="column-7">7</div>
-				<div class="column-5">5</div>
-			</div>
-			<div class="row debug">
-				<div class="column-8">8</div>
-				<div class="column-4">4</div>
-			</div>
-			<div class="row debug">
-				<div class="column-9">9</div>
-				<div class="column-3">3</div>
-			</div>
-			<div class="row debug">
-				<div class="column-10">10</div>
-				<div class="column-2">2</div>
-			</div>
-			<div class="row debug">
-				<div class="column-11">11</div>
-				<div class="column-1">1</div>
-			</div>
-			<div class="row debug">
-				<div class="column-12">12</div>
-			</div>
-
-			<br>
-
-			<iframe width="100%" height="300" src="//jsfiddle.net/ciro_maciel/nucwxn3f/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-		</div>
-
-
-		<h3>
-			<a id="spaces" class="mark" href="#spaces">Spaces</a>
-		</h3>
-		<div class="example">
-			<div class="row space debug">
-				<div class="column column-3">3</div>
-				<div class="column column-9">9</div>
-			</div>
-
-			<br>
-
-			<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/t5b4kwtd/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen" frameborder="0"></iframe>			
-
-		</div>
-
-
-		<h3>
-			<a id="auto" class="mark" href="#auto">Auto</a>
-		</h3>
-		<h5>Width</h5>
-		<div class="example">
-			<div class="row auto debug">
-				<div class="column">auto</div>
-				<div class="column">auto</div>
-				<div class="column">auto</div>
-			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row auto"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
-
-
-		<h5>with Spaces</h5>
-		<div class="example">
-			<div class="row space auto debug">
-				<div class="column">auto</div>
-				<div class="column">auto</div>
-				<div class="column">auto</div>
-				<div class="column">auto</div>
-			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row space auto"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
-
-
-
-		<h3>
-			<a id="bricks" class="mark" href="#bricks">Bricks</a>
-		</h3>
-		<h5>Auto</h5>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-6">50%</div>
-				<div class="column column-6">50%</div>
-				<div class="column column-6">50%</div>
-				<div class="column column-6">50%</div>
-			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
-
-
-		<h5>with Spaces</h5>
-		<div class="example">
-			<div class="row space debug">
-				<div class="column column-4">33%</div>
-				<div class="column column-4">33%</div>
-				<div class="column column-4">33%</div>
-				<div class="column column-4">33%</div>
-				<div class="column column-4">33%</div>
-				<div class="column column-4">33%</div>
-				<div class="column column-6">50%</div>
-				<div class="column column-6">50%</div>
-			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row space"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
-
-
-		<h3>
-			<a id="offset" class="mark" href="#offset">Offset</a>
-		</h3>
-		<p>
-			Offsetting columns is very simple in Kube. Just use column's class as usual, for example, column column-2 and then add the
-			offset value offset-4. This will offset this column and all following columns by 4.
-		</p>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-2">
-					2
 				</div>
-				<div class="column column-6 offset-4">
-					6
+				<div class="right">
+					<ul>
+						<li>
+							<a href="#spaces">Spaces</a>
+						</li>
+						<li>
+							<a href="#auto">Auto</a>
+						</li>
+						<li>
+							<a href="#bricks">Bricks</a>
+						</li>
+						<li>
+							<a href="#offset">Offset</a>
+						</li>
+						<li>
+							<a href="#nested">Nested</a>
+						</li>
+						<li>
+							<a href="#reordering">Reordering</a>
+						</li>
+						<li>
+							<a href="#around">Around</a>
+						</li>
+						<li>
+							<a href="#between">Between</a>
+						</li>
+						<li>
+							<a href="#alignment">Alignment</a>
+						</li>
+						<li>
+							<a href="#push">Push</a>
+						</li>
+						<li>
+							<a href="#media-grid">Media Grid</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-2"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6 offset-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h3>
-			<a id="nested" class="mark" href="#nested">Nested</a>
-		</h3>
-		<p>
-			Here's an example of nesting columns within columns. In this example, we have a single row, with two columns .column column-6,
-			a div nested within the second column, with .row end class to denote where to inject nested columns, and the three nested
-			columns.
-		</p>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-6">6</div>
-				<div class="column column-6">
-					<div class="row">
-						<div class="column column-4">4</div>
-						<div class="column column-4">4</div>
-						<div class="column column-4">4</div>
+			<p>
+				CSS grid poderá ser usado para obter uma infinidade de difirentes layouts. O diferencial desse método de criação de layouts
+				reside na possibilidade de se dividir uma página em grandes regiões e de se definir o relacionamento em termos de medidas,
+				posicionamento e camadas entre os diferentes componentes da marcação HTML.
+
+			</p>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column-12">
+
+			<h3>
+				<a id="columns" class="mark" href="#columns">Columns</a>
+			</h3>
+			<p>
+				Columns are building blocks for many websites. Here's how columns are formed, and here's how you can use them right away.
+			</p>
+			<div class="example">
+
+				<div class="row debug">
+					<div class="column-1">1</div>
+					<div class="column-11">11</div>
+				</div>
+				<div class="row debug">
+					<div class="column-2">2</div>
+					<div class="column-10">10</div>
+				</div>
+				<div class="row debug">
+					<div class="column-3">3</div>
+					<div class="column-9">9</div>
+				</div>
+				<div class="row debug">
+					<div class="column-4">4</div>
+					<div class="column-8">8</div>
+				</div>
+				<div class="row debug">
+					<div class="column-5">5</div>
+					<div class="column-7">7</div>
+				</div>
+				<div class="row debug">
+					<div class="column-6">6</div>
+					<div class="column-6">6</div>
+				</div>
+				<div class="row debug">
+					<div class="column-7">7</div>
+					<div class="column-5">5</div>
+				</div>
+				<div class="row debug">
+					<div class="column-8">8</div>
+					<div class="column-4">4</div>
+				</div>
+				<div class="row debug">
+					<div class="column-9">9</div>
+					<div class="column-3">3</div>
+				</div>
+				<div class="row debug">
+					<div class="column-10">10</div>
+					<div class="column-2">2</div>
+				</div>
+				<div class="row debug">
+					<div class="column-11">11</div>
+					<div class="column-1">1</div>
+				</div>
+				<div class="row debug">
+					<div class="column-12">12</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="300" src="//jsfiddle.net/ciro_maciel/nucwxn3f/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h3>
+				<a id="spaces" class="mark" href="#spaces">Spaces</a>
+			</h3>
+			<div class="example">
+
+				<div class="row space debug">
+					<div class="column column-3">3</div>
+					<div class="column column-9">9</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/t5b4kwtd/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h3>
+				<a id="auto" class="mark" href="#auto">Auto</a>
+			</h3>
+			<h5>Width</h5>
+			<div class="example">
+
+				<div class="row auto debug">
+					<div class="column">auto</div>
+					<div class="column">auto</div>
+					<div class="column">auto</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="250" src="//jsfiddle.net/ciro_maciel/jxjooevh/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h5>With Spaces</h5>
+			<div class="example">
+
+				<div class="row space auto debug">
+					<div class="column">auto</div>
+					<div class="column">auto</div>
+					<div class="column">auto</div>
+					<div class="column">auto</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="250" src="//jsfiddle.net/ciro_maciel/mxtfmqo6/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h3>
+				<a id="bricks" class="mark" href="#bricks">Bricks</a>
+			</h3>
+			<h5>Auto</h5>
+			<div class="example">
+
+				<div class="row debug">
+					<div class="column column-6">50%</div>
+					<div class="column column-6">50%</div>
+					<div class="column column-6">50%</div>
+					<div class="column column-6">50%</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="240" src="//jsfiddle.net/ciro_maciel/2psohz5n/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h5>With Spaces</h5>
+			<div class="example">
+
+				<div class="row space debug">
+					<div class="column column-4">33%</div>
+					<div class="column column-4">33%</div>
+					<div class="column column-4">33%</div>
+					<div class="column column-4">33%</div>
+					<div class="column column-4">33%</div>
+					<div class="column column-4">33%</div>
+					<div class="column column-6">50%</div>
+					<div class="column column-6">50%</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="300" src="//jsfiddle.net/ciro_maciel/mLcqjrjt/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h3>
+				<a id="offset" class="mark" href="#offset">Offset</a>
+			</h3>
+			<p>
+				Offsetting columns is very simple in Kube. Just use column's class as usual, for example, column column-2 and then add the
+				offset value offset-4. This will offset this column and all following columns by 4.
+			</p>
+			<div class="example">
+
+				<div class="row debug">
+					<div class="column column-2">
+						2
+					</div>
+					<div class="column column-6 offset-4">
+						6
 					</div>
 				</div>
+
+				<br>
+
+				<iframe width="100%" height="300" src="//jsfiddle.net/ciro_maciel/g4qz0xtt/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;
-        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-        &lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
+			<h3>
+				<a id="nested" class="mark" href="#nested">Nested</a>
+			</h3>
+			<p>
+				Here's an example of nesting columns within columns. In this example, we have a single row, with two columns .column column-6,
+				a div nested within the second column, with .row end class to denote where to inject nested columns, and the three nested
+				columns.
+			</p>
+			<div class="example">
 
-		<h3>
-			<a id="reordering" class="mark" href="#reordering">Reordering</a>
-		</h3>
-		<h5>First</h5>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-4">4</div>
-				<div class="column column-8 first">8</div>
+				<div class="row debug">
+					<div class="column column-6">6</div>
+					<div class="column column-6">
+						<div class="row">
+							<div class="column column-4">4</div>
+							<div class="column column-4">4</div>
+							<div class="column column-4">4</div>
+						</div>
+					</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="300" src="//jsfiddle.net/ciro_maciel/gsqas28m/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8 first"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Last</h5>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-3 last">3</div>
-				<div class="column column-9">9</div>
+
+			<h3>
+				<a id="reordering" class="mark" href="#reordering">Reordering</a>
+			</h3>
+			<h5>First</h5>
+			<div class="example">
+
+				<div class="row debug">
+					<div class="column column-4">4</div>
+					<div class="column column-8 first">8</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="200" src="//jsfiddle.net/ciro_maciel/5uqLmaw1/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3 last"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-9"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
+			<h5>Last</h5>
+			<div class="example">
 
-		<h3>
-			<a id="around" class="mark" href="#around">Around</a>
-		</h3>
-		<p>
-			When you want your columns to be surrounded by an even margins on both sides, just use .around class.
-		</p>
-		<div class="example">
-			<div class="row around debug">
-				<div class="column column-3">3</div>
-				<div class="column column-3">3</div>
-				<div class="column column-3">3</div>
+				<div class="row debug">
+					<div class="column column-3 last">3</div>
+					<div class="column column-9">9</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="200" src="//jsfiddle.net/ciro_maciel/6gbw93dp/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row around"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
 
-		<h3>
-			<a id="between" class="mark" href="#between">Between</a>
-		</h3>
-		<p>
-			Sometime you just need space between columns, and not around them. Well, there's a class for that: .between
-		</p>
-		<div class="example">
-			<div class="row between debug">
-				<div class="column column-3">3</div>
-				<div class="column column-3">3</div>
-				<div class="column column-3">3</div>
+			<h3>
+				<a id="around" class="mark" href="#around">Around</a>
+			</h3>
+			<p>
+				When you want your columns to be surrounded by an even margins on both sides, just use .around class.
+			</p>
+			<div class="example">
+
+				<div class="row around debug">
+					<div class="column column-3">3</div>
+					<div class="column column-3">3</div>
+					<div class="column column-3">3</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="220" src="//jsfiddle.net/ciro_maciel/hkn2gwak/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row between"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
 
-		<h3>
-			<a id="alignment" class="mark" href="#alignment">Alignment</a>
-		</h3>
-		<h5>Align Center</h5>
-		<div class="example">
-			<div class="row align-center debug">
-				<div class="column column-6">6</div>
+			<h3>
+				<a id="between" class="mark" href="#between">Between</a>
+			</h3>
+			<p>
+				Sometime you just need space between columns, and not around them. Well, there's a class for that: .between
+			</p>
+			<div class="example">
+
+				<div class="row between debug">
+					<div class="column column-3">3</div>
+					<div class="column column-3">3</div>
+					<div class="column column-3">3</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="220" src="//jsfiddle.net/ciro_maciel/0o8fgbm2/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row align-center"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Align Right</h5>
-		<div class="example">
-			<div class="row align-right debug">
-				<div class="column column-3">3</div>
-				<div class="column column-3">3</div>
+
+			<h3>
+				<a id="alignment" class="mark" href="#alignment">Alignment</a>
+			</h3>
+			<h5>Center</h5>
+			<div class="example">
+
+				<div class="row align-center debug">
+					<div class="column column-6">6</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/L5Lg764r/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row align-right"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-3"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Align Middle</h5>
-		<div class="example">
-			<div class="row align-middle debug" style="height: 40px;">
-				<div class="column column-4">4</div>
-				<div class="column column-4">4</div>
-				<div class="column column-4">4</div>
+			<h5>Right</h5>
+			<div class="example">
+
+				<div class="row align-right debug">
+					<div class="column column-3">3</div>
+					<div class="column column-3">3</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="200" src="//jsfiddle.net/ciro_maciel/vsnhd9cc/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row align-middle"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
+			<h5>Middle</h5>
+			<div class="example">
 
-		<h3>
-			<a id="push" class="mark" href="#push">Push</a>
-		</h3>
-		<h5>Push Center</h5>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-4 push-center">center</div>
+				<div class="row align-middle debug" style="height: 40px;">
+					<div class="column column-4">4</div>
+					<div class="column column-4">4</div>
+					<div class="column column-4">4</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="220" src="//jsfiddle.net/ciro_maciel/748c7dk4/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4 push-center"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Push Right</h5>
-		<div class="example">
-			<div class="row debug">
-				<div class="column column-6">6</div>
-				<div class="column column-4 push-right">4</div>
+
+			<h3>
+				<a id="push" class="mark" href="#push">Push</a>
+			</h3>
+			<h5>Center</h5>
+			<div class="example">
+
+				<div class="row debug">
+					<div class="column column-4 push-center">center</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/8h4ts0v0/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-6"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-4 push-right"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Push Middle</h5>
-		<div class="example">
-			<div class="row debug" style="height: 40px;">
-				<div class="column column-8 push-middle">8</div>
+			<h5>Right</h5>
+			<div class="example">
+
+				<div class="row debug">
+					<div class="column column-6">6</div>
+					<div class="column column-4 push-right">4</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="200" src="//jsfiddle.net/ciro_maciel/avz7y6n0/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8 push-middle"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Push Mixed</h5>
-		<div class="example">
-			<div class="row debug" style="height: 40px;">
-				<div class="column column-8 push-middle push-center">8</div>
+			<h5>Middle</h5>
+			<div class="example">
+
+				<div class="row debug" style="height: 40px;">
+					<div class="column column-8 push-middle">8</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/sL2zz0ra/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8 push-middle push-center"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
-		</div>
 
-		<h5>Push Bottom</h5>
-		<div class="example">
-			<div class="row debug" style="height: 40px;">
-				<div class="column column-8 push-bottom">8</div>
+			<h5>Mixed</h5>
+			<div class="example">
+
+				<div class="row debug" style="height: 40px;">
+					<div class="column column-8 push-middle push-center">8</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/q2q3fn4c/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
 			</div>
-			<pre class="code skip">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
-    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"column column-8 push-bottom"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;
-</pre>
+
+			<h5>Bottom</h5>
+			<div class="example">
+
+				<div class="row debug" style="height: 40px;">
+					<div class="column column-8 push-bottom">8</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="180" src="//jsfiddle.net/ciro_maciel/4q3fmhzh/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
+
+			<h3>
+				<a id="media-grid" class="mark" href="#media-grid">Media Grid</a>
+			</h3>
+			<p>
+				Media grid is a great example of flexibility and versatility. Whenever you have some media to display, you can choose to
+				use Media grid. This type of grid is ideal for featuring photos; it adds some visual music and slight randomness to your
+				layout.
+			</p>
+			<div class="example">
+
+				<div id="media-grid" class="debug">
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div>5</div>
+					<div>6</div>
+					<div>7</div>
+					<div>8</div>
+					<div>9</div>
+					<div>10</div>
+				</div>
+
+				<br>
+
+				<iframe width="100%" height="300" src="//jsfiddle.net/ciro_maciel/fmy0zd99/embedded/html,result/?bodyColor=ffffff" allowfullscreen="allowfullscreen"
+				    frameborder="0"></iframe>
+
+			</div>
+
 		</div>
+	</div>
 
-
-
-                <h3>
-                    <a id="media-grid" class="mark" href="#media-grid">Media Grid</a>
-                </h3>
-                <p>
-                    Media grid is a great example of flexibility and versatility. Whenever you have some media to display, you can choose to use Media grid. This type of grid is ideal for featuring photos; it adds some visual music and slight randomness to your layout.
-                </p>
-                <div class="example">
-
-
-            <div id="media-grid" class="debug">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
-              <div>7</div>
-              <div>8</div>
-              <div>9</div>
-              <div>10</div>
-            </div>
-
-
-
-                </div>
-
-
-
-
-
-            </div>
-        </div>
-
-
-    </div>
-
-
+</div>
 
 {% endblock %}
