@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sun Apr 30 2017 20:51:59 GMT-0300 (BRT)
+ * Static Here - in Sun Apr 30 2017 21:23:39 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -584,7 +584,6 @@ blockquote,
 hr,
 pre,
 ol,
-ul,
 dl,
 table,
 fieldset,
@@ -660,14 +659,6 @@ ul.unstyled ul {
 ul.inside > li,
 ol.inside > li {
   list-style-position: inside; }
-
-ul,
-ul ul,
-ul ol,
-ol,
-ol ul,
-ol ol {
-  margin-bottom: 22px; }
 
 ol ol li {
   list-style-type: lower-alpha; }
@@ -818,9 +809,7 @@ figure + h6 {
   float: right; }
 
 .w-center {
-  margin: auto !important;
-  display: inline-block !important;
-  position: relative !important; }
+  margin: auto !important; }
 
 .w-middle {
   display: -webkit-box;
@@ -1169,6 +1158,7 @@ header .option-group:hover {
 
 .nav-self ul {
   /*margin-top: auto;*/
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

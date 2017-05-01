@@ -1,8 +1,8 @@
 
  
- let utility = require('code') ;
- import {work, Person} from 'button';
- import Children from 'button';
+ let utility = require('code-1') ;
+ import {work, Person} from 'code-2';
+ import Children from 'code-2';
 
 
 var edgar = new Children('Edgar');

@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sun Apr 30 2017 20:52:00 GMT-0300 (BRT)
+ * Static Here - in Sun Apr 30 2017 21:23:39 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -10,69 +10,80 @@
  */
 (function (global, factory) {
     if (typeof define === "function" && define.amd) {
-        define(["exports"], factory);
+        define([], factory);
     } else if (typeof exports !== "undefined") {
-        factory(exports);
+        factory();
     } else {
         var mod = {
             exports: {}
         };
-        factory(mod.exports);
+        factory();
         global.button = mod.exports;
     }
-})(this, function (exports) {
-    "use strict";
+})(this, function () {
+    'use strict';
 
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
+    (function (window) {
 
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
+        // quando todo o load de window
+        window.addEventListener('DOMContentLoaded', function () {
 
-    var _createClass = function () {
-        function defineProperties(target, props) {
-            for (var i = 0; i < props.length; i++) {
-                var descriptor = props[i];
-                descriptor.enumerable = descriptor.enumerable || false;
-                descriptor.configurable = true;
-                if ("value" in descriptor) descriptor.writable = true;
-                Object.defineProperty(target, descriptor.key, descriptor);
-            }
-        }
+            var checkboxs = document.querySelectorAll('div.button.checkbox');
 
-        return function (Constructor, protoProps, staticProps) {
-            if (protoProps) defineProperties(Constructor.prototype, protoProps);
-            if (staticProps) defineProperties(Constructor, staticProps);
-            return Constructor;
-        };
-    }();
+            [].forEach.call(checkboxs, function (checkbox) {
 
-    function work(name) {
-        return name + " is working";
-    }
+                // os buttons do componente
+                var buttons = checkbox.querySelectorAll('button'),
+                    oldValue = checkbox.dataset.selected;
 
-    var Person = function () {
-        function Person(name) {
-            _classCallCheck(this, Person);
+                [].forEach.call(buttons, function (button) {
 
-            this.name = name;
-        }
+                    // o load do componente
+                    if (checkbox.dataset.selected === button.dataset.value) {
+                        // add ao button a class de selecionado
+                        button.classList.add('selected');
+                    }
 
-        _createClass(Person, [{
-            key: "doWork",
-            value: function doWork() {
-                return work(this.name);
-            }
-        }]);
+                    // o evento click para cada button do componente
+                    button.onclick = function () {
+                        // se este button não está selecionado e não está disabled
+                        if (!this.classList.contains('selected') && !this.classList.contains('disabled')) {
+                            // para todos os buttons deste meu componente
+                            var buttons = this.parentNode.querySelectorAll('button');
 
-        return Person;
-    }();
+                            // removo a class de seleção
+                            [].forEach.call(buttons, function (button) {
+                                button.classList.remove('selected');
+                            });
 
-    exports.work = work;
-    exports.Person = Person;
-    exports.default = Person;
+                            // add ao button que estou a class de selecionado
+                            this.classList.add('selected');
+                            // informo ao componente o valor do button selecionado
+                            this.parentNode.dataset.selected = this.dataset.value;
+                        }
+                    };
+                });
+
+                // para o watch do 'EVENTO' de mudança
+                setInterval(function () {
+                    // o valor inicial vs o valor do momento atual
+                    if (oldValue !== checkbox.dataset.selected) {
+
+                        oldValue = checkbox.dataset.selected;
+
+                        // para os buttons do componente
+                        [].forEach.call(buttons, function (button) {
+                            // removo a class de seleção
+                            button.classList.remove('selected');
+                            // marco o selecionado
+                            if (oldValue === button.dataset.value) {
+                                // add ao button a class de selecionado
+                                button.classList.add('selected');
+                            }
+                        });
+                    }
+                }, 10);
+            });
+        });
+    })(window);
 });

@@ -45,7 +45,7 @@
 
 		var targets = document.querySelectorAll(".hint");
 
-		console.log(targets);
+		// console.log(targets);
 
 		var targetCount = targets.length;
 		for (var i = 0; i < targetCount; i++) {
@@ -356,7 +356,7 @@
 
 		var hints = document.querySelectorAll("[data-i18n*='data-hint-title'][data-i18n*='data-hint-text']");
 
-		console.log(hints);
+		// console.log(hints);
 
 		[].forEach.call(hints, function (hint) {
 

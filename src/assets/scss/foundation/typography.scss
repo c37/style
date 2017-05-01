@@ -213,7 +213,6 @@ blockquote,
 hr,
 pre,
 ol,
-ul,
 dl,
 table,
 fieldset,
@@ -314,11 +313,11 @@ ol {
             list-style-position: inside;
         }
     }
-    &,
-    & ul,
-    & ol {
-        margin-bottom: $base-line;
-    }
+    // &,
+    // & ul,
+    // & ol {
+    //     margin-bottom: $base-line;
+    // }
 }
 
 ol ol li {
@@ -476,8 +475,6 @@ figure {
 
 .w-center {
     margin: auto !important;
-    display: inline-block !important;
-    position: relative !important;
 }
 
 .w-middle {
