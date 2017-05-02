@@ -50,66 +50,8 @@
         		<h5>Site</h5>
                 <header class="site">
                     <div class="container">
-
-                        <nav class="show-mobile">
-                            <ul>
-                                <li>
-
-                                <div class="nav-mobile">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </div>
-
-                                <script>
-                                    window.addEventListener('load', function () {
-                                        document.querySelector('.nav-mobile').onclick = function () {
-                                            this.classList.toggle('active');
-                                        };
-                                    });
-                                </script>
-
-                                </li>
-                                <li>
-                                <a href="/">
-                                    <i class="logo"></i>
-                                </a>
-                                </li>
-                                <li>
-                                    <i class="icon-search-20"></i>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <nav class="hide-mobile">
-                            <ul>
-                                <li>
-                                <a href="/">
-                                    <i class="logo"></i>
-                                </a>
-                                </li>
-                                <li>
-                                <a href="#" class="{%if selected == 'foundation' %}selected{% endif %}">Item 01</a>
-                                </li>
-                                <li>
-                                <a href="#" class="{%if selected == 'layout' %}selected{% endif %}">Item 02</a>
-                                </li>
-                                <li>
-                                <a href="#" class="{%if selected == 'graphic' %}selected{% endif %}">Item 03</a>
-                                </li>
-                                <li>
-                                <a href="#" class="{%if selected == 'container' %}selected{% endif %}">Item 04</a>
-                                </li>
-                                <li>
-                                <a href="#" class="{%if selected == 'component' %}selected{% endif %}">Item 05</a>
-                                </li>
-                                <li>
-                                    <i class="icon-search-20"></i>
-                                </li>
-                                
-                            </ul>
-                        </nav>
-
+                        {% import 'macros/nav.njk' as nav %}
+                        {{nav.active(urlHeader)}}
                     </div>
                 </header>                
 

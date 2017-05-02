@@ -39,6 +39,7 @@
     <script src="/assets/js/library/code-1.js"></script>
     <script src="/assets/js/library/code-2.js"></script>
 
+    <script src="/assets/js/library/header.js"></script>
     <script src="/assets/js/library/tab.js"></script>
     <script src="/assets/js/library/slider.js"></script>
     <script src="/assets/js/library/hint.js"></script>
@@ -59,25 +60,133 @@
     <div class="container">
         
         
+<!--
+<div class="visibility show-mobile w-100">
+  <div class="item">
+    <div class="nav-mobile">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <script>
+      window.addEventListener('load', function () {
+        Array.prototype.forEach.call(document.querySelectorAll('.nav-mobile'), function (element) {
+          element.onclick = function () {
+            this.classList.toggle('active');
+          };
+        });
+      });
+    </script>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="logo"></i>
+    </a>
+  </div>
+  <div class="item">
+    <i class="icon-search-20 cursor-pointer"></i>
+  </div>
+</div>
+-->
 
+<ul>
+  <li class="show-mobile">
+    <div class="nav-mobile">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <script>
+      // window.addEventListener('load', function () {
+      //   [].forEach.call(document.querySelectorAll('.xxx'), function (element) {
+      //     element.onclick = function () {
+      //       this.classList.toggle('active');
+
+      //       document.querySelector('header').classList.toggle('menu-opened');
+      //     };
+      //   });
+      // });
+    </script>
+  </li>
+  <li>
+    <a href="/">
+      <i class="logo"></i>
+    </a>
+  </li>
+  <li class="hide-mobile">
+    <a href="/foundation" class="">Foundation</a>
+  </li>
+  <li class="hide-mobile">
+    <a href="/layout" class="">Layout</a>
+  </li>
+  <li class="hide-mobile">
+    <a href="/graphic" class="">Graphic</a>
+  </li>
+  <li class="hide-mobile">
+    <a href="/container" class="">Container</a>
+  </li>
+  <li class="hide-mobile">
+    <a href="/component" class="">Component</a>
+  </li>
+  <li>
+    <i id="button-search" class="icon-search-20 cursor-pointer"></i>
+  </li>
+</ul>
+
+
+
+<!--
+
+<div class="item show-mobile">
+  <div class="nav-mobile">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</div>
+<div class="item">
+  <a href="/">
+    <i class="logo"></i>
+  </a>
+</div>
+<div class="item hide-mobile">
+  <a href="/foundation" class="">Foundation</a>
+</div>
+<div class="item hide-mobile">
+  <a href="/layout" class="">Layout</a>
+</div>
+<div class="item hide-mobile">
+  <a href="/graphic" class="">Graphic</a>
+</div>
+<div class="item hide-mobile">
+  <a href="/container" class="">Container</a>
+</div>
+<div class="item hide-mobile">
+  <a href="/component" class="">Component</a>
+</div>
+<div class="item">
+  <i class="icon-search-20 cursor-pointer"></i>
+</div>
+-->
+
+
+
+<!--
 <nav class="show-mobile">
   <ul>
     <li>
-
       <div class="nav-mobile">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </div>
-
       <script>
-          window.addEventListener('load', function () {
-              document.querySelector('.nav-mobile').onclick = function () {
-                  this.classList.toggle('active');
-              };
-          });
+        window.addEventListener('load', function () {
+          document.querySelector('.nav-mobile').onclick = function () {
+            this.classList.toggle('active');
+          };
+        });
       </script>
-
     </li>
     <li>
       <a href="/">
@@ -85,11 +194,13 @@
       </a>
     </li>
     <li>
-        <i class="icon-search-20"></i>
+      <i class="icon-search-20"></i>
     </li>
   </ul>
 </nav>
+-->
 
+<!--
 <nav class="hide-mobile">
   <ul>
     <li>
@@ -113,11 +224,11 @@
       <a href="/component" class="">Component</a>
     </li>
     <li>
-        <i class="icon-search-20"></i>
+      <i class="icon-search-20"></i>
     </li>
-    
   </ul>
 </nav>
+-->
 
     </div>
 </header> 

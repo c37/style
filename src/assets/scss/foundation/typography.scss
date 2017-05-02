@@ -313,11 +313,11 @@ ol {
             list-style-position: inside;
         }
     }
-    // &,
-    // & ul,
-    // & ol {
-    //     margin-bottom: $base-line;
-    // }
+    &,
+    & ul,
+    & ol {
+        margin: 0 0 0 $base-line;
+    }
 }
 
 ol ol li {
@@ -461,7 +461,6 @@ figure {
 
 .text-justify {
     text-align: justify !important;
-    ;
 }
 
 // positions
@@ -522,7 +521,19 @@ figure {
 
 // cursor
 .cursor-motion {
-    cursor: move;
+    cursor: move !important;
+}
+
+cursor-pointer {
+    cursor: pointer !important;
+}
+
+i.cursor-pointer {
+    cursor: pointer !important;
+    &:hover {
+        opacity: .78;
+        transition: all linear 0.2s !important;
+    }
 }
 
 // size
