@@ -3,10 +3,12 @@
     align-items: baseline;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
     // font-size: $font-size - 1px ! important;
 }
 
 .nav-menu h3 {
+    margin-top: $heading-margin-top-3 - 9px;
     margin-bottom: $heading-margin-bottom - 8px;
 }
 

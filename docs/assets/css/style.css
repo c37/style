@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 11:01:01 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 11:14:12 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -992,6 +992,11 @@ i.cursor-pointer {
   .hide-mobile {
     display: none !important; } }
 
+.responsive-img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: block; }
+
 /* foundation */
 /* layout */
 header.application {
@@ -1250,9 +1255,11 @@ nav.nav-section {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 7px; }
 
 .nav-menu h3 {
+  margin-top: 13px;
   margin-bottom: 2px; }
 
 .nav-menu ul {
