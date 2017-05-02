@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 12:28:51 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 12:45:51 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -899,6 +899,14 @@ i.cursor-pointer {
 .w-150 {
   min-width: 100px;
   max-width: 150px !important; }
+
+.w-170 {
+  min-width: 100px;
+  max-width: 170px !important; }
+
+.w-180 {
+  min-width: 100px;
+  max-width: 180px !important; }
 
 .w-200 {
   width: 200px !important; }
