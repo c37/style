@@ -39,7 +39,7 @@ function registerHeaders() {
 
                 // debugger
 
-                let hh = window.innerHeight - 48;
+                let hh = window.innerHeight;
                 let ww = window.innerWidth;
 
 
