@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 01:37:07 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 01:44:25 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -57,7 +57,7 @@
 
                     // debugger
 
-                    var hh = window.innerHeight;
+                    var hh = window.innerHeight + 48;
                     var ww = window.innerWidth;
 
                     var div = document.createElement('div');

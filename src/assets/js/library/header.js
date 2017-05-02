@@ -39,12 +39,12 @@ function registerHeaders() {
 
                 // debugger
 
-                let hh = window.innerHeight;
+                let hh = window.innerHeight + 48;
                 let ww = window.innerWidth;
 
 
                 var div = document.createElement('div');
-                div.style.position = 'absolute';
+                div.style.position = 'absolute'; 
                 div.style.backgroundColor = 'white';
                 div.style.boxSizing = 'border-box';
                 div.style.height = hh + 'px';
