@@ -30,6 +30,9 @@ function registerHeaders() {
                 this.classList.add('active');
 
 
+                document.body.style.overflow = 'hidden';
+
+
                 document.getElementById('button-search').style.transition = 'all linear 0.2s !important';
                 document.getElementById('button-search').style.opacity = 0;
 
@@ -37,7 +40,6 @@ function registerHeaders() {
                 // debugger
 
                 let hh = window.innerHeight - 48;
-
                 let ww = window.innerWidth;
 
 
