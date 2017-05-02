@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 11:30:59 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 11:36:52 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -897,34 +897,44 @@ i.cursor-pointer {
   width: 200px !important; }
 
 .w-250 {
-  width: 250px !important; }
+  min-width: 200px;
+  max-width: 250px !important; }
 
 .w-300 {
-  width: 300px !important; }
+  min-width: 200px;
+  max-width: 300px !important; }
 
 .w-350 {
-  width: 350px !important; }
+  min-width: 200px;
+  max-width: 350px !important; }
 
 .w-400 {
-  width: 400px !important; }
+  min-width: 200px;
+  max-width: 400px !important; }
 
 .w-450 {
-  width: 450px !important; }
+  min-width: 200px;
+  max-width: 450px !important; }
 
 .w-500 {
-  width: 500px !important; }
+  min-width: 200px;
+  max-width: 500px !important; }
 
 .w-550 {
-  width: 550px !important; }
+  min-width: 200px;
+  max-width: 550px !important; }
 
 .w-600 {
-  width: 600px !important; }
+  min-width: 200px;
+  max-width: 600px !important; }
 
 .w-650 {
-  width: 650px !important; }
+  min-width: 200px;
+  max-width: 650px !important; }
 
 .w-700 {
-  width: 700px !important; }
+  min-width: 200px;
+  max-width: 700px !important; }
 
 .clickable {
   cursor: pointer !important; }
