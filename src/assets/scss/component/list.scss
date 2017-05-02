@@ -14,6 +14,9 @@ ul.list {
 
         cursor: pointer !important;
         list-style: none;
+        >a{
+            display: block;
+        }
         * {
             cursor: pointer !important;
         }

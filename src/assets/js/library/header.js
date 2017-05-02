@@ -11,7 +11,7 @@ function registerHeaders() {
 
     var header = document.querySelector('header');
 
-    console.log(header);
+    // console.log(header);
 
 
 
@@ -20,8 +20,8 @@ function registerHeaders() {
         var itens = header.querySelectorAll('.container>ul>.hide-mobile');
         var navMobile = header.querySelector('.nav-mobile');
 
-        console.log(itens);
-        console.log(navMobile);
+        // console.log(itens);
+        // console.log(navMobile);
 
 
         navMobile.onclick = function () {

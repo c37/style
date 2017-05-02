@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 12:53:39 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 14:34:16 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -34,15 +34,17 @@
 
         var header = document.querySelector('header');
 
-        console.log(header);
+        // console.log(header);
+
 
         // [].forEach.call(headers, function (header) {
 
         var itens = header.querySelectorAll('.container>ul>.hide-mobile');
         var navMobile = header.querySelector('.nav-mobile');
 
-        console.log(itens);
-        console.log(navMobile);
+        // console.log(itens);
+        // console.log(navMobile);
+
 
         navMobile.onclick = function () {
 
