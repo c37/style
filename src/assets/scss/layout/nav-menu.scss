@@ -1,0 +1,20 @@
+.nav-menu {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    // font-size: $font-size - 1px ! important;
+}
+
+.nav-menu h3 {
+    margin-bottom: $heading-margin-bottom - 8px;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {    
+    padding: 0 7px;
+    list-style: none;
+}

@@ -9,10 +9,13 @@ if (Element.prototype.remove === undefined) {
 
 function registerHeaders() {
 
-    var headers = document.querySelectorAll('header');
+    var header = document.querySelector('header');
+
+    console.log(header);
 
 
-    [].forEach.call(headers, function (header) {
+
+    // [].forEach.call(headers, function (header) {
 
         var itens = header.querySelectorAll('.container>ul>.hide-mobile');
         var navMobile = header.querySelector('.nav-mobile');
@@ -39,12 +42,25 @@ function registerHeaders() {
 
                 // debugger
 
-                let hh = window.innerHeight + 73;
+                let hh = window.innerHeight + 99;
                 let ww = window.innerWidth;
 
 
+
+                // http://stackoverflow.com/questions/4917664/detect-viewport-orientation-if-orientation-is-portrait-display-alert-message-ad
+                if (window.matchMedia("(orientation: portrait)").matches) {
+                    // you're in PORTRAIT mode
+                }
+
+                if (window.matchMedia("(orientation: landscape)").matches) {
+                    // you're in LANDSCAPE mode
+                }
+
+
+
+
                 var div = document.createElement('div');
-                div.style.position = 'absolute'; 
+                div.style.position = 'absolute';
                 div.style.backgroundColor = 'white';
                 div.style.boxSizing = 'border-box';
                 div.style.height = hh + 'px';
@@ -85,7 +101,7 @@ function registerHeaders() {
                 document.body.style.overflow = 'initial';
 
                 document.getElementById('button-search').style.opacity = .6;
-                
+
 
 
                 [].forEach.call(document.querySelectorAll('.header-mobile'), function (header) {
@@ -97,7 +113,7 @@ function registerHeaders() {
 
         }
 
-    });
+    // });
 
 }
 
