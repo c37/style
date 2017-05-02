@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 14:34:17 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 14:41:27 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -54,6 +54,7 @@
                 menu.classList.add('vertical');
 
                 var boundingRect = navMenu.getBoundingClientRect();
+                var boundingRect22 = document.body.getBoundingClientRect();
 
                 console.log(boundingRect);
 
@@ -64,12 +65,15 @@
                 div.style.position = 'absolute';
                 div.style.backgroundColor = 'white';
                 div.style.boxSizing = 'border-box';
-                div.style.top = boundingRect.bottom + 'px';
+                div.style.top = boundingRect.bottom - 2 + 'px';
+                div.style.left = '0px';
+                div.style.borderBottom = '1px solid #c5c5c5';
                 // div.style.width = ww + 'px';
-                div.style.width = boundingRect.width + 'px';
+                div.style.width = boundingRect22.width + 'px';
                 div.style.zIndex = 3;
 
                 div.style.padding = '30px';
+                div.style.paddingTop = '20px';
 
                 // div.style.paddingRight = '30px';    
                 // div.style.paddingLeft = '30px';
