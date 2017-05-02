@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 11:52:26 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 12:14:40 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1334,6 +1334,11 @@ nav.nav-section {
 
 /* window - state */
 /* global */
+.icon-down {
+  background: url("../img/icon/down.svg") no-repeat center/100% !important;
+  width: 20px;
+  height: 20px; }
+
 .icon-add {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTS0xLTFoMTh2MThILTF6Ii8+PHBhdGggZmlsbD0iIzAxMDEwMSIgZD0iTTEzLjUgNi42MjVIOS4zNzVWMi41aC0yLjc1djQuMTI1SDIuNXYyLjc1aDQuMTI1VjEzLjVoMi43NVY5LjM3NUgxMy41eiIvPjwvc3ZnPg==); }
 
