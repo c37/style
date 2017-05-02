@@ -19,4 +19,8 @@
 .nav-menu ul li {    
     padding: 0 7px;
     list-style: none;
+    &:last-child{
+        // border: 1px solid red;
+        padding-right: 0px !important;
+    }
 }
