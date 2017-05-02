@@ -569,7 +569,8 @@ i.cursor-pointer {
 }
 
 .w-150 {
-    width: 150px !important;
+    min-width: 100px; 
+    max-width: 150px !important;
 }
 
 .w-200 {
