@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 19:12:42 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 20:20:59 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -79,7 +79,7 @@
                 div.style.boxSizing = 'border-box';
                 div.style.height = hh + 'px';
                 div.style.width = ww + 'px';
-                div.style.zIndex = 3;
+                div.style.zIndex = 7;
                 div.style.paddingRight = '30px';
                 div.style.paddingLeft = '30px';
                 div.classList.add('header-mobile');
