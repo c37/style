@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 14:41:27 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 19:12:43 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -44,8 +44,16 @@
 
             if (document.getElementById('xxxx') === null) {
 
-                button.style.transform = 'rotate( -180deg )';
-                button.style.transition = 'transform 150ms ease';
+                // button.style.transform = 'translateX(0px) rotate( -180deg )';
+                // button.style.transform = 'rotate(-180deg)';
+
+                button.style.display = 'inline-block';
+                button.style.position = 'relative';
+
+                button.style.transform = 'scaleY(-1)';
+                button.style.transition = 'transform 150ms';
+
+                // button.classList.add('rotate-on');
 
                 var menu = navMenu.querySelector('.hide-mobile').cloneNode(true);
                 menu.classList.remove('hide-mobile');
@@ -83,8 +91,11 @@
                 navMenu.appendChild(div);
             } else {
 
-                button.style.transform = 'rotate( 0deg )';
-                button.style.transition = 'transform 150ms ease';
+                // button.style.transform = 'translateX(0px) rotate( -360deg )';
+                // button.style.transform = 'rotate(-360deg)';
+
+                button.style.transform = 'scaleY(1)';
+                // button.style.transition = 'transform 150ms ease';
 
                 document.getElementById('xxxx').remove();
             }

@@ -21,9 +21,17 @@ function registerNavMenu() {
 
         if (document.getElementById('xxxx') === null) {
 
-            button.style.transform = 'rotate( -180deg )';
-            button.style.transition = 'transform 150ms ease';
+            // button.style.transform = 'translateX(0px) rotate( -180deg )';
+            // button.style.transform = 'rotate(-180deg)';
 
+            button.style.display = 'inline-block';
+            button.style.position = 'relative';
+
+
+            button.style.transform = 'scaleY(-1)';
+            button.style.transition = 'transform 150ms';
+
+            // button.classList.add('rotate-on');
 
             var menu = navMenu.querySelector('.hide-mobile').cloneNode(true);
             menu.classList.remove('hide-mobile');
@@ -64,8 +72,11 @@ function registerNavMenu() {
 
         } else {
 
-            button.style.transform = 'rotate( 0deg )';
-            button.style.transition = 'transform 150ms ease';
+            // button.style.transform = 'translateX(0px) rotate( -360deg )';
+            // button.style.transform = 'rotate(-360deg)';
+
+            button.style.transform = 'scaleY(1)';
+            // button.style.transition = 'transform 150ms ease';
 
             document.getElementById('xxxx').remove();
 

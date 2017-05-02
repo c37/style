@@ -484,6 +484,17 @@ figure {
     align-items: center;
 }
 
+.rotate-on{
+
+    transform: rotate(-180deg);
+    transition: transform 150ms ease;
+}
+
+.rotate-off{
+    transform: rotate(-360deg);
+    transition: transform 150ms ease;
+}
+
 // margin
 .margin-0 {
     margin: 0 !important;

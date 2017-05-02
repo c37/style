@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 14:41:25 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 19:12:42 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -834,6 +834,24 @@ figure + h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.rotate-on {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 150ms ease;
+  transition: -webkit-transform 150ms ease;
+  transition: transform 150ms ease;
+  transition: transform 150ms ease, -webkit-transform 150ms ease; }
+
+.rotate-off {
+  -webkit-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 150ms ease;
+  transition: -webkit-transform 150ms ease;
+  transition: transform 150ms ease;
+  transition: transform 150ms ease, -webkit-transform 150ms ease; }
 
 .margin-0 {
   margin: 0 !important; }
