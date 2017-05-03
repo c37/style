@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 02 2017 20:32:40 GMT-0300 (BRT)
+ * Static Here - in Tue May 02 2017 23:35:45 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -57,6 +57,19 @@
 
                 var menu = navMenu.querySelector('.hide-mobile').cloneNode(true);
                 menu.classList.remove('hide-mobile');
+
+                [].forEach.call(menu.querySelectorAll('li'), function (item) {
+
+                    item.addEventListener('click', function () {
+
+                        console.log(this);
+
+                        button.style.transform = 'scaleY(1)';
+                        // button.style.transition = 'transform 150ms ease';
+
+                        document.getElementById('xxxx').remove();
+                    });
+                });
 
                 menu.classList.add('list');
                 menu.classList.add('vertical');
