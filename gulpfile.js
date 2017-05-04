@@ -3,6 +3,7 @@ var del = require('del'),
     sass = require('gulp-sass'),
     babel = require('gulp-babel'),
     header = require('gulp-header'),
+    svgSprite = require('gulp-svg-sprite'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
     nunjucksRender = require('gulp-nunjucks-render');
@@ -39,7 +40,33 @@ var config = {
         'ios >= 7',
         'android >= 4',
         'bb >= 10'
-    ]
+    ],
+    // https://github.com/jkphl/gulp-svg-sprite
+    // https://github.com/jkphl/svg-sprite/blob/master/docs/configuration.md
+    icon: {
+        dest: '.',
+        mode: {
+            css: {
+                dest: '.',
+                sprite: './assets/img/icon/icon.svg',
+                dimensions: false,
+                // layout: "vertical",
+                prefix: ".icon-%s",
+                example: {
+                    dest: './assets/scss/graphic/sample.html'
+                },
+                bust: false,
+                render: {
+                    // css: {
+                    //     dest: './assets/xxx/sprite.css'
+                    // },
+                    scss: {
+                        dest: './assets/scss/graphic/sprite.scss'
+                    }
+                },
+            }
+        }
+    }
 };
 
 
@@ -127,6 +154,20 @@ const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk', './src/**/*
 // const watch = () => gulp.watch('./src/**/*', gulp.series(clean, template, css, js, assets, reload));
 
 
+
+function icon(params) {
+
+    return gulp.src('./src/assets/scss/graphic/icon/*.svg')
+        .pipe(svgSprite(config.icon))
+        .pipe(gulp.dest('src'));
+
+
+}
+
+
+
+
+gulp.task('icon', gulp.series(icon));
 
 gulp.task('docs', gulp.series(clean, template, css, js, assets));
 gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));

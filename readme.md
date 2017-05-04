@@ -15,3 +15,31 @@
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+
+
+##### Sobre CSS
+
+-- minify --
+
+https://github.com/ben-eb/gulp-svgmin
+
+
+
+-- font --
+
+https://github.com/nfroidure/gulp-iconfont
+
+
+
+-- sprite --
+
+https://github.com/jkphl/gulp-svg-sprite
+http://stackoverflow.com/questions/29838150/modifying-destination-and-filename-of-gulp-svg-sprite
+
+
+
+-- base64 --
+
+http://dev.mobify.com/blog/css-sprites-vs-data-uris-which-is-faster-on-mobile/
+
+https://github.com/sdl/gulp-svg-css

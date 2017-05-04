@@ -24,6 +24,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-header": "^1.8.8",
     "gulp-nunjucks-render": "^2.2.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-svg-sprite": "^1.3.6"
   }
 }
