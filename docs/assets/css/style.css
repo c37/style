@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Thu May 04 2017 18:05:40 GMT-0300 (BRT)
+ * Static Here - in Fri May 05 2017 02:37:13 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -9,6 +9,9 @@
  *
  */
 /* variables & functions */
+.icon-cancel, .icon-carving, .icon-command, .icon-device, .icon-devices, .icon-down, .icon-edit, .icon-engrave, .icon-engrave-halftone, .icon-engrave-surface, .icon-file-24, .icon-file-new, .icon-file-new-16, .icon-file-open-16, .icon-file-open-48, .icon-fixer, .icon-icon-cart, .icon-idea-24, .icon-idea-28, .icon-learning-group, .icon-learning-group-30, .icon-learning-video, .icon-milling, .icon-milling-cut, .icon-milling-cut-corners-snap, .icon-milling-cut-in, .icon-milling-cut-out, .icon-milling-cut-start-point, .icon-milling-cut-type, .icon-milling-deepen-type, .icon-milling-drill-type, .icon-milling-engrave-type, .icon-move-vertical, .icon-object-fit, .icon-probe-automatic-mode, .icon-probe-collect, .icon-probe-manual-mode, .icon-probe-mode-grid-points, .icon-probe-mode-three-points, .icon-probe-start, .icon-probe-stop, .icon-refresh, .icon-save, .icon-search, .icon-setting, .icon-start-up, .icon-target, .icon-tool, .icon-user, .icon-user-help, .icon-user-help-24, .icon-window-minimize {
+  background: url("../img/icon.svg") no-repeat; }
+
 .shadow {
   box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.4);
   border-radius: 2px; }
@@ -1339,7 +1342,7 @@ nav.nav-section {
   cursor: default !important; }
 
 .icon-cancel, .icon-carving, .icon-command, .icon-device, .icon-devices, .icon-down, .icon-edit, .icon-engrave, .icon-engrave-halftone, .icon-engrave-surface, .icon-file-24, .icon-file-new, .icon-file-new-16, .icon-file-open-16, .icon-file-open-48, .icon-fixer, .icon-icon-cart, .icon-idea-24, .icon-idea-28, .icon-learning-group, .icon-learning-group-30, .icon-learning-video, .icon-milling, .icon-milling-cut, .icon-milling-cut-corners-snap, .icon-milling-cut-in, .icon-milling-cut-out, .icon-milling-cut-start-point, .icon-milling-cut-type, .icon-milling-deepen-type, .icon-milling-drill-type, .icon-milling-engrave-type, .icon-move-vertical, .icon-object-fit, .icon-probe-automatic-mode, .icon-probe-collect, .icon-probe-manual-mode, .icon-probe-mode-grid-points, .icon-probe-mode-three-points, .icon-probe-start, .icon-probe-stop, .icon-refresh, .icon-save, .icon-search, .icon-setting, .icon-start-up, .icon-target, .icon-tool, .icon-user, .icon-user-help, .icon-user-help-24, .icon-window-minimize {
-  background: url("assets/img/icon/icon.svg") no-repeat; }
+  background: url("assets/img/icon.svg") no-repeat; }
 
 .icon-cancel {
   background-position: 9.523809523809524% 89.1891891891892%; }

@@ -48,20 +48,17 @@ var config = {
         mode: {
             css: {
                 dest: '.',
-                sprite: './assets/img/icon/icon.svg',
+                sprite: 'assets/img/icon.svg',
                 dimensions: false,
-                // layout: "vertical",
+                commonName: 'sasas',
                 prefix: ".icon-%s",
                 example: {
-                    dest: './assets/scss/graphic/sample.html'
+                    dest: 'assets/scss/graphic/icon/sample.html'
                 },
                 bust: false,
                 render: {
-                    // css: {
-                    //     dest: './assets/xxx/sprite.css'
-                    // },
                     scss: {
-                        dest: './assets/scss/graphic/sprite.scss'
+                        dest: 'assets/scss/graphic/icon/sprite.scss'
                     }
                 },
             }
@@ -157,7 +154,7 @@ const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk', './src/**/*
 
 function icon(params) {
 
-    return gulp.src('./src/assets/scss/graphic/icon/*.svg')
+    return gulp.src('./src/assets/scss/graphic/icon/svg/*.svg')
         .pipe(svgSprite(config.icon))
         .pipe(gulp.dest('src'));
 
@@ -167,7 +164,7 @@ function icon(params) {
 
 
 
-gulp.task('icon', gulp.series(icon));
+gulp.task('img-icon', gulp.series(icon));
 
 gulp.task('docs', gulp.series(clean, template, css, js, assets));
 gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));

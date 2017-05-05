@@ -1,33 +1,4 @@
 {% macro active(selected="") %}
-<!--
-<div class="visibility show-mobile w-100">
-  <div class="item">
-    <div class="nav-mobile">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </div>
-    <script>
-      window.addEventListener('load', function () {
-        Array.prototype.forEach.call(document.querySelectorAll('.nav-mobile'), function (element) {
-          element.onclick = function () {
-            this.classList.toggle('active');
-          };
-        });
-      });
-    </script>
-  </div>
-  <div class="item">
-    <a href="/">
-      <i class="logo"></i>
-    </a>
-  </div>
-  <div class="item">
-    <i class="icon-search-20 cursor-pointer"></i>
-  </div>
-</div>
--->
-
 <ul>
   <li class="show-mobile">
     <div class="nav-mobile">
@@ -35,17 +6,6 @@
       <span class="line"></span>
       <span class="line"></span>
     </div>
-    <script>
-      // window.addEventListener('load', function () {
-      //   [].forEach.call(document.querySelectorAll('.xxx'), function (element) {
-      //     element.onclick = function () {
-      //       this.classList.toggle('active');
-
-      //       document.querySelector('header').classList.toggle('menu-opened');
-      //     };
-      //   });
-      // });
-    </script>
   </li>
   <li>
     <a href="/">
@@ -67,105 +27,11 @@
   <li class="hide-mobile">
     <a href="/component" class="{%if selected == 'component' %}selected{% endif %}">Component</a>
   </li>
+  <li class="hide-mobile">
+    <a href="/pages" class="{%if selected == 'pages' %}selected{% endif %}">Pages</a>
+  </li>
   <li>
-    <i id="button-search" class="icon-search-20 cursor-pointer"></i>
+    <i id="button-search" class="icon-search cursor-pointer"></i>
   </li>
 </ul>
-
-
-
-<!--
-
-<div class="item show-mobile">
-  <div class="nav-mobile">
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
-  </div>
-</div>
-<div class="item">
-  <a href="/">
-    <i class="logo"></i>
-  </a>
-</div>
-<div class="item hide-mobile">
-  <a href="/foundation" class="{%if selected == 'foundation' %}selected{% endif %}">Foundation</a>
-</div>
-<div class="item hide-mobile">
-  <a href="/layout" class="{%if selected == 'layout' %}selected{% endif %}">Layout</a>
-</div>
-<div class="item hide-mobile">
-  <a href="/graphic" class="{%if selected == 'graphic' %}selected{% endif %}">Graphic</a>
-</div>
-<div class="item hide-mobile">
-  <a href="/container" class="{%if selected == 'container' %}selected{% endif %}">Container</a>
-</div>
-<div class="item hide-mobile">
-  <a href="/component" class="{%if selected == 'component' %}selected{% endif %}">Component</a>
-</div>
-<div class="item">
-  <i class="icon-search-20 cursor-pointer"></i>
-</div>
--->
-
-
-
-<!--
-<nav class="show-mobile">
-  <ul>
-    <li>
-      <div class="nav-mobile">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
-      <script>
-        window.addEventListener('load', function () {
-          document.querySelector('.nav-mobile').onclick = function () {
-            this.classList.toggle('active');
-          };
-        });
-      </script>
-    </li>
-    <li>
-      <a href="/">
-        <i class="logo"></i>
-      </a>
-    </li>
-    <li>
-      <i class="icon-search-20"></i>
-    </li>
-  </ul>
-</nav>
--->
-
-<!--
-<nav class="hide-mobile">
-  <ul>
-    <li>
-      <a href="/">
-        <i class="logo"></i>
-      </a>
-    </li>
-    <li>
-      <a href="/foundation" class="{%if selected == 'foundation' %}selected{% endif %}">Foundation</a>
-    </li>
-    <li>
-      <a href="/layout" class="{%if selected == 'layout' %}selected{% endif %}">Layout</a>
-    </li>
-    <li>
-      <a href="/graphic" class="{%if selected == 'graphic' %}selected{% endif %}">Graphic</a>
-    </li>
-    <li>
-      <a href="/container" class="{%if selected == 'container' %}selected{% endif %}">Container</a>
-    </li>
-    <li>
-      <a href="/component" class="{%if selected == 'component' %}selected{% endif %}">Component</a>
-    </li>
-    <li>
-      <i class="icon-search-20"></i>
-    </li>
-  </ul>
-</nav>
--->
 {% endmacro %}

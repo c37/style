@@ -28,6 +28,12 @@ $grid-space: 2% !default;
     height: 48px;   
 }
 
+// icon
+%svg-common {
+	background: url("../img/icon.svg") no-repeat;
+}
+
+
 // width
 $width-large: 1440px !default;
 $width-big: 1024px !default;
