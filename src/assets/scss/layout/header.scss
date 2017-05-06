@@ -23,8 +23,10 @@ header {
                     align-items: center;
                     display: flex;
                     >a {
-                        >.logo {
-                            @include logo-header();
+                        >.logo-c37 {
+                            display: block;
+                            width: 37px;
+                            height: 37px;
                         }
                         color: #666665; // color: #3b4854;
                         &:hover,

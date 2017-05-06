@@ -13,6 +13,11 @@ function registerNavMenu() {
     // console.log(menu);
     var navMenu = document.querySelector('.nav-menu');
 
+    if (navMenu === null || navMenu === undefined) {
+        return;
+    }
+
+
     var button = navMenu.querySelector('.show-mobile>li>i')
 
     // console.log(button);
@@ -39,7 +44,7 @@ function registerNavMenu() {
 
             [].forEach.call(menu.querySelectorAll('li'), function (item) {
 
-                item.addEventListener('click', function(){
+                item.addEventListener('click', function () {
 
                     console.log(this);
 

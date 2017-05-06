@@ -43,24 +43,60 @@ var config = {
     ],
     // https://github.com/jkphl/gulp-svg-sprite
     // https://github.com/jkphl/svg-sprite/blob/master/docs/configuration.md
+    // https://github.com/jkphl/svg-sprite/issues/80
     icon: {
         dest: '.',
+        // "log": "debug",
         mode: {
             css: {
-                dest: '.',
-                sprite: 'assets/img/icon.svg',
+                dest: './assets/',
+                sprite: 'img/icon.svg',
+                layout: 'vertical',
                 dimensions: false,
-                commonName: 'sasas',
                 prefix: ".icon-%s",
                 example: {
-                    dest: 'assets/scss/graphic/icon/sample.html'
+                    dest: 'scss/graphic/icon/sample.html'
                 },
                 bust: false,
                 render: {
                     scss: {
-                        dest: 'assets/scss/graphic/icon/sprite.scss'
+                        dest: 'scss/graphic/icon/sprite.scss',
+                        template: './src/assets/scss/graphic/icon/template.mustache'
                     }
                 },
+            }
+        },
+        shape: {
+            spacing: {
+                padding: 3,
+            }
+        }
+    },
+    logo: {
+        dest: '.',
+        // "log": "debug",
+        mode: {
+            css: {
+                dest: './assets/',
+                sprite: 'img/logo.svg',
+                layout: 'vertical',
+                dimensions: false,
+                prefix: ".logo-%s",
+                example: {
+                    dest: 'scss/graphic/logo/sample.html'
+                },
+                bust: false,
+                render: {
+                    scss: {
+                        dest: 'scss/graphic/logo/sprite.scss',
+                        template: './src/assets/scss/graphic/logo/template.mustache'
+                    }
+                },
+            }
+        },
+        shape: {
+            spacing: {
+                padding: 3,
             }
         }
     }
@@ -152,19 +188,23 @@ const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk', './src/**/*
 
 
 
-function icon(params) {
-
+function icon() {
     return gulp.src('./src/assets/scss/graphic/icon/svg/*.svg')
         .pipe(svgSprite(config.icon))
         .pipe(gulp.dest('src'));
+}
 
-
+function logo() {
+    return gulp.src('./src/assets/scss/graphic/logo/svg/*.svg')
+        .pipe(svgSprite(config.logo))
+        .pipe(gulp.dest('src'));
 }
 
 
 
 
 gulp.task('img-icon', gulp.series(icon));
+gulp.task('img-logo', gulp.series(logo));
 
 gulp.task('docs', gulp.series(clean, template, css, js, assets));
 gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));

@@ -1,0 +1,40 @@
+%logo-common {
+	background: url("../img/logo.svg") no-repeat;
+	background-size: 100% auto !important;
+}
+
+.logo-automatus {
+	@extend %logo-common;
+	background-position: 0 0;
+}
+
+.logo-c37 {
+	@extend %logo-common;
+	background-position: 0 16.666666666666668%;
+}
+
+.logo-cad {
+	@extend %logo-common;
+	background-position: 0 33.333333333333336%;
+}
+
+.logo-cam {
+	@extend %logo-common;
+	background-position: 0 50%;
+}
+
+.logo-controller {
+	@extend %logo-common;
+	background-position: 0 66.66666666666667%;
+}
+
+.logo-firmware {
+	@extend %logo-common;
+	background-position: 0 83.33333333333333%;
+}
+
+.logo-production {
+	@extend %logo-common;
+	background-position: 0 100%;
+}
+

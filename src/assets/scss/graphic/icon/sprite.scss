@@ -1,264 +1,285 @@
-%svg-common {
-	background: url("assets/img/icon.svg") no-repeat;
+%icon-common {
+	background: url("../img/icon.svg") no-repeat;
+	background-size: 100% auto !important;
 }
 
 .icon-cancel {
-	@extend %svg-common;
-	background-position: 9.523809523809524% 89.1891891891892%;
-}
-
-.icon-carving {
-	@extend %svg-common;
-	background-position: 85.71428571428571% 89.1891891891892%;
-}
-
-.icon-command {
-	@extend %svg-common;
-	background-position: 28.571428571428573% 89.1891891891892%;
-}
-
-.icon-device {
-	@extend %svg-common;
-	background-position: 70.58823529411765% 0;
-}
-
-.icon-devices {
-	@extend %svg-common;
-	background-position: 19.047619047619047% 89.1891891891892%;
-}
-
-.icon-down {
-	@extend %svg-common;
-	background-position: 0 75%;
-}
-
-.icon-edit {
-	@extend %svg-common;
-	background-position: 100% 43.24324324324324%;
-}
-
-.icon-engrave {
-	@extend %svg-common;
-	background-position: 100% 97.29729729729729%;
-}
-
-.icon-engrave-halftone {
-	@extend %svg-common;
-	background-position: 0 89.1891891891892%;
-}
-
-.icon-engrave-surface {
-	@extend %svg-common;
-	background-position: 86.22754491017965% 57.142857142857146%;
-}
-
-.icon-file-24 {
-	@extend %svg-common;
-	background-position: 73.75% 68.57142857142857%;
-}
-
-.icon-file-new {
-	@extend %svg-common;
-	background-position: 35.294117647058826% 0;
-}
-
-.icon-file-new-16 {
-	@extend %svg-common;
-	background-position: 38.095238095238095% 89.1891891891892%;
-}
-
-.icon-file-open-16 {
-	@extend %svg-common;
-	background-position: 100% 21.62162162162162%;
-}
-
-.icon-file-open-48 {
-	@extend %svg-common;
-	background-position: 0 41.37931034482759%;
-}
-
-.icon-fixer {
-	@extend %svg-common;
-	background-position: 100% 75.67567567567568%;
-}
-
-.icon-icon-cart {
-	@extend %svg-common;
-	background-position: 87.8048780487805% 16.666666666666668%;
-}
-
-.icon-idea-24 {
-	@extend %svg-common;
-	background-position: 58.75% 68.57142857142857%;
-}
-
-.icon-idea-28 {
-	@extend %svg-common;
-	background-position: 42.30769230769231% 70.58823529411765%;
-}
-
-.icon-learning-group {
-	@extend %svg-common;
-	background-position: 70.58823529411765% 41.37931034482759%;
-}
-
-.icon-learning-group-30 {
-	@extend %svg-common;
-	background-position: 23.376623376623378% 71.64179104477611%;
-}
-
-.icon-learning-video {
-	@extend %svg-common;
-	background-position: 35.294117647058826% 41.37931034482759%;
-}
-
-.icon-milling {
-	@extend %svg-common;
-	background-position: 47.61904761904762% 89.1891891891892%;
-}
-
-.icon-milling-cut {
-	@extend %svg-common;
-	background-position: 57.142857142857146% 89.1891891891892%;
-}
-
-.icon-milling-cut-corners-snap {
-	@extend %svg-common;
-	background-position: 66.66666666666667% 89.1891891891892%;
-}
-
-.icon-milling-cut-in {
-	@extend %svg-common;
-	background-position: 76.19047619047619% 89.1891891891892%;
-}
-
-.icon-milling-cut-out {
-	@extend %svg-common;
-	background-position: 85.71428571428571% 68.24324324324324%;
-}
-
-.icon-milling-cut-start-point {
-	@extend %svg-common;
-	background-position: 0 100%;
-}
-
-.icon-milling-cut-type {
-	@extend %svg-common;
-	background-position: 89.94413407821229% 56.75675675675676%;
-}
-
-.icon-milling-deepen-type {
-	@extend %svg-common;
-	background-position: 89.3854748603352% 68.24324324324324%;
-}
-
-.icon-milling-drill-type {
-	@extend %svg-common;
-	background-position: 89.3854748603352% 89.1891891891892%;
-}
-
-.icon-milling-engrave-type {
-	@extend %svg-common;
-	background-position: 8.938547486033519% 100%;
-}
-
-.icon-move-vertical {
-	@extend %svg-common;
-	background-position: 11.731843575418994% 100%;
-}
-
-.icon-object-fit {
-	@extend %svg-common;
-	background-position: 15.476190476190476% 100%;
-}
-
-.icon-probe-automatic-mode {
-	@extend %svg-common;
-	background-position: 25% 100%;
-}
-
-.icon-probe-collect {
-	@extend %svg-common;
-	background-position: 34.523809523809526% 100%;
-}
-
-.icon-probe-manual-mode {
-	@extend %svg-common;
-	background-position: 44.04761904761905% 100%;
-}
-
-.icon-probe-mode-grid-points {
-	@extend %svg-common;
-	background-position: 53.57142857142857% 100%;
-}
-
-.icon-probe-mode-three-points {
-	@extend %svg-common;
-	background-position: 63.095238095238095% 100%;
-}
-
-.icon-probe-start {
-	@extend %svg-common;
-	background-position: 72.61904761904762% 100%;
-}
-
-.icon-probe-stop {
-	@extend %svg-common;
-	background-position: 82.14285714285714% 100%;
-}
-
-.icon-refresh {
-	@extend %svg-common;
-	background-position: 100% 0;
-}
-
-.icon-save {
-	@extend %svg-common;
-	background-position: 100% 10.81081081081081%;
-}
-
-.icon-search {
-	@extend %svg-common;
-	background-position: 87.8048780487805% 30.555555555555557%;
-}
-
-.icon-setting {
-	@extend %svg-common;
-	background-position: 100% 32.432432432432435%;
-}
-
-.icon-start-up {
-	@extend %svg-common;
+	@extend %icon-common;
 	background-position: 0 0;
 }
 
+.icon-carving {
+	@extend %icon-common;
+	background-position: 0 1.3439218081857056%;
+}
+
+.icon-command {
+	@extend %icon-common;
+	background-position: 0 2.6878436163714112%;
+}
+
+.icon-device {
+	@extend %icon-common;
+	background-position: 0 4.11214953271028%;
+}
+
+.icon-devices {
+	@extend %icon-common;
+	background-position: 0 7.330482590103848%;
+}
+
+.icon-down {
+	@extend %icon-common;
+	background-position: 0 8.78169449598021%;
+}
+
+.icon-edit {
+	@extend %icon-common;
+	background-position: 0 11.2400733048259%;
+}
+
+.icon-engrave {
+	@extend %icon-common;
+	background-position: 0 12.583995113011607%;
+}
+
+.icon-engrave-halftone {
+	@extend %icon-common;
+	background-position: 0 13.927916921197312%;
+}
+
+.icon-engrave-surface {
+	@extend %icon-common;
+	background-position: 0 15.28117359413203%;
+}
+
+.icon-file-24 {
+	@extend %icon-common;
+	background-position: 0 16.75874769797422%;
+}
+
+.icon-file-new {
+	@extend %icon-common;
+	background-position: 0 18.878504672897197%;
+}
+
+.icon-file-new-16 {
+	@extend %icon-common;
+	background-position: 0 21.808185705558948%;
+}
+
+.icon-file-open-16 {
+	@extend %icon-common;
+	background-position: 0 23.152107513744657%;
+}
+
+.icon-file-open-48 {
+	@extend %icon-common;
+	background-position: 0 24.98442367601246%;
+}
+
+.icon-fixer {
+	@extend %icon-common;
+	background-position: 0 27.79474648747709%;
+}
+
+.icon-icon-cart {
+	@extend %icon-common;
+	background-position: 0 29.210042865890998%;
+}
+
+.icon-idea-24 {
+	@extend %icon-common;
+	background-position: 0 30.877839165131984%;
+}
+
+.icon-idea-28 {
+	@extend %icon-common;
+	background-position: 0 32.8%;
+}
+
+.icon-learning-group {
+	@extend %icon-common;
+	background-position: 0 35.32710280373832%;
+}
+
+.icon-learning-group-30 {
+	@extend %icon-common;
+	background-position: 0 38.262476894639555%;
+}
+
+.icon-learning-video {
+	@extend %icon-common;
+	background-position: 0 40.93457943925234%;
+}
+
+.icon-milling {
+	@extend %icon-common;
+	background-position: 0 43.4331093463653%;
+}
+
+.icon-milling-cut {
+	@extend %icon-common;
+	background-position: 0 44.77703115455101%;
+}
+
+.icon-milling-cut-corners-snap {
+	@extend %icon-common;
+	background-position: 0 46.120952962736716%;
+}
+
+.icon-milling-cut-in {
+	@extend %icon-common;
+	background-position: 0 47.46487477092242%;
+}
+
+.icon-milling-cut-out {
+	@extend %icon-common;
+	background-position: 0 48.808796579108126%;
+}
+
+.icon-milling-cut-start-point {
+	@extend %icon-common;
+	background-position: 0 50.15271838729383%;
+}
+
+.icon-milling-cut-type {
+	@extend %icon-common;
+	background-position: 0 51.496640195479536%;
+}
+
+.icon-milling-deepen-type {
+	@extend %icon-common;
+	background-position: 0 52.84056200366524%;
+}
+
+.icon-milling-drill-type {
+	@extend %icon-common;
+	background-position: 0 54.184483811850946%;
+}
+
+.icon-milling-engrave-type {
+	@extend %icon-common;
+	background-position: 0 55.52840562003665%;
+}
+
+.icon-move-vertical {
+	@extend %icon-common;
+	background-position: 0 56.872327428222356%;
+}
+
+.icon-object-fit {
+	@extend %icon-common;
+	background-position: 0 58.21624923640806%;
+}
+
+.icon-probe-automatic-mode {
+	@extend %icon-common;
+	background-position: 0 59.560171044593766%;
+}
+
+.icon-probe-collect {
+	@extend %icon-common;
+	background-position: 0 60.90409285277948%;
+}
+
+.icon-probe-manual-mode {
+	@extend %icon-common;
+	background-position: 0 62.24801466096518%;
+}
+
+.icon-probe-mode-grid-points {
+	@extend %icon-common;
+	background-position: 0 63.59193646915089%;
+}
+
+.icon-probe-mode-three-points {
+	@extend %icon-common;
+	background-position: 0 64.93585827733659%;
+}
+
+.icon-probe-start {
+	@extend %icon-common;
+	background-position: 0 66.27978008552229%;
+}
+
+.icon-probe-stop {
+	@extend %icon-common;
+	background-position: 0 67.623701893708%;
+}
+
+.icon-refresh {
+	@extend %icon-common;
+	background-position: 0 68.96762370189371%;
+}
+
+.icon-save {
+	@extend %icon-common;
+	background-position: 0 70.31154551007941%;
+}
+
+.icon-search {
+	@extend %icon-common;
+	background-position: 0 73.08411214953271%;
+}
+
+.icon-setting {
+	@extend %icon-common;
+	background-position: 0 74.95418448381186%;
+}
+
+.icon-social-facebook {
+	@extend %icon-common;
+	background-position: 0 77.81931464174455%;
+}
+
+.icon-social-instagram {
+	@extend %icon-common;
+	background-position: 0 81.18380062305296%;
+}
+
+.icon-social-pinterest {
+	@extend %icon-common;
+	background-position: 0 84.54828660436137%;
+}
+
+.icon-social-youtube {
+	@extend %icon-common;
+	background-position: 0 87.91277258566979%;
+}
+
+.icon-start-up {
+	@extend %icon-common;
+	background-position: 0 91.27725856697819%;
+}
+
 .icon-target {
-	@extend %svg-common;
-	background-position: 100% 54.054054054054056%;
+	@extend %icon-common;
+	background-position: 0 92.79169211973121%;
 }
 
 .icon-tool {
-	@extend %svg-common;
-	background-position: 100% 64.86486486486487%;
+	@extend %icon-common;
+	background-position: 0 94.13561392791692%;
 }
 
 .icon-user {
-	@extend %svg-common;
-	background-position: 87.8048780487805% 44.44444444444444%;
+	@extend %icon-common;
+	background-position: 0 95.71341090018372%;
 }
 
 .icon-user-help {
-	@extend %svg-common;
-	background-position: 100% 86.48648648648648%;
+	@extend %icon-common;
+	background-position: 0 97.06780696395846%;
 }
 
 .icon-user-help-24 {
-	@extend %svg-common;
-	background-position: 90% 0;
+	@extend %icon-common;
+	background-position: 0 98.89502762430939%;
 }
 
 .icon-window-minimize {
-	@extend %svg-common;
-	background-position: 83.72093023255815% 76.97368421052632%;
+	@extend %icon-common;
+	background-position: 0 100%;
 }
 

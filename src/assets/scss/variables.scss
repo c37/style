@@ -1,79 +1,64 @@
-
 // grid
 $grid-columns: 12 !default;
 $grid-space: 2% !default;
 @mixin debug-grid() {
     background-color: #E3DBDE;
 }
+
 @mixin debug-row() {
     background-color: #ebf4fc;
 }
+
 @mixin debug-column() {
     background-color: #d8e9fa;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-// logo
-@mixin logo-header() {
-    display: block;
-    background: url('/assets/img/logo.svg') no-repeat center / 87% !important;
-    width: 48px;
-    height: 35px;   
-}
-@mixin logo-footer() {
-    display: block;
-    background: url('/assets/img/logo.svg') no-repeat center / 100% !important;
-    width: 48px;
-    height: 48px;   
-}
-
 // icon
 %svg-common {
-	background: url("../img/icon.svg") no-repeat;
+    background: url("../img/icon.svg") no-repeat;
 }
-
 
 // width
 $width-large: 1440px !default;
 $width-big: 1024px !default;
 $width-medium: 720px !default;
 $width-small: 360px !default;
-
 // break points
 $sm: 768px !default;
 $md: 1024px !default;
 $lg: 1200px !default;
-
 $break-large: 1440px !default;
 $break-big: 1024px !default;
 $break-medium: 720px !default;
 $break-small: 360px !default;
 $break-small: 360px !default;
-
 // font family
-$font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
-$font-family-monospace: Consolas, Monaco, 'Courier New', monospace !default;
-
+$font-family: 'lucida grande',
+tahoma,
+verdana,
+arial,
+sans-serif;
+$font-family-monospace: Consolas,
+Monaco,
+'Courier New',
+monospace !default;
 // font size
 $font-size: 14px !default;
-$font-size-large: $font-size + 6px !default;
-$font-size-big: $font-size + 4px !default;
+$font-size-large: $font-size+6px !default;
+$font-size-big: $font-size+4px !default;
 $font-size-small: $font-size - 2px !default;
 $font-size-smaller: $font-size - 4px !default;
-
 // baseline
 $base-line-large: 32px !default;
 $base-line-big: 28px !default;
 $base-line: 22px !default;
 $base-line-small: 20px - 2px !default;
 $base-line-smaller: 20px - 6px !default;
-
 // margin
 $text-margin-bottom: 9px !default;
-
 // headings
-
 // font size
 $heading-font-size-title: 60px !default;
 $heading-font-size-1: 48px !default;
@@ -82,7 +67,6 @@ $heading-font-size-3: 24px !default;
 $heading-font-size-4: 21px !default;
 $heading-font-size-5: 18px !default;
 $heading-font-size-6: 16px !default;
-
 // baseline
 $heading-base-line-title: 64px !default;
 $heading-base-line-1: 52px !default;
@@ -91,7 +75,6 @@ $heading-base-line-3: 32px !default;
 $heading-base-line-4: 32px !default;
 $heading-base-line-5: 28px !default;
 $heading-base-line-6: 24px !default;
-
 // margin
 $heading-margin-top-title: $heading-base-line-1 - 10px;
 $heading-margin-top-1: $heading-base-line-1 - 10px;
@@ -100,39 +83,32 @@ $heading-margin-top-3: $heading-base-line-3 - 10px;
 $heading-margin-top-4: $heading-base-line-4 - 10px;
 $heading-margin-top-5: $heading-base-line-5 - 10px;
 $heading-margin-top-6: $heading-base-line-6 - 10px;
-
 $heading-margin-bottom: $font-size - 4px !default;
-
-
 // colors
-
 // text
 $color-text: #666665 !default;
 $color-headings: #676b72 !default;
-
 // links
 $color-link: #599bcd !default;
 $color-link-hover: #666665 !default;
 $color-link-selected: #599bcd !default;
-$color-link-mark: rgba(0, 0, 0, 0.3)!default;
-
-
+$color-link-mark: rgba(0,
+0,
+0,
+0.3)!default;
 // button
 $color-button-primary: #1c86f2 !default;
 $color-button-primary-text: #fff !default;
 $color-button-secondary: #313439 !default;
 $color-button-secondary-text: #fff !default;
-
 // atates
 $color-error: #f03c69 !default;
 $color-success: #35beb1 !default;
 $color-warning: #f7ba45 !default;
 $color-focus: #1c86f2 !default;
-
 // extra
 $color-inverted: #fff !default;
 $color-highlight: #edf2ff !default; // color-focus 15% opacity
-
 // grayscale
 $color-black: #0d0d0e !default;
 $color-darkgray: #313439 !default;
@@ -141,19 +117,6 @@ $color-gray: #bdbdbd !default;
 $color-lightgray: #d4d4d4 !default;
 $color-silver: #e0e1e1 !default;
 $color-aluminum: #f8f8f8 !default;
-
-
-
-
-
-
-
-
-
-
-
-
-
 // border
 // https://developer.mozilla.org/pt-BR/docs/Web/CSS/border-radius
 $border-radius: 2px;
@@ -162,47 +125,41 @@ $border-radius-last: 0 0 2px 2px;
 $border-radius-top: $border-radius-first;
 $border-radius-bottom: $border-radius-last;
 // border
-
-
-
-
-
-
 // global visual class
 .shadow {
-    box-shadow: 1px 1px 2px rgba(100,100,100,.4);
+    box-shadow: 1px 1px 2px rgba(100, 100, 100, .4);
     border-radius: $border-radius;
 }
+
 // global visual class
-
-
-
 // table
 // Color variables (appears count calculates by raw css)
-$tablecolor0: rgb(248, 248, 248); // Appears 1 time
+$tablecolor0: rgb(248,
+248,
+248); // Appears 1 time
 $tablecolor1: #c5c5c5; // Appears 1 time
 $tablecolor2: #fefefe; // Appears 1 time
 // table
-
-
-
-
 // list
 // Color variables (appears count calculates by raw css)
 $listcolor0: #c5c5c5;
 // Appears 3 times
-$listcolor1: rgb(248, 248, 248);
+$listcolor1: rgb(248,
+248,
+248);
 // Appears 2 times
-$listcolor2: rgb(0, 0, 0);
+$listcolor2: rgb(0,
+0,
+0);
 // Appears 1 time
-$listcolor3: rgb(255, 255, 255);
+$listcolor3: rgb(255,
+255,
+255);
 // Appears 1 time
-
 // Width variables (appears count calculates by raw css)
 $listwidth0: 100%;
 // Appears 2 times
 // list
-
 // dialog
 // Color variables (appears count calculates by raw css)
 $dialogcolor0: #c5c5c5;
@@ -214,10 +171,6 @@ $dialogcolor2: #eeeeee;
 $dialogcolor3: #fafafa;
 // Appears 1 time
 // dialog
-
-
-
-
 // option
 // Color variables (appears count calculates by raw css)
 $option-color0: #fafafa; // Appears 9 times
@@ -232,23 +185,11 @@ $option-color8: #666666; // Appears 1 time
 $option-color9: #cccccc; // Appears 1 time
 $option-color10: #dddddd; // Appears 1 time
 $option-color11: #c5c5c5; // Appears 1 time
-$option-color12: rgb(255, 255, 255); // Appears 1 time
+$option-color12: rgb(255,
+255,
+255); // Appears 1 time
 // option
-
-
-
-
-
-
-
-
-
-
-
-
-
 // message
-
 // Color variables (appears count calculates by raw css)
 $messagecolor0: #d19a5f; // Appears 1 time
 $messagecolor1: #a1882b; // Appears 1 time
@@ -266,12 +207,7 @@ $messagecolor12: #d0e3ef; // Appears 1 time
 $messagecolor13: #264c72; // Appears 1 time
 $messagecolor14: #97c1da; // Appears 1 time
 $messagecolor15: #d8f5cd; // Appears 1 time
-
 // message
-
-
-
-
 // box
 // Color variables (appears count calculates by raw css)
 $boxcolor0: #c5c5c5;
@@ -282,24 +218,16 @@ $boxcolor2: #fefefe;
 // Appears 1 time
 $boxcolor3: #fafafa;
 // Appears 1 time
-$boxcolor4: rgb(197, 197, 197);
+$boxcolor4: rgb(197,
+197,
+197);
 // Appears 1 time
-$boxcolor5: rgb(255, 255, 255);
+$boxcolor5: rgb(255,
+255,
+255);
 // Appears 1 time
-
-
 // box
-
-
-
-
-
-
-
-
-
 // menu
-
 // Color variables (appears count calculates by raw css)
 $menucolor0: #cccccc;
 // Appears 4 times
@@ -315,26 +243,10 @@ $menucolor5: #3d3b36;
 // Appears 1 time
 $menucolor6: #dddddd;
 // Appears 1 time
-
-$listcolor2: rgb(0, 0, 0);
-
-
+$listcolor2: rgb(0,
+0,
+0);
 // menu
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Z-INDEX
 // ---------------------------------------------------------------------------
 $z-over-content: 100 !default;
@@ -342,54 +254,37 @@ $z-over-control: 200 !default;
 $z-over-page: 300 !default;
 $z-over-screen: 400 !default;
 $z-over-all: 500 !default;
-
-
-
-
-
-
-
-
-
 // TABLES
 // ---------------------------------------------------------------------------
-
 // Font Size
 $table-font-size: $font-size - 1px !default;
-
 // Baseline
 $table-base-line: 24px !default;
-
 // Padding
 $table-padding-tb: 1rem !default;
 $table-padding-rl: 1rem !default;
-
 // Border
-$table-border: 1px solid rgba(0, 0, 0, .05) !default;
-
+$table-border: 1px solid rgba(0,
+0,
+0,
+.05) !default;
 // Striped
 $table-background-striped: $color-aluminum !default;
-
-
 // BUTTONS
 // ---------------------------------------------------------------------------
-
 // Font Size
 $button-font-size: 15px !default;
 $button-font-size-smaller: $button-font-size - 4px !default;
 $button-font-size-small: $button-font-size - 2px !default;
-$button-font-size-big: $button-font-size + 2px !default;
-$button-font-size-large: $button-font-size + 4px !default;
-
+$button-font-size-big: $button-font-size+2px !default;
+$button-font-size-large: $button-font-size+4px !default;
 // Baseline
 $button-base-line: 20px !default;
-
 // Height
 $button-height: 40px !default;
 $button-height-small: 36px !default;
 $button-height-big: 48px !default;
 $button-height-large: 56px !default;
-
 // Padding
 $button-padding-tb: 8px !default;
 $button-padding-rl: 20px !default;
@@ -399,76 +294,56 @@ $button-padding-big-tb: 13px !default;
 $button-padding-big-rl: 24px !default;
 $button-padding-large-tb: 20px !default;
 $button-padding-large-rl: 36px !default;
-
 // Weight
 $button-font-weight: 500 !default;
-
 // Radius
 $button-border-radius: 3px !default;
-
-
 // INPUTS
 // ---------------------------------------------------------------------------
-
 // Font Size
 $input-font-size: 15px !default;
 $input-font-size-smaller: $input-font-size - 4px !default;
 $input-font-size-small: $input-font-size - 2px !default;
-$input-font-size-big: $input-font-size + 2px !default;
-$input-font-size-large: $input-font-size + 4px !default;
-
+$input-font-size-big: $input-font-size+2px !default;
+$input-font-size-large: $input-font-size+4px !default;
 // Baseline
 $textarea-base-line: $base-line !default;
-
 // Height
 $input-height: 40px !default;
 $input-height-small: 36px !default;
 $input-height-big: 48px !default;
 $input-height-large: 56px !default;
-
 // Padding
 $input-padding-rl: 12px !default;
 $input-padding-small-rl: 12px !default;
 $input-padding-big-rl: 12px !default;
 $input-padding-large-rl: 12px !default;
 $input-textarea-padding-tb: 8px !default;
-
 // States
 $input-border-width: 1px !default;
 $input-border-color: $color-lightgray !default;
 $input-background-color: #fff !default;
 $input-box-shadow: none !default;
-
 $input-focus-background-color: #fff !default;
 $input-focus-border-color: $color-focus !default;
 $input-focus-box-shadow: 0 0 1px $color-focus inset !default;
-
 $input-error-background-color: $color-error !default;
 $input-error-border-color: $color-error !default;
 $input-error-focus-box-shadow: 0 0 1px $color-error inset !default;
-
 $input-success-background-color: $color-success !default;
 $input-success-border-color: $color-success !default;
 $input-success-focus-box-shadow: 0 0 1px $color-success inset !default;
-
 $input-disabled-opacity: .6;
-$input-disabled-color: rgba(0, 0, 0, .5);
-
+$input-disabled-color: rgba(0,
+0,
+0,
+.5);
 // Radius
 $input-border-radius: 3px !default;
-
-
 // OVERLAY
 // ---------------------------------------------------------------------------
-$overlay-background-color: rgba(#fff, .95);
-
-
-
-
-
-
-
-
+$overlay-background-color: rgba(#fff,
+.95);
 div.example {
     border: 1px solid rgba(0, 0, 0, 0.07);
     padding: 30px;
@@ -494,6 +369,6 @@ div.code {
             margin-bottom: 0;
             background: none;
             padding: 0;
-        }  
+        }
     }
 }

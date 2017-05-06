@@ -24,7 +24,7 @@ footer.site>.container>.left,
 footer.site>.container>.right{
       flex-grow: 1;
       align-self: center;
-}
+} 
 
 footer.site>.container>.right{
     text-align: right;
@@ -37,54 +37,28 @@ footer.site>.container>.right>table{
 
 
 
-footer.site .logo {
+footer.site .logo-c37 {
     display: block;
-    top: -5px;
+    top: 3px;
     position: relative;
-    background: url('/assets/img/logo.svg') no-repeat center/100%;
-    width: 50px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     margin: 0 auto;
 }
 footer.site .logo-caption {
     display: block;
-    top: -15px;
+    top: 0px;
     position: relative;
 }
 
 
-footer.site .social.facebook {
-    display: inline-block;
-    background: url('/assets/img/social/facebook.svg') no-repeat center/100%;
-    width: 20px;
-    height: 20px;
+footer.site [class^="icon-social-"] {
+    width: 24px;
+    height: 24px;
     vertical-align: middle;
+    opacity: 1;
 }
-footer.site .social.pinterest {
-    display: inline-block;
-    background: url('/assets/img/social/pinterest.svg') no-repeat center/100%;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;   
-}
-footer.site .social.instagram {
-    display: inline-block;
-    background: url('/assets/img/social/instagram.svg') no-repeat center/95%;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-footer.site .social.youtube {
-    display: inline-block;
-    background: url('/assets/img/social/youtube.svg') no-repeat center/100%;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-
 
 @media all and (max-width: 768px) {
 
