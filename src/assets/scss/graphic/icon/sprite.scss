@@ -3,279 +3,354 @@
 	background-size: 100% auto !important;
 }
 
-.icon-cancel {
+.icon-button-add {
 	@extend %icon-common;
 	background-position: 0 0;
 }
 
+.icon-button-cancel {
+	@extend %icon-common;
+	background-position: 0 1.9948282231252308%;
+}
+
+.icon-button-edit {
+	@extend %icon-common;
+	background-position: 0 3.9896564462504616%;
+}
+
+.icon-button-ok {
+	@extend %icon-common;
+	background-position: 0 5.984484669375693%;
+}
+
+.icon-button-ok-white {
+	@extend %icon-common;
+	background-position: 0 7.979312892500923%;
+}
+
+.icon-button-refresh {
+	@extend %icon-common;
+	background-position: 0 9.974141115626155%;
+}
+
+.icon-button-remove {
+	@extend %icon-common;
+	background-position: 0 11.968969338751386%;
+}
+
+.icon-button-save {
+	@extend %icon-common;
+	background-position: 0 13.963797561876616%;
+}
+
+.icon-button-setting {
+	@extend %icon-common;
+	background-position: 0 15.958625785001846%;
+}
+
 .icon-carving {
 	@extend %icon-common;
-	background-position: 0 1.334141904184354%;
+	background-position: 0 17.743702081051477%;
 }
 
 .icon-command {
 	@extend %icon-common;
-	background-position: 0 2.668283808368708%;
+	background-position: 0 18.546914932457103%;
 }
 
 .icon-device {
 	@extend %icon-common;
-	background-position: 0 4.081632653061225%;
+	background-position: 0 19.57886959734023%;
 }
 
 .icon-devices {
 	@extend %icon-common;
-	background-position: 0 7.277137659187386%;
+	background-position: 0 21.321650237312888%;
 }
 
 .icon-down {
 	@extend %icon-common;
-	background-position: 0 8.78169449598021%;
-}
-
-.icon-edit {
-	@extend %icon-common;
-	background-position: 0 11.885991510006065%;
+	background-position: 0 22.386405615072036%;
 }
 
 .icon-engrave {
 	@extend %icon-common;
-	background-position: 0 13.220133414190418%;
+	background-position: 0 24.096385542168676%;
 }
 
 .icon-engrave-halftone {
 	@extend %icon-common;
-	background-position: 0 14.554275318374772%;
+	background-position: 0 24.899598393574298%;
 }
 
 .icon-engrave-surface {
 	@extend %icon-common;
-	background-position: 0 15.898058252427184%;
+	background-position: 0 25.712198685171657%;
 }
 
 .icon-file-24 {
 	@extend %icon-common;
-	background-position: 0 17.36745886654479%;
+	background-position: 0 26.620285609666787%;
 }
 
 .icon-file-new {
 	@extend %icon-common;
-	background-position: 0 19.48051948051948%;
+	background-position: 0 27.96453638714444%;
 }
 
 .icon-file-new-16 {
 	@extend %icon-common;
-	background-position: 0 22.37719830200121%;
+	background-position: 0 29.609346476816356%;
 }
 
 .icon-file-open-16 {
 	@extend %icon-common;
-	background-position: 0 23.711340206185568%;
+	background-position: 0 30.412559328221977%;
 }
 
 .icon-file-open-48 {
 	@extend %icon-common;
-	background-position: 0 25.541125541125542%;
+	background-position: 0 31.58478019948282%;
 }
 
 .icon-fixer {
 	@extend %icon-common;
-	background-position: 0 28.320194057004244%;
+	background-position: 0 33.18729463307776%;
 }
 
 .icon-icon-cart {
 	@extend %icon-common;
-	background-position: 0 29.726443768996962%;
+	background-position: 0 34.040219378427786%;
 }
 
 .icon-idea-24 {
 	@extend %icon-common;
-	background-position: 0 31.38330286410725%;
+	background-position: 0 35.04210911753936%;
 }
 
 .icon-idea-28 {
 	@extend %icon-common;
-	background-position: 0 33.292608430054976%;
+	background-position: 0 36.19361936193619%;
 }
 
 .icon-learning-group {
 	@extend %icon-common;
-	background-position: 0 35.80705009276438%;
+	background-position: 0 37.71702992242335%;
 }
 
 .icon-learning-group-30 {
 	@extend %icon-common;
-	background-position: 0 38.71559633027523%;
+	background-position: 0 39.44954128440367%;
 }
 
 .icon-learning-video {
 	@extend %icon-common;
-	background-position: 0 41.37291280148423%;
+	background-position: 0 41.041743627632066%;
 }
 
 .icon-milling {
 	@extend %icon-common;
-	background-position: 0 43.844754396604%;
+	background-position: 0 42.5337714494341%;
 }
 
 .icon-milling-cut {
 	@extend %icon-common;
-	background-position: 0 45.17889630078836%;
+	background-position: 0 43.336984300839724%;
 }
 
 .icon-milling-cut-corners-snap {
 	@extend %icon-common;
-	background-position: 0 46.51303820497271%;
+	background-position: 0 44.14019715224534%;
 }
 
 .icon-milling-cut-in {
 	@extend %icon-common;
-	background-position: 0 47.847180109157065%;
+	background-position: 0 44.94341000365097%;
 }
 
 .icon-milling-cut-out {
 	@extend %icon-common;
-	background-position: 0 49.18132201334142%;
+	background-position: 0 45.74662285505659%;
 }
 
 .icon-milling-cut-start-point {
 	@extend %icon-common;
-	background-position: 0 50.51546391752577%;
+	background-position: 0 46.54983570646221%;
 }
 
 .icon-milling-cut-type {
 	@extend %icon-common;
-	background-position: 0 51.84960582171013%;
+	background-position: 0 47.35304855786784%;
 }
 
 .icon-milling-deepen-type {
 	@extend %icon-common;
-	background-position: 0 53.183747725894484%;
+	background-position: 0 48.156261409273455%;
 }
 
 .icon-milling-drill-type {
 	@extend %icon-common;
-	background-position: 0 54.517889630078834%;
+	background-position: 0 48.95947426067908%;
 }
 
 .icon-milling-engrave-type {
 	@extend %icon-common;
-	background-position: 0 55.85203153426319%;
+	background-position: 0 49.762687112084706%;
 }
 
 .icon-move-vertical {
 	@extend %icon-common;
-	background-position: 0 57.18617343844755%;
+	background-position: 0 50.565899963490324%;
 }
 
 .icon-object-fit {
 	@extend %icon-common;
-	background-position: 0 58.520315342631896%;
+	background-position: 0 51.36911281489595%;
 }
 
 .icon-probe-automatic-mode {
 	@extend %icon-common;
-	background-position: 0 59.85445724681625%;
+	background-position: 0 52.17232566630157%;
 }
 
 .icon-probe-collect {
 	@extend %icon-common;
-	background-position: 0 61.18859915100061%;
+	background-position: 0 52.97553851770719%;
 }
 
 .icon-probe-manual-mode {
 	@extend %icon-common;
-	background-position: 0 62.52274105518496%;
+	background-position: 0 53.77875136911282%;
 }
 
 .icon-probe-mode-grid-points {
 	@extend %icon-common;
-	background-position: 0 63.856882959369315%;
+	background-position: 0 54.58196422051844%;
 }
 
 .icon-probe-mode-three-points {
 	@extend %icon-common;
-	background-position: 0 65.19102486355366%;
+	background-position: 0 55.38517707192406%;
 }
 
 .icon-probe-start {
 	@extend %icon-common;
-	background-position: 0 66.52516676773803%;
+	background-position: 0 56.18838992332968%;
 }
 
 .icon-probe-stop {
 	@extend %icon-common;
-	background-position: 0 67.85930867192238%;
-}
-
-.icon-refresh {
-	@extend %icon-common;
-	background-position: 0 69.19345057610673%;
-}
-
-.icon-save {
-	@extend %icon-common;
-	background-position: 0 70.52759248029109%;
+	background-position: 0 56.991602774735306%;
 }
 
 .icon-search {
 	@extend %icon-common;
-	background-position: 0 73.28385899814471%;
+	background-position: 0 58.47801994828223%;
 }
 
-.icon-setting {
+.icon-shop-bag {
 	@extend %icon-common;
-	background-position: 0 75.13644633110977%;
+	background-position: 0 60.47284817140746%;
+}
+
+.icon-shop-favorite {
+	@extend %icon-common;
+	background-position: 0 62.467676394532695%;
+}
+
+.icon-shop-order-failure {
+	@extend %icon-common;
+	background-position: 0 64.46250461765793%;
+}
+
+.icon-shop-order-success {
+	@extend %icon-common;
+	background-position: 0 66.45733284078315%;
 }
 
 .icon-social-facebook {
 	@extend %icon-common;
-	background-position: 0 77.98392084106369%;
+	background-position: 0 68.45216106390839%;
 }
 
 .icon-social-instagram {
 	@extend %icon-common;
-	background-position: 0 81.32343846629561%;
+	background-position: 0 70.44698928703362%;
 }
 
 .icon-social-pinterest {
 	@extend %icon-common;
-	background-position: 0 84.66295609152752%;
+	background-position: 0 72.44181751015884%;
 }
 
 .icon-social-youtube {
 	@extend %icon-common;
-	background-position: 0 88.00247371675943%;
+	background-position: 0 74.43664573328408%;
 }
 
 .icon-start-up {
 	@extend %icon-common;
-	background-position: 0 91.34199134199135%;
+	background-position: 0 76.4314739564093%;
 }
 
 .icon-target {
 	@extend %icon-common;
-	background-position: 0 92.84414796846573%;
+	background-position: 0 77.51004016064257%;
 }
 
 .icon-tool {
 	@extend %icon-common;
-	background-position: 0 94.1782898726501%;
+	background-position: 0 78.3132530120482%;
 }
 
 .icon-user {
 	@extend %icon-common;
-	background-position: 0 95.74468085106383%;
+	background-position: 0 80.0517177687477%;
 }
 
-.icon-user-help {
+.icon-user-add {
 	@extend %icon-common;
-	background-position: 0 97.08914493632504%;
+	background-position: 0 82.04654599187292%;
 }
 
-.icon-user-help-24 {
+.icon-user-group {
 	@extend %icon-common;
-	background-position: 0 98.90310786106033%;
+	background-position: 0 84.04137421499816%;
+}
+
+.icon-user-incognito {
+	@extend %icon-common;
+	background-position: 0 86.03620243812338%;
+}
+
+.icon-user-less {
+	@extend %icon-common;
+	background-position: 0 88.03103066124862%;
+}
+
+.icon-user-location {
+	@extend %icon-common;
+	background-position: 0 90.02585888437385%;
+}
+
+.icon-user-lock {
+	@extend %icon-common;
+	background-position: 0 92.02068710749907%;
+}
+
+.icon-user-unlock {
+	@extend %icon-common;
+	background-position: 0 94.01551533062431%;
+}
+
+.icon-window-close {
+	@extend %icon-common;
+	background-position: 0 96.01034355374954%;
+}
+
+.icon-window-maximize {
+	@extend %icon-common;
+	background-position: 0 98.00517177687477%;
 }
 
 .icon-window-minimize {

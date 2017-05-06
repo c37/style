@@ -3,6 +3,11 @@
     margin: 0 2px;
     opacity: .6;
     vertical-align: sub;
+    height: 16px;
+    width: 16px;
+    &:hover {
+        opacity: 1;
+    }
     &.disabled {
         opacity: .5 !important;
         cursor: default !important;
@@ -14,16 +19,6 @@
 }
 
 // sizes
-.icon-12 {
-    height: 12px !important;
-    width: 12px !important;
-}
-
-.icon-16 {
-    height: 16px !important;
-    width: 16px !important;
-}
-
 .icon-20 {
     height: 20px !important;
     width: 20px !important;

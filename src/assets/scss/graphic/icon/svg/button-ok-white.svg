@@ -9,12 +9,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="48"
    height="48"
-   id="svg4183"
+   id="svg8647"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="window-minimize.svg">
+   sodipodi:docname="ok-white.svg">
   <metadata
-     id="metadata4191">
+     id="metadata8657">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs4189" />
+     id="defs8655" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,19 +38,19 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1792"
      inkscape:window-height="1071"
-     id="namedview4187"
+     id="namedview8653"
      showgrid="false"
-     inkscape:zoom="9.0104167"
-     inkscape:cx="30.934314"
-     inkscape:cy="20.532372"
+     inkscape:zoom="9.5569901"
+     inkscape:cx="35.876847"
+     inkscape:cy="31.227523"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4183" />
-  <circle
-     cx="24"
-     cy="24"
-     r="23"
-     id="circle4185"
-     style="fill:#febe11" />
+     inkscape:current-layer="svg8647" />
+  <path
+     stroke="null"
+     d="m 45.271302,8.0396271 c -2.301311,-2.3013113 -6.035515,-2.3013113 -8.340445,0 L 17.536155,27.43433 11.084521,20.989933 c -1.067432,-1.067432 -2.5473635,-1.729602 -4.1756501,-1.729602 -3.2638099,0 -5.90887103,2.641443 -5.90887103,5.905253 0,1.635523 0.66216993,3.111836 1.73683903,4.182887 l 10.6164281,10.620047 0.01086,-0.01086 c 2.301311,2.304931 6.035515,2.304931 8.340445,0 L 45.271302,16.38731 c 2.304931,-2.301312 2.304931,-6.035516 0,-8.3404459 z"
+     id="path8651"
+     style="fill:#ffffff;fill-opacity:1"
+     inkscape:connector-curvature="0" />
 </svg>
