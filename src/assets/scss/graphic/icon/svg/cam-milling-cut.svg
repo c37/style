@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   enable-background="new 0 0 16 16"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cam-milling-cut.svg"><metadata
+     id="metadata9229"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs9227" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1792"
+     inkscape:window-height="1071"
+     id="namedview9225"
+     showgrid="false"
+     inkscape:zoom="18.020833"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><g
+     id="g9219"
+     transform="matrix(3.0664622,0,0,3.0664622,-0.53016437,-0.5316976)"><path
+       d="m 8.584,10.348 3.31,2.817 c 1.068,0.911 2.674,0.781 3.585,-0.288 l -4.933,-4.199 -1.962,1.67 z"
+       id="path9221"
+       inkscape:connector-curvature="0"
+       style="fill:#010101" /><path
+       d="M 15.5,3.147 C 14.59,2.078 12.984,1.949 11.915,2.86 L 7.813,6.352 6.119,4.91 C 6.389,3.88 6.08,2.742 5.216,2.006 4.677,1.548 4.019,1.324 3.362,1.324 2.553,1.324 1.749,1.665 1.183,2.33 0.158,3.533 0.303,5.34 1.507,6.364 2.045,6.821 2.704,7.046 3.36,7.046 3.731,7.046 4.098,6.965 4.444,6.824 L 5.851,8.021 4.485,9.184 C 4.14,9.038 3.76,8.954 3.36,8.954 c -1.58,0 -2.861,1.281 -2.861,2.861 0,1.58 1.281,2.861 2.861,2.861 1.58,0 2.861,-1.281 2.861,-2.861 0,-0.238 -0.038,-0.468 -0.093,-0.688 L 15.5,3.147 Z M 7.812,7.046 C 8.339,7.046 8.766,7.473 8.766,8 8.766,8.526 8.339,8.953 7.812,8.953 7.285,8.953 6.858,8.526 6.858,8 6.858,7.473 7.285,7.046 7.812,7.046 Z M 2.331,5.395 C 2.008,5.12 1.811,4.735 1.777,4.313 1.743,3.889 1.875,3.478 2.151,3.154 2.453,2.799 2.895,2.595 3.362,2.595 c 0.267,0 0.661,0.065 1.029,0.379 0.324,0.275 0.52,0.66 0.555,1.082 C 4.979,4.48 4.847,4.892 4.571,5.215 4.269,5.57 3.827,5.774 3.36,5.774 3.094,5.774 2.699,5.709 2.331,5.395 Z m 1.03,8.009 c -0.877,0 -1.589,-0.713 -1.589,-1.59 0,-0.877 0.712,-1.589 1.589,-1.589 0.876,0 1.589,0.712 1.589,1.589 0,0.877 -0.713,1.59 -1.589,1.59 z"
+       id="path9223"
+       inkscape:connector-curvature="0"
+       style="fill:#010101" /></g></svg>

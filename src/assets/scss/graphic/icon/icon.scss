@@ -14,6 +14,10 @@
     }
 }
 
+.opacity-no{
+    opacity: .8 !important;
+}
+
 [class$="-white"] {
     opacity: 1;
 }
@@ -37,6 +41,11 @@
 .icon-48 {
     height: 48px !important;
     width: 48px !important;
+}
+
+.icon-64 {
+    height: 64px !important;
+    width: 64px !important;
 }
 
 // /* window - state */
@@ -63,7 +72,7 @@
 // }
 // /* window - state */
 // /* global */
-// .icon-down {
+// .icon-global-button-down {
 //     background: url('../img/icon/down.svg') no-repeat center / 100% !important;
 //     width: 20px;
 //     height: 20px;

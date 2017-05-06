@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   enable-background="new 0 0 16 16"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cam-milling-cut-start-point.svg"><metadata
+     id="metadata11658"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs11656" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1792"
+     inkscape:window-height="1071"
+     id="namedview11654"
+     showgrid="false"
+     inkscape:zoom="18.020833"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><g
+     id="g11648"
+     transform="matrix(3.0666667,0,0,3.0666667,-0.5333336,-0.5333336)"><path
+       d="m 8,6.85 c -0.636,0 -1.15,0.515 -1.15,1.149 0,0.636 0.515,1.15 1.15,1.15 0.635,0 1.151,-0.515 1.151,-1.15 C 9.15,7.364 8.634,6.85 8,6.85 Z"
+       id="path11650"
+       inkscape:connector-curvature="0"
+       style="fill:#010101" /><path
+       d="M 13.992,7.453 C 13.732,4.569 11.429,2.266 8.546,2.006 l 0,-1.506 -1.093,0 0,1.506 C 4.569,2.267 2.267,4.569 2.005,7.453 l -1.505,0 0,1.093 1.506,0 c 0.262,2.884 2.563,5.186 5.448,5.447 l 0,1.507 1.093,0 0,-1.507 c 2.883,-0.262 5.186,-2.563 5.446,-5.447 l 1.507,0 0,-1.093 -1.508,0 z m -1.097,1.093 c -0.254,2.281 -2.068,4.096 -4.348,4.349 l 0,-1.971 -1.094,0 0,1.971 C 5.173,12.642 3.357,10.828 3.104,8.546 l 1.971,0 0,-1.093 -1.971,0 C 3.357,5.173 5.173,3.357 7.453,3.104 l 0,1.971 1.093,0 0,-1.971 c 2.28,0.253 4.094,2.068 4.348,4.349 l -1.971,0 0,1.093 1.972,0 z"
+       id="path11652"
+       inkscape:connector-curvature="0"
+       style="fill:#010101" /></g></svg>

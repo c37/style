@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg9219"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cam-milling-trace.svg">
+  <metadata
+     id="metadata9229">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9227" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1792"
+     inkscape:window-height="1071"
+     id="namedview9225"
+     showgrid="false"
+     inkscape:zoom="18.020833"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9219" />
+  <path
+     d="m -1,31 18,0 0,18 -18,0 z"
+     id="path9221"
+     inkscape:connector-curvature="0"
+     style="fill:none" />
+  <path
+     stroke="null"
+     d="m 39.931876,31.336038 0,-4.975984 -7.104247,0 0,-14.28977 -2.360055,0 0,25.325435 c 0,1.715857 -1.402788,3.112624 -3.118644,3.112624 l -5.538904,0 c -1.715857,0 -3.112624,-1.399778 -3.112624,-3.112624 l 0,-25.325436 -2.390158,0 0,25.325436 c 0,1.715857 -1.396767,3.112624 -3.112623,3.112624 l -5.5178328,0 c -1.7158563,0 -3.1156338,-1.399778 -3.1156338,-3.112624 l 0,-11.068778 -3.5611544,0 0,-4.686997 5.1355278,0 c 1.7158563,0 3.1126235,1.396768 3.1126235,3.112624 l 0,11.180158 2.3389827,0 0,-25.328446 c 0,-1.7158565 1.396768,-3.1096135 3.112624,-3.1126235 l 5.578038,0 c 1.715856,0 3.112623,1.399777 3.112623,3.1156335 l 0,25.328447 2.390158,0 0,-25.331457 c 0,-1.7158565 1.402788,-3.1096135 3.118644,-3.1126235 l 5.544925,0 c 1.715857,0 3.115634,1.399777 3.115634,3.1156335 l 0,11.032655 2.378117,0 0,-5.298082 L 47,23.987959 l -7.065114,7.35109 z"
+     id="path9223"
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill:#231f20;fill-rule:evenodd" />
+</svg>

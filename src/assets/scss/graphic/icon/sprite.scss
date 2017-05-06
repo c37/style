@@ -3,357 +3,427 @@
 	background-size: 100% auto !important;
 }
 
-.icon-button-add {
+.icon-cad-object-fit {
 	@extend %icon-common;
 	background-position: 0 0;
 }
 
-.icon-button-cancel {
+.icon-cam-history {
 	@extend %icon-common;
-	background-position: 0 1.9948282231252308%;
+	background-position: 0 1.1904761904761905%;
 }
 
-.icon-button-edit {
+.icon-cam-material {
 	@extend %icon-common;
-	background-position: 0 3.9896564462504616%;
+	background-position: 0 2.380952380952381%;
 }
 
-.icon-button-ok {
+.icon-cam-milling {
 	@extend %icon-common;
-	background-position: 0 5.984484669375693%;
+	background-position: 0 3.5714285714285716%;
 }
 
-.icon-button-ok-white {
+.icon-cam-milling-carving {
 	@extend %icon-common;
-	background-position: 0 7.979312892500923%;
+	background-position: 0 4.761904761904762%;
 }
 
-.icon-button-refresh {
+.icon-cam-milling-cut {
 	@extend %icon-common;
-	background-position: 0 9.974141115626155%;
+	background-position: 0 5.9523809523809526%;
 }
 
-.icon-button-remove {
+.icon-cam-milling-cut-corners {
 	@extend %icon-common;
-	background-position: 0 11.968969338751386%;
+	background-position: 0 7.142857142857143%;
 }
 
-.icon-button-save {
+.icon-cam-milling-cut-in {
 	@extend %icon-common;
-	background-position: 0 13.963797561876616%;
+	background-position: 0 8.333333333333334%;
 }
 
-.icon-button-setting {
+.icon-cam-milling-cut-out {
 	@extend %icon-common;
-	background-position: 0 15.958625785001846%;
+	background-position: 0 9.523809523809524%;
 }
 
-.icon-carving {
+.icon-cam-milling-cut-start-point {
 	@extend %icon-common;
-	background-position: 0 17.743702081051477%;
+	background-position: 0 10.714285714285714%;
 }
 
-.icon-command {
+.icon-cam-milling-deepen {
 	@extend %icon-common;
-	background-position: 0 18.546914932457103%;
+	background-position: 0 11.904761904761905%;
 }
 
-.icon-device {
+.icon-cam-milling-drill {
 	@extend %icon-common;
-	background-position: 0 19.57886959734023%;
+	background-position: 0 13.095238095238095%;
 }
 
-.icon-devices {
+.icon-cam-milling-engrave {
 	@extend %icon-common;
-	background-position: 0 21.321650237312888%;
+	background-position: 0 14.285714285714286%;
 }
 
-.icon-down {
+.icon-cam-milling-halftone {
 	@extend %icon-common;
-	background-position: 0 22.386405615072036%;
+	background-position: 0 15.476190476190476%;
 }
 
-.icon-engrave {
+.icon-cam-milling-order {
 	@extend %icon-common;
-	background-position: 0 24.096385542168676%;
+	background-position: 0 16.666666666666668%;
 }
 
-.icon-engrave-halftone {
+.icon-cam-milling-trace {
 	@extend %icon-common;
-	background-position: 0 24.899598393574298%;
+	background-position: 0 17.857142857142858%;
 }
 
-.icon-engrave-surface {
+.icon-cam-milling-type-cut {
 	@extend %icon-common;
-	background-position: 0 25.712198685171657%;
+	background-position: 0 19.047619047619047%;
 }
 
-.icon-file-24 {
+.icon-cam-milling-type-deepen {
 	@extend %icon-common;
-	background-position: 0 26.620285609666787%;
+	background-position: 0 20.238095238095237%;
 }
 
-.icon-file-new {
+.icon-cam-milling-type-drill {
 	@extend %icon-common;
-	background-position: 0 27.96453638714444%;
+	background-position: 0 21.428571428571427%;
 }
 
-.icon-file-new-16 {
+.icon-cam-milling-type-trace {
 	@extend %icon-common;
-	background-position: 0 29.609346476816356%;
+	background-position: 0 22.61904761904762%;
 }
 
-.icon-file-open-16 {
+.icon-cam-router-assistant {
 	@extend %icon-common;
-	background-position: 0 30.412559328221977%;
+	background-position: 0 23.80952380952381%;
 }
 
-.icon-file-open-48 {
+.icon-cam-router-calcule {
 	@extend %icon-common;
-	background-position: 0 31.58478019948282%;
+	background-position: 0 25%;
 }
 
-.icon-fixer {
+.icon-cam-router-export {
 	@extend %icon-common;
-	background-position: 0 33.18729463307776%;
+	background-position: 0 26.19047619047619%;
 }
 
-.icon-icon-cart {
+.icon-cam-tool {
 	@extend %icon-common;
-	background-position: 0 34.040219378427786%;
+	background-position: 0 27.38095238095238%;
 }
 
-.icon-idea-24 {
+.icon-cam-tool-change {
 	@extend %icon-common;
-	background-position: 0 35.04210911753936%;
+	background-position: 0 28.571428571428573%;
 }
 
-.icon-idea-28 {
+.icon-cam-workflow {
 	@extend %icon-common;
-	background-position: 0 36.19361936193619%;
+	background-position: 0 29.761904761904763%;
 }
 
-.icon-learning-group {
+.icon-controller-axis {
 	@extend %icon-common;
-	background-position: 0 37.71702992242335%;
+	background-position: 0 30.952380952380953%;
 }
 
-.icon-learning-group-30 {
+.icon-controller-axis-zero-define {
 	@extend %icon-common;
-	background-position: 0 39.44954128440367%;
+	background-position: 0 32.142857142857146%;
 }
 
-.icon-learning-video {
+.icon-controller-axis-zero-return {
 	@extend %icon-common;
-	background-position: 0 41.041743627632066%;
+	background-position: 0 33.333333333333336%;
 }
 
-.icon-milling {
+.icon-controller-command {
 	@extend %icon-common;
-	background-position: 0 42.5337714494341%;
+	background-position: 0 34.523809523809526%;
 }
 
-.icon-milling-cut {
+.icon-controller-connection {
 	@extend %icon-common;
-	background-position: 0 43.336984300839724%;
+	background-position: 0 35.714285714285715%;
 }
 
-.icon-milling-cut-corners-snap {
+.icon-controller-connection-in {
 	@extend %icon-common;
-	background-position: 0 44.14019715224534%;
+	background-position: 0 36.904761904761905%;
 }
 
-.icon-milling-cut-in {
+.icon-controller-connection-out {
 	@extend %icon-common;
-	background-position: 0 44.94341000365097%;
+	background-position: 0 38.095238095238095%;
 }
 
-.icon-milling-cut-out {
+.icon-controller-control {
 	@extend %icon-common;
-	background-position: 0 45.74662285505659%;
+	background-position: 0 39.285714285714285%;
 }
 
-.icon-milling-cut-start-point {
+.icon-controller-control-down {
 	@extend %icon-common;
-	background-position: 0 46.54983570646221%;
+	background-position: 0 40.476190476190474%;
 }
 
-.icon-milling-cut-type {
+.icon-controller-control-left {
 	@extend %icon-common;
-	background-position: 0 47.35304855786784%;
+	background-position: 0 41.666666666666664%;
 }
 
-.icon-milling-deepen-type {
+.icon-controller-control-move {
 	@extend %icon-common;
-	background-position: 0 48.156261409273455%;
+	background-position: 0 42.857142857142854%;
 }
 
-.icon-milling-drill-type {
+.icon-controller-control-pause {
 	@extend %icon-common;
-	background-position: 0 48.95947426067908%;
+	background-position: 0 44.04761904761905%;
 }
 
-.icon-milling-engrave-type {
+.icon-controller-control-right {
 	@extend %icon-common;
-	background-position: 0 49.762687112084706%;
+	background-position: 0 45.23809523809524%;
 }
 
-.icon-move-vertical {
+.icon-controller-control-start {
 	@extend %icon-common;
-	background-position: 0 50.565899963490324%;
+	background-position: 0 46.42857142857143%;
 }
 
-.icon-object-fit {
+.icon-controller-control-stop {
 	@extend %icon-common;
-	background-position: 0 51.36911281489595%;
+	background-position: 0 47.61904761904762%;
 }
 
-.icon-probe-automatic-mode {
+.icon-controller-control-up {
 	@extend %icon-common;
-	background-position: 0 52.17232566630157%;
+	background-position: 0 48.80952380952381%;
 }
 
-.icon-probe-collect {
+.icon-controller-device {
 	@extend %icon-common;
-	background-position: 0 52.97553851770719%;
+	background-position: 0 50%;
 }
 
-.icon-probe-manual-mode {
+.icon-controller-gcode {
 	@extend %icon-common;
-	background-position: 0 53.77875136911282%;
+	background-position: 0 51.19047619047619%;
 }
 
-.icon-probe-mode-grid-points {
+.icon-controller-probe-collect {
 	@extend %icon-common;
-	background-position: 0 54.58196422051844%;
+	background-position: 0 52.38095238095238%;
 }
 
-.icon-probe-mode-three-points {
+.icon-controller-probe-mode-level {
 	@extend %icon-common;
-	background-position: 0 55.38517707192406%;
+	background-position: 0 53.57142857142857%;
 }
 
-.icon-probe-start {
+.icon-controller-probe-start {
 	@extend %icon-common;
-	background-position: 0 56.18838992332968%;
+	background-position: 0 54.76190476190476%;
 }
 
-.icon-probe-stop {
+.icon-controller-probe-stop {
 	@extend %icon-common;
-	background-position: 0 56.991602774735306%;
+	background-position: 0 55.95238095238095%;
 }
 
-.icon-search {
+.icon-global-button-add {
 	@extend %icon-common;
-	background-position: 0 58.47801994828223%;
+	background-position: 0 57.142857142857146%;
 }
 
-.icon-shop-bag {
+.icon-global-button-cancel {
 	@extend %icon-common;
-	background-position: 0 60.47284817140746%;
+	background-position: 0 58.333333333333336%;
 }
 
-.icon-shop-favorite {
+.icon-global-button-down {
 	@extend %icon-common;
-	background-position: 0 62.467676394532695%;
+	background-position: 0 59.523809523809526%;
 }
 
-.icon-shop-order-failure {
+.icon-global-button-edit {
 	@extend %icon-common;
-	background-position: 0 64.46250461765793%;
+	background-position: 0 60.714285714285715%;
 }
 
-.icon-shop-order-success {
+.icon-global-button-ok {
 	@extend %icon-common;
-	background-position: 0 66.45733284078315%;
+	background-position: 0 61.904761904761905%;
 }
 
-.icon-social-facebook {
+.icon-global-button-ok-white {
 	@extend %icon-common;
-	background-position: 0 68.45216106390839%;
+	background-position: 0 63.095238095238095%;
 }
 
-.icon-social-instagram {
+.icon-global-button-refresh {
 	@extend %icon-common;
-	background-position: 0 70.44698928703362%;
+	background-position: 0 64.28571428571429%;
 }
 
-.icon-social-pinterest {
+.icon-global-button-remove {
 	@extend %icon-common;
-	background-position: 0 72.44181751015884%;
+	background-position: 0 65.47619047619048%;
 }
 
-.icon-social-youtube {
+.icon-global-button-save {
 	@extend %icon-common;
-	background-position: 0 74.43664573328408%;
+	background-position: 0 66.66666666666667%;
 }
 
-.icon-start-up {
+.icon-global-button-search {
 	@extend %icon-common;
-	background-position: 0 76.4314739564093%;
+	background-position: 0 67.85714285714286%;
 }
 
-.icon-target {
+.icon-global-button-setting {
 	@extend %icon-common;
-	background-position: 0 77.51004016064257%;
+	background-position: 0 69.04761904761905%;
 }
 
-.icon-tool {
+.icon-global-file {
 	@extend %icon-common;
-	background-position: 0 78.3132530120482%;
+	background-position: 0 70.23809523809524%;
 }
 
-.icon-user {
+.icon-global-file-new {
 	@extend %icon-common;
-	background-position: 0 80.0517177687477%;
+	background-position: 0 71.42857142857143%;
 }
 
-.icon-user-add {
+.icon-global-file-open {
 	@extend %icon-common;
-	background-position: 0 82.04654599187292%;
+	background-position: 0 72.61904761904762%;
 }
 
-.icon-user-group {
+.icon-global-social-facebook {
 	@extend %icon-common;
-	background-position: 0 84.04137421499816%;
+	background-position: 0 73.80952380952381%;
 }
 
-.icon-user-incognito {
+.icon-global-social-instagram {
 	@extend %icon-common;
-	background-position: 0 86.03620243812338%;
+	background-position: 0 75%;
 }
 
-.icon-user-less {
+.icon-global-social-pinterest {
 	@extend %icon-common;
-	background-position: 0 88.03103066124862%;
+	background-position: 0 76.19047619047619%;
 }
 
-.icon-user-location {
+.icon-global-social-youtube {
 	@extend %icon-common;
-	background-position: 0 90.02585888437385%;
+	background-position: 0 77.38095238095238%;
 }
 
-.icon-user-lock {
+.icon-global-user {
 	@extend %icon-common;
-	background-position: 0 92.02068710749907%;
+	background-position: 0 78.57142857142857%;
 }
 
-.icon-user-unlock {
+.icon-global-user-add {
 	@extend %icon-common;
-	background-position: 0 94.01551533062431%;
+	background-position: 0 79.76190476190476%;
 }
 
-.icon-window-close {
+.icon-global-user-group {
 	@extend %icon-common;
-	background-position: 0 96.01034355374954%;
+	background-position: 0 80.95238095238095%;
 }
 
-.icon-window-maximize {
+.icon-global-user-incognito {
 	@extend %icon-common;
-	background-position: 0 98.00517177687477%;
+	background-position: 0 82.14285714285714%;
 }
 
-.icon-window-minimize {
+.icon-global-user-less {
+	@extend %icon-common;
+	background-position: 0 83.33333333333333%;
+}
+
+.icon-global-user-location {
+	@extend %icon-common;
+	background-position: 0 84.52380952380952%;
+}
+
+.icon-global-user-lock {
+	@extend %icon-common;
+	background-position: 0 85.71428571428571%;
+}
+
+.icon-global-user-unlock {
+	@extend %icon-common;
+	background-position: 0 86.9047619047619%;
+}
+
+.icon-global-view-home {
+	@extend %icon-common;
+	background-position: 0 88.0952380952381%;
+}
+
+.icon-global-window-close {
+	@extend %icon-common;
+	background-position: 0 89.28571428571429%;
+}
+
+.icon-global-window-maximize {
+	@extend %icon-common;
+	background-position: 0 90.47619047619048%;
+}
+
+.icon-global-window-minimize {
+	@extend %icon-common;
+	background-position: 0 91.66666666666667%;
+}
+
+.icon-site-learning-group {
+	@extend %icon-common;
+	background-position: 0 92.85714285714286%;
+}
+
+.icon-site-learning-video {
+	@extend %icon-common;
+	background-position: 0 94.04761904761905%;
+}
+
+.icon-site-shop-bag {
+	@extend %icon-common;
+	background-position: 0 95.23809523809524%;
+}
+
+.icon-site-shop-favorite {
+	@extend %icon-common;
+	background-position: 0 96.42857142857143%;
+}
+
+.icon-site-shop-order-failure {
+	@extend %icon-common;
+	background-position: 0 97.61904761904762%;
+}
+
+.icon-site-shop-order-success {
+	@extend %icon-common;
+	background-position: 0 98.80952380952381%;
+}
+
+.icon-site-start-up {
 	@extend %icon-common;
 	background-position: 0 100%;
 }
