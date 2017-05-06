@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sat May 06 2017 00:16:14 GMT-0300 (BRT)
+ * Static Here - in Sat May 06 2017 00:38:34 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -81,7 +81,8 @@
                 var boundingRect = navMenu.getBoundingClientRect();
                 var boundingRect22 = document.body.getBoundingClientRect();
 
-                console.log(boundingRect);
+                // console.log(boundingRect);
+
 
                 var ww = window.innerWidth;
 

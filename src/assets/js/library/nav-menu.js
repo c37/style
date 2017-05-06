@@ -65,7 +65,7 @@ function registerNavMenu() {
             var boundingRect22 = document.body.getBoundingClientRect();
 
 
-            console.log(boundingRect);
+            // console.log(boundingRect);
 
 
             let ww = window.innerWidth;

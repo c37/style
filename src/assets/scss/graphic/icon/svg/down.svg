@@ -10,13 +10,13 @@
    version="1.1"
    x="0px"
    y="0px"
-   viewBox="0 0 36 36"
+   viewBox="0 0 48 48"
    xml:space="preserve"
    id="svg4285"
    inkscape:version="0.91 r13725"
    sodipodi:docname="down.svg"
-   width="36"
-   height="36"><metadata
+   width="48"
+   height="48"><metadata
      id="metadata4297"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -40,7 +40,7 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4285" /><polygon
-     points="12,16.948 2.794,8.143 3.838,7.052 12,14.858 20.162,7.052 21.206,8.143 "
+     points="12,14.858 20.162,7.052 21.206,8.143 12,16.948 2.794,8.143 3.838,7.052 "
      id="polygon4287"
-     transform="matrix(1.7111883,0,0,1.7111883,-2.5342596,-2.5202187)"
+     transform="matrix(2.3041995,0,0,2.3041995,-3.650394,-3.6314873)"
      style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.09724247;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></svg>
