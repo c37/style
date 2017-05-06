@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg29209"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cad-object-ungroup.svg">
+  <metadata
+     id="metadata29219">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs29217" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1792"
+     inkscape:window-height="1071"
+     id="namedview29215"
+     showgrid="false"
+     inkscape:zoom="18.020833"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg29209" />
+  <g
+     id="g29211"
+     style="fill:#010202"
+     transform="matrix(3.5384615,0,0,3.5384615,-4.307692,-4.307692)">
+    <path
+       d="M 5.423,9.428 2.957,11.894 1.5,10.438 l 0,4.062 4.063,0 -1.458,-1.456 2.467,-2.467 M 10.438,1.5 11.894,2.957 9.428,5.423 10.577,6.573 13.044,4.105 14.5,5.563 14.5,1.5 M 5.423,6.572 6.572,5.423 4.105,2.957 5.563,1.5 1.5,1.5 1.5,5.563 2.957,4.105 m 7.62,5.323 -1.149,1.149 2.466,2.467 -1.456,1.456 4.062,0 0,-4.062 -1.456,1.456"
+       id="path29213"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
