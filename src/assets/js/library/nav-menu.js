@@ -20,6 +20,11 @@ function registerNavMenu() {
 
     var button = navMenu.querySelector('.show-mobile>li>i')
 
+    if (button === null || button === undefined) {
+        return;
+    }
+
+
     // console.log(button);
 
     button.onclick = function () {
