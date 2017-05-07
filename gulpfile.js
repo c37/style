@@ -81,7 +81,7 @@ var config = {
                 sprite: 'img/logo.svg',
                 layout: 'vertical',
                 dimensions: false,
-                prefix: ".logo-%s",
+                prefix: ".i18n-%s",
                 example: {
                     dest: 'scss/graphic/logo/sample.html'
                 },
@@ -90,6 +90,34 @@ var config = {
                     scss: {
                         dest: 'scss/graphic/logo/sprite.scss',
                         template: './src/assets/scss/graphic/logo/template.mustache'
+                    }
+                },
+            }
+        },
+        shape: {
+            spacing: {
+                padding: 3,
+            }
+        }
+    },
+    i18n: {
+        dest: '.',
+        // "log": "debug",
+        mode: {
+            css: {
+                dest: './assets/',
+                sprite: 'img/i18n.svg',
+                layout: 'vertical',
+                dimensions: false,
+                prefix: ".logo-%s",
+                example: {
+                    dest: 'scss/graphic/i18n/sample.html'
+                },
+                bust: false,
+                render: {
+                    scss: {
+                        dest: 'scss/graphic/i18n/sprite.scss',
+                        template: './src/assets/scss/graphic/i18n/template.mustache'
                     }
                 },
             }
@@ -200,11 +228,18 @@ function logo() {
         .pipe(gulp.dest('src'));
 }
 
+function i18n() {
+    return gulp.src('./src/assets/scss/graphic/i18n/svg/*.svg')
+        .pipe(svgSprite(config.i18n))
+        .pipe(gulp.dest('src'));
+}
+
 
 
 
 gulp.task('img-icon', gulp.series(icon));
 gulp.task('img-logo', gulp.series(logo));
+gulp.task('img-i18n', gulp.series(i18n));
 
 gulp.task('docs', gulp.series(clean, template, css, js, assets));
 gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));

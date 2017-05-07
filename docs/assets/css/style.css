@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sat May 06 2017 20:43:40 GMT-0300 (BRT)
+ * Static Here - in Sat May 06 2017 22:55:41 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1750,6 +1750,87 @@ nav.nav-section {
   background-position: 0 83.33333333333333%; }
 
 .logo-production {
+  background-position: 0 100%; }
+
+[class^="logo-"] {
+  display: inline-block; }
+
+.logo-16 {
+  height: 16px !important;
+  width: 16px !important; }
+
+.logo-20 {
+  height: 20px !important;
+  width: 20px !important; }
+
+.logo-24 {
+  height: 24px !important;
+  width: 24px !important; }
+
+.logo-32 {
+  height: 32px !important;
+  width: 32px !important; }
+
+.logo-48 {
+  height: 48px !important;
+  width: 48px !important; }
+
+.logo-64 {
+  height: 64px !important;
+  width: 64px !important; }
+
+.logo-84 {
+  height: 84px !important;
+  width: 84px !important; }
+
+.logo-124 {
+  height: 124px !important;
+  width: 124px !important; }
+
+.logo-AE, .logo-BR, .logo-CN, .logo-DE, .logo-ES, .logo-GB, .logo-IN, .logo-JP, .logo-PL, .logo-RO, .logo-RU, .logo-TR, .logo-UA, .logo-US {
+  background: url("../img/i18n.svg") no-repeat;
+  background-size: 100% auto !important; }
+
+.logo-AE {
+  background-position: 0 0; }
+
+.logo-BR {
+  background-position: 0 7.6923076923076925%; }
+
+.logo-CN {
+  background-position: 0 15.384615384615385%; }
+
+.logo-DE {
+  background-position: 0 23.076923076923077%; }
+
+.logo-ES {
+  background-position: 0 30.76923076923077%; }
+
+.logo-GB {
+  background-position: 0 38.46153846153846%; }
+
+.logo-IN {
+  background-position: 0 46.15384615384615%; }
+
+.logo-JP {
+  background-position: 0 53.84615384615385%; }
+
+.logo-PL {
+  background-position: 0 61.53846153846154%; }
+
+.logo-RO {
+  background-position: 0 69.23076923076923%; }
+
+.logo-RU {
+  background-position: 0 76.92307692307692%; }
+
+.logo-TR {
+  background-position: 0 84.61538461538461%; }
+
+.logo-UA {
+  background-position: 0 92.3076923076923%; }
+
+.logo-US {
   background-position: 0 100%; }
 
 /* graphic */

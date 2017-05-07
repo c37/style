@@ -1,0 +1,75 @@
+%i18n-common {
+	background: url("../img/i18n.svg") no-repeat;
+	background-size: 100% auto !important;
+}
+
+.logo-AE {
+	@extend %i18n-common;
+	background-position: 0 0;
+}
+
+.logo-BR {
+	@extend %i18n-common;
+	background-position: 0 7.6923076923076925%;
+}
+
+.logo-CN {
+	@extend %i18n-common;
+	background-position: 0 15.384615384615385%;
+}
+
+.logo-DE {
+	@extend %i18n-common;
+	background-position: 0 23.076923076923077%;
+}
+
+.logo-ES {
+	@extend %i18n-common;
+	background-position: 0 30.76923076923077%;
+}
+
+.logo-GB {
+	@extend %i18n-common;
+	background-position: 0 38.46153846153846%;
+}
+
+.logo-IN {
+	@extend %i18n-common;
+	background-position: 0 46.15384615384615%;
+}
+
+.logo-JP {
+	@extend %i18n-common;
+	background-position: 0 53.84615384615385%;
+}
+
+.logo-PL {
+	@extend %i18n-common;
+	background-position: 0 61.53846153846154%;
+}
+
+.logo-RO {
+	@extend %i18n-common;
+	background-position: 0 69.23076923076923%;
+}
+
+.logo-RU {
+	@extend %i18n-common;
+	background-position: 0 76.92307692307692%;
+}
+
+.logo-TR {
+	@extend %i18n-common;
+	background-position: 0 84.61538461538461%;
+}
+
+.logo-UA {
+	@extend %i18n-common;
+	background-position: 0 92.3076923076923%;
+}
+
+.logo-US {
+	@extend %i18n-common;
+	background-position: 0 100%;
+}
+
