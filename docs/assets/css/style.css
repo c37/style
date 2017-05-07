@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Sat May 06 2017 22:55:41 GMT-0300 (BRT)
+ * Static Here - in Sat May 06 2017 23:27:19 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1752,85 +1752,69 @@ nav.nav-section {
 .logo-production {
   background-position: 0 100%; }
 
-[class^="logo-"] {
+[class^="i18n-"] {
   display: inline-block; }
 
-.logo-16 {
-  height: 16px !important;
-  width: 16px !important; }
-
-.logo-20 {
+.i18n-20 {
   height: 20px !important;
   width: 20px !important; }
 
-.logo-24 {
+.i18n-24 {
   height: 24px !important;
   width: 24px !important; }
 
-.logo-32 {
+.i18n-32 {
   height: 32px !important;
   width: 32px !important; }
 
-.logo-48 {
+.i18n-48 {
   height: 48px !important;
   width: 48px !important; }
 
-.logo-64 {
-  height: 64px !important;
-  width: 64px !important; }
-
-.logo-84 {
-  height: 84px !important;
-  width: 84px !important; }
-
-.logo-124 {
-  height: 124px !important;
-  width: 124px !important; }
-
-.logo-AE, .logo-BR, .logo-CN, .logo-DE, .logo-ES, .logo-GB, .logo-IN, .logo-JP, .logo-PL, .logo-RO, .logo-RU, .logo-TR, .logo-UA, .logo-US {
+.i18n-AE, .i18n-BR, .i18n-CN, .i18n-DE, .i18n-ES, .i18n-GB, .i18n-IN, .i18n-JP, .i18n-PL, .i18n-RO, .i18n-RU, .i18n-TR, .i18n-UA, .i18n-US {
   background: url("../img/i18n.svg") no-repeat;
   background-size: 100% auto !important; }
 
-.logo-AE {
+.i18n-AE {
   background-position: 0 0; }
 
-.logo-BR {
+.i18n-BR {
   background-position: 0 7.6923076923076925%; }
 
-.logo-CN {
+.i18n-CN {
   background-position: 0 15.384615384615385%; }
 
-.logo-DE {
+.i18n-DE {
   background-position: 0 23.076923076923077%; }
 
-.logo-ES {
+.i18n-ES {
   background-position: 0 30.76923076923077%; }
 
-.logo-GB {
+.i18n-GB {
   background-position: 0 38.46153846153846%; }
 
-.logo-IN {
+.i18n-IN {
   background-position: 0 46.15384615384615%; }
 
-.logo-JP {
+.i18n-JP {
   background-position: 0 53.84615384615385%; }
 
-.logo-PL {
+.i18n-PL {
   background-position: 0 61.53846153846154%; }
 
-.logo-RO {
+.i18n-RO {
   background-position: 0 69.23076923076923%; }
 
-.logo-RU {
+.i18n-RU {
   background-position: 0 76.92307692307692%; }
 
-.logo-TR {
+.i18n-TR {
   background-position: 0 84.61538461538461%; }
 
-.logo-UA {
+.i18n-UA {
   background-position: 0 92.3076923076923%; }
 
-.logo-US {
+.i18n-US {
   background-position: 0 100%; }
 
 /* graphic */

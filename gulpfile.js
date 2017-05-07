@@ -81,7 +81,7 @@ var config = {
                 sprite: 'img/logo.svg',
                 layout: 'vertical',
                 dimensions: false,
-                prefix: ".i18n-%s",
+                prefix: ".logo-%s",
                 example: {
                     dest: 'scss/graphic/logo/sample.html'
                 },
@@ -109,7 +109,7 @@ var config = {
                 sprite: 'img/i18n.svg',
                 layout: 'vertical',
                 dimensions: false,
-                prefix: ".logo-%s",
+                prefix: ".i18n-%s",
                 example: {
                     dest: 'scss/graphic/i18n/sample.html'
                 },
