@@ -25,6 +25,10 @@ div {
         }
         &.fluid {
             width: $width-flex;
+            height: $height-flex; 
+            box-sizing: border-box;
+            padding: 0 !important;
+            margin: 0 !important;
         }
         &.large {
             max-width: $width-large;
@@ -97,7 +101,8 @@ div.row {
 
 // authenticate
 div.authenticate {
-    margin: 1px 0 1px 0;
+    height: 100%;
+    width: 100%;
     &.debug {
         @include debug-row;
         >div[class^='column'],
