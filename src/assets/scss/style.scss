@@ -1,44 +1,46 @@
-
-
-/* variables & functions */
-@import "variables.scss";
-@import "functions.scss";
-/* variables & functions */
-
-
 /* mixin */
+
+@import "mixin/variables.scss";
 @import "mixin/breakpoints.scss";
 @import "mixin/flex.scss";
+
 /* mixin */
- 
+
 
 /* foundation */
+
 @import "foundation/positioning.scss";
 @import "foundation/grid.scss";
 @import "foundation/typography.scss";
 @import "foundation/responsive.scss";
+
 /* foundation */
 
 
 /* layout */
+
 @import "layout/header.scss";
 @import "layout/footer.scss";
 @import "layout/nav-section.scss";
 @import "layout/nav-menu.scss";
+
 /* layout */
 
 
 /* graphic */
+
 @import "graphic/icon/icon.scss";
 @import "graphic/icon/sprite.scss";
 @import "graphic/logo/logo.scss";
 @import "graphic/logo/sprite.scss";
 @import "graphic/i18n/i18n.scss";
 @import "graphic/i18n/sprite.scss";
+
 /* graphic */
 
 
 /* component */
+
 @import "component/alert.scss";
 @import "component/button.scss";
 @import "component/switch.scss";
@@ -51,10 +53,12 @@
 @import "component/pagination.scss";
 @import "component/popover.scss";
 @import "component/progress.scss";
+
 /* component */
 
 
 /* container */
+
 @import "container/box.scss";
 @import "container/collapse.scss";
 @import "container/form.scss";
@@ -62,4 +66,5 @@
 @import "container/panel.scss";
 @import "container/tab.scss";
 @import "container/table.scss";
+
 /* container */

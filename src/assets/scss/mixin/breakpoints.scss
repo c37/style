@@ -3,21 +3,33 @@
     $type: type-of($min);
 
     @if $type==string {
-        @if $min==sm {
-            @media (max-width: $sm) {
+       
+        @if $min==smaller {
+            @media (max-width: $break-smaller) {
                 @content;
             }
         }
-        @else if $min==md {
-            @media (min-width: $sm) and (max-width: $md) {
+        @else if $min==small {
+            @media (max-width: $break-small) {
                 @content;
             }
         }
-        @else if $min==lg {
-            @media (min-width: $lg) {
+        @else if $min==medium {
+            @media (max-width: $break-medium) {
                 @content;
             }
         }
+        @else if $min==big {
+            @media (max-width: $break-big) {
+                @content;
+            }
+        }
+        @else if $min==large {
+            @media (max-width: $break-large) {
+                @content;
+            }
+        }
+
     }
     @else if $type==number {
         $query: "all" !default;
@@ -36,3 +48,43 @@
     }
 
 }
+
+
+// @mixin breakpoint($min: 0, $max: 0) {
+    
+//     $type: type-of($min);
+
+//     @if $type==string {
+//         @if $min==sm {
+//             @media (max-width: $sm) {
+//                 @content;
+//             }
+//         }
+//         @else if $min==md {
+//             @media (min-width: $sm) and (max-width: $md) {
+//                 @content;
+//             }
+//         }
+//         @else if $min==lg {
+//             @media (min-width: $lg) {
+//                 @content;
+//             }
+//         }
+//     }
+//     @else if $type==number {
+//         $query: "all" !default;
+//         @if $min !=0 and $max !=0 {
+//             $query: "(min-width: #{$min}) and (max-width: #{$max})";
+//         }
+//         @else if $min !=0 and $max==0 {
+//             $query: "(min-width: #{$min})";
+//         }
+//         @else if $min==0 and $max !=0 {
+//             $query: "(max-width: #{$max})";
+//         }
+//         @media #{$query} {
+//             @content;
+//         }
+//     }
+
+// }

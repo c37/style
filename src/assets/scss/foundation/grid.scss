@@ -1,112 +1,131 @@
 // https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
 // http://dev.w3.org/csswg/css-flexbox-1
-
+// https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 // grid
 div {
     &.grid {
         margin: 0px auto 25px auto;
+        @include breakpoint(medium) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include breakpoint(large) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         &.debug {
             @include debug-grid;
-
             >div.row {
                 @include debug-row;
-
                 >div[class^='column'],
                 >div[class*=' column'] {
                     @include debug-column;
                 }
-                
             }
-            
-        }
-        &.w-1024{
-            max-width: 1024px;
-        }
-        &.w-960{
-            max-width: 960px;
-        }
-        &.w-840 {
-            max-width: 840px;
         }
         &.fluid {
-            width: 100%;
+            width: $width-flex;
+        }
+        &.large {
+            max-width: $width-large;
+        }
+        &.big {
+            max-width: $width-big;
+        }
+        &.medium {
+            max-width: $width-medium;
+        }
+        &.small {
+            max-width: $width-small;
         }
     }
 }
-// grid
 
-@media (min-width: 768px) {
-  div.grid {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (max-width: 768px) {
-  div.grid {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-
-// grid row
+// row
 div.row {
     margin: 1px 0 1px 0;
-
     &.debug {
         @include debug-row;
-
         >div[class^='column'],
         >div[class*=' column'] {
             @include debug-column;
         }
-        
-    }    
-
+    }
     @include flex;
     @include flex-items-row;
     @include flex-items-wrap;
-
-    @include breakpoint(sm) {
+    @include breakpoint(medium) {
         @include flex-items-column;
         @include flex-items-nowrap;
     }
-
-    // space
     &.space,
-    &.space > div.row {
+    &.space>div.row {
         margin-left: -$grid-space;
-
-        @include breakpoint(sm) {
+        @include breakpoint(medium) {
             margin-left: 0;
         }
-
-        & > .column {
+        &>.column {
             margin-left: $grid-space;
-
-            @include breakpoint(sm) {
+            @include breakpoint(medium) {
                 margin-left: 0;
             }
         }
     }
-	&.around {
-		@include flex-items-space-around;
-	}
-	&.between {
-		@include flex-items-space-between;
-	}
-	&.auto {
-    	& .column {
-        	@include flex-item-grow(1);
+    &.around {
+        @include flex-items-space-around;
+    }
+    &.between {
+        @include flex-items-space-between;
+    }
+    &.auto {
+        & .column {
+            @include flex-item-grow(1);
         }
-	}
+    }
+    @include breakpoint(medium) {
+        & div.column {
+            margin-left: 0;
+            width: 100%;
+        }
+        &.space {
+            & div.column {
+                margin-bottom: $text-margin-bottom;
+            }
+        }
+    }
 }
-// grid row
 
+// authenticate
+div.authenticate {
+    margin: 1px 0 1px 0;
+    &.debug {
+        @include debug-row;
+        >div[class^='column'],
+        >div[class*=' column'] {
+            @include debug-column;
+        }
+    }
+    @include flex;
+    @include flex-items-row;
+    @include flex-items-wrap;
+    @include breakpoint(small) {
+        @include flex-items-column;
+        @include flex-items-nowrap;
+    }
+    @include breakpoint(small) {
+        & div.column {
+            margin-left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    >.column-450 {
+        width: 450px;
+    }
+}
 
 // columns
-@for $i from 1 through $grid-columns
-{
+@for $i from 1 through $grid-columns {
     div.column-#{$i} {
         width: 100% / $grid-columns * $i;
     }
@@ -114,126 +133,77 @@ div.row {
         $width: 100% / $grid-columns * $i;
         margin-left: $width;
     }
-
 }
 
-div[class^='column'],
-div[class*=' column'] {
-    box-sizing: border-box;
-    padding: 0px;
-}
-
-
+// columns - with space
 .space {
-    @for $i from 1 through $grid-columns
-    {
-        & > div.column-#{$i} {
+    @for $i from 1 through $grid-columns {
+        &>div.column-#{$i} {
             $width: 100% / $grid-columns * $i;
             width: calc(#{$width} - #{$grid-space});
         }
-        & > div.offset-#{$i} {
+        &>div.offset-#{$i} {
             $width: 100% / $grid-columns * $i;
             margin-left: calc(#{$width} + #{$grid-space}) !important;
         }
     }
 }
 
-    // media
-    @include breakpoint(sm) {
-        .row {
-
-            & div.column {
-                margin-left: 0;
-                width: 100%;
-            }
-            // &.space {
-            //     & div.column {
-            //         margin-bottom: $text-margin-bottom;
-            //     }
-            // }
-        }
-    }
-    // media
-
-// columns
-
-
-
+// columns - format
+div[class^='column'],
+div[class*=' column'] {
+    box-sizing: border-box;
+    padding: 0px;
+}
 
 // offset
 [class^='offset-'],
 [class*=' offset-'] {
-    @include breakpoint(sm) {
+    @include breakpoint(medium) {
         margin-left: 0;
     }
 }
-// offset
-
 
 // ordering
-.first    { order: -1; }
-.last     { order: 1;  }
-// ordering
+.first {
+    order: -1;
+}
 
-
-
-
-
-
-
-
+.last {
+    order: 1;
+}
 
 // grid media - columns
-
 @mixin grid-media-columns($num) {
-
-	-webkit-column-count: $num;
-	-moz-column-count: $num;
-	column-count: $num;
-
-	-webkit-column-gap: $grid-space;
-	-moz-column-gap: $grid-space;
-	column-gap: $grid-space;
-
-	& > div {
-		display: inline-block;
-		width: 100%;
-	}
-
-    @include breakpoint(sm) {
-		-webkit-column-count: 1;
-		-moz-column-count: 1;
-		column-count: 1;
+    column-count: $num;
+    column-gap: $grid-space;
+    &>div {
+        display: inline-block;
+        width: 100%;
+    }
+    @include breakpoint(medium) {
+        column-count: 1;
     }
 }
 
-
-#media-grid {
-
+// grid media
+.media-grid {
     @include grid-media-columns(2);
-
-    &.debug{
-        & > div {
+    &.debug {
+        &>div {
             @include debug-row;
         }
     }
-
-    & > div {
+    &>div {
         box-sizing: border-box;
         padding: 7px;
         margin-bottom: 20px;
         height: 80px;
     }
-    & > div:nth-child(2n) {
-      height: 200px;
+    &>div:nth-child(2n) {
+        height: 200px;
     }
-    & > div:nth-child(5n) {
-      height: 120px;
+    &>div:nth-child(5n) {
+        height: 120px;
     }
 }
-
-
-
-// grid media - columns
-
-

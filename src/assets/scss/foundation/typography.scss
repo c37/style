@@ -289,7 +289,7 @@ figure pre {
 }
 
 figure {
-    & .video-container{
+    & .video-container {
         display: flex;
     }
     & .video-container,
@@ -354,22 +354,34 @@ dd {
 
 /* font sizes */
 
-.large {
+p.large,
+span.large,
+input.large,
+label.large {
     font-size: $font-size-large;
     line-height: $base-line-large;
 }
 
-.big {
+p.big,
+span.big,
+input.big,
+label.big {
     font-size: $font-size-big;
     line-height: $base-line-big;
 }
 
-.small {
+p.small,
+span.small,
+input.small,
+label.small {
     font-size: $font-size-small;
     line-height: $base-line-small;
 }
 
-.smaller {
+p.smaller,
+span.smaller,
+input.smaller,
+label.smaller {
     font-size: $font-size-smaller;
     line-height: $base-line-smaller;
 }
@@ -484,13 +496,12 @@ figure {
     align-items: center;
 }
 
-.rotate-on{
-
+.rotate-on {
     transform: rotate(-180deg);
     transition: transform 150ms ease;
 }
 
-.rotate-off{
+.rotate-off {
     transform: rotate(-360deg);
     transition: transform 150ms ease;
 }
@@ -580,16 +591,17 @@ i.cursor-pointer {
 }
 
 .w-150 {
-    min-width: 100px; 
+    min-width: 100px;
     max-width: 150px !important;
 }
 
 .w-170 {
-    min-width: 100px; 
+    min-width: 100px;
     max-width: 170px !important;
 }
+
 .w-180 {
-    min-width: 100px; 
+    min-width: 100px;
     max-width: 180px !important;
 }
 
@@ -598,52 +610,52 @@ i.cursor-pointer {
 }
 
 .w-250 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 250px !important;
 }
 
 .w-300 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 300px !important;
 }
 
 .w-350 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 350px !important;
 }
 
 .w-400 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 400px !important;
 }
 
 .w-450 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 450px !important;
 }
 
 .w-500 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 500px !important;
 }
 
 .w-550 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 550px !important;
 }
 
 .w-600 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 600px !important;
 }
 
 .w-650 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 650px !important;
 }
 
 .w-700 {
-    min-width: 200px; 
+    min-width: 200px;
     max-width: 700px !important;
 }
 

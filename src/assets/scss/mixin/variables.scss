@@ -15,25 +15,19 @@ $grid-space: 2% !default;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-// icon
-%svg-common {
-    background: url("../img/icon.svg") no-repeat;
-}
-
 // width
+$width-flex: 100% !default;
 $width-large: 1440px !default;
 $width-big: 1024px !default;
-$width-medium: 720px !default;
-$width-small: 360px !default;
+$width-medium: 960px !default;
+$width-small: 840px !default;
+$width-smaller: 600px !default;
 // break points
-$sm: 768px !default;
-$md: 1024px !default;
-$lg: 1200px !default;
 $break-large: 1440px !default;
 $break-big: 1024px !default;
-$break-medium: 720px !default;
-$break-small: 360px !default;
-$break-small: 360px !default;
+$break-medium: 768px !default;
+$break-small: 600px !default;
+$break-smaller: 360px !default;
 // font family
 $font-family: 'lucida grande',
 tahoma,
@@ -57,7 +51,7 @@ $base-line: 22px !default;
 $base-line-small: 20px - 2px !default;
 $base-line-smaller: 20px - 6px !default;
 // margin
-$text-margin-bottom: 9px !default;
+$text-margin-bottom: $font-size !default;
 // headings
 // font size
 $heading-font-size-title: 60px !default;
@@ -92,10 +86,7 @@ $color-headings: #676b72 !default;
 $color-link: #599bcd !default;
 $color-link-hover: #666665 !default;
 $color-link-selected: #599bcd !default;
-$color-link-mark: rgba(0,
-0,
-0,
-0.3)!default;
+$color-link-mark: rgba(0, 0, 0, 0.3)!default;
 // button
 $color-button-primary: #1c86f2 !default;
 $color-button-primary-text: #fff !default;
@@ -134,9 +125,7 @@ $border-radius-bottom: $border-radius-last;
 // global visual class
 // table
 // Color variables (appears count calculates by raw css)
-$tablecolor0: rgb(248,
-248,
-248); // Appears 1 time
+$tablecolor0: rgb(248, 248, 248); // Appears 1 time
 $tablecolor1: #c5c5c5; // Appears 1 time
 $tablecolor2: #fefefe; // Appears 1 time
 // table
@@ -144,17 +133,11 @@ $tablecolor2: #fefefe; // Appears 1 time
 // Color variables (appears count calculates by raw css)
 $listcolor0: #c5c5c5;
 // Appears 3 times
-$listcolor1: rgb(248,
-248,
-248);
+$listcolor1: rgb(248, 248, 248);
 // Appears 2 times
-$listcolor2: rgb(0,
-0,
-0);
+$listcolor2: rgb(0, 0, 0);
 // Appears 1 time
-$listcolor3: rgb(255,
-255,
-255);
+$listcolor3: rgb(255, 255, 255);
 // Appears 1 time
 // Width variables (appears count calculates by raw css)
 $listwidth0: 100%;
@@ -185,9 +168,7 @@ $option-color8: #666666; // Appears 1 time
 $option-color9: #cccccc; // Appears 1 time
 $option-color10: #dddddd; // Appears 1 time
 $option-color11: #c5c5c5; // Appears 1 time
-$option-color12: rgb(255,
-255,
-255); // Appears 1 time
+$option-color12: rgb(255, 255, 255); // Appears 1 time
 // option
 // message
 // Color variables (appears count calculates by raw css)
@@ -218,13 +199,9 @@ $boxcolor2: #fefefe;
 // Appears 1 time
 $boxcolor3: #fafafa;
 // Appears 1 time
-$boxcolor4: rgb(197,
-197,
-197);
+$boxcolor4: rgb(197, 197, 197);
 // Appears 1 time
-$boxcolor5: rgb(255,
-255,
-255);
+$boxcolor5: rgb(255, 255, 255);
 // Appears 1 time
 // box
 // menu
@@ -243,9 +220,7 @@ $menucolor5: #3d3b36;
 // Appears 1 time
 $menucolor6: #dddddd;
 // Appears 1 time
-$listcolor2: rgb(0,
-0,
-0);
+$listcolor2: rgb(0, 0, 0);
 // menu
 // Z-INDEX
 // ---------------------------------------------------------------------------
@@ -264,10 +239,7 @@ $table-base-line: 24px !default;
 $table-padding-tb: 1rem !default;
 $table-padding-rl: 1rem !default;
 // Border
-$table-border: 1px solid rgba(0,
-0,
-0,
-.05) !default;
+$table-border: 1px solid rgba(0, 0, 0, .05) !default;
 // Striped
 $table-background-striped: $color-aluminum !default;
 // BUTTONS
@@ -334,16 +306,12 @@ $input-success-background-color: $color-success !default;
 $input-success-border-color: $color-success !default;
 $input-success-focus-box-shadow: 0 0 1px $color-success inset !default;
 $input-disabled-opacity: .6;
-$input-disabled-color: rgba(0,
-0,
-0,
-.5);
+$input-disabled-color: rgba(0, 0, 0, .5);
 // Radius
 $input-border-radius: 3px !default;
 // OVERLAY
 // ---------------------------------------------------------------------------
-$overlay-background-color: rgba(#fff,
-.95);
+$overlay-background-color: rgba(#fff, .95);
 div.example {
     border: 1px solid rgba(0, 0, 0, 0.07);
     padding: 30px;
