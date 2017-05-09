@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 09 2017 19:51:10 GMT-0300 (BRT)
+ * Static Here - in Tue May 09 2017 20:29:52 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2536,17 +2536,14 @@ div.box {
   div.box * {
     cursor: default; }
   div.box > .header {
-    background-color: #eeeeee;
-    background-image: -webkit-linear-gradient(#fafafa, #eeeeee);
-    background-image: linear-gradient(#fafafa, #eeeeee);
-    padding: 11px 9px;
-    box-sizing: border-box;
-    min-height: 44px;
-    max-height: 44px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    background-color: #eeeeee;
+    background-image: -webkit-linear-gradient(#fafafa, #eeeeee);
+    background-image: linear-gradient(#fafafa, #eeeeee);
+    padding: 11px 9px; }
     div.box > .header > .item {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -2571,16 +2568,10 @@ div.box {
             -webkit-transition: all linear 0.2s;
             transition: all linear 0.2s; }
   div.box > .body {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
     background-color: white;
     border-radius: 0 0 2px 2px;
     border-top: 1px solid #c5c5c5;
     height: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
     padding: 10px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2600,10 +2591,7 @@ div.box {
     border-top: 1px solid #c5c5c5;
     height: auto;
     overflow: hidden;
-    padding: 10px;
-    box-sizing: border-box;
-    min-height: 47px;
-    max-height: 47px; }
+    padding: 10px; }
 
 .collapse h4 {
   margin-top: 1px !important;
