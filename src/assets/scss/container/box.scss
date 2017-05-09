@@ -10,12 +10,16 @@ div.box {
     &>.header {
         background-color: $boxcolor1;
         background-image: linear-gradient($boxcolor3, $boxcolor1);
-        padding: 6px 7px;
+        padding: 11px 9px;
+        // padding: 6px 7px;
         display: flex;
         >.item {
             align-items: center;
             display: flex;
             margin-right: 5px;
+            &>strong{
+                font-size: $font-size + 1px;
+            }
             &>i {
                 margin: 0px;
             }

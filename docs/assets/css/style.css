@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 09 2017 19:19:09 GMT-0300 (BRT)
+ * Static Here - in Tue May 09 2017 19:31:33 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2539,7 +2539,7 @@ div.box {
     background-color: #eeeeee;
     background-image: -webkit-linear-gradient(#fafafa, #eeeeee);
     background-image: linear-gradient(#fafafa, #eeeeee);
-    padding: 6px 7px;
+    padding: 11px 9px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2554,6 +2554,8 @@ div.box {
       display: -ms-flexbox;
       display: flex;
       margin-right: 5px; }
+      div.box > .header > .item > strong {
+        font-size: 15px; }
       div.box > .header > .item > i {
         margin: 0px; }
       div.box > .header > .item.right {
