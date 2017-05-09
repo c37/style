@@ -1,19 +1,20 @@
 div.box {
     border-radius: $border-radius;
     border: 1px solid $boxcolor4;
+    box-sizing: border-box;
     * {
         cursor: default;
     }
     &>.header {
         background-color: $boxcolor1;
         background-image: linear-gradient($boxcolor3, $boxcolor1);
-        padding: 6px 7px; 
+        padding: 6px 7px;
         display: flex;
         >.item {
             align-items: center;
             display: flex;
             margin-right: 5px;
-            &>i{
+            &>i {
                 margin: 0px;
             }
             &.right {
@@ -44,5 +45,12 @@ div.box {
         height: auto;
         overflow: hidden;
         padding: 10px;
+        &.fixed-bottom {            
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
     }
 }
