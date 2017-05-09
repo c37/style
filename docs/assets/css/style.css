@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 09 2017 20:29:52 GMT-0300 (BRT)
+ * Static Here - in Tue May 09 2017 20:33:41 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -213,7 +213,7 @@ div.authenticate {
       background-color: #d8e9fa;
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       border-right: 1px solid rgba(0, 0, 0, 0.1); }
-  @media (max-width: 600px) {
+  @media (max-width: 580px) {
     div.authenticate {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -223,7 +223,7 @@ div.authenticate {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap; } }
-  @media (max-width: 600px) {
+  @media (max-width: 580px) {
     div.authenticate div.column {
       margin-left: 0;
       width: 100%;
