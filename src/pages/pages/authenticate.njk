@@ -41,8 +41,90 @@
 
   <div class="grid fluid">
 
-    <div class="authenticate align-center align-middle debug">
-      <div class="column column-450">6</div>
+    <div class="authenticate align-center align-middle">
+      <div class="column column-450">
+
+
+        <div class="box ">
+          <div class="header">
+            <img src="/assets/img/icon-user.svg" style="vertical-align: middle; width: 16px" alt="">
+            <strong>Sua Conta</strong>
+            <i id="button-user-auth-close" class="icon-cancel clickable right"></i>
+          </div>
+          <div class="body" style="padding: 10px 10px 0 10px">
+
+            <div class="text-center">
+              <i class="logo-c37 logo-48"></i>
+            </div>
+
+            <p class="text-center">
+              Trabalhamos para levar os meios de produção ao alcance de <strong>todas as pessoas</strong>.
+            </p>
+
+            <div id="tab-user-auth" class="tab">
+              <ul class="header">
+                <li class="item active" data-ref="signin">Entrar</li>
+                <li class="item" data-ref="signup">Criar uma nova conta</li>
+              </ul>
+              <div class="body" style="padding-bottom: 0">
+                <div class="item active" data-ref="signin">
+                  <form id="form-user-signin" onsubmit="return false;" data-buttercup-form-id="bcup-form:1" data-buttercup="attached">
+                    <label for="">Preencha suas informações</label>
+                    <label for="">E-mail</label>
+                    <input id="text-user-signin-email" type="text" value="" placeholder="E-mail" autocomplete="off" data-buttercup-input="username"
+                      data-buttercup-form-id="bcup-form:1" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABp1BMVEVHcEwICAjIwMECAgISEhLAubk6OjoAAABFRUWwq6w5OTkSEhI4OTkuLi7///9kZGTPxseMi4uZlpZ1dHQMDAyBgICenZ0JCQnb0tPx6+w6OjoZGRlhYWGgnJwMDAyenJxERETGwMD18/P/////////+/xbW1vx6+vCu7xzcXHRzs5AQECmpKQHBwefnJ3T0tLa2NhwcHDn3t++vLxgYGBjY2O0sbG9vb3EwcGQkJDq6Oinp6e7wcAArKEApZsApJoAraIAqZ8AsqcAp50AsaYAppwAr6UArqQAs6gAtqsAtaoAtKkAsKUAqJ4Aopj///8Aq6Db3d358PHZ2trf3t7q6enY19fe1tbj4uLm5eWN1tLw+fhDs6zn5+fUzMzg4eD99vd20szn29z17OwmurEjp581w7rLycpvxcDu5OUzu7PP7+39/PxLxr6f19PEyclSsKq4xMNbu7aQzMmfzst0y8aEvLgatay24N1gysOPu7gwrKSx19Wk5OB3tbIgraS46ufe8fA+w7oKraPG19bL4d8msKiYwL7I7uzY5uVyvrkRu7Fozcd/Hm8yAAAAOnRSTlMADvQiFPlyAUbnCQJkWRMc+MXVsEK7ozT77jkrI8dKkH/99fAE6RPZ6pu7V64Z2tTbj/XKT1LAu8CYS0FU2QAAA21JREFUSMfFlml3mkwUgJukaoj6Nvv6Zk/bdEnXd/2gAVRQAUeNMUYa4r6vqXHLvqfLjy4KDBhJ2m99jgdw7n3OmYHhXh49+j2s/MGz8ovJj/+af/n86fLy0+cv5/9+/NP0/vEpANjs6dHRaZYFYOp1/0PZuul/AbgNJ745nBTldHxLhG8B+O9+pWcegKOEE6ccIhROJY4AGFefmG7mLThN4HZHB3Y8cQreTavOfgqEKdzRhd0eBksq0+pfYvM05VSDzrOhLmNmij2nKXWcdIJdujOrnre5vDLf3qnQ57l3nSv/H4RJu4SVwJ04abXLUOR3MK7Mnw7VrbgYxIlYMHuWDcYIhYHT9ZxiGbp/2AyNi5CNHMjWs4DNk7gMHWM/6uU7FCrAIJkHtxkCJc7PcudKAw0q7tR4KENYBWj72VkN5S/QGpu10lYIEWNfw/05WSdoETSfa5is/IXVHc4lSFqGPPywJgqvvCmTNGwKh2JCGpoJNUwKAW2EXonCe28GJUTcYW8NM7XAYqEGRsigsegLUZj9gpMKoRAUKHiDFyZZIOmrWSFfj9RJCLbvhWxGr2JuOYQerg60hWerBRPK/2//sP3opkz0Sw2GUHdl8ElbeNL72Y1K8MLOzs5m69AiWlCEPg/+KQnCMttL3Y9ub297KrvbIjU3DEFhtSILTCodCKQLzCF/apHOY7LQKwgDyKEbwgu7u4GrjCew2ya9x0ghrII8E7be0OUFFCyptM/n20h5fAKBT1C4uJwVt98L3zUmCxEPj88j4Lu8kELYtWdEfHCGyJ4FEzGnIhsb/o02/EkZ2YsYRKGvt8JIw7ZUxA/ZilQZGLHcDM5I78+Y/9rCCJi/RrYk/MU9aZhhLCf+IfgGGSerNjj+CXLAmGXB/HXLINeMYe7EZhGwmSHSUAvzSfKNom4YuWZHuAubuckZFFVjYGSytG57gPXS5NhAR+FDkgcu872sHxSRic7SZ9SU7zdc8fKi8W5x1S7yxroqroNyUtvdHrSaZMmlorhcpeLigl6loRgRrhl3dRGvcohBr9ZR9BNjyeLxHSV+XOTGRu/tuNphLtksQSdeaha5N9q1B/pon3ZIwyXLN9Xj4+pNOclphrQzugf7tG5tdGFkGNHwIMMjC3Nrup9/Cuh7+iZG5+ZGJ/p69L/ju+UH4N+pnU9QB6UAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 18px 18px; background-position: 98% 50%; cursor: auto;">
+                    <label for="">Senha</label>
+                    <input id="text-user-signin-password" type="password" name="" value="" placeholder="Senha" autocomplete="new-password" data-buttercup-input="password"
+                      data-buttercup-form-id="bcup-form:1" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABp1BMVEVHcEwICAjIwMECAgISEhLAubk6OjoAAABFRUWwq6w5OTkSEhI4OTkuLi7///9kZGTPxseMi4uZlpZ1dHQMDAyBgICenZ0JCQnb0tPx6+w6OjoZGRlhYWGgnJwMDAyenJxERETGwMD18/P/////////+/xbW1vx6+vCu7xzcXHRzs5AQECmpKQHBwefnJ3T0tLa2NhwcHDn3t++vLxgYGBjY2O0sbG9vb3EwcGQkJDq6Oinp6e7wcAArKEApZsApJoAraIAqZ8AsqcAp50AsaYAppwAr6UArqQAs6gAtqsAtaoAtKkAsKUAqJ4Aopj///8Aq6Db3d358PHZ2trf3t7q6enY19fe1tbj4uLm5eWN1tLw+fhDs6zn5+fUzMzg4eD99vd20szn29z17OwmurEjp581w7rLycpvxcDu5OUzu7PP7+39/PxLxr6f19PEyclSsKq4xMNbu7aQzMmfzst0y8aEvLgatay24N1gysOPu7gwrKSx19Wk5OB3tbIgraS46ufe8fA+w7oKraPG19bL4d8msKiYwL7I7uzY5uVyvrkRu7Fozcd/Hm8yAAAAOnRSTlMADvQiFPlyAUbnCQJkWRMc+MXVsEK7ozT77jkrI8dKkH/99fAE6RPZ6pu7V64Z2tTbj/XKT1LAu8CYS0FU2QAAA21JREFUSMfFlml3mkwUgJukaoj6Nvv6Zk/bdEnXd/2gAVRQAUeNMUYa4r6vqXHLvqfLjy4KDBhJ2m99jgdw7n3OmYHhXh49+j2s/MGz8ovJj/+af/n86fLy0+cv5/9+/NP0/vEpANjs6dHRaZYFYOp1/0PZuul/AbgNJ745nBTldHxLhG8B+O9+pWcegKOEE6ccIhROJY4AGFefmG7mLThN4HZHB3Y8cQreTavOfgqEKdzRhd0eBksq0+pfYvM05VSDzrOhLmNmij2nKXWcdIJdujOrnre5vDLf3qnQ57l3nSv/H4RJu4SVwJ04abXLUOR3MK7Mnw7VrbgYxIlYMHuWDcYIhYHT9ZxiGbp/2AyNi5CNHMjWs4DNk7gMHWM/6uU7FCrAIJkHtxkCJc7PcudKAw0q7tR4KENYBWj72VkN5S/QGpu10lYIEWNfw/05WSdoETSfa5is/IXVHc4lSFqGPPywJgqvvCmTNGwKh2JCGpoJNUwKAW2EXonCe28GJUTcYW8NM7XAYqEGRsigsegLUZj9gpMKoRAUKHiDFyZZIOmrWSFfj9RJCLbvhWxGr2JuOYQerg60hWerBRPK/2//sP3opkz0Sw2GUHdl8ElbeNL72Y1K8MLOzs5m69AiWlCEPg/+KQnCMttL3Y9ub297KrvbIjU3DEFhtSILTCodCKQLzCF/apHOY7LQKwgDyKEbwgu7u4GrjCew2ya9x0ghrII8E7be0OUFFCyptM/n20h5fAKBT1C4uJwVt98L3zUmCxEPj88j4Lu8kELYtWdEfHCGyJ4FEzGnIhsb/o02/EkZ2YsYRKGvt8JIw7ZUxA/ZilQZGLHcDM5I78+Y/9rCCJi/RrYk/MU9aZhhLCf+IfgGGSerNjj+CXLAmGXB/HXLINeMYe7EZhGwmSHSUAvzSfKNom4YuWZHuAubuckZFFVjYGSytG57gPXS5NhAR+FDkgcu872sHxSRic7SZ9SU7zdc8fKi8W5x1S7yxroqroNyUtvdHrSaZMmlorhcpeLigl6loRgRrhl3dRGvcohBr9ZR9BNjyeLxHSV+XOTGRu/tuNphLtksQSdeaha5N9q1B/pon3ZIwyXLN9Xj4+pNOclphrQzugf7tG5tdGFkGNHwIMMjC3Nrup9/Cuh7+iZG5+ZGJ/p69L/ju+UH4N+pnU9QB6UAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 18px 18px; background-position: 98% 50%; cursor: auto;">
+                    <div class="text-right">
+                      <input id="checkbox-user-signin" type="checkbox" checked="">
+                      <span class="checkbox" onclick="document.getElementById('checkbox-user-signin').checked = !document.getElementById('checkbox-user-signin').checked"> Permanecer conectado </span>
+                    </div>
+                  </form>
+                </div>
+                <div class="item" data-ref="signup">
+                  <form id="form-user-signup" onsubmit="return false;" data-buttercup-form-id="bcup-form:2" data-buttercup="attached">
+                    <label for="">Preencha os campos abaixo</label>
+                    <input id="text-user-signup-first-name" type="text" value="" placeholder="Nome" autocomplete="off" data-buttercup-input="username"
+                      data-buttercup-form-id="bcup-form:2" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABp1BMVEVHcEwICAjIwMECAgISEhLAubk6OjoAAABFRUWwq6w5OTkSEhI4OTkuLi7///9kZGTPxseMi4uZlpZ1dHQMDAyBgICenZ0JCQnb0tPx6+w6OjoZGRlhYWGgnJwMDAyenJxERETGwMD18/P/////////+/xbW1vx6+vCu7xzcXHRzs5AQECmpKQHBwefnJ3T0tLa2NhwcHDn3t++vLxgYGBjY2O0sbG9vb3EwcGQkJDq6Oinp6e7wcAArKEApZsApJoAraIAqZ8AsqcAp50AsaYAppwAr6UArqQAs6gAtqsAtaoAtKkAsKUAqJ4Aopj///8Aq6Db3d358PHZ2trf3t7q6enY19fe1tbj4uLm5eWN1tLw+fhDs6zn5+fUzMzg4eD99vd20szn29z17OwmurEjp581w7rLycpvxcDu5OUzu7PP7+39/PxLxr6f19PEyclSsKq4xMNbu7aQzMmfzst0y8aEvLgatay24N1gysOPu7gwrKSx19Wk5OB3tbIgraS46ufe8fA+w7oKraPG19bL4d8msKiYwL7I7uzY5uVyvrkRu7Fozcd/Hm8yAAAAOnRSTlMADvQiFPlyAUbnCQJkWRMc+MXVsEK7ozT77jkrI8dKkH/99fAE6RPZ6pu7V64Z2tTbj/XKT1LAu8CYS0FU2QAAA21JREFUSMfFlml3mkwUgJukaoj6Nvv6Zk/bdEnXd/2gAVRQAUeNMUYa4r6vqXHLvqfLjy4KDBhJ2m99jgdw7n3OmYHhXh49+j2s/MGz8ovJj/+af/n86fLy0+cv5/9+/NP0/vEpANjs6dHRaZYFYOp1/0PZuul/AbgNJ745nBTldHxLhG8B+O9+pWcegKOEE6ccIhROJY4AGFefmG7mLThN4HZHB3Y8cQreTavOfgqEKdzRhd0eBksq0+pfYvM05VSDzrOhLmNmij2nKXWcdIJdujOrnre5vDLf3qnQ57l3nSv/H4RJu4SVwJ04abXLUOR3MK7Mnw7VrbgYxIlYMHuWDcYIhYHT9ZxiGbp/2AyNi5CNHMjWs4DNk7gMHWM/6uU7FCrAIJkHtxkCJc7PcudKAw0q7tR4KENYBWj72VkN5S/QGpu10lYIEWNfw/05WSdoETSfa5is/IXVHc4lSFqGPPywJgqvvCmTNGwKh2JCGpoJNUwKAW2EXonCe28GJUTcYW8NM7XAYqEGRsigsegLUZj9gpMKoRAUKHiDFyZZIOmrWSFfj9RJCLbvhWxGr2JuOYQerg60hWerBRPK/2//sP3opkz0Sw2GUHdl8ElbeNL72Y1K8MLOzs5m69AiWlCEPg/+KQnCMttL3Y9ub297KrvbIjU3DEFhtSILTCodCKQLzCF/apHOY7LQKwgDyKEbwgu7u4GrjCew2ya9x0ghrII8E7be0OUFFCyptM/n20h5fAKBT1C4uJwVt98L3zUmCxEPj88j4Lu8kELYtWdEfHCGyJ4FEzGnIhsb/o02/EkZ2YsYRKGvt8JIw7ZUxA/ZilQZGLHcDM5I78+Y/9rCCJi/RrYk/MU9aZhhLCf+IfgGGSerNjj+CXLAmGXB/HXLINeMYe7EZhGwmSHSUAvzSfKNom4YuWZHuAubuckZFFVjYGSytG57gPXS5NhAR+FDkgcu872sHxSRic7SZ9SU7zdc8fKi8W5x1S7yxroqroNyUtvdHrSaZMmlorhcpeLigl6loRgRrhl3dRGvcohBr9ZR9BNjyeLxHSV+XOTGRu/tuNphLtksQSdeaha5N9q1B/pon3ZIwyXLN9Xj4+pNOclphrQzugf7tG5tdGFkGNHwIMMjC3Nrup9/Cuh7+iZG5+ZGJ/p69L/ju+UH4N+pnU9QB6UAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 18px 18px; background-position: 98% 50%; cursor: auto;">
+                    <!--<label for="">Sobrenome</label>-->
+                    <input id="text-user-signup-last-name" type="text" name="" value="" placeholder="Sobrenome">
+                    <!--<label for="">E-mail</label>-->
+                    <input id="text-user-signup-email" type="text" name="" value="" placeholder="E-mail">
+                    <!--<label for="">Senha</label>-->
+                    <input id="text-user-signup-password" type="password" name="" value="" placeholder="Senha" autocomplete="new-password" data-buttercup-input="password"
+                      data-buttercup-form-id="bcup-form:2" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABp1BMVEVHcEwICAjIwMECAgISEhLAubk6OjoAAABFRUWwq6w5OTkSEhI4OTkuLi7///9kZGTPxseMi4uZlpZ1dHQMDAyBgICenZ0JCQnb0tPx6+w6OjoZGRlhYWGgnJwMDAyenJxERETGwMD18/P/////////+/xbW1vx6+vCu7xzcXHRzs5AQECmpKQHBwefnJ3T0tLa2NhwcHDn3t++vLxgYGBjY2O0sbG9vb3EwcGQkJDq6Oinp6e7wcAArKEApZsApJoAraIAqZ8AsqcAp50AsaYAppwAr6UArqQAs6gAtqsAtaoAtKkAsKUAqJ4Aopj///8Aq6Db3d358PHZ2trf3t7q6enY19fe1tbj4uLm5eWN1tLw+fhDs6zn5+fUzMzg4eD99vd20szn29z17OwmurEjp581w7rLycpvxcDu5OUzu7PP7+39/PxLxr6f19PEyclSsKq4xMNbu7aQzMmfzst0y8aEvLgatay24N1gysOPu7gwrKSx19Wk5OB3tbIgraS46ufe8fA+w7oKraPG19bL4d8msKiYwL7I7uzY5uVyvrkRu7Fozcd/Hm8yAAAAOnRSTlMADvQiFPlyAUbnCQJkWRMc+MXVsEK7ozT77jkrI8dKkH/99fAE6RPZ6pu7V64Z2tTbj/XKT1LAu8CYS0FU2QAAA21JREFUSMfFlml3mkwUgJukaoj6Nvv6Zk/bdEnXd/2gAVRQAUeNMUYa4r6vqXHLvqfLjy4KDBhJ2m99jgdw7n3OmYHhXh49+j2s/MGz8ovJj/+af/n86fLy0+cv5/9+/NP0/vEpANjs6dHRaZYFYOp1/0PZuul/AbgNJ745nBTldHxLhG8B+O9+pWcegKOEE6ccIhROJY4AGFefmG7mLThN4HZHB3Y8cQreTavOfgqEKdzRhd0eBksq0+pfYvM05VSDzrOhLmNmij2nKXWcdIJdujOrnre5vDLf3qnQ57l3nSv/H4RJu4SVwJ04abXLUOR3MK7Mnw7VrbgYxIlYMHuWDcYIhYHT9ZxiGbp/2AyNi5CNHMjWs4DNk7gMHWM/6uU7FCrAIJkHtxkCJc7PcudKAw0q7tR4KENYBWj72VkN5S/QGpu10lYIEWNfw/05WSdoETSfa5is/IXVHc4lSFqGPPywJgqvvCmTNGwKh2JCGpoJNUwKAW2EXonCe28GJUTcYW8NM7XAYqEGRsigsegLUZj9gpMKoRAUKHiDFyZZIOmrWSFfj9RJCLbvhWxGr2JuOYQerg60hWerBRPK/2//sP3opkz0Sw2GUHdl8ElbeNL72Y1K8MLOzs5m69AiWlCEPg/+KQnCMttL3Y9ub297KrvbIjU3DEFhtSILTCodCKQLzCF/apHOY7LQKwgDyKEbwgu7u4GrjCew2ya9x0ghrII8E7be0OUFFCyptM/n20h5fAKBT1C4uJwVt98L3zUmCxEPj88j4Lu8kELYtWdEfHCGyJ4FEzGnIhsb/o02/EkZ2YsYRKGvt8JIw7ZUxA/ZilQZGLHcDM5I78+Y/9rCCJi/RrYk/MU9aZhhLCf+IfgGGSerNjj+CXLAmGXB/HXLINeMYe7EZhGwmSHSUAvzSfKNom4YuWZHuAubuckZFFVjYGSytG57gPXS5NhAR+FDkgcu872sHxSRic7SZ9SU7zdc8fKi8W5x1S7yxroqroNyUtvdHrSaZMmlorhcpeLigl6loRgRrhl3dRGvcohBr9ZR9BNjyeLxHSV+XOTGRu/tuNphLtksQSdeaha5N9q1B/pon3ZIwyXLN9Xj4+pNOclphrQzugf7tG5tdGFkGNHwIMMjC3Nrup9/Cuh7+iZG5+ZGJ/p69L/ju+UH4N+pnU9QB6UAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 18px 18px; background-position: 98% 50%; cursor: auto;">
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <p id="text-user-signin" class="text-center">
+              <strong><a href="">Esqueceu sua a senha?</a></strong>
+            </p>
+
+            <p id="text-user-signup" class="text-center smaller hide">
+              Ao clicar em Criar conta, você concorda com nossos <a href="#">Termos</a> e que leu nossa <a href="#">Política de Privacidade</a>,
+              incluindo nosso Uso de <a href="#">Cookies</a>.
+            </p>
+
+          </div>
+          <div class="footer">
+            <img id="img-user-auth-loader" src="/assets/img/loader.gif" alt="" style="margin-top: 6px;margin-left: 11px" class="hide">
+
+            <button id="button-user-auth-signin" class="button success right" form="form-user-signin">
+                    <i class="icon-ok-white"></i>
+                    <strong>Entrar</strong>
+                </button>
+            <button id="button-user-auth-signup" class="button success right hide" form="form-user-signup">
+                    <i class="icon-ok-white"></i>
+                    <strong>Criar conta</strong>
+                </button>
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
   </div>
