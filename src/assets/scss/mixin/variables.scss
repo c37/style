@@ -117,6 +117,15 @@ $border-radius-last: 0 0 2px 2px;
 $border-radius-top: $border-radius-first;
 $border-radius-bottom: $border-radius-last;
 // border
+
+
+// header
+$header-padding: 9px 9px;
+$header-font-size: $font-size + 1px;
+// header
+
+
+
 // global visual class
 .shadow {
     box-shadow: 1px 1px 2px rgba(100, 100, 100, .4);

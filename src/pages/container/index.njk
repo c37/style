@@ -63,7 +63,7 @@
                         <div class="box w-250">
                             <div class="header">
                                 <div class="item">
-                                    <i class="icon-utility"></i>
+                                    <i class="icon-cad-utility"></i>
                                 </div>
                                 <div class="item">
                                     <strong>Teste texto para Header</strong>
@@ -100,7 +100,7 @@
                         </div>
 
                         <br>
-                        
+
                     </div>
                     <div class="column column-6">
 
@@ -154,9 +154,9 @@
                 <div class="collapse">
 
                     <h4>
-                        <a class="collapse-toggle" rel="item-01">Item 01</a>
+                        <a class="collapse-toggle selected" rel="item-01">Item 01</a>
                     </h4>
-                    <div class="collapse-box" id="item-01">
+                    <div class="collapse-box responsive" id="item-01">
 
                         <div class="row space">
                             <div class="column column-12">
@@ -295,7 +295,7 @@
 
                     <div class="footer">
                         <button class="button success right" data-modal-close="modal-teste" data-modal-validate="">
-                            <i class="icon-ok-white"></i>
+                            <i class="icon-global-button-ok-white"></i>
                             <strong>Concluído</strong>
                         </button>
                         <button class="button warn right" data-modal-cancel="modal-teste">
@@ -324,7 +324,7 @@
                 <div id="modal-teste" class="modal w-400 shadow">
                     <div class="header">
                         <div class="item">
-                            <i class="icon-revision"></i>
+                            <i class="icon-cam-history"></i>
                         </div>
                         <div class="item">
                             <strong>Quais são suas Revisões?</strong>
@@ -350,7 +350,7 @@
                     </div>
                     <div class="footer">
                         <button class="button success right" data-modal-close="modal-teste" data-modal-validate="">
-                            <i class="icon-ok-white"></i>
+                            <i class="icon-global-button-ok-white"></i>
                             <strong>Concluído</strong>
                         </button>
                         <button class="button warn right" data-modal-cancel="modal-teste">
@@ -389,7 +389,7 @@
                                 <input id="text-user-signin-password" type="password" name="" value="" placeholder="Senha">
                                 <div class="text-right">
                                     <input id="checkbox-user-signin" type="checkbox" checked="">
-                                    <span class="checkbox" onclick="document.getElementById('checkbox-user-signin').checked = !document.getElementById('checkbox-user-signin').checked"> Permanecer conectado </span>
+                                    <span class="checkbox clickable" onclick="document.getElementById('checkbox-user-signin').checked = !document.getElementById('checkbox-user-signin').checked"> Permanecer conectado </span>
                                 </div>
                             </form>
                         </div>
@@ -411,28 +411,58 @@
             <h3>
                 <a id="table" class="mark" href="#table">Table</a>
             </h3>
+
             <div class="example">
 
-                <table>
+                <table class="table striped">
                     <thead>
                         <tr>
-                            <td>Header 1</td>
-                            <td>Header 2</td>
-                            <td>Header 3</td>
+                            <th class="w-20"></th>
+                            <th>
+                                <span>Descrição</span>
+                            </th>
+                            <th class="w-40">
+                                <span>Quantidade</span>
+                            </th>
+                            <th class="w-30"></th>
+                            <th class="text-right">
+                                <span>Valor Unitário</span>
+                            </th>
+                            <th class="text-right">
+                                <span>Valor Total</span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Body 1</td>
-                            <td>Body 2</td>
-                            <td>Body 3</td>
+                            <td>
+                                <i class="icon-global-file-new icon-20"></i>
+                            </td>
+                            <td>
+                                <span>Assinatura - 001</span>
+                            </td>
+                            <td>
+                                <input type="number" min="1" class="margin-0">
+                            </td>
+                            <td>
+                                <i class="icon-global-button-remove clickable"></i>
+                            </td>
+                            <td class="text-right">
+                                <span>R$ 1.00</span>
+                            </td>
+                            <td class="text-right">
+                                <span>R$ 1.00</span>
+                            </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td>Footer 1</td>
-                            <td>Footer 2</td>
-                            <td>Footer 3</td>
+                            <td colspan="5">
+                                <strong>Valor Total</strong>
+                            </td>
+                            <td class="text-right">
+                                <strong id="strong-total-amount">R$ 4.00</strong>
+                            </td>
                         </tr>
                     </tfoot>
                 </table>

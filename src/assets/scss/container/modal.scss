@@ -13,7 +13,8 @@ div.modal {
     &>.header {
         background-color: $boxcolor1;
         background-image: linear-gradient($boxcolor3, $boxcolor1);
-        padding: 7px 5px;
+        padding: $header-padding;
+        font-size: $header-font-size;
         display: flex;
         >.item {
             align-items: center;

@@ -1,33 +1,68 @@
 .collapse {
-    // margin-bottom: 24px;
+    border-radius: $border-radius;
+    >h4 {
+        margin-top: 1px !important;
+        background: #f4f4f4;
+        padding: $header-padding;
+        margin-bottom: 1px;
+        font-size: $header-font-size;
+        line-height: 24px;
+        >a {
+            margin-top: 3px !important;
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+        &:first-child() {
+            border-radius: $border-radius-first;
+        }
+        &:last-child() {
+            border-radius: $border-radius-last;
+        }
+    }
+    >div {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 1px;
+        padding: 24px 32px 15px;
+        @include breakpoint(medium) {
+            &.responsive {
+                padding: 20px 0 0 0 !important;
+            }
+        }
+    }
+    &.collapse-toggle.selected {
+        color: #599bcd !important;
+    }
 }
 
-.collapse h4 {
-    margin-top: 1px !important;
-    background: #f4f4f4;
-    padding: 8px 16px;
-    margin-bottom: 1px;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.collapse h4 a {
-    margin-top: 3px !important;
-    text-decoration: none;
-    color: #000;
-    display: block;
-}
-
-.collapse>div {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 1px;
-    padding: 24px 32px 15px;
-}
-
-/*.collapse .collapse-toggle{
-    border: 1px dotted salmon;
-}*/
-
-.collapse .collapse-toggle.selected {
-     color:  #599bcd !important;
-}
+// .collapse h4 {
+//     margin-top: 1px !important;
+//     background: #f4f4f4;
+//     padding: $header-padding; // padding: 8px 16px;
+//     margin-bottom: 1px;
+//     font-size: 16px;
+//     line-height: 24px;
+// }
+// .collapse h4:first-child() {
+//     border-radius: $border-radius-first;
+// }
+// .collapse h4:last-child() {
+//     border-radius: $border-radius-last;
+// }
+// .collapse h4 a {
+//     margin-top: 3px !important;
+//     text-decoration: none;
+//     color: #000;
+//     display: block;
+// }
+// .collapse>div {
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     margin-bottom: 1px;
+//     padding: 24px 32px 15px;
+// }
+// /*.collapse .collapse-toggle{
+//     border: 1px dotted salmon;
+// }*/
+// .collapse .collapse-toggle.selected {
+//     color: #599bcd !important;
+// }

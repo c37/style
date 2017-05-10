@@ -2,7 +2,8 @@
     display: inline-block;
     margin: 0 2px;
     opacity: .6;
-    vertical-align: sub;
+    // vertical-align: sub;
+    vertical-align: middle;
     height: 16px;
     width: 16px;
     &:hover {

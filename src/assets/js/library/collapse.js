@@ -39,6 +39,7 @@
                         this.classList.add('selected');
                         document.getElementById(this.rel).classList.remove('hide');
                     }
+
                 }
 
             });
