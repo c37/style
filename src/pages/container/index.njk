@@ -136,7 +136,7 @@
                                 </ul>
                             </div>
                             <div class="footer">
-                                <p>Texto para teste de paragrafo com footer</p>
+                                <p class="margin-0">Texto para teste de paragrafo com footer</p>
                             </div>
                         </div>
 
@@ -375,18 +375,20 @@
             </h3>
             <div class="example">
 
-
-                <div class="tab w-400 w-center">
+                <div id="tab-user-auth" class="tab w-400 w-center">
                     <ul class="header">
                         <li class="item active" data-ref="signin">Entrar</li>
                         <li class="item" data-ref="signup">Criar uma nova conta</li>
                     </ul>
-                    <div class="body" style="padding-bottom: 0">
+                    <div class="body">
                         <div class="item active" data-ref="signin">
                             <form id="form-user-signin" onsubmit="return false;" data-buttercup-form-id="bcup-form:1" data-buttercup="attached">
                                 <label for="">Preencha suas informações</label>
-                                <input id="text-user-signin-email" type="text" value="" placeholder="E-mail">
-                                <input id="text-user-signin-password" type="password" name="" value="" placeholder="Senha">
+                                <label class="strong">E-mail</label>
+                                <input id="text-user-signin-email" type="text" placeholder="Informe seu E-mail">
+
+                                <label class="strong">Senha</label>
+                                <input id="text-user-signin-password" type="password" placeholder="Informe sua Senha">
                                 <div class="text-right">
                                     <input id="checkbox-user-signin" type="checkbox" checked="">
                                     <span class="checkbox clickable" onclick="document.getElementById('checkbox-user-signin').checked = !document.getElementById('checkbox-user-signin').checked"> Permanecer conectado </span>
@@ -396,10 +398,14 @@
                         <div class="item" data-ref="signup">
                             <form id="form-user-signup" onsubmit="return false;" data-buttercup-form-id="bcup-form:2" data-buttercup="attached">
                                 <label for="">Preencha os campos abaixo</label>
-                                <input id="text-user-signup-first-name" type="text" value="" placeholder="Nome">
-                                <input id="text-user-signup-last-name" type="text" name="" value="" placeholder="Sobrenome">
-                                <input id="text-user-signup-email" type="text" name="" value="" placeholder="E-mail">
-                                <input id="text-user-signup-password" type="password" name="" value="" placeholder="Senha">
+                                <label class="strong">Nome</label>
+                                <input id="text-user-signup-first-name" type="text" placeholder="Informe seu Nome">
+                                <label class="strong">Sobrenome</label>
+                                <input id="text-user-signup-last-name" type="text" name="" value="" placeholder="Informe seu Sobrenome">
+                                <label class="strong">E-mail</label>
+                                <input id="text-user-signup-email" type="text" name="" value="" placeholder="Informe seu E-mail">
+                                <label class="strong">Senha</label>
+                                <input id="text-user-signup-password" type="password" placeholder="Escolha sua senha">
                             </form>
                         </div>
                     </div>
@@ -454,6 +460,46 @@
                                 <span>R$ 1.00</span>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <i class="icon-global-file-new icon-20"></i>
+                            </td>
+                            <td>
+                                <span>Assinatura - 001</span>
+                            </td>
+                            <td>
+                                <input type="number" min="1" class="margin-0">
+                            </td>
+                            <td>
+                                <i class="icon-global-button-remove clickable"></i>
+                            </td>
+                            <td class="text-right">
+                                <span>R$ 1.00</span>
+                            </td>
+                            <td class="text-right">
+                                <span>R$ 1.00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="icon-global-file-new icon-20"></i>
+                            </td>
+                            <td>
+                                <span>Assinatura - 001</span>
+                            </td>
+                            <td>
+                                <input type="number" min="1" class="margin-0">
+                            </td>
+                            <td>
+                                <i class="icon-global-button-remove clickable"></i>
+                            </td>
+                            <td class="text-right">
+                                <span>R$ 1.00</span>
+                            </td>
+                            <td class="text-right">
+                                <span>R$ 1.00</span>
+                            </td>
+                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -461,7 +507,7 @@
                                 <strong>Valor Total</strong>
                             </td>
                             <td class="text-right">
-                                <strong id="strong-total-amount">R$ 4.00</strong>
+                                <strong id="strong-total-amount">R$ 3.00</strong>
                             </td>
                         </tr>
                     </tfoot>
