@@ -514,6 +514,14 @@ figure {
     margin: 0 !important;
 }
 
+.margin-to-left {
+    margin-right: auto;
+}
+
+.margin-to-right {
+    margin-left: auto;
+}
+
 // padding
 .padding-0 {
     padding: 0;
@@ -584,6 +592,7 @@ i.cursor-pointer {
 .w-30 {
     width: 30px !important;
 }
+
 .w-35 {
     width: 35px !important;
 }

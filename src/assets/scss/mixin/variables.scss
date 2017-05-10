@@ -117,15 +117,10 @@ $border-radius-last: 0 0 2px 2px;
 $border-radius-top: $border-radius-first;
 $border-radius-bottom: $border-radius-last;
 // border
-
-
 // header
 $header-padding: 9px 9px;
-$header-font-size: $font-size + 1px;
+$header-font-size: $font-size+1px;
 // header
-
-
-
 // global visual class
 .shadow {
     box-shadow: 1px 1px 2px rgba(100, 100, 100, .4);
@@ -325,6 +320,9 @@ $overlay-background-color: rgba(#fff, .95);
 div.example {
     border: 1px solid rgba(0, 0, 0, 0.07);
     padding: 30px;
+    &.responsive {
+        padding: 30px 0 30px 0 !important;
+    }
     pre.code {
         margin-top: 40px;
         margin-bottom: 0;
