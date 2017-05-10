@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Wed May 10 2017 13:33:38 GMT-0300 (BRT)
+ * Static Here - in Wed May 10 2017 16:42:24 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -891,6 +891,9 @@ figure + h6 {
 .margin-0 {
   margin: 0 !important; }
 
+.margin-2 {
+  margin: 2px !important; }
+
 .margin-to-left {
   margin-right: auto; }
 
@@ -1099,6 +1102,10 @@ i.cursor-pointer {
 
 @media (max-width: 768px) {
   .hide-mobile {
+    display: none !important; } }
+
+@media (max-width: 320px) {
+  .hide-mobile-smaller {
     display: none !important; } }
 
 .responsive-img {
@@ -1400,7 +1407,7 @@ nav.nav-section {
   height: 64px !important;
   width: 64px !important; }
 
-.icon-cad-curve, .icon-cad-curve-bezier-cubic, .icon-cad-curve-bezier-quadratic, .icon-cad-curve-spline, .icon-cad-form, .icon-cad-form-circle, .icon-cad-form-polygon, .icon-cad-form-rectangle, .icon-cad-grid-off, .icon-cad-grid-on, .icon-cad-grid-ortho, .icon-cad-grid-snap, .icon-cad-layer, .icon-cad-object-copy, .icon-cad-object-edit, .icon-cad-object-fit, .icon-cad-object-group, .icon-cad-object-mirror, .icon-cad-object-move, .icon-cad-object-remove, .icon-cad-object-rotate, .icon-cad-object-scale, .icon-cad-object-ungroup, .icon-cad-trace, .icon-cad-trace-arc, .icon-cad-trace-line, .icon-cad-trace-polyline, .icon-cad-utility, .icon-cad-utility-annotation, .icon-cad-utility-quote, .icon-cad-utility-ruler, .icon-cam-history, .icon-cam-material, .icon-cam-milling, .icon-cam-milling-carving, .icon-cam-milling-cut, .icon-cam-milling-cut-corners, .icon-cam-milling-cut-in, .icon-cam-milling-cut-out, .icon-cam-milling-cut-start-point, .icon-cam-milling-deepen, .icon-cam-milling-drill, .icon-cam-milling-engrave, .icon-cam-milling-halftone, .icon-cam-milling-order, .icon-cam-milling-trace, .icon-cam-milling-type-cut, .icon-cam-milling-type-deepen, .icon-cam-milling-type-drill, .icon-cam-milling-type-trace, .icon-cam-router-assistant, .icon-cam-router-calcule, .icon-cam-router-export, .icon-cam-tool, .icon-cam-tool-change, .icon-cam-workflow, .icon-controller-axis, .icon-controller-axis-zero-define, .icon-controller-axis-zero-return, .icon-controller-command, .icon-controller-connection, .icon-controller-connection-in, .icon-controller-connection-out, .icon-controller-control, .icon-controller-control-down, .icon-controller-control-left, .icon-controller-control-move, .icon-controller-control-pause, .icon-controller-control-right, .icon-controller-control-start, .icon-controller-control-stop, .icon-controller-control-up, .icon-controller-device, .icon-controller-gcode, .icon-controller-probe-collect, .icon-controller-probe-mode-level, .icon-controller-probe-start, .icon-controller-probe-stop, .icon-global-button-add, .icon-global-button-cancel, .icon-global-button-down, .icon-global-button-edit, .icon-global-button-ok, .icon-global-button-ok-white, .icon-global-button-refresh, .icon-global-button-remove, .icon-global-button-save, .icon-global-button-search, .icon-global-button-setting, .icon-global-file, .icon-global-file-new, .icon-global-file-open, .icon-global-social-facebook, .icon-global-social-instagram, .icon-global-social-pinterest, .icon-global-social-youtube, .icon-global-user, .icon-global-user-add, .icon-global-user-group, .icon-global-user-incognito, .icon-global-user-less, .icon-global-user-location, .icon-global-user-lock, .icon-global-user-unlock, .icon-global-view-home, .icon-global-view-move, .icon-global-view-zoom-minus, .icon-global-view-zoom-more, .icon-global-window-close, .icon-global-window-maximize, .icon-global-window-minimize, .icon-site-learning-group, .icon-site-learning-video, .icon-site-shop-bag, .icon-site-shop-favorite, .icon-site-shop-order-failure, .icon-site-shop-order-success, .icon-site-start-up {
+.icon-cad-curve, .icon-cad-curve-bezier-cubic, .icon-cad-curve-bezier-quadratic, .icon-cad-curve-spline, .icon-cad-form, .icon-cad-form-circle, .icon-cad-form-polygon, .icon-cad-form-rectangle, .icon-cad-grid-off, .icon-cad-grid-on, .icon-cad-grid-ortho, .icon-cad-grid-snap, .icon-cad-history, .icon-cad-layer, .icon-cad-object-copy, .icon-cad-object-edit, .icon-cad-object-fit, .icon-cad-object-group, .icon-cad-object-mirror, .icon-cad-object-move, .icon-cad-object-remove, .icon-cad-object-rotate, .icon-cad-object-scale, .icon-cad-object-ungroup, .icon-cad-revision, .icon-cad-trace, .icon-cad-trace-arc, .icon-cad-trace-line, .icon-cad-trace-polyline, .icon-cad-utility, .icon-cad-utility-annotation, .icon-cad-utility-quote, .icon-cad-utility-ruler, .icon-cam-history, .icon-cam-material, .icon-cam-milling, .icon-cam-milling-carving, .icon-cam-milling-cut, .icon-cam-milling-cut-corners, .icon-cam-milling-cut-in, .icon-cam-milling-cut-out, .icon-cam-milling-cut-start-point, .icon-cam-milling-deepen, .icon-cam-milling-drill, .icon-cam-milling-engrave, .icon-cam-milling-halftone, .icon-cam-milling-order, .icon-cam-milling-trace, .icon-cam-milling-type-cut, .icon-cam-milling-type-deepen, .icon-cam-milling-type-drill, .icon-cam-milling-type-trace, .icon-cam-router-assistant, .icon-cam-router-calcule, .icon-cam-router-export, .icon-cam-tool, .icon-cam-tool-change, .icon-cam-workflow, .icon-controller-axis, .icon-controller-axis-zero-define, .icon-controller-axis-zero-return, .icon-controller-command, .icon-controller-connection, .icon-controller-connection-in, .icon-controller-connection-out, .icon-controller-control, .icon-controller-control-down, .icon-controller-control-left, .icon-controller-control-move, .icon-controller-control-pause, .icon-controller-control-right, .icon-controller-control-start, .icon-controller-control-stop, .icon-controller-control-up, .icon-controller-device, .icon-controller-gcode, .icon-controller-probe-collect, .icon-controller-probe-mode-level, .icon-controller-probe-start, .icon-controller-probe-stop, .icon-global-button-add, .icon-global-button-cancel, .icon-global-button-down, .icon-global-button-edit, .icon-global-button-ok, .icon-global-button-ok-white, .icon-global-button-refresh, .icon-global-button-remove, .icon-global-button-save, .icon-global-button-search, .icon-global-button-setting, .icon-global-file, .icon-global-file-export, .icon-global-file-import, .icon-global-file-new, .icon-global-file-open, .icon-global-social-facebook, .icon-global-social-instagram, .icon-global-social-pinterest, .icon-global-social-youtube, .icon-global-user, .icon-global-user-add, .icon-global-user-group, .icon-global-user-incognito, .icon-global-user-less, .icon-global-user-location, .icon-global-user-lock, .icon-global-user-unlock, .icon-global-view-home, .icon-global-view-move, .icon-global-view-zoom-minus, .icon-global-view-zoom-more, .icon-global-window-close, .icon-global-window-maximize, .icon-global-window-minimize, .icon-site-learning-group, .icon-site-learning-video, .icon-site-shop-bag, .icon-site-shop-favorite, .icon-site-shop-order-failure, .icon-site-shop-order-success, .icon-site-start-up {
   background: url("../img/icon.svg") no-repeat;
   background-size: 100% auto !important; }
 
@@ -1408,352 +1415,364 @@ nav.nav-section {
   background-position: 0 0; }
 
 .icon-cad-curve-bezier-cubic {
-  background-position: 0 0.8547008547008547%; }
+  background-position: 0 0.8264462809917356%; }
 
 .icon-cad-curve-bezier-quadratic {
-  background-position: 0 1.7094017094017093%; }
+  background-position: 0 1.6528925619834711%; }
 
 .icon-cad-curve-spline {
-  background-position: 0 2.5641025641025643%; }
+  background-position: 0 2.479338842975207%; }
 
 .icon-cad-form {
-  background-position: 0 3.4188034188034186%; }
+  background-position: 0 3.3057851239669422%; }
 
 .icon-cad-form-circle {
-  background-position: 0 4.273504273504273%; }
+  background-position: 0 4.132231404958677%; }
 
 .icon-cad-form-polygon {
-  background-position: 0 5.128205128205129%; }
+  background-position: 0 4.958677685950414%; }
 
 .icon-cad-form-rectangle {
-  background-position: 0 5.982905982905983%; }
+  background-position: 0 5.785123966942149%; }
 
 .icon-cad-grid-off {
-  background-position: 0 6.837606837606837%; }
+  background-position: 0 6.6115702479338845%; }
 
 .icon-cad-grid-on {
-  background-position: 0 7.6923076923076925%; }
+  background-position: 0 7.43801652892562%; }
 
 .icon-cad-grid-ortho {
-  background-position: 0 8.547008547008547%; }
+  background-position: 0 8.264462809917354%; }
 
 .icon-cad-grid-snap {
-  background-position: 0 9.401709401709402%; }
+  background-position: 0 9.090909090909092%; }
+
+.icon-cad-history {
+  background-position: 0 9.917355371900827%; }
 
 .icon-cad-layer {
-  background-position: 0 10.256410256410257%; }
+  background-position: 0 10.743801652892563%; }
 
 .icon-cad-object-copy {
-  background-position: 0 11.11111111111111%; }
+  background-position: 0 11.570247933884298%; }
 
 .icon-cad-object-edit {
-  background-position: 0 11.965811965811966%; }
+  background-position: 0 12.396694214876034%; }
 
 .icon-cad-object-fit {
-  background-position: 0 12.820512820512821%; }
+  background-position: 0 13.223140495867769%; }
 
 .icon-cad-object-group {
-  background-position: 0 13.675213675213675%; }
+  background-position: 0 14.049586776859504%; }
 
 .icon-cad-object-mirror {
-  background-position: 0 14.52991452991453%; }
+  background-position: 0 14.87603305785124%; }
 
 .icon-cad-object-move {
-  background-position: 0 15.384615384615385%; }
+  background-position: 0 15.702479338842975%; }
 
 .icon-cad-object-remove {
-  background-position: 0 16.23931623931624%; }
+  background-position: 0 16.52892561983471%; }
 
 .icon-cad-object-rotate {
-  background-position: 0 17.094017094017094%; }
+  background-position: 0 17.355371900826448%; }
 
 .icon-cad-object-scale {
-  background-position: 0 17.94871794871795%; }
+  background-position: 0 18.181818181818183%; }
 
 .icon-cad-object-ungroup {
-  background-position: 0 18.803418803418804%; }
+  background-position: 0 19.00826446280992%; }
+
+.icon-cad-revision {
+  background-position: 0 19.834710743801654%; }
 
 .icon-cad-trace {
-  background-position: 0 19.65811965811966%; }
+  background-position: 0 20.66115702479339%; }
 
 .icon-cad-trace-arc {
-  background-position: 0 20.512820512820515%; }
+  background-position: 0 21.487603305785125%; }
 
 .icon-cad-trace-line {
-  background-position: 0 21.367521367521366%; }
+  background-position: 0 22.31404958677686%; }
 
 .icon-cad-trace-polyline {
-  background-position: 0 22.22222222222222%; }
+  background-position: 0 23.140495867768596%; }
 
 .icon-cad-utility {
-  background-position: 0 23.076923076923077%; }
+  background-position: 0 23.96694214876033%; }
 
 .icon-cad-utility-annotation {
-  background-position: 0 23.931623931623932%; }
+  background-position: 0 24.793388429752067%; }
 
 .icon-cad-utility-quote {
-  background-position: 0 24.786324786324787%; }
+  background-position: 0 25.619834710743802%; }
 
 .icon-cad-utility-ruler {
-  background-position: 0 25.641025641025642%; }
+  background-position: 0 26.446280991735538%; }
 
 .icon-cam-history {
-  background-position: 0 26.495726495726494%; }
+  background-position: 0 27.272727272727273%; }
 
 .icon-cam-material {
-  background-position: 0 27.35042735042735%; }
+  background-position: 0 28.09917355371901%; }
 
 .icon-cam-milling {
-  background-position: 0 28.205128205128204%; }
+  background-position: 0 28.925619834710744%; }
 
 .icon-cam-milling-carving {
-  background-position: 0 29.05982905982906%; }
+  background-position: 0 29.75206611570248%; }
 
 .icon-cam-milling-cut {
-  background-position: 0 29.914529914529915%; }
+  background-position: 0 30.578512396694215%; }
 
 .icon-cam-milling-cut-corners {
-  background-position: 0 30.76923076923077%; }
+  background-position: 0 31.40495867768595%; }
 
 .icon-cam-milling-cut-in {
-  background-position: 0 31.623931623931625%; }
+  background-position: 0 32.231404958677686%; }
 
 .icon-cam-milling-cut-out {
-  background-position: 0 32.47863247863248%; }
+  background-position: 0 33.05785123966942%; }
 
 .icon-cam-milling-cut-start-point {
-  background-position: 0 33.333333333333336%; }
+  background-position: 0 33.88429752066116%; }
 
 .icon-cam-milling-deepen {
-  background-position: 0 34.18803418803419%; }
+  background-position: 0 34.710743801652896%; }
 
 .icon-cam-milling-drill {
-  background-position: 0 35.042735042735046%; }
+  background-position: 0 35.53719008264463%; }
 
 .icon-cam-milling-engrave {
-  background-position: 0 35.8974358974359%; }
+  background-position: 0 36.36363636363637%; }
 
 .icon-cam-milling-halftone {
-  background-position: 0 36.75213675213675%; }
+  background-position: 0 37.1900826446281%; }
 
 .icon-cam-milling-order {
-  background-position: 0 37.60683760683761%; }
+  background-position: 0 38.01652892561984%; }
 
 .icon-cam-milling-trace {
-  background-position: 0 38.46153846153846%; }
+  background-position: 0 38.84297520661157%; }
 
 .icon-cam-milling-type-cut {
-  background-position: 0 39.31623931623932%; }
+  background-position: 0 39.66942148760331%; }
 
 .icon-cam-milling-type-deepen {
-  background-position: 0 40.17094017094017%; }
+  background-position: 0 40.49586776859504%; }
 
 .icon-cam-milling-type-drill {
-  background-position: 0 41.02564102564103%; }
+  background-position: 0 41.32231404958678%; }
 
 .icon-cam-milling-type-trace {
-  background-position: 0 41.88034188034188%; }
+  background-position: 0 42.14876033057851%; }
 
 .icon-cam-router-assistant {
-  background-position: 0 42.73504273504273%; }
+  background-position: 0 42.97520661157025%; }
 
 .icon-cam-router-calcule {
-  background-position: 0 43.58974358974359%; }
+  background-position: 0 43.80165289256198%; }
 
 .icon-cam-router-export {
-  background-position: 0 44.44444444444444%; }
+  background-position: 0 44.62809917355372%; }
 
 .icon-cam-tool {
-  background-position: 0 45.2991452991453%; }
+  background-position: 0 45.45454545454545%; }
 
 .icon-cam-tool-change {
-  background-position: 0 46.15384615384615%; }
+  background-position: 0 46.28099173553719%; }
 
 .icon-cam-workflow {
-  background-position: 0 47.00854700854701%; }
+  background-position: 0 47.107438016528924%; }
 
 .icon-controller-axis {
-  background-position: 0 47.863247863247864%; }
+  background-position: 0 47.93388429752066%; }
 
 .icon-controller-axis-zero-define {
-  background-position: 0 48.717948717948715%; }
+  background-position: 0 48.760330578512395%; }
 
 .icon-controller-axis-zero-return {
-  background-position: 0 49.572649572649574%; }
+  background-position: 0 49.586776859504134%; }
 
 .icon-controller-command {
-  background-position: 0 50.427350427350426%; }
+  background-position: 0 50.413223140495866%; }
 
 .icon-controller-connection {
-  background-position: 0 51.282051282051285%; }
+  background-position: 0 51.239669421487605%; }
 
 .icon-controller-connection-in {
-  background-position: 0 52.136752136752136%; }
+  background-position: 0 52.06611570247934%; }
 
 .icon-controller-connection-out {
-  background-position: 0 52.99145299145299%; }
+  background-position: 0 52.892561983471076%; }
 
 .icon-controller-control {
-  background-position: 0 53.84615384615385%; }
+  background-position: 0 53.71900826446281%; }
 
 .icon-controller-control-down {
-  background-position: 0 54.7008547008547%; }
+  background-position: 0 54.54545454545455%; }
 
 .icon-controller-control-left {
-  background-position: 0 55.55555555555556%; }
+  background-position: 0 55.37190082644628%; }
 
 .icon-controller-control-move {
-  background-position: 0 56.41025641025641%; }
+  background-position: 0 56.19834710743802%; }
 
 .icon-controller-control-pause {
-  background-position: 0 57.26495726495727%; }
+  background-position: 0 57.02479338842975%; }
 
 .icon-controller-control-right {
-  background-position: 0 58.11965811965812%; }
+  background-position: 0 57.85123966942149%; }
 
 .icon-controller-control-start {
-  background-position: 0 58.97435897435897%; }
+  background-position: 0 58.67768595041322%; }
 
 .icon-controller-control-stop {
-  background-position: 0 59.82905982905983%; }
+  background-position: 0 59.50413223140496%; }
 
 .icon-controller-control-up {
-  background-position: 0 60.68376068376068%; }
+  background-position: 0 60.33057851239669%; }
 
 .icon-controller-device {
-  background-position: 0 61.53846153846154%; }
+  background-position: 0 61.15702479338843%; }
 
 .icon-controller-gcode {
-  background-position: 0 62.39316239316239%; }
+  background-position: 0 61.98347107438016%; }
 
 .icon-controller-probe-collect {
-  background-position: 0 63.24786324786325%; }
+  background-position: 0 62.8099173553719%; }
 
 .icon-controller-probe-mode-level {
-  background-position: 0 64.1025641025641%; }
+  background-position: 0 63.63636363636363%; }
 
 .icon-controller-probe-start {
-  background-position: 0 64.95726495726495%; }
+  background-position: 0 64.46280991735537%; }
 
 .icon-controller-probe-stop {
-  background-position: 0 65.8119658119658%; }
+  background-position: 0 65.2892561983471%; }
 
 .icon-global-button-add {
-  background-position: 0 66.66666666666667%; }
+  background-position: 0 66.11570247933884%; }
 
 .icon-global-button-cancel {
-  background-position: 0 67.52136752136752%; }
+  background-position: 0 66.94214876033058%; }
 
 .icon-global-button-down {
-  background-position: 0 68.37606837606837%; }
+  background-position: 0 67.76859504132231%; }
 
 .icon-global-button-edit {
-  background-position: 0 69.23076923076923%; }
+  background-position: 0 68.59504132231405%; }
 
 .icon-global-button-ok {
-  background-position: 0 70.08547008547009%; }
+  background-position: 0 69.42148760330579%; }
 
 .icon-global-button-ok-white {
-  background-position: 0 70.94017094017094%; }
+  background-position: 0 70.24793388429752%; }
 
 .icon-global-button-refresh {
-  background-position: 0 71.7948717948718%; }
+  background-position: 0 71.07438016528926%; }
 
 .icon-global-button-remove {
-  background-position: 0 72.64957264957265%; }
+  background-position: 0 71.90082644628099%; }
 
 .icon-global-button-save {
-  background-position: 0 73.5042735042735%; }
+  background-position: 0 72.72727272727273%; }
 
 .icon-global-button-search {
-  background-position: 0 74.35897435897436%; }
+  background-position: 0 73.55371900826447%; }
 
 .icon-global-button-setting {
-  background-position: 0 75.21367521367522%; }
+  background-position: 0 74.3801652892562%; }
 
 .icon-global-file {
-  background-position: 0 76.06837606837607%; }
+  background-position: 0 75.20661157024793%; }
+
+.icon-global-file-export {
+  background-position: 0 76.03305785123968%; }
+
+.icon-global-file-import {
+  background-position: 0 76.85950413223141%; }
 
 .icon-global-file-new {
-  background-position: 0 76.92307692307692%; }
+  background-position: 0 77.68595041322314%; }
 
 .icon-global-file-open {
-  background-position: 0 77.77777777777777%; }
+  background-position: 0 78.51239669421487%; }
 
 .icon-global-social-facebook {
-  background-position: 0 78.63247863247864%; }
+  background-position: 0 79.33884297520662%; }
 
 .icon-global-social-instagram {
-  background-position: 0 79.48717948717949%; }
+  background-position: 0 80.16528925619835%; }
 
 .icon-global-social-pinterest {
-  background-position: 0 80.34188034188034%; }
+  background-position: 0 80.99173553719008%; }
 
 .icon-global-social-youtube {
-  background-position: 0 81.19658119658119%; }
+  background-position: 0 81.81818181818181%; }
 
 .icon-global-user {
-  background-position: 0 82.05128205128206%; }
+  background-position: 0 82.64462809917356%; }
 
 .icon-global-user-add {
-  background-position: 0 82.90598290598291%; }
+  background-position: 0 83.47107438016529%; }
 
 .icon-global-user-group {
-  background-position: 0 83.76068376068376%; }
+  background-position: 0 84.29752066115702%; }
 
 .icon-global-user-incognito {
-  background-position: 0 84.61538461538461%; }
+  background-position: 0 85.12396694214875%; }
 
 .icon-global-user-less {
-  background-position: 0 85.47008547008546%; }
+  background-position: 0 85.9504132231405%; }
 
 .icon-global-user-location {
-  background-position: 0 86.32478632478633%; }
+  background-position: 0 86.77685950413223%; }
 
 .icon-global-user-lock {
-  background-position: 0 87.17948717948718%; }
+  background-position: 0 87.60330578512396%; }
 
 .icon-global-user-unlock {
-  background-position: 0 88.03418803418803%; }
+  background-position: 0 88.4297520661157%; }
 
 .icon-global-view-home {
-  background-position: 0 88.88888888888889%; }
+  background-position: 0 89.25619834710744%; }
 
 .icon-global-view-move {
-  background-position: 0 89.74358974358974%; }
+  background-position: 0 90.08264462809917%; }
 
 .icon-global-view-zoom-minus {
-  background-position: 0 90.5982905982906%; }
+  background-position: 0 90.9090909090909%; }
 
 .icon-global-view-zoom-more {
-  background-position: 0 91.45299145299145%; }
+  background-position: 0 91.73553719008264%; }
 
 .icon-global-window-close {
-  background-position: 0 92.3076923076923%; }
+  background-position: 0 92.56198347107438%; }
 
 .icon-global-window-maximize {
-  background-position: 0 93.16239316239316%; }
+  background-position: 0 93.38842975206612%; }
 
 .icon-global-window-minimize {
-  background-position: 0 94.01709401709402%; }
+  background-position: 0 94.21487603305785%; }
 
 .icon-site-learning-group {
-  background-position: 0 94.87179487179488%; }
+  background-position: 0 95.04132231404958%; }
 
 .icon-site-learning-video {
-  background-position: 0 95.72649572649573%; }
+  background-position: 0 95.86776859504133%; }
 
 .icon-site-shop-bag {
-  background-position: 0 96.58119658119658%; }
+  background-position: 0 96.69421487603306%; }
 
 .icon-site-shop-favorite {
-  background-position: 0 97.43589743589743%; }
+  background-position: 0 97.52066115702479%; }
 
 .icon-site-shop-order-failure {
-  background-position: 0 98.2905982905983%; }
+  background-position: 0 98.34710743801652%; }
 
 .icon-site-shop-order-success {
-  background-position: 0 99.14529914529915%; }
+  background-position: 0 99.17355371900827%; }
 
 .icon-site-start-up {
   background-position: 0 100%; }
@@ -2878,7 +2897,7 @@ table.table caption {
   .table td {
     padding: 3px; }
   table th span {
-    width: 55px;
+    width: 50px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
