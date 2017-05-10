@@ -28,7 +28,7 @@ $break-large: 1440px !default;
 $break-big: 1024px !default;
 $break-medium: 768px !default;
 $break-small: 580px !default;
-$break-smaller: 320px !default;
+$break-smaller: 360px !default;
 // font family
 $font-family: 'lucida grande',
 tahoma,
@@ -320,8 +320,10 @@ $overlay-background-color: rgba(#fff, .95);
 div.example {
     border: 1px solid rgba(0, 0, 0, 0.07);
     padding: 30px;
-    &.responsive {
-        padding: 30px 0 30px 0 !important;
+    @media (max-width: $break-smaller) {
+        &.responsive {
+            padding: 30px 0 30px 0 !important;
+        }
     }
     pre.code {
         margin-top: 40px;
