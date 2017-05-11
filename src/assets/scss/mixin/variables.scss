@@ -23,12 +23,14 @@ $width-big: 1024px !default;
 $width-medium: 960px !default;
 $width-small: 840px !default;
 $width-smaller: 600px !default;
+
 // break points
 $break-large: 1440px !default;
 $break-big: 1024px !default;
 $break-medium: 768px !default;
 $break-small: 580px !default;
 $break-smaller: 360px !default;
+
 // font family
 $font-family: 'lucida grande',
 tahoma,
@@ -39,21 +41,26 @@ $font-family-monospace: Consolas,
 Monaco,
 'Courier New',
 monospace !default;
+
 // font size
 $font-size: 14px !default;
 $font-size-large: $font-size+6px !default;
 $font-size-big: $font-size+4px !default;
 $font-size-small: $font-size - 2px !default;
 $font-size-smaller: $font-size - 4px !default;
+
 // baseline
 $base-line-large: 32px !default;
 $base-line-big: 28px !default;
 $base-line: 22px !default;
 $base-line-small: 20px - 2px !default;
 $base-line-smaller: 20px - 6px !default;
+
 // margin
 $text-margin-bottom: $font-size !default;
+
 // headings
+
 // font size
 $heading-font-size-title: 60px !default;
 $heading-font-size-1: 48px !default;
@@ -62,6 +69,7 @@ $heading-font-size-3: 24px !default;
 $heading-font-size-4: 21px !default;
 $heading-font-size-5: 18px !default;
 $heading-font-size-6: 16px !default;
+
 // baseline
 $heading-base-line-title: 64px !default;
 $heading-base-line-1: 52px !default;
@@ -70,6 +78,7 @@ $heading-base-line-3: 32px !default;
 $heading-base-line-4: 32px !default;
 $heading-base-line-5: 28px !default;
 $heading-base-line-6: 24px !default;
+
 // margin
 $heading-margin-top-title: $heading-base-line-1 - 10px;
 $heading-margin-top-1: $heading-base-line-1 - 10px;
@@ -79,25 +88,24 @@ $heading-margin-top-4: $heading-base-line-4 - 10px;
 $heading-margin-top-5: $heading-base-line-5 - 10px;
 $heading-margin-top-6: $heading-base-line-6 - 10px;
 $heading-margin-bottom: $font-size - 4px !default;
+
 // colors
 // text
 $color-text: #666665 !default;
 $color-headings: #676b72 !default;
+
 // links
 $color-link: #599bcd !default;
 $color-link-hover: #666665 !default;
 $color-link-selected: #599bcd !default;
 $color-link-mark: rgba(0, 0, 0, 0.3)!default;
-// button
-$color-button-primary: #1c86f2 !default;
-$color-button-primary-text: #fff !default;
-$color-button-secondary: #313439 !default;
-$color-button-secondary-text: #fff !default;
+
 // atates
 $color-error: #f03c69 !default;
 $color-success: #35beb1 !default;
 $color-warning: #f7ba45 !default;
 $color-focus: #1c86f2 !default;
+
 // extra
 $color-inverted: #fff !default;
 $color-highlight: #edf2ff !default; // color-focus 15% opacity
@@ -109,18 +117,26 @@ $color-gray: #bdbdbd !default;
 $color-lightgray: #d4d4d4 !default;
 $color-silver: #e0e1e1 !default;
 $color-aluminum: #f8f8f8 !default;
+
+
 // border
+$border-color: rgb(197, 197, 197);
+
 // https://developer.mozilla.org/pt-BR/docs/Web/CSS/border-radius
 $border-radius: 2px;
 $border-radius-first: 2px 2px 0 0;
 $border-radius-last: 0 0 2px 2px;
 $border-radius-top: $border-radius-first;
 $border-radius-bottom: $border-radius-last;
-// border
+
+
 // header
 $header-padding: 9px 9px;
 $header-font-size: $font-size+1px;
 // header
+
+
+
 // global visual class
 .shadow {
     box-shadow: 1px 1px 2px rgba(100, 100, 100, .4);
@@ -350,3 +366,38 @@ div.code {
         }
     }
 }
+
+
+
+
+
+
+
+
+// button
+$button-margin: 0 3px;
+$button-padding: 1px 7px;
+
+// default
+$button-default-color: $color-text;
+
+$button-default-background: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
+$button-default-background-active: linear-gradient(rgb(250, 250, 250), rgb(217, 217, 217));
+$button-default-background-disabled: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
+$button-default-background-selected: #dcdcdc none;
+
+$button-default-border: 1px solid $border-color;
+$button-default-border-active: 1px solid rgb(189, 189, 189);
+$button-default-border-disabled: 1px solid rgb(197, 197, 197);
+$button-default-border-selected: 1px solid rgb(189, 189, 189);
+
+// success
+$button-success-color: rgb(255, 255, 255);
+
+$button-success-background: rgb(96, 176, 68) linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
+$button-success-background-active: linear-gradient(rgb(250, 250, 250), rgb(217, 217, 217));
+$button-success-background-disabled: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
+
+$button-success-border: 1px solid rgb(92, 169, 65);
+$button-success-border-active: 1px solid rgb(189, 189, 189);
+$button-success-border-disabled: 1px solid rgb(197, 197, 197);

@@ -1,21 +1,20 @@
 /* default */
-
 button.button {
+    display: inline-block;
     font: inherit;
 
-            // align-items: center;
-            // display: inline-flex;
+    background: $button-default-background;
+    color: $button-default-color;
 
-    display: inline-block;
-    padding: 1px 7px;
-    margin: 0 3px;
-    color: #3d3b36;
-    text-align: left;
-    background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
-    border: 1px solid rgb(197, 197, 197);
+    padding: $button-padding;
+    margin: $button-margin;
+
+    border: $button-default-border;
     border-radius: $border-radius;
-    outline: none;
+
     cursor: pointer !important;
+    outline: none;
+
     * {
         cursor: pointer !important;
     }
@@ -31,10 +30,11 @@ button.button {
     }
     &:hover{
         & > i {
-            opacity: 1;
+            opacity: .85;
         }
     }
 }
+
 a.detail{
     float: left;
     padding: 2px 5px;
@@ -75,22 +75,17 @@ a.detail{
     }
 }
 
-
-
 button.button:hover,
 button.button:active {
-    color: #393b3e;
-    background-image: linear-gradient(rgb(250, 250, 250), rgb(217, 217, 217));
-    border-color: rgb(189, 189, 189);
+    background: $button-default-background-active;
+    border: $button-default-border-active;
 }
 
 button.button.disabled,
 button.button:hover .disabled {
     opacity: .5 !important;
-    color: rgb(102, 102, 102) !important;
-    background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234)) !important;
-    background-color: rgb(229, 229, 229);
-    border-color: rgb(197, 197, 197) !important;
+    background: $button-default-background-disabled;
+    border: $button-default-border-disabled;
     cursor: default !important;
     * {
         cursor: default !important;
@@ -98,27 +93,24 @@ button.button:hover .disabled {
     }
 }
 
-
 button.button.selected {
-    color: #393b3e;
-    background-image: none;
-    background-color: #dcdcdc;
-    border-color: rgb(189, 189, 189);
+    background: $button-default-background-selected;
+    border-color: $button-default-border-selected;
     cursor: default !important;
-    opacity: 1 !important;
+    opacity: .85 !important;
     *{
         cursor: default !important;
-        opacity: 1 !important;
+        opacity: .85 !important;
     }
 }
 /* default */
+
 /* success */
 
 button.button.success {
-    color: rgb(255, 255, 255);
-    background-color: rgb(96, 176, 68);
-    background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
-    border-color: rgb(92, 169, 65);
+    color: $button-success-color;
+    background: $button-success-background;
+    border: $button-success-border;
 }
 
 button.button.success:hover,

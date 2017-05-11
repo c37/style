@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Wed May 10 2017 20:11:20 GMT-0300 (BRT)
+ * Static Here - in Thu May 11 2017 01:45:09 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1907,18 +1907,17 @@ nav.nav-section {
 /* component */
 /* default */
 button.button {
-  font: inherit;
   display: inline-block;
+  font: inherit;
+  background: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background: linear-gradient(#fafafa, #eaeaea);
+  color: #666665;
   padding: 1px 7px;
   margin: 0 3px;
-  color: #3d3b36;
-  text-align: left;
-  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
-  background-image: linear-gradient(#fafafa, #eaeaea);
   border: 1px solid #c5c5c5;
   border-radius: 2px;
-  outline: none;
-  cursor: pointer !important; }
+  cursor: pointer !important;
+  outline: none; }
   button.button * {
     cursor: pointer !important; }
   button.button > i {
@@ -1930,7 +1929,7 @@ button.button {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   button.button:hover > i {
-    opacity: 1; }
+    opacity: .85; }
 
 a.detail {
   float: left;
@@ -1961,19 +1960,16 @@ a.detail {
 
 button.button:hover,
 button.button:active {
-  color: #393b3e;
-  background-image: -webkit-linear-gradient(#fafafa, #d9d9d9);
-  background-image: linear-gradient(#fafafa, #d9d9d9);
-  border-color: #bdbdbd; }
+  background: -webkit-linear-gradient(#fafafa, #d9d9d9);
+  background: linear-gradient(#fafafa, #d9d9d9);
+  border: 1px solid #bdbdbd; }
 
 button.button.disabled,
 button.button:hover .disabled {
   opacity: .5 !important;
-  color: #666666 !important;
-  background-image: -webkit-linear-gradient(#fafafa, #eaeaea) !important;
-  background-image: linear-gradient(#fafafa, #eaeaea) !important;
-  background-color: #e5e5e5;
-  border-color: #c5c5c5 !important;
+  background: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background: linear-gradient(#fafafa, #eaeaea);
+  border: 1px solid #c5c5c5;
   cursor: default !important; }
   button.button.disabled *,
   button.button:hover .disabled * {
@@ -1981,24 +1977,21 @@ button.button:hover .disabled {
     opacity: .5 !important; }
 
 button.button.selected {
-  color: #393b3e;
-  background-image: none;
-  background-color: #dcdcdc;
-  border-color: #bdbdbd;
+  background: #dcdcdc none;
+  border-color: 1px solid #bdbdbd;
   cursor: default !important;
-  opacity: 1 !important; }
+  opacity: .85 !important; }
   button.button.selected * {
     cursor: default !important;
-    opacity: 1 !important; }
+    opacity: .85 !important; }
 
 /* default */
 /* success */
 button.button.success {
   color: white;
-  background-color: #60b044;
-  background-image: -webkit-linear-gradient(#8add6d, #60b044);
-  background-image: linear-gradient(#8add6d, #60b044);
-  border-color: #5ca941; }
+  background: #60b044 -webkit-linear-gradient(#8add6d, #60b044);
+  background: #60b044 linear-gradient(#8add6d, #60b044);
+  border: 1px solid #5ca941; }
 
 button.button.success:hover,
 button.button.success:active {

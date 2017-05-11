@@ -11,6 +11,9 @@
 - http://placehold.it/
 
 
+- https://developer.mozilla.org/pt-BR/docs/Web/CSS/background
+
+
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
