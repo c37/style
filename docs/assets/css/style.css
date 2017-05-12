@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Fri May 12 2017 19:06:14 GMT-0300 (BRT)
+ * Static Here - in Fri May 12 2017 20:42:03 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -859,7 +859,11 @@ figure + h6 {
   float: right; }
 
 .w-center {
-  margin: auto !important; }
+  margin: auto !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .w-middle {
   display: -webkit-box;
@@ -1370,7 +1374,7 @@ nav.nav-section {
 /* graphic */
 [class^="icon-"] {
   display: inline-block;
-  margin: 0 2px;
+  margin: 0 3px;
   opacity: .6;
   vertical-align: middle;
   height: 16px;
@@ -2738,7 +2742,7 @@ input:focus,
 textarea {
   height: 27px;
   width: 100%;
-  font-size: 11px;
+  font-size: 12px;
   border: 1px solid #cccccc;
   padding: 3px 3px 3px 5px;
   margin: 0 0 11px 0;
@@ -2950,7 +2954,7 @@ table.table caption {
 @media (min-width: 768px) {
   .table th,
   .table td {
-    padding: 9px;
+    padding: 7px;
     vertical-align: middle; } }
 
 @media (max-width: 768px) {

@@ -29,6 +29,7 @@ table.table caption {
     vertical-align: middle;
 }
 
+
 .table th,
 .table td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -37,7 +38,7 @@ table.table caption {
 @media (min-width: 768px) {
     .table th,
     .table td {
-        padding: 9px;
+        padding: 7px;
         vertical-align: middle;
     }
 }
