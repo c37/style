@@ -23,9 +23,10 @@ header {
                     align-items: center;
                     display: flex;
                     >a {
+                        font-size: $header-font-size + 1px;
                         >.logo-c37 {
                             display: block;
-                            width: 41px;
+                            width: 41px; 
                             height: 41px;
                         }
                         color: #666665; // color: #3b4854;

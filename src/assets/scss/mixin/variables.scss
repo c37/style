@@ -43,7 +43,7 @@ Monaco,
 monospace !default;
 
 // font size
-$font-size: 14px !default;
+$font-size: 12px !default;
 $font-size-large: $font-size+6px !default;
 $font-size-big: $font-size+4px !default;
 $font-size-small: $font-size - 2px !default;
@@ -131,8 +131,8 @@ $border-radius-bottom: $border-radius-last;
 
 
 // header
-$header-padding: 9px 9px;
-$header-font-size: $font-size+1px;
+$header-padding: 5px 9px;
+$header-font-size: $font-size + 1px;
 // header
 
 
