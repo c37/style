@@ -9,7 +9,7 @@ table.table {
 
 table.table caption {
     text-align: left;
-    font-size: 14px;
+    font-size: $font-size + 1px;
     font-weight: 500;
     color: #676b72;
 }
@@ -37,7 +37,8 @@ table.table caption {
 @media (min-width: 768px) {
     .table th,
     .table td {
-        padding: 11px;
+        padding: 9px;
+        vertical-align: middle;
     }
 }
 

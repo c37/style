@@ -1,29 +1,56 @@
 .collapse {
     border-radius: $border-radius;
-    >h4 {
-        margin-top: 1px !important;
-        background: #f4f4f4;
-        padding: $header-padding;
-        margin-bottom: 1px;
+    >.first {
+        border-radius: $border-radius-first;
+    }
+    >.last {
+        border-radius: $border-radius-last;
+    }
+    >.header {
+        display: flex;
+        border: 1px solid $boxcolor4;
+        box-sizing: border-box;
         font-size: $header-font-size;
-        line-height: 24px;
-        >a {
-            margin-top: 3px !important;
-            text-decoration: none;
-            color: #000;
-            display: block;
+        background-color: $boxcolor1;
+        background-image: linear-gradient($boxcolor3, $boxcolor1);
+        padding: $header-padding;
+        margin-top: 2px;
+        cursor: pointer;
+        &:hover {
+            >.item {
+                &>i {
+                    opacity: .88;
+                }
+            }
         }
-        &:first-child() {
-            border-radius: $border-radius-first;
-        }
-        &:last-child() {
-            border-radius: $border-radius-last;
+        >.item {
+            align-items: center;
+            display: flex;
+            margin-right: 5px;
+            &>strong {
+                font-size: $font-size + 1px;
+            }
+            &>i {
+                margin: 0px;
+            }
+            &.right {
+                margin-left: auto;
+                margin-right: 0px;
+                &>i {
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1;
+                        transition: all linear 0.2s;
+                    }
+                }
+            }
         }
     }
-    >div {
+    >.body {
         border: 1px solid rgba(0, 0, 0, 0.1);
-        margin-bottom: 1px;
-        padding: 24px 32px 15px;
+        border-top: none;
+        margin-bottom: 2px;
+        padding: 18px 25px;
         @include breakpoint(medium) {
             &.responsive {
                 padding: 20px 0 0 0 !important;

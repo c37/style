@@ -14,6 +14,10 @@
     height: 26px;
     padding: 1px 9px;
     position: relative;
+    >div{
+        display: flex;
+        align-items: center;
+    }
     &:hover {
         background-color: $option-color1;
         background-image: -moz-linear-gradient($option-color0, $option-color1);
@@ -52,7 +56,7 @@
     // http://apps.eky.hk/css-triangle-generator/
     display: inline-block;
     position: relative;
-    top: -2px;
+    margin-left: 3px;
     width: 0;
     height: 0;
     border-style: solid;

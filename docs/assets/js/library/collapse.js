@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Fri May 12 2017 14:54:00 GMT-0300 (BRT)
+ * Static Here - in Fri May 12 2017 19:06:18 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -41,25 +41,25 @@
                 // para o set do valor
                 collapse.setSelected = setSelected;
 
-                collapse.querySelectorAll('h4>a').forEach(function (item) {
+                collapse.querySelectorAll('.header').forEach(function (item) {
 
                     item.onclick = function (e) {
 
                         var target = '';
 
-                        collapse.querySelectorAll('h4>a').forEach(function (item) {
+                        collapse.querySelectorAll('.header').forEach(function (item) {
 
                             if (item.classList.contains('selected')) {
-                                target = item.rel;
+                                target = item.dataset.body;
                             }
 
                             item.classList.remove('selected');
-                            document.getElementById(item.rel).classList.add('hide');
+                            document.getElementById(item.dataset.body).classList.add('hide');
                         });
 
-                        if (target !== this.rel) {
+                        if (target !== this.dataset.body) {
                             this.classList.add('selected');
-                            document.getElementById(this.rel).classList.remove('hide');
+                            document.getElementById(this.dataset.body).classList.remove('hide');
                         }
                     };
                 });
@@ -70,14 +70,14 @@
 
             var collapse = this;
 
-            collapse.querySelectorAll('h4>a').forEach(function (item) {
+            collapse.querySelectorAll('.header').forEach(function (item) {
 
                 item.classList.remove('selected');
-                document.getElementById(item.rel).classList.add('hide');
+                document.getElementById(item.dataset.body).classList.add('hide');
 
-                if (target === item.rel) {
+                if (target === item.dataset.body) {
                     item.classList.add('selected');
-                    document.getElementById(item.rel).classList.remove('hide');
+                    document.getElementById(item.dataset.body).classList.remove('hide');
                 }
             });
         }
