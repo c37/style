@@ -1,8 +1,11 @@
 {% extends "base.njk" %} {% block content %}
- 
+
 <div class="grid small">
+
     <div class="row">
+
         <div class="column column-12">
+
             <div class="hero">
                 <h1>Style<small> + {scss} = Css</small></h1>
                 <p>
@@ -10,11 +13,84 @@
                     continuidade, é importante para manter a atenção do leitor. As proporções das margens vão variar de acordo
                     com o contexto de design, mas como linha condutora, a margem inferior é normalmente o dobro da margem
                     do topo e a margem inferior duplica a largura da margem exterior.<sub><a href="https://pt.wikipedia.org/wiki/Layout_gr%C3%A1fico" target="_blank">wikipedia</a></sup> 
-                    </p>
-                </div>
+                </p>
             </div>
         </div>
-
     </div>
+
+    <div class="row">
+        <div class="column column-6">
+            <h3>Guides</h3>
+            <ul>
+                <li><a href="https://developers.google.com/web/fundamentals/design-and-ui/" target="_blank">Google Design e IU</a></li>
+                <li><a href="https://developer.apple.com/design/" target="_blank">Apple Design Guides</a></li>
+                <li><a href="https://www.lightningdesignsystem.com/" target="_blank">Sales Force UI</a></li>
+                <li><a href="https://www.mozilla.org/en-US/styleguide/" target="_blank">mozilla Style guide</a></li>
+                <li><a href="https://www.yelp.com/styleguide/" target="_blank">Yelp Styleguide</a></li>
+                <li><a href="http://ux.mailchimp.com/patterns" target="_blank">MailChimp Patterns</a></li>
+                <li><a href="https://www.mapbox.com/base/" target="_blank">Mapbox styleguide</a></li>
+            </ul>
+        </div>
+        <div class="column column-6">
+            <h3>Documentation</h3>
+            <ul>
+                <li><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome DevTools</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background" target="_blank">Background</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">HTML script element</a></li>
+                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach" target="_blank">NodeList.forEach()</a></li>
+            </ul>
+        </div>
+    </div>        
+
+    <div class="row">
+        <div class="column column-6">
+            <h3>Articles</h3>
+            <ul>
+                <li><a href="http://blog.trello.com/refining-the-way-we-structure-our-css-at-trello" target="_blank">Refining The Way We Structure Our CSS</a></li>
+                <li><a href="http://dev.mobify.com/blog/css-sprites-vs-data-uris-which-is-faster-on-mobile/" target="_blank">CSS Sprites vs. Data URIs</a></li>
+                <li><a href="https://css-tricks.com/icon-fonts-vs-svg/" target="_blank">Inline SVG vs Icon Fonts</a></li>
+                <li><a href="https://www.sitepoint.com/icon-fonts-vs-svg-debate/" target="_blank">The Great Icon Debate: Fonts Vs SVG</a></li>
+                <li><a href="http://maddesigns.de/svg-sprites-icon-fonts-2309.html" target="_blank">SVG Sprites vs. Icon-Fonts</a></li>
+            </ul>
+        </div>
+        <div class="column column-6">
+            <h3>Developer</h3>
+            <ul>
+                <li><a href="https://github.com/ben-eb/gulp-svgmin" target="_blank">Minify SVG</a></li>
+                <li><a href="https://github.com/jkphl/gulp-svg-sprite" target="_blank">SVG sprites & stacks galore</a></li>
+                <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
+                <li><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+                <li><a href="https://www.browsersync.io/" target="_blank">Synchronised browser testing</a></li>
+                <li><a href="https://github.com/babel/gulp-babel" target="_blank">Gulp plugin for Babel</a></li>
+            </ul>
+        </div>
+    </div>        
+
+    <div class="row">
+        <div class="column column-6">
+            <h3>Tools</h3>
+            <ul>
+                <li><a href="https://color.adobe.com/pt/explore" target="_blank">Adobe - Color CC</a></li>
+                <li><a href="http://placehold.it/" target="_blank">Placehold</a></li>
+                <li><a href="https://unsplash.it/" target="_blank">Unsplash It</a></li>
+                <li><a href="http://sizzy.co/" target="_blank">Tool for developing responsive websites</a></li>
+                <li><a href="https://thenounproject.com/" target="_blank">Noun Project</a></li>
+                
+            </ul>
+        </div>
+        <div class="column column-6">
+            <h3>Responsive</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="_blank">Using CSS Flexible Boxes</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
+                <li><a href="https://css-tricks.com/between-the-lines/" target="_blank">Between the Lines</a></li>
+                <li><a href="https://css-tricks.com/rems-ems/" target="_blank">Font Size Idea</a></li>
+                <li><a href="https://css-tricks.com/rem-global-em-local/" target="_blank">Use `rem` for Global Sizing</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
 
 {% endblock %}
