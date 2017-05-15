@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 16:43:27 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 16:51:40 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1317,7 +1317,8 @@ header .option-group:hover {
   -webkit-app-region: no-drag; }
 
 footer {
-  background-color: #fefefe; }
+  background-color: #fefefe;
+  padding-bottom: 17px; }
   footer > .website {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     font-size: 12px;
@@ -1374,19 +1375,19 @@ footer {
       opacity: 1; }
 
 @media all and (max-width: 768px) {
-  footer > .site > .container > .left,
-  footer > .site > .container > .right {
+  footer > .website > .container > .left,
+  footer > .website > .container > .right {
     -webkit-box-flex: 1;
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
             flex: 1 100%;
     padding-bottom: 0px; }
-  footer > .site > .container > .left > p {
+  footer > .website > .container > .left > p {
     text-align: center; }
-    footer > .site > .container > .left > p > strong {
+    footer > .website > .container > .left > p > strong {
       display: block;
       text-align: center; }
-  footer > .site > .container > .right > table {
+  footer > .website > .container > .right > table {
     float: none;
     margin: 0 auto; } }
 

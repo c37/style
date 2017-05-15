@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 16:43:27 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 16:51:40 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -39,7 +39,7 @@
 
         // [].forEach.call(headers, function (header) {
 
-        var itens = header.querySelectorAll('.container>ul>.hide-mobile');
+        var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile');
         var navMobile = header.querySelector('.nav-mobile');
 
         // console.log(itens);
@@ -56,8 +56,8 @@
 
                 document.body.style.overflow = 'hidden';
 
-                document.getElementById('button-search').style.transition = 'all linear 0.2s !important';
-                document.getElementById('button-search').style.opacity = 0;
+                document.getElementById('button-search-open').style.transition = 'all linear 0.2s !important';
+                document.getElementById('button-search-open').style.opacity = 0;
 
                 // debugger
 
@@ -108,7 +108,7 @@
 
                 document.body.style.overflow = 'initial';
 
-                document.getElementById('button-search').style.opacity = .6;
+                document.getElementById('button-search-open').style.opacity = .6;
 
                 [].forEach.call(document.querySelectorAll('.header-mobile'), function (header) {
                     header.remove();

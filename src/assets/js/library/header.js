@@ -17,7 +17,7 @@ function registerHeaders() {
 
     // [].forEach.call(headers, function (header) {
 
-        var itens = header.querySelectorAll('.container>ul>.hide-mobile');
+        var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile');
         var navMobile = header.querySelector('.nav-mobile');
 
         // console.log(itens);
@@ -36,8 +36,8 @@ function registerHeaders() {
                 document.body.style.overflow = 'hidden';
 
 
-                document.getElementById('button-search').style.transition = 'all linear 0.2s !important';
-                document.getElementById('button-search').style.opacity = 0;
+                document.getElementById('button-search-open').style.transition = 'all linear 0.2s !important';
+                document.getElementById('button-search-open').style.opacity = 0;
 
 
                 // debugger
@@ -100,7 +100,7 @@ function registerHeaders() {
 
                 document.body.style.overflow = 'initial';
 
-                document.getElementById('button-search').style.opacity = .6;
+                document.getElementById('button-search-open').style.opacity = .6;
 
 
 
