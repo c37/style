@@ -55,9 +55,10 @@
 
 <body>
 
-    <header class="site">
-    <div class="container">
-         
+    <header>
+    <div class="site">
+        <div class="container">
+             
 <ul>
   <li class="show-mobile">
     <div class="nav-mobile">
@@ -98,137 +99,22 @@
 </ul>
 
 
+        </div>
     </div>
+    <div class="search">
 
+        <div class="container">
 
-
-    <style>
-
-        .search-wrapper {
-            display: block;
-            /*display: none;*/
-            /*position: absolute;*/
-            top: 0;
-            /*left: 20%;*/
-            width: 60%;
-            max-width: 600px;
-            background: transparent;
-            height: 47px;
-            z-index: 100;
-        }
-
-        @media (max-width: 768px) {
-
-            .search-wrapper {
-                width: 80%;
-            }
-        }
-
-
-        .search-form-wrapper {
-            height: 47px;
-            /*padding: 16px 5px;*/
-            /*position: absolute;*/
-            /*left: 100px;*/
-            /*opacity: 0;*/
-            background-color: #fff;
-        }
-
-        .search-form {
-            height: 47px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 20px;
-        }
-
-        .search-form i {
-            color: #fff;
-            margin-right: 10px;
-        }
-
-        .search-form input {
-            /*background: transparent;*/
-            /*color: #fff;*/
-            /*border: none;*/
-            font-size: 14px;
-            /*font-weight: 100;*/
-            /*color: #fff;*/
-            margin: 0;
-            outline: none;
-        }
-
-        .search-results {
-            position: absolute;
-            top: 46px;
-            background: #fff;
-
-            width: 60%;
-            max-width: 600px;
-
-            z-index: 100;
-            padding: 10px 20px 20px 20px;
-            box-sizing: border-box;
-            /*border-bottom: 1px solid rgba(0, 0, 0, 0.05);*/
-        }
-
-        .background-overlay {
-            /*display: none;*/
-            display: block;
-            background: rgba(0, 0, 0, 0.46);
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: 99;
-        }
-
-
-        @media (max-width: 768px) {
-
-            .search-wrapper .search-results {
-                width: 100%;
-                left: 0;
-                max-width: 100%;
-            }
-        }
-
-
-        .xxx {
-            width: 100%;
-
-            position: absolute;
-            background-color: white;
-            z-index: 100;
-            top: 0;
-        }
-
-        .zzz {
-            max-width: 1024px;
-            margin: 0 auto;
-            height: 47px;
-            display: flex;
-            align-items: center;
-            padding: 0 5px;
-            justify-content: space-between;
-            box-sizing: border-box;
-        }
-    </style>
-
-    <div class="xxx">
-
-        <div class="zzz">
-
-            <i class="logo-c37" style="width: 41px;height: 41px;"></i>
-
-            <div class="search-wrapper">
-                <div class="search-form-wrapper">
-                    <form class="search-form">
-                        <!--<i class="fa fa-search"></i>-->
-                        <input class="search-field" placeholder="Procurar em style.c37.co" type="text" />
+            <ul>
+                <li>
+                    <i class="logo-c37" style="width: 41px;height: 41px;"></i>
+                </li>
+                <li>
+                    <form>
+                        <input placeholder="Procurar em style.c37.co" type="text" />
                     </form>
-                </div>
-                <div class="search-results">
-                    <div class="search-suggestions">
+                    <div class="results">
+
                         <span class="h5">
                             Links rápidos
                         </span>
@@ -256,26 +142,19 @@
                                 <a href="#">Pages</a>
                             </li>
                         </ul>
-
                     </div>
-                </div>
-            </div>
-
-            <i class="icon-global-button-cancel clickable"></i>
-
+                </li>
+                <li>
+                    <i class="icon-global-button-cancel clickable"></i>
+                </li>
+            </ul>
 
         </div>
 
-
     </div>
-
-
-
 </header>
 
-
-    <div class="overlay"></div>
- 
+<div class="overlay"></div> 
 
 
 <div class="grid small">
@@ -572,53 +451,56 @@
 </div>
 
 
- <footer class="site">
-    <div class="container">
-        <div class="left">
-            <p>
-                <strong>Comunidade</strong>&nbsp;
-                <a href="https://c37.co/about.html">Sobre a C37</a>&nbsp;●
-                <a href="https://status.c37.co">Status</a>&nbsp;●
-                <a href="/open-source.html">Open Source</a>&nbsp;●
-                <a href="https://firebasestorage.googleapis.com/v0/b/c37-website.appspot.com/o/documentation%2FC37-Terms.pdf?alt=media&token=f3d57209-b580-4e3d-b656-4a09b2f4b5c1"
-                    target="_blank">Termos</a>&nbsp;●
-                <a href="https://firebasestorage.googleapis.com/v0/b/c37-website.appspot.com/o/documentation%2FC37-Privacy.pdf?alt=media&token=709f395d-00d1-4ed5-9598-a375444116db"
-                    target="_blank">Política</a>
-            </p>
-            <p>
-                <strong>Social</strong> &nbsp;
-                <a href="https://www.facebook.com/c37.cnc/" target="_blank">
-                    <i class="icon-global-social-facebook"></i>
-                </a>
-                &nbsp;
-                <a href="https://br.pinterest.com/c37cnc/" target="_blank">
-                    <i class="icon-global-social-pinterest"></i>
-                </a>
-                &nbsp;
-                <a href="https://www.instagram.com/c37.cnc/" target="_blank">
-                    <i class="icon-global-social-instagram"></i>
-                </a>
-                &nbsp;
-                <a href="https://www.youtube.com/c/c37cnc" target="_blank">
-                    <i class="icon-global-social-youtube"></i>
-                </a>
-            </p>
-        </div>
-        <div class="right">
-            <table>
-                <tr>
-                    <td>
-                        <a href="#">
-                            <i class="logo-c37"></i>
-                            <strong class="logo-caption">C37&reg; - 2017</strong>
-                        </a>
-                    </td>
-                </tr>
-            </table>
+ <footer>
+
+    <div class="site">
+        <div class="container">
+            <div class="left">
+                <p>
+                    <strong>Comunidade</strong>&nbsp;
+                    <a href="https://c37.co/about.html">Sobre a C37</a>&nbsp;●
+                    <a href="https://status.c37.co">Status</a>&nbsp;●
+                    <a href="/open-source.html">Open Source</a>&nbsp;●
+                    <a href="https://firebasestorage.googleapis.com/v0/b/c37-website.appspot.com/o/documentation%2FC37-Terms.pdf?alt=media&token=f3d57209-b580-4e3d-b656-4a09b2f4b5c1"
+                        target="_blank">Termos</a>&nbsp;●
+                    <a href="https://firebasestorage.googleapis.com/v0/b/c37-website.appspot.com/o/documentation%2FC37-Privacy.pdf?alt=media&token=709f395d-00d1-4ed5-9598-a375444116db"
+                        target="_blank">Política</a>
+                </p>
+                <p>
+                    <strong>Social</strong> &nbsp;
+                    <a href="https://www.facebook.com/c37.cnc/" target="_blank">
+                        <i class="icon-global-social-facebook"></i>
+                    </a>
+                    &nbsp;
+                    <a href="https://br.pinterest.com/c37cnc/" target="_blank">
+                        <i class="icon-global-social-pinterest"></i>
+                    </a>
+                    &nbsp;
+                    <a href="https://www.instagram.com/c37.cnc/" target="_blank">
+                        <i class="icon-global-social-instagram"></i>
+                    </a>
+                    &nbsp;
+                    <a href="https://www.youtube.com/c/c37cnc" target="_blank">
+                        <i class="icon-global-social-youtube"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="right">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <i class="logo-c37"></i>
+                                <strong class="logo-caption">C37&reg; - 2017</strong>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
+    
 </footer>
-
 
 </body>
 
