@@ -96,6 +96,13 @@ header {
                     align-items: center;
                     display: flex;
                     list-style: none;
+                    >a {
+                        >.logo-c37 {
+                            display: block;
+                            width: 41px;
+                            height: 41px;
+                        }
+                    }
                     @include breakpoint(medium) {
                         &:nth-child(2) {
                             width: 80% !important;

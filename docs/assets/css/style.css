@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 19:14:14 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 19:52:52 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1264,6 +1264,10 @@ header > .search {
         display: -ms-flexbox;
         display: flex;
         list-style: none; }
+        header > .search > .container > ul > li > a > .logo-c37 {
+          display: block;
+          width: 41px;
+          height: 41px; }
         @media (max-width: 768px) {
           header > .search > .container > ul > li:nth-child(2) {
             width: 80% !important; } }
