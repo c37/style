@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 13:21:53 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 15:30:19 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -12,6 +12,27 @@
 .shadow {
   box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.4);
   border-radius: 2px; }
+
+div.overlay {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.21);
+  z-index: 11; }
 
 div.example {
   border: 1px solid rgba(0, 0, 0, 0.07);
@@ -2937,28 +2958,6 @@ div.modal {
     width: 450px; }
   div.modal.w-500 {
     width: 500px; }
-
-div.overlay {
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* align horizontal */
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* align vertical */
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.21); }
 
 .tab {
   width: 100%;

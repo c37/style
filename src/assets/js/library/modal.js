@@ -48,7 +48,7 @@
             buttonOpen.onclick = function () {
 
                 var modal = document.getElementById(buttonOpen.dataset.modalOpen);
-
+ 
                 var div = document.createElement('div');
                 div.classList.add('overlay');
 

@@ -63,17 +63,3 @@ div.modal {
         width: 500px;
     }
 }
-
-div.overlay {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    /* align horizontal */
-    align-items: center;
-    /* align vertical */
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.21); // z-index: 1;
-}

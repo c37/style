@@ -5,25 +5,53 @@ if (Element.prototype.remove === undefined) {
     }
 }
 
-
 if (NodeList.prototype.forEach === undefined) {
     NodeList.prototype.forEach = Array.prototype.forEach
 }
 
 
+function searchRegister() {
 
-function registerSearch() {
+    function searchOpen() {
 
-    function displaySearch() {
+        var div = document.createElement('div');
+        div.classList.add('overlay');
+
+        document.body.appendChild(div);
+
+        document.querySelector('header>.search').classList.remove('hide');
+
+    }
 
 
+    function searchClose() {
+
+        document.querySelector('.overlay').remove();
+        document.querySelector('header>.search').classList.add('hide');
+
+    }
+
+
+    function searchInput() {
+
+        var textSearchTerm = document.getElementById('text-search-term');
+
+        
 
 
     }
 
 
-    document.getElementById('button-search').onclick = function () {
-        displaySearch();
+
+
+
+
+    document.getElementById('button-search-open').onclick = function () {
+        searchOpen();
+    };
+
+    document.getElementById('button-search-close').onclick = function () {
+        searchClose();
     };
 
 }
@@ -32,10 +60,8 @@ function registerSearch() {
 
 
 
-
-
 window.addEventListener('DOMContentLoaded', function () {
 
-    registerSearch();
+    searchRegister();
 
 });
