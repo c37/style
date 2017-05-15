@@ -43,67 +43,26 @@
             </h3>
 
             <h5>Site</h5>
-            <header class="site">
-                <div class="container">
-                    {% import 'macros/header.njk' as nav %} {{nav.active(urlHeader)}}
-                </div>
-            </header>
+            {% include "partials/header.njk" %}
 
+            <!--
             <h5>Application</h5>
-            <header class="site">
-                <div class="container">
-                    {% import 'macros/header.njk' as nav %} {{nav.active(urlHeader)}}
+            <header>
+                <div class="site">
+                    <div class="container">
+                        {% import 'macros/header.njk' as nav %} {{nav.active(urlHeader)}}
+                    </div>
                 </div>
             </header>
+            -->
 
             <br>
 
             <h3>
                 <a id="footer" class="mark" href="#footer">Footer</a>
             </h3>
+            {% include "partials/footer.njk" %}
 
-            <footer class="site">
-                <div class="container">
-                    <div class="left">
-                        <p>
-                            <strong>Comunidade</strong>&nbsp;
-                            <a href="#">Item 01</a>&nbsp;●
-                            <a href="#">Item 02</a>&nbsp;●
-                            <a href="#">Item 03</a>
-                        </p>
-                        <p>
-                            <strong>Social</strong> &nbsp;
-                            <a href="https://www.facebook.com/c37.cnc/" target="_blank">
-                                <i class="icon-global-social-facebook"></i>
-                            </a>
-                            &nbsp;
-                            <a href="https://br.pinterest.com/c37cnc/" target="_blank">
-                                <i class="icon-global-social-pinterest"></i>
-                            </a>
-                            &nbsp;
-                            <a href="https://www.instagram.com/c37.cnc/" target="_blank">
-                                <i class="icon-global-social-instagram"></i>
-                            </a>
-                            &nbsp;
-                            <a href="https://www.youtube.com/c/c37cnc" target="_blank">
-                                <i class="icon-global-social-youtube"></i>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="right">
-                        <table>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <i class="logo-c37"></i>
-                                        <strong class="logo-caption">C37&reg; - 2017</strong>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </footer>
 
             <h3>
                 <a id="navigation" class="mark" href="#navigation">Navigation</a>
@@ -161,7 +120,7 @@
             <h5>Menu</h5>
 
             <div class="nav-menu">
-                
+
                 <h3>
                     <a href="#">Item Menu</a>
                 </h3>
@@ -193,7 +152,7 @@
                         <a href="#">Item 07</a>
                     </li>
                 </ul>
-                
+
             </div>
 
             <br>

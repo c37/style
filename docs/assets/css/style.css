@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 15:30:19 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 16:43:27 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1142,9 +1142,9 @@ i.cursor-pointer {
 header > .application {
   margin: 0px; }
 
-header > .site {
+header > .website {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
-  header > .site > .container {
+  header > .website > .container {
     max-width: 1024px;
     height: 47px;
     margin: 0 auto;
@@ -1153,7 +1153,7 @@ header > .site {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    header > .site > .container > ul {
+    header > .website > .container > ul {
       width: 100%;
       display: -webkit-box;
       display: -webkit-flex;
@@ -1168,7 +1168,7 @@ header > .site {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      header > .site > .container > ul > li {
+      header > .website > .container > ul > li {
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
@@ -1177,34 +1177,34 @@ header > .site {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-        header > .site > .container > ul > li > a {
+        header > .website > .container > ul > li > a {
           font-size: 14px;
           color: #666665; }
-          header > .site > .container > ul > li > a > .logo-c37 {
+          header > .website > .container > ul > li > a > .logo-c37 {
             display: block;
             width: 41px;
             height: 41px; }
-          header > .site > .container > ul > li > a:hover, header > .site > .container > ul > li > a.selected {
+          header > .website > .container > ul > li > a:hover, header > .website > .container > ul > li > a.selected {
             color: #599bcd;
             -webkit-transition: all linear 0.2s;
             transition: all linear 0.2s; }
-          header > .site > .container > ul > li > a.selected {
+          header > .website > .container > ul > li > a.selected {
             font-weight: bold; }
-        header > .site > .container > ul > li > .nav-mobile {
+        header > .website > .container > ul > li > .nav-mobile {
           margin-left: 5px; }
-          header > .site > .container > ul > li > .nav-mobile:hover {
+          header > .website > .container > ul > li > .nav-mobile:hover {
             cursor: pointer; }
-          header > .site > .container > ul > li > .nav-mobile.active .line:nth-child(2) {
+          header > .website > .container > ul > li > .nav-mobile.active .line:nth-child(2) {
             opacity: 0; }
-          header > .site > .container > ul > li > .nav-mobile.active .line:nth-child(1) {
+          header > .website > .container > ul > li > .nav-mobile.active .line:nth-child(1) {
             -webkit-transform: translateY(5px) rotate(45deg);
                 -ms-transform: translateY(5px) rotate(45deg);
                     transform: translateY(5px) rotate(45deg); }
-          header > .site > .container > ul > li > .nav-mobile.active .line:nth-child(3) {
+          header > .website > .container > ul > li > .nav-mobile.active .line:nth-child(3) {
             -webkit-transform: translateY(-5px) rotate(-45deg);
                 -ms-transform: translateY(-5px) rotate(-45deg);
                     transform: translateY(-5px) rotate(-45deg); }
-          header > .site > .container > ul > li > .nav-mobile .line {
+          header > .website > .container > ul > li > .nav-mobile .line {
             width: 20px;
             height: 2px;
             background-color: #666665;
@@ -1212,7 +1212,7 @@ header > .site {
             margin: 3px auto;
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out; }
-  header > .site .selected {
+  header > .website .selected {
     font-weight: bold; }
 
 header > .search {
@@ -1316,60 +1316,62 @@ header .option-group:hover {
   outline: none;
   -webkit-app-region: no-drag; }
 
-footer > .site {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  font-size: 12px;
-  padding-top: 7px; }
-  footer > .site > .container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    max-width: 1024px;
-    margin: 0 auto; }
-    footer > .site > .container > * {
-      padding: 10px;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 auto;
-          -ms-flex: 1 auto;
-              flex: 1 auto; }
-    footer > .site > .container > .left,
-    footer > .site > .container > .right {
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-                  -ms-grid-row-align: center;
-              align-self: center; }
-    footer > .site > .container > .right {
-      padding-top: 0px !important; }
-      footer > .site > .container > .right > table {
-        margin: 0px;
-        float: right; }
-  footer > .site .logo-c37 {
-    display: block;
-    top: 3px;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    margin: 0 auto; }
-  footer > .site .logo-caption {
-    display: block;
-    top: 2px;
-    position: relative; }
-  footer > .site [class^="icon-global-social-"] {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    opacity: 1; }
+footer {
+  background-color: #fefefe; }
+  footer > .website {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 12px;
+    padding-top: 7px; }
+    footer > .website > .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      max-width: 1024px;
+      margin: 0 auto; }
+      footer > .website > .container > * {
+        padding: 10px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 auto;
+            -ms-flex: 1 auto;
+                flex: 1 auto; }
+      footer > .website > .container > .left,
+      footer > .website > .container > .right {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                    -ms-grid-row-align: center;
+                align-self: center; }
+      footer > .website > .container > .right {
+        padding-top: 0px !important; }
+        footer > .website > .container > .right > table {
+          margin: 0px;
+          float: right; }
+    footer > .website .logo-c37 {
+      display: block;
+      top: 3px;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin: 0 auto; }
+    footer > .website .logo-caption {
+      display: block;
+      top: 2px;
+      position: relative; }
+    footer > .website [class^="icon-global-social-"] {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      opacity: 1; }
 
 @media all and (max-width: 768px) {
   footer > .site > .container > .left,

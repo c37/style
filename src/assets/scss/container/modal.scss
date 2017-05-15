@@ -40,7 +40,8 @@ div.modal {
         }
     }
     &>.footer {
-        background-color: $dialogcolor1;
+        // background-color: $dialogcolor1;
+        background-color: #fefefe;
         border-top: 1px solid $dialogcolor0;
         height: auto;
         overflow: hidden;
