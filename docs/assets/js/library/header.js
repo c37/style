@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 17:00:12 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 19:14:14 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -30,21 +30,16 @@
         };
     }
 
-    function registerHeaders() {
+    if (NodeList.prototype.forEach === undefined) {
+        NodeList.prototype.forEach = Array.prototype.forEach;
+    }
+
+    function headerRegister() {
 
         var header = document.querySelector('header');
 
-        // console.log(header);
-
-
-        // [].forEach.call(headers, function (header) {
-
         var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile');
         var navMobile = header.querySelector('.nav-mobile');
-
-        // console.log(itens);
-        // console.log(navMobile);
-
 
         navMobile.onclick = function () {
 
@@ -115,12 +110,50 @@
                 });
             }
         };
+    }
 
-        // });
+    function searchRegister() {
+
+        function searchOpen() {
+
+            var div = document.createElement('div');
+            div.classList.add('overlay');
+
+            document.body.appendChild(div);
+
+            document.querySelectorAll('header>.search .list.vertical>li').forEach(function (item) {
+                item.classList.remove('hide-mobile');
+            });
+
+            document.querySelector('header>.search').classList.remove('hide');
+        }
+
+        function searchClose() {
+            document.querySelector('.overlay').remove();
+            document.querySelector('header>.search').classList.add('hide');
+
+            document.querySelectorAll('header>.search .list.vertical>li').forEach(function (item) {
+                item.classList.add('hide-mobile');
+            });
+        }
+
+        function searchInput() {
+
+            var textSearchTerm = document.getElementById('text-search-term');
+        }
+
+        document.getElementById('button-search-open').onclick = function () {
+            searchOpen();
+        };
+
+        document.getElementById('button-search-close').onclick = function () {
+            searchClose();
+        };
     }
 
     window.addEventListener('DOMContentLoaded', function () {
 
-        registerHeaders();
+        headerRegister();
+        searchRegister();
     });
 });
