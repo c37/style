@@ -19,15 +19,23 @@ function searchRegister() {
 
         document.body.appendChild(div);
 
+        document.querySelectorAll('header>.search .list.vertical>li').forEach(function(item){
+            item.classList.remove('hide-mobile');
+        });
+
         document.querySelector('header>.search').classList.remove('hide');
 
     }
 
 
     function searchClose() {
-
         document.querySelector('.overlay').remove();
         document.querySelector('header>.search').classList.add('hide');
+
+        document.querySelectorAll('header>.search .list.vertical>li').forEach(function(item){
+            item.classList.add('hide-mobile');
+        });
+
 
     }
 
