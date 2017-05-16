@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 22:14:21 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 22:24:30 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1

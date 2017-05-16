@@ -2,8 +2,8 @@ nav.nav-section {
     background: rgba(242, 242, 242, 0.7);
     overflow: hidden;
     padding: 0;
-    padding-top: 11px;
-    padding-bottom: 12px;
+    padding-top: 13px;
+    padding-bottom: 8px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -11,11 +11,11 @@ nav.nav-section {
     // z-index: 87;
     >ul {
         list-style: none;
-        margin: 0 34px;
+        margin: 0 15px;
         overflow-x: auto;
         overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 50px;
+        // -webkit-overflow-scrolling: touch;
+        // padding-bottom: 50px;
         white-space: nowrap;
         >li {
             display: inline-block;
