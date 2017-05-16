@@ -60,6 +60,7 @@ function headerRegister() {
             div.style.backgroundColor = 'white';
             div.style.boxSizing = 'border-box';
             div.style.height = hh + 'px';
+            div.style.top = '47px';
             div.style.width = ww + 'px';
             div.style.zIndex = 7;
             div.style.paddingRight = '30px';
