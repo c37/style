@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 16 2017 01:44:12 GMT-0300 (BRT)
+ * Static Here - in Tue May 16 2017 01:54:42 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -103,7 +103,8 @@
                 div.style.zIndex = 3;
 
                 div.style.padding = '30px';
-                div.style.paddingTop = '20px';
+                div.style.paddingTop = '10px';
+                div.style.paddingBottom = '20px';
 
                 // div.style.paddingRight = '30px';    
                 // div.style.paddingLeft = '30px';
