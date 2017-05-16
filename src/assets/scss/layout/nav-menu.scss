@@ -12,6 +12,11 @@
     margin-bottom: $heading-margin-bottom - 8px;
 }
 
+.nav-menu [class^="icon-"] {
+    margin-top: 13px;
+}
+
+
 .nav-menu ul {
     display: flex;
 }

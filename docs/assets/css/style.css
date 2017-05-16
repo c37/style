@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Tue May 16 2017 01:54:40 GMT-0300 (BRT)
+ * Static Here - in Tue May 16 2017 12:18:27 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1468,6 +1468,9 @@ nav.nav-section {
 .nav-menu h3 {
   margin-top: 13px;
   margin-bottom: 0px; }
+
+.nav-menu [class^="icon-"] {
+  margin-top: 13px; }
 
 .nav-menu ul {
   display: -webkit-box;
