@@ -1,6 +1,6 @@
 /**
  *
- * Static Here - in Mon May 15 2017 19:52:52 GMT-0300 (BRT)
+ * Static Here - in Mon May 15 2017 21:19:22 GMT-0300 (BRT)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1152,7 +1152,8 @@ header > .website {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    box-sizing: border-box; }
     header > .website > .container > ul {
       width: 100%;
       display: -webkit-box;
@@ -1182,8 +1183,8 @@ header > .website {
           color: #666665; }
           header > .website > .container > ul > li > a > .logo-c37 {
             display: block;
-            width: 41px;
-            height: 41px; }
+            width: 40px;
+            height: 40px; }
           header > .website > .container > ul > li > a:hover, header > .website > .container > ul > li > a.selected {
             color: #599bcd;
             -webkit-transition: all linear 0.2s;
@@ -1266,8 +1267,8 @@ header > .search {
         list-style: none; }
         header > .search > .container > ul > li > a > .logo-c37 {
           display: block;
-          width: 41px;
-          height: 41px; }
+          width: 40px;
+          height: 40px; }
         @media (max-width: 768px) {
           header > .search > .container > ul > li:nth-child(2) {
             width: 80% !important; } }

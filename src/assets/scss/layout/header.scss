@@ -11,6 +11,7 @@ header {
             margin: 0 auto;
             padding: 0 5px;
             display: flex;
+            box-sizing: border-box;            
             >ul {
                 width: 100%;
                 display: flex;
@@ -24,8 +25,8 @@ header {
                         font-size: $header-font-size + 1px;
                         >.logo-c37 {
                             display: block;
-                            width: 41px;
-                            height: 41px;
+                            width: 40px;
+                            height: 40px;
                         }
                         color: #666665; // color: #3b4854;
                         &:hover,
@@ -99,8 +100,8 @@ header {
                     >a {
                         >.logo-c37 {
                             display: block;
-                            width: 41px;
-                            height: 41px;
+                            width: 40px;
+                            height: 40px;
                         }
                     }
                     @include breakpoint(medium) {
