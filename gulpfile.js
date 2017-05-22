@@ -17,7 +17,7 @@ var config = {
     banner: [
         '/**',
         ' *',
-        ' * Static Here - in <%= new Date().toString() %>',
+        ' * C37 Style - in <%= new Date().toString() %>',
         ' *',
         ' * <%= pkg.name %> - <%= pkg.description %>',
         ' * @version <%= pkg.version %>',
@@ -134,8 +134,9 @@ var config = {
 
 function clean() {
     return del([
-        './docs/**/*',
-        '!./docs/CNAME'
+        '/docs/**/*',
+        '!/docs/assets/js{,/**}',
+        '!/docs/CNAME'
     ]);
 }
 
@@ -242,4 +243,5 @@ gulp.task('img-logo', gulp.series(logo));
 gulp.task('img-i18n', gulp.series(i18n));
 
 gulp.task('docs', gulp.series(clean, template, css, js, assets));
-gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
+// gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
+gulp.task('serve', gulp.series(clean, template, css, assets, serve, watch));
