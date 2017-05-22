@@ -11,7 +11,7 @@
 //             s = this.settings;
 //             this.bindUIActions();
 //         },
-        
+         
 //         actions: function () {
 //             s.submitBtn.on("click", function() {
 //                 if (!ContactForm.validate()) {

@@ -171,7 +171,7 @@ function css() {
 }
 
 function js() {
-    return gulp.src(['./src/assets/js/**/*.js'])
+    return gulp.src(['./src/assets/js/library/**/*.js'])
         .pipe(babel({
             presets: ['es2015'],
             plugins: ["transform-es2015-modules-umd"]
@@ -179,7 +179,7 @@ function js() {
         .pipe(header(config.banner, {
             pkg: config.pkg
         }))
-        .pipe(gulp.dest('./docs/assets/js/'));
+        .pipe(gulp.dest('./docs/assets/js/library/'));
 }
 
 function assets() {
@@ -188,8 +188,8 @@ function assets() {
             './src/assets/**/*',
             '!./src/assets/scss',
             '!./src/assets/scss/**',
-            '!./src/assets/js',
-            '!./src/assets/js/**'
+            '!./src/assets/js/library',
+            '!./src/assets/js/library/**'
         ])
         .pipe(gulp.dest('./docs/assets/'));
 
