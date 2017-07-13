@@ -12,7 +12,7 @@
             var buttons = checkbox.querySelectorAll('button'),
                 oldValue = checkbox.dataset.selected;
 
-
+ 
             [].forEach.call(buttons, function (button) {
 
                 // o load do componente

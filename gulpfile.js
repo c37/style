@@ -2,6 +2,7 @@ var del = require('del'),
     gulp = require('gulp'),
     sass = require('gulp-sass'),
     babel = require('gulp-babel'),
+    concat = require('gulp-concat'),
     header = require('gulp-header'),
     svgSprite = require('gulp-svg-sprite'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -134,19 +135,20 @@ var config = {
 
 function clean() {
     return del([
-        '/docs/**/*',
-        '!/docs/assets/js{,/**}',
-        '!/docs/CNAME'
+        './docs/**/*',
+        // '!/docs/assets/js{,/**}',
+        '!./docs/.gitkeep',
+        '!./docs/CNAME'
     ]);
 }
 
 function template() {
 
     // Gets .html and .nunjucks files in pages
-    return gulp.src('src/pages/**/*.+(html|njk)')
+    return gulp.src('./src/pages/**/*.+(html|njk)')
         // Renders template with nunjucks
         .pipe(nunjucksRender({
-            path: ['src/templates/']
+            path: ['./src/templates/']
         }))
         // output files in developer folder
         .pipe(gulp.dest('./docs'));
@@ -170,16 +172,24 @@ function css() {
 
 }
 
-function js() {
-    return gulp.src(['./src/assets/js/library/**/*.js'])
-        .pipe(babel({
-            presets: ['es2015'],
-            plugins: ["transform-es2015-modules-umd"]
-        }))
-        .pipe(header(config.banner, {
-            pkg: config.pkg
-        }))
-        .pipe(gulp.dest('./docs/assets/js/library/'));
+var js = {
+    library: function () {
+        return gulp.src(['./src/assets/js/library/**/*.js'])
+            .pipe(concat('library.js'))
+            .pipe(babel({
+                presets: ['es2015'],
+                plugins: ["transform-es2015-modules-umd"]
+            }))
+            .pipe(header(config.banner, {
+                pkg: config.pkg
+            }))
+            .pipe(gulp.dest('./docs/assets/js/'));
+    },
+    vendor: function js() {
+        return gulp.src(['./src/assets/js/vendor/**/*.js'])
+            .pipe(concat('vendor.js'))
+            .pipe(gulp.dest('./docs/assets/js/'));
+    }
 }
 
 function assets() {
@@ -189,7 +199,9 @@ function assets() {
             '!./src/assets/scss',
             '!./src/assets/scss/**',
             '!./src/assets/js/library',
-            '!./src/assets/js/library/**'
+            '!./src/assets/js/library/**',
+            '!./src/assets/js/vendor',
+            '!./src/assets/js/vendor/**'
         ])
         .pipe(gulp.dest('./docs/assets/'));
 
@@ -212,8 +224,7 @@ function serve(done) {
 }
 
 
-const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk', './src/**/*.js'], gulp.series(clean, template, css, js, assets, reload));
-// const watch = () => gulp.watch('./src/**/*', gulp.series(clean, template, css, js, assets, reload));
+const watch = () => gulp.watch(['./src/**/*.scss', './src/**/*.njk', './src/**/*.js'], gulp.series(clean, template, css, gulp.parallel(js.vendor, js.library), assets, reload));
 
 
 
@@ -242,6 +253,6 @@ gulp.task('img-icon', gulp.series(icon));
 gulp.task('img-logo', gulp.series(logo));
 gulp.task('img-i18n', gulp.series(i18n));
 
-gulp.task('docs', gulp.series(clean, template, css, js, assets));
+gulp.task('docs', gulp.series(clean, template, css, gulp.parallel(js.vendor, js.library), assets));
 // gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
-gulp.task('serve', gulp.series(clean, template, css, assets, serve, watch));
+gulp.task('serve', gulp.series(clean, template, css, gulp.parallel(js.vendor, js.library), assets, serve, watch));
