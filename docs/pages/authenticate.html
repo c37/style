@@ -69,30 +69,50 @@
                 <li class="item active" data-ref="signin">Entrar</li>
                 <li class="item" data-ref="signup">Criar uma nova conta</li>
               </ul>
-              <div class="body">
+              <div class="body padding-20">
                 <div class="item active" data-ref="signin">
                   <form id="form-user-signin" onsubmit="return false;" data-buttercup-form-id="bcup-form:1" data-buttercup="attached">
-                    <label class="strong">E-mail</label>
-                    <input id="text-user-signin-email" type="text" placeholder="Informe seu E-mail">
 
-                    <label class="strong">Senha</label>
-                    <input id="text-user-signin-password" type="password" placeholder="Informe sua Senha">
+                    <div class="group">
+                      <input id="text-user-signin-email" type="text" required="required">
+                      <div class="label">E-mail</div>           
+                    </div>
+
+                    <div class="group">
+                      <input id="text-user-signin-email" type="password" required="required">
+                      <div class="label">Digite sua Senha</div>           
+                    </div>
+
                     <div class="text-right">
                       <input id="checkbox-user-signin" type="checkbox" checked="">
                       <span class="checkbox clickable" onclick="document.getElementById('checkbox-user-signin').checked = !document.getElementById('checkbox-user-signin').checked"> Permanecer conectado </span>
                     </div>
+
                   </form>
                 </div>
                 <div class="item" data-ref="signup">
                   <form id="form-user-signup" onsubmit="return false;" data-buttercup-form-id="bcup-form:2" data-buttercup="attached">
-                    <label class="strong">Nome</label>
-                    <input id="text-user-signup-first-name" type="text" placeholder="Informe seu Nome">
-                    <label class="strong">Sobrenome</label>
-                    <input id="text-user-signup-last-name" type="text" name="" value="" placeholder="Informe seu Sobrenome">
-                    <label class="strong">E-mail</label>
-                    <input id="text-user-signup-email" type="text" name="" value="" placeholder="Informe seu E-mail">
-                    <label class="strong">Senha</label>
-                    <input id="text-user-signup-password" type="password" placeholder="Escolha sua senha">
+  
+                    <div class="group">
+                      <input id="text-user-signup-first-name" class="capitalize" type="text" required ="required">
+                      <div class="label">Nome</div>
+                    </div>
+                    <div class="group">
+                      <input id="text-user-signup-last-name" class="capitalize" type="text" required ="required">
+                      <div class="label">Sobrenome</div>
+                    </div>
+
+                    <div class="group">
+                      <input id="text-user-signup-email" type="text" required="required">
+                      <div class="label">E-mail</div>           
+                    </div>
+
+                    <div class="group">
+                      <input id="text-user-signup-email" type="password" required="required">
+                      <div class="label">Digite sua Senha</div>           
+                    </div>
+
+                    
                   </form>
                 </div>
               </div>

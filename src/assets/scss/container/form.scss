@@ -1,12 +1,33 @@
-// https://github.com/foretagsplatsen/numbro
-
-
-
-form{
+form {
     margin: 0px;
+    &>.group {
+        display: flex;
+        // box-flex: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-width: 0%;
+        position: relative;
+        margin-top: 11px;
+        input {
+            &:not([disabled]):focus~.label,
+            &[badinput="true"]~.label,
+            &:valid~.label {
+                transform: scale(.90) translateY(-26px) translateX(-7px);
+                color: #4285f4;
+            }
+        }
+        &>.label {
+            transform-origin: bottom left;
+            transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color, bottom, transform;
+            pointer-events: none;
+            position: absolute;
+            bottom: 13px;
+            left: 7px;
+            width: 100%
+        }
+    }
 }
-
-
 
 input,
 input:focus,

@@ -15,10 +15,13 @@ function headerRegister() {
 
     var header = document.querySelector('header');
 
+    if ((header === null) || (header === undefined)) {
+        return;
+    }
 
-    var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile');
-    var navMobile = header.querySelector('.nav-mobile');
 
+    var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile'),
+        navMobile = header.querySelector('.nav-mobile');
 
     navMobile.onclick = function () {
 
@@ -153,13 +156,16 @@ function searchRegister() {
 
     }
 
-    document.getElementById('button-search-open').onclick = function () {
-        searchOpen();
-    };
+    if (document.getElementById('button-search-open') && document.getElementById('button-search-close')) {
 
-    document.getElementById('button-search-close').onclick = function () {
-        searchClose();
-    };
+        document.getElementById('button-search-open').onclick = function () {
+            searchOpen();
+        };
+
+        document.getElementById('button-search-close').onclick = function () {
+            searchClose();
+        };
+    }
 
 }
 

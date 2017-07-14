@@ -479,6 +479,11 @@ figure {
     text-align: justify !important;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
+
 // positions
 .left {
     float: left;
@@ -563,7 +568,7 @@ figure {
     cursor: move !important;
 }
 
-cursor-pointer {
+.cursor-pointer {
     cursor: pointer !important;
 }
 

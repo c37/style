@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Thu Jul 13 2017 01:09:57 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Thu Jul 13 2017 22:46:01 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -160,6 +160,37 @@
 
         window.addEventListener('keydown', function (e) {});
     })(window);
+    // http://stackoverflow.com/questions/3387427/remove-element-by-id
+    if (Element.prototype.remove === undefined) {
+        Element.prototype.remove = function () {
+            this.parentElement.removeChild(this);
+        };
+    }
+
+    if (NodeList.prototype.forEach === undefined) {
+        NodeList.prototype.forEach = Array.prototype.forEach;
+    }
+
+    // quando todo o load de window
+    // window.addEventListener('load', function () {
+    window.addEventListener('DOMContentLoaded', function () {
+
+        var forms = document.querySelectorAll('form[data-validate="true"]');
+
+        [].forEach.call(forms, function (form) {
+
+            var groups = form.querySelectorAll('.group');
+
+            console.log(groups);
+        });
+
+        console.log(forms);
+    });
+
+    // https://github.com/Mevrael/bunny
+    // https://github.com/ansman/validate.js
+    // https://github.com/rickharrison/validate.js
+
     // var ContactForm = (function () {
     //     var s;
 
@@ -167,7 +198,7 @@
     //         settings: {
     //             inputs: $("#contact_form input"),
     //             submitBtn: $(".js-contact_form-submit")
-    //         },
+    //         }, 
 
     //         init: function() {
     //             s = this.settings;
@@ -208,8 +239,12 @@
 
         var header = document.querySelector('header');
 
-        var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile');
-        var navMobile = header.querySelector('.nav-mobile');
+        if (header === null || header === undefined) {
+            return;
+        }
+
+        var itens = header.querySelectorAll('.website>.container>ul>.hide-mobile'),
+            navMobile = header.querySelector('.nav-mobile');
 
         navMobile.onclick = function () {
 
@@ -313,13 +348,16 @@
             var textSearchTerm = document.getElementById('text-search-term');
         }
 
-        document.getElementById('button-search-open').onclick = function () {
-            searchOpen();
-        };
+        if (document.getElementById('button-search-open') && document.getElementById('button-search-close')) {
 
-        document.getElementById('button-search-close').onclick = function () {
-            searchClose();
-        };
+            document.getElementById('button-search-open').onclick = function () {
+                searchOpen();
+            };
+
+            document.getElementById('button-search-close').onclick = function () {
+                searchClose();
+            };
+        }
     }
 
     window.addEventListener('DOMContentLoaded', function () {
