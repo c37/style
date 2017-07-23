@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Thu Jul 13 2017 22:46:01 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Thu Jul 20 2017 21:51:04 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1

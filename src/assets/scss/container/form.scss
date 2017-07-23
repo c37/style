@@ -12,7 +12,7 @@ form {
             &:not([disabled]):focus~.label,
             &[badinput="true"]~.label,
             &:valid~.label {
-                transform: scale(.90) translateY(-26px) translateX(-7px);
+                transform: scale(.90) translateY(-27px) translateX(-7px);
                 color: #4285f4;
             }
         }

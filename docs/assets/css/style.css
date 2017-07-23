@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Thu Jul 13 2017 22:45:59 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Thu Jul 20 2017 21:51:02 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -2879,9 +2879,9 @@ form {
     form > .group input:not([disabled]):focus ~ .label,
     form > .group input[badinput="true"] ~ .label,
     form > .group input:valid ~ .label {
-      -webkit-transform: scale(0.9) translateY(-26px) translateX(-7px);
-          -ms-transform: scale(0.9) translateY(-26px) translateX(-7px);
-              transform: scale(0.9) translateY(-26px) translateX(-7px);
+      -webkit-transform: scale(0.9) translateY(-27px) translateX(-7px);
+          -ms-transform: scale(0.9) translateY(-27px) translateX(-7px);
+              transform: scale(0.9) translateY(-27px) translateX(-7px);
       color: #4285f4; }
     form > .group > .label {
       -webkit-transform-origin: bottom left;
