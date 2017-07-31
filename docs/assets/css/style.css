@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Sun Jul 23 2017 19:09:48 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Mon Jul 31 2017 01:19:18 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -3028,9 +3028,11 @@ div.modal {
 
 .tab > .header {
   display: block;
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
   box-sizing: border-box;
   margin-bottom: -1px; }
 
@@ -3054,7 +3056,9 @@ div.modal {
 
 .tab > .body {
   border: 1px solid #c5c5c5;
-  padding: 10px; }
+  padding: 10px;
+  position: relative;
+  top: -1px; }
 
 .tab > .body > .item {
   display: none; }
