@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Mon Jul 31 2017 23:05:08 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Wed Aug 02 2017 19:11:56 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -3038,15 +3038,17 @@ div.modal {
   font: inherit;
   display: inline-block;
   color: #3d3b36;
+  cursor: pointer !important;
   border: 1px solid #c5c5c5;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  cursor: pointer !important;
   padding: 3px 10px;
   margin-right: 2px;
   text-align: center;
   background-color: #FFF;
   box-shadow: 1px -1px 2px rgba(100, 100, 100, 0.4); }
+  .tab > .header > .item > * {
+    cursor: pointer !important; }
 
 .tab > .header > .item.active {
   border-bottom: 1px solid white !important;
