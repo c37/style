@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Wed Aug 02 2017 19:11:56 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Wed Aug 02 2017 21:48:54 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1496,7 +1496,7 @@ nav.nav-section {
   display: inline-block;
   margin: 0 3px;
   opacity: .6;
-  vertical-align: middle;
+  vertical-align: text-top;
   height: 16px;
   width: 16px; }
   [class^="icon-"]:hover {
@@ -1998,7 +1998,9 @@ nav.nav-section {
   background-position: 0 100%; }
 
 [class^="i18n-"] {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: top; }
 
 .i18n-20 {
   height: 20px !important;
@@ -2590,18 +2592,12 @@ ul.menu.vertical > li {
   margin-bottom: 9px;
   display: inline-block;
   font-weight: 500;
-  height: 26px;
+  height: 27px;
   padding: 1px 9px;
   position: relative; }
   .option > div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    height: 100%;
+    line-height: 24px; }
   .option:hover {
     background-color: #dadada;
     background-image: -webkit-linear-gradient(#fafafa, #dadada);
