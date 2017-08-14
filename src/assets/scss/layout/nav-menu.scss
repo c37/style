@@ -9,17 +9,16 @@
 
 .nav-menu h3 {
     margin-top: $heading-margin-top-3 - 9px;
-    margin-bottom: $heading-margin-bottom - 8px;
+    margin-bottom: $heading-margin-bottom - 3px;
 }
 
 .nav-menu [class^="icon-"] {
-    margin-top: 13px;
+    margin-top: 9px;
 }
 
 
 .nav-menu ul {
     display: flex;
-    margin-top: 18px;
 }
 
 .nav-menu ul li {    

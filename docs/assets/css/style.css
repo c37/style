@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Wed Aug 02 2017 21:48:54 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Mon Aug 14 2017 13:51:48 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -1472,17 +1472,16 @@ nav.nav-section {
 
 .nav-menu h3 {
   margin-top: 13px;
-  margin-bottom: 0px; }
+  margin-bottom: 5px; }
 
 .nav-menu [class^="icon-"] {
-  margin-top: 13px; }
+  margin-top: 9px; }
 
 .nav-menu ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  margin-top: 18px; }
+  display: flex; }
 
 .nav-menu ul li {
   padding: 0 7px;

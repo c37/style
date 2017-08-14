@@ -1,6 +1,6 @@
 /**
  *
- * C37 Style - in Wed Aug 02 2017 21:48:56 GMT-0300 (E. South America Standard Time)
+ * C37 Style - in Mon Aug 14 2017 13:51:50 GMT-0300 (E. South America Standard Time)
  *
  * c37-styleguide - styleguide of C37 - CNC
  * @version 0.0.1
@@ -184,7 +184,8 @@
             console.log(groups);
         });
 
-        console.log(forms);
+        // console.log(forms);
+
     });
 
     // https://github.com/Mevrael/bunny
