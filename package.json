@@ -1,0 +1,35 @@
+{
+    "name": "@c37/style-react",
+    "version": "0.0.1",
+    "description": "Style in React of C37 - CNC",
+    "homepage": "http://style-react.c37.co",
+    "license": "CC BY-SA 4.0",
+    "private": true,
+    "author": {
+        "name": "Ciro Cesar Maciel",
+        "email": "ciro.maciel@c37.co"
+    },
+    "contributors": [
+        {
+            "name": "Andréa Fabiana Maciel",
+            "email": "andrea.maciel@c37.co"
+        }
+    ],
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "dependencies": {
+        "react": "^15.6.1",
+        "react-document-title": "^2.0.3",
+        "react-dom": "^15.6.1",
+        "react-intl": "^2.3.0",
+        "react-router": "^4.1.2",
+        "react-router-dom": "^4.1.2"
+    },
+    "devDependencies": {
+        "react-scripts": "1.0.11"
+    }
+}
