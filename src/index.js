@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 
 
 
-// require('offline-plugin/runtime').install();
-utility.net.info.load();
 // https://github.com/hoodsy/3ree-auth-example/blob/master/common/views/routes.js
 
 const Main = () => (

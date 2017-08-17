@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class Tab extends Component {
+export default class Tab extends Component {
     constructor() {
         super();
         this.state = { headerActive: '' };

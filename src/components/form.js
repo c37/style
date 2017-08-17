@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 
-export class Form extends Component {
+export default class Form extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
 

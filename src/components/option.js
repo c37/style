@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 
-export class Option extends Component {
+export default class Option extends Component {
     componentWillMount() {
         // console.log(this);
 
