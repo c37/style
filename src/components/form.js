@@ -84,7 +84,8 @@ Form.Input = class Input extends Component {
             name: this.props.name,
             type: this.props.type,
             className: this.props.className,
-            placeholder: this.props.placeholder            
+            style: this.props.style,
+            placeholder: this.props.placeholder
         };
 
         // motando as validations no componente html
@@ -138,7 +139,7 @@ Form.Button = class Button extends Component {
     }
     render() {
         return (
-            <button id={this.props.id} className={this.props.className} onClick={this.handleClick}>
+            <button id={this.props.id} className={this.props.className} style={this.props.style} onClick={this.handleClick}>
                 {this.props.children}
             </button>
         )

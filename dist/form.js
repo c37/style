@@ -137,6 +137,7 @@ Form.Input = function (_Component2) {
                 name: this.props.name,
                 type: this.props.type,
                 className: this.props.className,
+                style: this.props.style,
                 placeholder: this.props.placeholder
             };
 
@@ -212,7 +213,7 @@ Form.Button = function (_Component3) {
         value: function render() {
             return _react2.default.createElement(
                 'button',
-                { id: this.props.id, className: this.props.className, onClick: this.handleClick },
+                { id: this.props.id, className: this.props.className, style: this.props.style, onClick: this.handleClick },
                 this.props.children
             );
         }
