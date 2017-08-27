@@ -116,10 +116,14 @@ Form.Input = class Input extends Component {
                     // console.log(propsInput)
  
                 // let span =  React.createElement('span', propsSpan);
-
                 return React.createElement('div', propsDiv, React.createElement('input', propsInput), React.createElement('span', propsSpan, this.props.label));
-            default:
+            default:{
+                if (this.props.focus) {
+                    // https://stackoverflow.com/questions/39735816/how-do-i-set-a-ref-when-using-react-createelement
+                    return React.createElement('input', {...propsInput, ref:(input => input && input.focus()) })
+                } 
                 return React.createElement('input', propsInput);
+            }
         }
         // para os tipos de componentes
 

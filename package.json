@@ -1,6 +1,6 @@
 {
     "name": "@c37/style-react",
-    "version": "0.0.3",
+    "version": "0.1.1",
     "description": "Style in React of C37",
     "main": "dist/index.js",
     "homepage": "http://style-react.c37.co",
