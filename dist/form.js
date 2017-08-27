@@ -139,6 +139,7 @@ Form.Input = function (_Component2) {
                 name: this.props.name,
                 type: this.props.type,
                 className: this.props.className,
+                onChange: this.props.onChange,
                 style: this.props.style,
                 placeholder: this.props.placeholder
             };

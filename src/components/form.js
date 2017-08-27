@@ -84,6 +84,7 @@ Form.Input = class Input extends Component {
             name: this.props.name,
             type: this.props.type,
             className: this.props.className,
+            onChange: this.props.onChange,
             style: this.props.style,
             placeholder: this.props.placeholder
         };
