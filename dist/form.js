@@ -182,7 +182,7 @@ Form.Input = function (_Component2) {
                                 } }));
                         }
                         // https://stackoverflow.com/questions/28889826/react-set-focus-on-input-after-render
-                        return _react2.default.createElement('input', _extends({}, propsInput, { ref: this.ref }));
+                        return _react2.default.createElement('input', _extends({}, propsInput, { ref: 'input' }));
                     }
             }
             // para os tipos de componentes

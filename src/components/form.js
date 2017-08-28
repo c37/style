@@ -124,7 +124,7 @@ Form.Input = class Input extends Component {
                     return React.createElement('input', {...propsInput, ref:(input => input && input.focus()) })
                 } 
                 // https://stackoverflow.com/questions/28889826/react-set-focus-on-input-after-render
-                return React.createElement('input', {...propsInput, ref: this.ref});
+                return React.createElement('input', {...propsInput, ref: 'input'});
             }
         }
         // para os tipos de componentes
