@@ -123,7 +123,8 @@ Form.Input = class Input extends Component {
                     // https://stackoverflow.com/questions/39735816/how-do-i-set-a-ref-when-using-react-createelement
                     return React.createElement('input', {...propsInput, ref:(input => input && input.focus()) })
                 } 
-                return React.createElement('input', propsInput);
+                // https://stackoverflow.com/questions/28889826/react-set-focus-on-input-after-render
+                return React.createElement('input', {...propsInput, ref: this.ref});
             }
         }
         // para os tipos de componentes

@@ -1,7 +1,7 @@
 var del = require('del'),
     gulp = require('gulp'),
+    bump = require('gulp-bump'),
     babel = require('gulp-babel');
-
 
 
 var config = {
@@ -67,7 +67,6 @@ var config = {
 };
 
 
-
 function dist() {
 
     function clean() {
@@ -87,8 +86,19 @@ function dist() {
             .pipe(gulp.dest('./dist/'));
     }
 
+    function version() {
+        return gulp.src(['./package.json'])
+            .pipe(bump({
+                type: 'patch'
+            }))
+            .pipe(gulp.dest('./'));
+    }
+    // major: 1.0.0
+    // minor: 0.1.0
+    // patch: 0.0.2
+    // prerelease: 0.0.1-2    
 
-    return gulp.series(clean, js);
+    return gulp.series(clean, js, version);
 
 }
 
