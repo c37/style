@@ -1,18 +1,20 @@
 form {
     margin: 0px;
     &>.group {
-        display: flex;
-        // box-flex: 1;
-        flex-grow: 1;
-        flex-shrink: 1;
+        // display: flex;
+        // flex-direction: column;
+        // flex-grow: 1;
+        // flex-shrink: 1;
         min-width: 0%;
         position: relative;
-        margin-top: 11px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         input {
+            margin: 0px;
             &:not([disabled]):focus~.label,
             &[badinput="true"]~.label,
             &:valid~.label {
-                transform: scale(.90) translateY(-27px) translateX(-7px);
+                transform: scale(.90) translateY(-23px) translateX(-7px);
                 color: #4285f4;
             }
         }
@@ -21,10 +23,15 @@ form {
             transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
             transition-property: color, bottom, transform;
             pointer-events: none;
-            position: absolute;
-            bottom: 13px;
+            position: relative;
+            bottom: 24px;
             left: 7px;
+            height: 0px;
             width: 100%
+        }
+        &>.validation{
+            color: #dd4b39;
+            height: 14px;
         }
     }
 }
