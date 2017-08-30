@@ -11,7 +11,7 @@ export default class Form extends Component {
         e.preventDefault();
 
         // console.log(e);
-        // console.log(this);
+        console.log(this);
         // console.log(ReactDOM.findDOMNode(this));
 
         let form = ReactDOM.findDOMNode(this),
@@ -20,50 +20,17 @@ export default class Form extends Component {
 
         // console.log(inputs)
 
-        inputs.forEach((input) => {
-            data[input.name] = input.value;
-        })
+        for (var index = 0; index < inputs.length; index++) {
+            var element = inputs[index];
 
-        // console.log(data);
+            // if (!element.validation()) {
+            //     break;
+            // }
 
-        if (typeof(this.props.onSubmit) === 'function') {
-            this.props.onSubmit(data);
+            data[inputs[index].name] = inputs[index].value;
         }
     }
     render() {
-        // let items = React.Children.map(this.props.children, child => {
-
-        //     // console.log(React.Children.count(child.props.children))
-
-        //     if (child.type === 'div') {
-        //         // console.log(child)
-
-        //     //     if (child.props.children.length) {
-        //     //         console.log('arr')
-        //     //     } else {
-        //     //         // console.log('only')
-        //     //         if (typeof(child.props.children.type) === 'function') {
-        //     //             child.props.children = React.cloneElement(child.props.children, {
-        //     //                 rel: 'sasasas'
-        //     //             })
-        //     //         }
-        //     //     }
-
-        //     //     console.log(child.props.children)
-
-        //     //     // if (typeof(child.props.children[0].type) === 'function'){
-        //     //     //     child.props.children[0] = React.cloneElement(child.props.children[0], {
-        //     //     //         rel: 'sasasas'
-        //     //     //     })
-        //     //     // }
-
-        //     } else {
-        //         return child;
-        //     }
-        
-        // });
-
-
         return (
             <form id={this.props.id} onSubmit={this.handleSubmit} className={this.props.className} style={this.props.style}>
                  {this.props.children} 
@@ -75,9 +42,9 @@ export default class Form extends Component {
 }
 
 Form.Input = class Input extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+    }
     render() {
 
         var propsInput = {
@@ -85,6 +52,22 @@ Form.Input = class Input extends Component {
             type: this.props.type,
             className: this.props.className,
             onChange: this.props.onChange,
+            onBlur: (e) => {
+
+                // console.log(e.target.parentNode);
+                // console.log(this.props.validations)
+
+                var elementValidation = e.target.parentNode.querySelector('.validation') || e.target.parentNode.parentNode.querySelector('.validation');
+                    
+                elementValidation.classList.add('hide');
+                e.target.classList.remove("required");
+
+                if (this.props.validations && this.props.validations.indexOf('required') > 0 && e.target.value === "") {
+                    e.target.classList.add("required");
+                    elementValidation.classList.toggle('hide');
+                }
+
+            },
             style: this.props.style,
             placeholder: this.props.placeholder
         };
@@ -133,11 +116,11 @@ Form.Input = class Input extends Component {
 }
 
 Form.Button = class Button extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-    handleClick = () => {
-        if (this.props.form) {
+    constructor(props) {
+        super(props);
+    }
+    handleClick = (e) => {
+        if (this.props.form && (!e.target.classList.contains('disabled'))) {
             let form = document.getElementById(this.props.form),
                 submit = form.querySelector('input[type="submit"]');
             submit.click();

@@ -46,7 +46,7 @@ var Form = function (_Component) {
             e.preventDefault();
 
             // console.log(e);
-            // console.log(this);
+            console.log(_this);
             // console.log(ReactDOM.findDOMNode(this));
 
             var form = _reactDom2.default.findDOMNode(_this),
@@ -55,14 +55,14 @@ var Form = function (_Component) {
 
             // console.log(inputs)
 
-            inputs.forEach(function (input) {
-                data[input.name] = input.value;
-            });
+            for (var index = 0; index < inputs.length; index++) {
+                var element = inputs[index];
 
-            // console.log(data);
+                // if (!element.validation()) {
+                //     break;
+                // }
 
-            if (typeof _this.props.onSubmit === 'function') {
-                _this.props.onSubmit(data);
+                data[inputs[index].name] = inputs[index].value;
             }
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
@@ -70,39 +70,6 @@ var Form = function (_Component) {
     _createClass(Form, [{
         key: 'render',
         value: function render() {
-            // let items = React.Children.map(this.props.children, child => {
-
-            //     // console.log(React.Children.count(child.props.children))
-
-            //     if (child.type === 'div') {
-            //         // console.log(child)
-
-            //     //     if (child.props.children.length) {
-            //     //         console.log('arr')
-            //     //     } else {
-            //     //         // console.log('only')
-            //     //         if (typeof(child.props.children.type) === 'function') {
-            //     //             child.props.children = React.cloneElement(child.props.children, {
-            //     //                 rel: 'sasasas'
-            //     //             })
-            //     //         }
-            //     //     }
-
-            //     //     console.log(child.props.children)
-
-            //     //     // if (typeof(child.props.children[0].type) === 'function'){
-            //     //     //     child.props.children[0] = React.cloneElement(child.props.children[0], {
-            //     //     //         rel: 'sasasas'
-            //     //     //     })
-            //     //     // }
-
-            //     } else {
-            //         return child;
-            //     }
-
-            // });
-
-
             return _react2.default.createElement(
                 'form',
                 { id: this.props.id, onSubmit: this.handleSubmit, className: this.props.className, style: this.props.style },
@@ -121,25 +88,37 @@ exports.default = Form;
 Form.Input = function (_Component2) {
     _inherits(Input, _Component2);
 
-    function Input() {
+    function Input(props) {
         _classCallCheck(this, Input);
 
-        return _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).call(this, props));
     }
 
     _createClass(Input, [{
         key: 'render',
-
-        // constructor(props) {
-        //     super(props);
-        // }
         value: function render() {
+            var _this3 = this;
 
             var propsInput = {
                 name: this.props.name,
                 type: this.props.type,
                 className: this.props.className,
                 onChange: this.props.onChange,
+                onBlur: function onBlur(e) {
+
+                    // console.log(e.target.parentNode);
+                    // console.log(this.props.validations)
+
+                    var elementValidation = e.target.parentNode.querySelector('.validation') || e.target.parentNode.parentNode.querySelector('.validation');
+
+                    elementValidation.classList.add('hide');
+                    e.target.classList.remove("required");
+
+                    if (_this3.props.validations && _this3.props.validations.indexOf('required') > 0 && e.target.value === "") {
+                        e.target.classList.add("required");
+                        elementValidation.classList.toggle('hide');
+                    }
+                },
                 style: this.props.style,
                 placeholder: this.props.placeholder
             };
@@ -195,29 +174,21 @@ Form.Input = function (_Component2) {
 Form.Button = function (_Component3) {
     _inherits(Button, _Component3);
 
-    function Button() {
-        var _ref2;
-
-        var _temp2, _this3, _ret2;
-
+    function Button(props) {
         _classCallCheck(this, Button);
 
-        for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-            args[_key2] = arguments[_key2];
-        }
+        var _this4 = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
 
-        return _ret2 = (_temp2 = (_this3 = _possibleConstructorReturn(this, (_ref2 = Button.__proto__ || Object.getPrototypeOf(Button)).call.apply(_ref2, [this].concat(args))), _this3), _this3.handleClick = function () {
-            if (_this3.props.form) {
-                var form = document.getElementById(_this3.props.form),
+        _this4.handleClick = function (e) {
+            if (_this4.props.form && !e.target.classList.contains('disabled')) {
+                var form = document.getElementById(_this4.props.form),
                     submit = form.querySelector('input[type="submit"]');
                 submit.click();
             }
-        }, _temp2), _possibleConstructorReturn(_this3, _ret2);
-    }
-    // constructor(props) {
-    //     super(props);
-    // }
+        };
 
+        return _this4;
+    }
 
     _createClass(Button, [{
         key: 'render',
