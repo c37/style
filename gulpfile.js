@@ -1,6 +1,7 @@
 var del = require('del'),
     gulp = require('gulp'),
     sass = require('gulp-sass'),
+    bump = require('gulp-bump'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
     header = require('gulp-header'),
@@ -272,6 +273,17 @@ function copy() {
         .pipe(gulp.dest('dist/'));
 }
 
+function version() {
+    return gulp.src(['./package.json'])
+        .pipe(bump({
+            type: 'patch'
+        }))
+        .pipe(gulp.dest('./'));
+}
+// major: 1.0.0
+// minor: 0.1.0
+// patch: 0.0.2
+// prerelease: 0.0.1-2    
 
 gulp.task('img-icon', gulp.series(icon));
 gulp.task('img-logo', gulp.series(logo));
@@ -280,4 +292,4 @@ gulp.task('img-i18n', gulp.series(i18n));
 gulp.task('docs', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets));
 // gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
 gulp.task('serve', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets, serve, watch));
-gulp.task('dist', gulp.series(clean.dist, copy));
+gulp.task('dist', gulp.series(clean.dist, copy, version));

@@ -1,6 +1,6 @@
 {
     "name": "@c37/style-html",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Style in Html of C37",
     "homepage": "http://style-html.c37.co",
     "license": "CC-BY-SA-4.0",
@@ -11,7 +11,8 @@
     "contributors": [],
     "dependencies": {},
     "scripts": {
-        "start": ""
+        "start": "",
+        "deploy": "npm publish"
     },
     "devDependencies": {
         "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
@@ -21,6 +22,7 @@
         "gulp": "github:gulpjs/gulp#4.0",
         "gulp-autoprefixer": "^3.1.1",
         "gulp-babel": "^6.1.2",
+        "gulp-bump": "^2.7.0",
         "gulp-concat": "^2.6.1",
         "gulp-header": "^1.8.8",
         "gulp-nunjucks-render": "^2.2.1",
