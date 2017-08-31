@@ -1,11 +1,11 @@
 /**
  *
- * C37 Style Html - in Thu Aug 31 2017 13:29:57 GMT-0300 (E. South America Standard Time)
+ * C37 Style Html - in Thu Aug 31 2017 15:04:11 GMT-0300 (E. South America Standard Time)
  *
- * c37-styleguide - styleguide of C37 - CNC
- * @version 0.0.1
- * @link http://styleguide.c37.co
- * @license CC BY-SA 4.0
+ * @c37/style-html - Style in Html of C37
+ * @version 2.1.1
+ * @link http://style-html.c37.co
+ * @license CC-BY-SA-4.0
  *
  */
 (function (global, factory) {

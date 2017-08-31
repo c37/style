@@ -23,6 +23,9 @@
             padding-right: 3px;            
         }
     }
+    &:focus{
+        outline: none;
+    }
     &:hover {
         background-color: $option-color1;
         background-image: -moz-linear-gradient($option-color0, $option-color1);
