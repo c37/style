@@ -1,31 +1,30 @@
 {
-  "name": "c37-styleguide",
-  "version": "0.0.1",
-  "description": "styleguide of C37 - CNC",
-  "homepage": "http://styleguide.c37.co",
-  "license": "CC BY-SA 4.0",
-  "private": true,
-  "author": {
-    "name": "Ciro Cesar Maciel",
-    "email": "ciro.maciel@c37.co"
-  },
-  "contributors": [],
-  "dependencies": {},
-  "scripts": {
-    "start": ""
-  },
-  "devDependencies": {
-    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.18.8",
-    "del": "^2.2.2",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-header": "^1.8.8",
-    "gulp-nunjucks-render": "^2.2.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-svg-sprite": "^1.3.6"
-  }
+    "name": "@c37/style-html",
+    "version": "2.1.0",
+    "description": "Style in Html of C37",
+    "homepage": "http://style-html.c37.co",
+    "license": "CC-BY-SA-4.0",
+    "author": {
+        "name": "Ciro Cesar Maciel",
+        "email": "ciro.maciel@c37.co"
+    },
+    "contributors": [],
+    "dependencies": {},
+    "scripts": {
+        "start": ""
+    },
+    "devDependencies": {
+        "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+        "babel-preset-es2015": "^6.24.1",
+        "browser-sync": "^2.18.8",
+        "del": "^2.2.2",
+        "gulp": "github:gulpjs/gulp#4.0",
+        "gulp-autoprefixer": "^3.1.1",
+        "gulp-babel": "^6.1.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-header": "^1.8.8",
+        "gulp-nunjucks-render": "^2.2.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-svg-sprite": "^1.3.6"
+    }
 }

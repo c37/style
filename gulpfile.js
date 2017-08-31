@@ -18,7 +18,7 @@ var config = {
     banner: [
         '/**',
         ' *',
-        ' * C37 Style - in <%= new Date().toString() %>',
+        ' * C37 Style Html - in <%= new Date().toString() %>',
         ' *',
         ' * <%= pkg.name %> - <%= pkg.description %>',
         ' * @version <%= pkg.version %>',
@@ -132,15 +132,33 @@ var config = {
 };
 
 
-
-function clean() {
-    return del([
-        './docs/**/*',
-        // '!/docs/assets/js{,/**}',
-        '!./docs/.gitkeep',
-        '!./docs/CNAME'
-    ]);
+var clean = {
+    docs: function clean() {
+        return del([
+            './docs/**/*',
+            // '!/docs/assets/js{,/**}',
+            '!./docs/.gitkeep',
+            '!./docs/CNAME'
+        ]);
+    },
+    dist: function clean() {
+        return del([
+            './dist/**/*',
+            // '!/docs/assets/js{,/**}',
+            '!./docs/.gitkeep',
+            '!./docs/CNAME'
+        ]);
+    }
 }
+
+// function clean() {
+//     return del([
+//         './docs/**/*',
+//         // '!/docs/assets/js{,/**}',
+//         '!./docs/.gitkeep',
+//         '!./docs/CNAME'
+//     ]);
+// }
 
 function template() {
 
@@ -246,13 +264,20 @@ function i18n() {
         .pipe(gulp.dest('src'));
 }
 
-
+// https://stackoverflow.com/questions/34842771/copying-files-with-gulp
+// https://github.com/gulpjs/gulp/issues/165
+function copy() {
+    return gulp
+        .src(['./docs/assets/**', '!./docs/assets/{js,js/**}'])
+        .pipe(gulp.dest('dist/'));
+}
 
 
 gulp.task('img-icon', gulp.series(icon));
 gulp.task('img-logo', gulp.series(logo));
 gulp.task('img-i18n', gulp.series(i18n));
 
-gulp.task('docs', gulp.series(clean, template, css, gulp.parallel(js.vendor, js.library), assets));
+gulp.task('docs', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets));
 // gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
-gulp.task('serve', gulp.series(clean, template, css, gulp.parallel(js.vendor, js.library), assets, serve, watch));
+gulp.task('serve', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets, serve, watch));
+gulp.task('dist', gulp.series(clean.dist, copy));
