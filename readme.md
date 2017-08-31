@@ -13,6 +13,10 @@
 - [Markdown parser](https://github.com/jonschlinkert/remarkable)
 - [React Transition Group](https://github.com/reactjs/react-transition-group)
 - [React Calendars](https://github.com/wix/react-native-calendars)
+- [React Yearly Calendar](https://github.com/BelkaLab/react-yearly-calendar)
+- [Internationalizable Datepicker](https://github.com/airbnb/react-dates)
+- [Infinite scrolling Datepicker](https://github.com/clauderic/react-infinite-calendar)
+- [React Big Calendar](https://github.com/intljusticemission/react-big-calendar)
 
 
 ## References
