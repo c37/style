@@ -102,6 +102,7 @@ var Option = function (_Component) {
 
             propsChildren = _react2.default.Children.map(this.props.children, function (child) {
                 return _react2.default.cloneElement(child, {
+                    className: itemSelected.props.value === child.props.value ? 'selected' : '',
                     onChange: _this2.onChange,
                     updateState: _this2.updateState
                 });
@@ -160,7 +161,8 @@ Option.Item = function (_Component2) {
                 { onClick: function onClick(e) {
                         _this4.props.updateState({ itemSelected: _this4 });
                         _this4.props.onChange(_this4);
-                    } },
+                    },
+                    className: this.props.className },
                 this.props.children
             );
         }

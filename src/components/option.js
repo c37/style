@@ -66,6 +66,7 @@ export default class Option extends Component {
 
         propsChildren = React.Children.map(this.props.children, child => {
             return React.cloneElement(child, {
+                className: (itemSelected.props.value === child.props.value) ? 'selected' : '',
                 onChange: this.onChange,
                 updateState: this.updateState,
             })
@@ -96,7 +97,8 @@ Option.Item = class Item extends Component {
             <li onClick={(e)=> {
                     this.props.updateState({ itemSelected: this });
                     this.props.onChange(this);                
-                }}>
+                }}
+                className={this.props.className}>
                 {this.props.children}
             </li>
         )
