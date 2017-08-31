@@ -1,6 +1,4 @@
-## Style in Html of C37 
-
-[![npm version](https://badge.fury.io/js/%40c37%2Fstyle-html.svg)](https://badge.fury.io/js/%40c37%2Fstyle-html) 
+## Style in Html of C37 [![npm version](https://badge.fury.io/js/%40c37%2Fstyle-html.svg)](https://badge.fury.io/js/%40c37%2Fstyle-html) 
 
 `npm install @c37/style-html --save`
 
