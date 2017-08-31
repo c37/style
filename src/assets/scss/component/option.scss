@@ -12,14 +12,16 @@
     display: inline-block;
     font-weight: 500;
     height: 27px;
-    padding: 1px 9px;
+    padding: 1px 5px;
     position: relative;
     >div{
         height: 100%;
         line-height: 24px;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
+        display: flex;
+        align-items: center;
+        &>strong{
+            padding-right: 3px;            
+        }
     }
     &:hover {
         background-color: $option-color1;
@@ -50,16 +52,16 @@
     padding: 0px;
 }
 
-.option>strong {
-    padding-top: 2px;
-    padding-right: 7px;
-}
+// .option>strong {
+//     padding-top: 2px;
+//     padding-right: 7px;
+// }
 
 .option i.caret {
     // http://apps.eky.hk/css-triangle-generator/
     display: inline-block;
     position: relative;
-    margin-left: 3px;
+    margin-left: auto;
     width: 0;
     height: 0;
     border-style: solid;
