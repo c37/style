@@ -31,6 +31,11 @@ export default class Option extends Component {
         }
 
     }
+    onBlur = () => {
+        let element = ReactDOM.findDOMNode(this);
+        
+        element.querySelector(".menu").style.display = "none";
+    }
     updateState = (state) => {
         this.setState(state);
     }
@@ -74,7 +79,8 @@ export default class Option extends Component {
 
         return (
             // <div className="option margin-0" style={this.props.style}>
-            <div className="option" style={this.props.style}>
+            // https://stackoverflow.com/questions/18504139/div-onblur-function
+            <div className="option" style={this.props.style} tabIndex={0} onBlur={(e) => {this.onBlur()}} >
                 {divContainer}
                 <div className="menu right" style={{display: "none"}}>
                     <div className="content">

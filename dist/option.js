@@ -46,6 +46,10 @@ var Option = function (_Component) {
             if (typeof _this.props.onChange === 'function') {
                 _this.props.onChange(item);
             }
+        }, _this.onBlur = function () {
+            var element = _reactDom2.default.findDOMNode(_this);
+
+            element.querySelector(".menu").style.display = "none";
         }, _this.updateState = function (state) {
             _this.setState(state);
         }, _temp), _possibleConstructorReturn(_this, _ret);
@@ -110,9 +114,12 @@ var Option = function (_Component) {
 
             return (
                 // <div className="option margin-0" style={this.props.style}>
+                // https://stackoverflow.com/questions/18504139/div-onblur-function
                 _react2.default.createElement(
                     'div',
-                    { className: 'option', style: this.props.style },
+                    { className: 'option', style: this.props.style, tabIndex: 0, onBlur: function onBlur(e) {
+                            _this2.onBlur();
+                        } },
                     divContainer,
                     _react2.default.createElement(
                         'div',

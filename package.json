@@ -1,6 +1,6 @@
 {
     "name": "@c37/style-react",
-    "version": "0.1.20",
+    "version": "0.1.24",
     "description": "Style in React of C37",
     "main": "dist/index.js",
     "homepage": "http://style-react.c37.co",
@@ -9,12 +9,7 @@
         "name": "Ciro Cesar Maciel",
         "email": "ciro.maciel@c37.co"
     },
-    "contributors": [
-        {
-            "name": "Andréa Fabiana Maciel",
-            "email": "andrea.maciel@c37.co"
-        }
-    ],
+    "contributors": [],
     "scripts": {
         "start": "webpack-dev-server --inline --open",
         "deploy": "npm publish",
