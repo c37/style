@@ -17,6 +17,7 @@
 - [Internationalizable Datepicker](https://github.com/airbnb/react-dates)
 - [Infinite scrolling Datepicker](https://github.com/clauderic/react-infinite-calendar)
 - [React Big Calendar](https://github.com/intljusticemission/react-big-calendar)
+- [React Daypicker](https://github.com/gpbl/react-day-picker)
 
 
 ## References
