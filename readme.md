@@ -19,6 +19,9 @@
 - [React Big Calendar](https://github.com/intljusticemission/react-big-calendar)
 - [React Daypicker](https://github.com/gpbl/react-day-picker)
 
+## Server Side Rendering
+- [Framework for server-rendered React apps](https://github.com/zeit/next.js/)
+- [Next.js 3.0](https://zeit.co/blog/next3)
 
 ## References
 - [gulp-4.0](https://stackoverflow.com/questions/33429727/how-do-i-install-gulp-4)
