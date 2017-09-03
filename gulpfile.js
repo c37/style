@@ -5,6 +5,7 @@ var del = require('del'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
     header = require('gulp-header'),
+    cleanCSS = require('gulp-clean-css'),
     svgSprite = require('gulp-svg-sprite'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
@@ -191,6 +192,14 @@ function css() {
 
 }
 
+function minifyCss() {
+    return gulp.src('./docs/assets/css/*.css')
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
+        .pipe(gulp.dest('./dist/css/'));
+};
+
 var js = {
     library: function () {
         return gulp.src(['./src/assets/js/library/**/*.js'])
@@ -289,7 +298,7 @@ gulp.task('img-icon', gulp.series(icon));
 gulp.task('img-logo', gulp.series(logo));
 gulp.task('img-i18n', gulp.series(i18n));
 
-gulp.task('docs', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets));
+gulp.task('docs', gulp.series(clean.docs, template, css, minifyCss, gulp.parallel(js.vendor, js.library), assets));
 // gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
-gulp.task('serve', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets, serve, watch));
+gulp.task('serve', gulp.series(clean.docs, template, css, minifyCss, gulp.parallel(js.vendor, js.library), assets, serve, watch));
 gulp.task('dist', gulp.series(clean.dist, copy, version));
