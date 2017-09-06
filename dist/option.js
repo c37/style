@@ -117,7 +117,7 @@ var Option = function (_Component) {
                 // https://stackoverflow.com/questions/18504139/div-onblur-function
                 _react2.default.createElement(
                     'div',
-                    { className: 'option', style: this.props.style, tabIndex: 0, onBlur: function onBlur(e) {
+                    { className: "option".concat(this.props.className ? this.props.className : ''), style: this.props.style, tabIndex: 0, onBlur: function onBlur(e) {
                             _this2.onBlur();
                         } },
                     divContainer,

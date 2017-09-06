@@ -80,7 +80,7 @@ export default class Option extends Component {
         return (
             // <div className="option margin-0" style={this.props.style}>
             // https://stackoverflow.com/questions/18504139/div-onblur-function
-            <div className="option" style={this.props.style} tabIndex={0} onBlur={(e) => {this.onBlur()}} >
+            <div className={"option".concat(this.props.className ? this.props.className : '')} style={this.props.style} tabIndex={0} onBlur={(e) => {this.onBlur()}} >
                 {divContainer}
                 <div className="menu right" style={{display: "none"}}>
                     <div className="content">
