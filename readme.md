@@ -1,5 +1,6 @@
 ## Style React
 - [Wix verticals](https://github.com/wix/wix-style-react)
+- [Carbon Components - in React](https://github.com/carbon-design-system/carbon-components-react)
 
 ## Tools
 - [Interactive development & testing environment for React](https://github.com/storybooks/storybook)
