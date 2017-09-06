@@ -1,9 +1,9 @@
 /**
  *
- * C37 Style Html - in Wed Sep 06 2017 15:25:24 GMT-0300 (E. South America Standard Time)
+ * C37 Style Html - in Wed Sep 06 2017 16:08:17 GMT-0300 (E. South America Standard Time)
  *
  * @c37/style-html - Style in Html of C37
- * @version 2.1.7
+ * @version 2.1.8
  * @link http://style-html.c37.co
  * @license CC-BY-SA-4.0
  *
@@ -2617,7 +2617,7 @@ ul.menu.vertical > li {
     border-color: #c5c5c5; }
   .option.required {
     border: 1px solid firebrick;
-    background-color: #FFD5D5;
+    background-color: white;
     background-image: none; }
   .option.text-center {
     text-align: center; }

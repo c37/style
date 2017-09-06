@@ -37,7 +37,8 @@
     &.required,
     {
         border: 1px solid firebrick;
-        background-color: #FFD5D5;
+        // background-color: #FFD5D5;
+        background-color: white;
         background-image: none;
     }
     &.text-center {
