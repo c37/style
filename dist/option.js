@@ -166,7 +166,7 @@ Option.Item = function (_Component2) {
             return _react2.default.createElement(
                 'li',
                 { onClick: function onClick(e) {
-                        if (_this4.props.value && _this4.props.value !== -1 && _this4.props.value === '-1') {
+                        if (_this4.props.value && _this4.props.value !== -1 && _this4.props.value !== '-1') {
                             _this4.props.updateState({ itemSelected: _this4 });
                             _this4.props.onChange(_this4);
                         }

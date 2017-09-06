@@ -101,7 +101,7 @@ Option.Item = class Item extends Component {
     render() {
         return (
             <li onClick={(e)=> {
-                    if (this.props.value && this.props.value !== -1 && this.props.value === '-1') {
+                    if (this.props.value && this.props.value !== -1 && this.props.value !== '-1') {
                         this.props.updateState({ itemSelected: this });
                         this.props.onChange(this);                
                     }
