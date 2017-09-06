@@ -298,7 +298,7 @@ gulp.task('img-icon', gulp.series(icon));
 gulp.task('img-logo', gulp.series(logo));
 gulp.task('img-i18n', gulp.series(i18n));
 
-gulp.task('docs', gulp.series(clean.docs, template, css, minifyCss, gulp.parallel(js.vendor, js.library), assets));
+gulp.task('docs', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets));
 // gulp.task('serve', gulp.series(clean, template, css, js, assets, serve, watch));
-gulp.task('serve', gulp.series(clean.docs, template, css, minifyCss, gulp.parallel(js.vendor, js.library), assets, serve, watch));
-gulp.task('dist', gulp.series('docs', clean.dist, copy, version));
+gulp.task('serve', gulp.series(clean.docs, template, css, gulp.parallel(js.vendor, js.library), assets, serve, watch));
+gulp.task('dist', gulp.series('docs', clean.dist, copy, minifyCss, version));
