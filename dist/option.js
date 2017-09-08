@@ -84,12 +84,23 @@ var Option = function (_Component) {
                 divContainer = void 0,
                 propsChildren = void 0;
 
-            itemChildren = _react2.default.Children.map(itemSelected.props.children, function (item) {
-                if (item.type === "span") {
-                    return _react2.default.createElement('strong', null, item.props.children);
-                }
-                return item;
-            });
+            // react
+            if (itemSelected.props.children) {
+                itemChildren = _react2.default.Children.map(itemSelected.props.children, function (item) {
+                    if (item.type === "span") {
+                        return _react2.default.createElement('strong', null, item.props.children);
+                    }
+                    return item;
+                });
+            } else {
+                // preact
+                itemChildren = _react2.default.Children.map(itemSelected.children, function (item) {
+                    if (item.type === "span") {
+                        return _react2.default.createElement('strong', null, item.children);
+                    }
+                    return item;
+                });
+            }
 
             // console.log(itemChildren);
 

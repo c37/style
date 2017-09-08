@@ -48,12 +48,22 @@ export default class Option extends Component {
             divContainer,
             propsChildren;
 
-        itemChildren = React.Children.map(itemSelected.props.children, item => {
-            if (item.type === "span"){
-                return React.createElement('strong', null, item.props.children);
-            }
-            return item;
-        });
+            // react
+        if (itemSelected.props.children){
+            itemChildren = React.Children.map(itemSelected.props.children, item => {
+                if (item.type === "span"){
+                    return React.createElement('strong', null, item.props.children);
+                }
+                return item;
+            });
+        } else { // preact
+            itemChildren = React.Children.map(itemSelected.children, item => {
+                if (item.type === "span"){
+                    return React.createElement('strong', null, item.children);
+                }
+                return item;
+            });
+        }
 
         // console.log(itemChildren);
 
