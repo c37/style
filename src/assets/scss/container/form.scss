@@ -1,14 +1,18 @@
 form {
     margin: 0px;
-    &>.group, &>.row  {
+    // &>.group, &>.row  {
+    & .group, & .row  {
         // display: flex;
         // flex-direction: column;
         // flex-grow: 1;
         // flex-shrink: 1;
         min-width: 0%;
         position: relative;
-        margin-top: 20px;
+        // margin-top: 20px;
         margin-bottom: 20px;
+        & .option{
+            margin-bottom: 0px;
+        }
         input {
             margin: 0px;
             &:not([disabled]):focus~.label,
@@ -18,7 +22,8 @@ form {
                 color: #4285f4;
             }
         }
-        &>.label {
+        // &>.label {
+        & .label {
             transform-origin: bottom left;
             transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
             transition-property: color, bottom, transform;
@@ -29,7 +34,8 @@ form {
             height: 0px;
             width: 100%
         }
-        &>.validation {
+        // &>.validation {
+        & .validation {
             color: #dd4b39;
             height: 14px;
             line-height: 17px;

@@ -1,9 +1,9 @@
 /**
  *
- * C37 Style Html - in Mon Sep 11 2017 02:03:14 GMT-0300 (E. South America Standard Time)
+ * C37 Style Html - in Mon Sep 11 2017 20:38:18 GMT-0300 (E. South America Standard Time)
  *
  * @c37/style-html - Style in Html of C37
- * @version 2.1.11
+ * @version 2.1.14
  * @link http://style-html.c37.co
  * @license CC-BY-SA-4.0
  *
@@ -2867,23 +2867,24 @@ div.box {
 
 form {
   margin: 0px; }
-  form > .group, form > .row {
+  form .group, form .row {
     min-width: 0%;
     position: relative;
-    margin-top: 20px;
     margin-bottom: 20px; }
-    form > .group input, form > .row input {
+    form .group .option, form .row .option {
+      margin-bottom: 0px; }
+    form .group input, form .row input {
       margin: 0px; }
-      form > .group input:not([disabled]):focus ~ .label,
-      form > .group input[badinput="true"] ~ .label,
-      form > .group input:valid ~ .label, form > .row input:not([disabled]):focus ~ .label,
-      form > .row input[badinput="true"] ~ .label,
-      form > .row input:valid ~ .label {
+      form .group input:not([disabled]):focus ~ .label,
+      form .group input[badinput="true"] ~ .label,
+      form .group input:valid ~ .label, form .row input:not([disabled]):focus ~ .label,
+      form .row input[badinput="true"] ~ .label,
+      form .row input:valid ~ .label {
         -webkit-transform: scale(0.9) translateY(-23px) translateX(-7px);
             -ms-transform: scale(0.9) translateY(-23px) translateX(-7px);
                 transform: scale(0.9) translateY(-23px) translateX(-7px);
         color: #4285f4; }
-    form > .group > .label, form > .row > .label {
+    form .group .label, form .row .label {
       -webkit-transform-origin: bottom left;
           -ms-transform-origin: bottom left;
               transform-origin: bottom left;
@@ -2899,7 +2900,7 @@ form {
       left: 7px;
       height: 0px;
       width: 100%; }
-    form > .group > .validation, form > .row > .validation {
+    form .group .validation, form .row .validation {
       color: #dd4b39;
       height: 14px;
       line-height: 17px;
