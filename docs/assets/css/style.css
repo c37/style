@@ -1,9 +1,9 @@
 /**
  *
- * C37 Style Html - in Mon Sep 11 2017 20:38:18 GMT-0300 (E. South America Standard Time)
+ * C37 Style Html - in Thu Sep 21 2017 18:05:08 GMT-0300 (E. South America Standard Time)
  *
  * @c37/style-html - Style in Html of C37
- * @version 2.1.14
+ * @version 2.1.22
  * @link http://style-html.c37.co
  * @license CC-BY-SA-4.0
  *
@@ -230,6 +230,9 @@ div.authenticate {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+  @media handheld, screen and (max-height: 500px) {
+    div.authenticate {
+      height: initial !important; } }
   div.authenticate.debug {
     background-color: #ebf4fc; }
     div.authenticate.debug > div[class^='column'],

@@ -9,6 +9,11 @@
                 @content;
             }
         }
+        @else if $min=='small-landscape' {
+            @media handheld, screen and (max-height: 500px) {
+                @content;
+            }
+        }
         @else if $min==small {
             @media (max-width: $break-small) {
                 @content;

@@ -103,6 +103,9 @@ div.row {
 div.authenticate {
     height: 100%;
     width: 100%;
+    @include breakpoint('small-landscape') {
+        height: initial !important;
+    }        
     &.debug {
         @include debug-row;
         >div[class^='column'],
