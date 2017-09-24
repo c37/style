@@ -22,6 +22,12 @@ footer {
                 flex-grow: 1;
                 align-self: center;
             }
+            >.left {
+                padding-top: 0px !important;
+                >table {
+                    margin: 0px;
+                }
+            }
             >.right {
                 padding-top: 0px !important;
                 >table {
@@ -71,8 +77,10 @@ footer {
                         }
                     }
                 }
+                >.left,
                 >.right {
                     >table {
+                        text-align: center;
                         float: none;
                         margin: 0 auto;
                     }

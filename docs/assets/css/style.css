@@ -1,9 +1,9 @@
 /**
  *
- * C37 Style Html - in Thu Sep 21 2017 18:05:08 GMT-0300 (E. South America Standard Time)
+ * C37 Style Html - in Sun Sep 24 2017 12:16:22 GMT-0300 (E. South America Standard Time)
  *
  * @c37/style-html - Style in Html of C37
- * @version 2.1.22
+ * @version 2.1.26
  * @link http://style-html.c37.co
  * @license CC-BY-SA-4.0
  *
@@ -1367,6 +1367,10 @@ footer {
             -ms-flex-item-align: center;
                     -ms-grid-row-align: center;
                 align-self: center; }
+      footer > .website > .container > .left {
+        padding-top: 0px !important; }
+        footer > .website > .container > .left > table {
+          margin: 0px; }
       footer > .website > .container > .right {
         padding-top: 0px !important; }
         footer > .website > .container > .right > table {
@@ -1403,7 +1407,9 @@ footer {
     footer > .website > .container > .left > p > strong {
       display: block;
       text-align: center; }
+  footer > .website > .container > .left > table,
   footer > .website > .container > .right > table {
+    text-align: center;
     float: none;
     margin: 0 auto; } }
 

@@ -1,9 +1,9 @@
 /**
  *
- * C37 Style Html - in Thu Sep 21 2017 18:05:09 GMT-0300 (E. South America Standard Time)
+ * C37 Style Html - in Sun Sep 24 2017 12:16:24 GMT-0300 (E. South America Standard Time)
  *
  * @c37/style-html - Style in Html of C37
- * @version 2.1.22
+ * @version 2.1.26
  * @link http://style-html.c37.co
  * @license CC-BY-SA-4.0
  *
