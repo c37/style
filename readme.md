@@ -23,6 +23,7 @@
 - [React Big Calendar](https://github.com/intljusticemission/react-big-calendar)
 - [React Daypicker](https://github.com/gpbl/react-day-picker)
 - [A responsive event timeline in React.js](https://github.com/rcdexta/react-event-timeline)
+- [A very lightweight and flexible accessible modal dialog](https://github.com/edenspiekermann/a11y-dialog)
 
 ## Server Side Rendering
 - [Framework for server-rendered React apps](https://github.com/zeit/next.js/)
