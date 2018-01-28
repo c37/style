@@ -2,8 +2,6 @@
 /dev/*/
 /dev/*.*
 !/dev/.gitkeep
-/dist/*/
-/dist/*.*
 !/dist/.gitkeep
 /node_modules/
 /nbproject/
