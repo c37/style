@@ -1,43 +1,41 @@
 {
-    "name": "@c37/style-react",
-    "version": "0.1.32",
-    "description": "Style in React of C37",
-    "main": "dist/index.js",
-    "homepage": "http://style-react.c37.co",
+    "name": "@ciro-maciel/style",
+    "version": "4.0.0",
+    "description": "My Universal React/Preact Style Guide",
+    "main": "docs/index.html",
+    "homepage": "http://style.ciro-maciel.me",
     "license": "CC-BY-SA-4.0",
     "author": {
         "name": "Ciro Cesar Maciel",
         "email": "ciro.maciel@c37.co"
     },
-    "contributors": [],
     "scripts": {
-        "start": "webpack-dev-server --inline --open",
-        "deploy": "npm publish",
-        "build": "webpack",
-        "install": "npm install"
+        "start:dev": "start-storybook -p 9001 -c docs/storybook/.storybook",
+        "build:site": "build-storybook -c docs/storybook/.storybook -o docs",
+        "build:dist": "rimraf dist && babel src -d dist",
+        "install": "yarn"
     },
     "dependencies": {
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
-        "react-intl": "^2.3.0",
-        "react-router-dom": "^4.2.2",
-        "react-document-title": "^2.0.3"
+        "prop-types": "^15.6.0",
+        "react": "^15.6.2",
+        "react-dom": "^15.6.2",
+        "styled-components": "^2.2.1"
     },
     "devDependencies": {
+        "@storybook/addon-info": "^3.2.12",
+        "@storybook/addon-options": "^3.2.12",
+        "@storybook/react": "^3.2.12",
+        "babel-cli": "^6.26.0",
         "babel-core": "^6.25.0",
         "babel-loader": "^7.1.2",
-        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-env": "^1.6.0",
         "babel-preset-react": "^6.24.1",
-        "babel-preset-stage-0": "^6.24.1",
-        "del": "^3.0.0",
-        "gulp": "github:gulpjs/gulp#4.0",
-        "gulp-babel": "^7.0.0",
-        "gulp-bump": "^2.7.0",
-        "html-webpack-plugin": "^2.29.0",
-        "uglifyjs-webpack-plugin": "^0.4.6",
-        "webpack": "^3.4.1",
-        "webpack-dashboard": "^0.4.0",
-        "webpack-dev-server": "^2.6.1"
+        "babel-preset-stage-2": "^6.24.1",
+        "enzyme": "^3.1.0",
+        "enzyme-adapter-react-15": "^1.0.2",
+        "expect": "^21.2.1",
+        "raw-loader": "^0.5.1",
+        "rimraf": "^2.6.2",
+        "storybook-addon-specifications": "^2.1.1"
     }
 }

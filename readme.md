@@ -1,38 +1,27 @@
-## Style React
-- [Wix verticals](https://github.com/wix/wix-style-react)
-- [Carbon Components - in React](https://github.com/carbon-design-system/carbon-components-react)
+## react-style-boilerplate
+My version of React/Preact Style Guide Boilerplate
 
-## Tools
-- [Interactive development & testing environment for React](https://github.com/storybooks/storybook)
 
-## Components React
-- [React autosuggest](https://github.com/moroshko/react-autosuggest)
-- [React Collapse](https://github.com/nkbt/react-collapse)
-- [React Date Picker](https://github.com/Hacker0x01/react-datepicker)
-- [Copy to clipboard React](https://github.com/nkbt/react-copy-to-clipboard)
-- [React Height](https://github.com/nkbt/react-height)
-- [React Modal Dialog](https://github.com/reactjs/react-modal)
-- [React Motion](https://github.com/chenglou/react-motion)
-- [React onClickOutside](https://github.com/Pomax/react-onclickoutside)
-- [Markdown parser](https://github.com/jonschlinkert/remarkable)
-- [React Transition Group](https://github.com/reactjs/react-transition-group)
-- [React Calendars](https://github.com/wix/react-native-calendars)
-- [React Yearly Calendar](https://github.com/BelkaLab/react-yearly-calendar)
-- [Internationalizable Datepicker](https://github.com/airbnb/react-dates)
-- [Infinite scrolling Datepicker](https://github.com/clauderic/react-infinite-calendar)
-- [React Big Calendar](https://github.com/intljusticemission/react-big-calendar)
-- [React Daypicker](https://github.com/gpbl/react-day-picker)
-- [A responsive event timeline in React.js](https://github.com/rcdexta/react-event-timeline)
-- [A very lightweight and flexible accessible modal dialog](https://github.com/edenspiekermann/a11y-dialog)
-- [A draggable and resizable grid layout with responsive breakpoints](https://github.com/STRML/react-grid-layout)
-- [Another free dashboard tool](https://github.com/ylacaute/ez-Dashing)
+### Reusable Components with Advanced features
+- https://www.styled-components.com/
 
-## Server Side Rendering
-- [Framework for server-rendered React apps](https://github.com/zeit/next.js/)
-- [Next.js 3.0](https://zeit.co/blog/next3)
+### API first!
+- https://storybook.js.org/
 
-## References
-- [gulp-4.0](https://stackoverflow.com/questions/33429727/how-do-i-install-gulp-4)
-- npm install "gulpjs/gulp#4.0" --save-dev
-- [Babel - Plugins](https://babeljs.io/docs/plugins/)
-- [react-component-gulp-tasks](https://github.com/JedWatson/react-component-gulp-tasks)
+
+#### Components
+- [React Draft Wysiwyg](https://jpuri.github.io/react-draft-wysiwyg/#/)
+- [Pure React rich text "WYSISYG" editor based on draft-js](https://github.com/sstur/react-rte)
+- [A React framework for building text editors](https://github.com/facebook/draft-js)
+- [A markdown parser and compiler. Built for speed](https://github.com/chjj/marked)
+- [Render Markdown as React components](https://github.com/rexxars/react-markdown)
+- [How do I render Markdown from a React component?](https://stackoverflow.com/questions/31875748/how-do-i-render-markdown-from-a-react-component)
+
+- ### References
+### 2018.01.13
+- [MELHOR ESTRUTURA PARA 'styled-components'](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Alert.js)
+- [MELHOR ESTRUTURA PARA 'styled-components'](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js)
+- [https://gist.github.com/ciro-maciel/1a462999c1d86a48d93629dfc312f299](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js)- [Trend Micro Frontend](https://github.com/trendmicro-frontend)
+
+### 2018.01.30
+- [Exporting Storybook as a Static App](https://storybook.js.org/basics/exporting-storybook/)
