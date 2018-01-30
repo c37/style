@@ -13,7 +13,8 @@
     "scripts": {
         "start": "webpack-dev-server --inline --open",
         "deploy": "npm publish",
-        "build": "webpack"
+        "build": "webpack",
+        "install": "npm install"
     },
     "dependencies": {
         "react": "^16.0.0",
