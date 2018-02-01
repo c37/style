@@ -6,7 +6,7 @@ import { withInfo } from '@storybook/addon-info';
 
 storiesOf('Welcome', module).add('Introduction',
     withInfo({
-        text: `Maintained by the @ciro-maciel.`,
+        text: `developed and maintained by the @ciro-maciel.`,
         inline: true,
         source: false
     })(() => {

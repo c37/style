@@ -10,7 +10,7 @@ import { specs, describe, it } from 'storybook-addon-specifications';
 import { mount } from "enzyme";
 import expect from "expect";
 
-import { Button, Card, CardBody, CardFooter } from 'react-style-boilerplate';
+import { Button, Card, CardBody, CardFooter } from '@ciro-maciel/style-guide';
 
 const story = () => {
     const card =

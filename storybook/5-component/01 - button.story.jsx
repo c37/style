@@ -1,17 +1,16 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 
-import { specs, describe, it } from 'storybook-addon-specifications';
+import { action } from '@storybook/addon-actions';
 
-import { Button } from 'react-style-boilerplate';
-// import Doc from './doc.md';
+import { specs, describe, it } from 'storybook-addon-specifications';
 
 import { mount } from "enzyme";
 import expect from "expect";
 
+import { Button } from '@ciro-maciel/style-guide';
 
 const story = () => {
     const button = 
@@ -32,8 +31,4 @@ const story = () => {
 };
 
 
-storiesOf('Component', module).add('Button',
-    withInfo({
-        text: 'String or React Element with docs about my component',
-        summary: (<div>custom JSX structure</div>),        
-    })(() => story() ));
+storiesOf('Component', module).add('Button', withInfo("String or React Element with docs about my component")(() => story()));

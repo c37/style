@@ -56,6 +56,7 @@ addDecorator(story => (
     </div>
 ));
 
+// https://github.com/storybooks/storybook/tree/master/addons/options
 setOptions({
     name: 'cm Style Guide',
     url: 'http://style.ciro-maciel.me/',
@@ -66,6 +67,8 @@ setOptions({
     downPanelInRight: true,
     sortStoriesByKind: false,
     sidebarAnimations: true,
+    // hierarchySeparator: /\/|\./,
+    // hierarchyRootSeparator: /\|/,
     selectedAddonPanel: undefined
 });
 
