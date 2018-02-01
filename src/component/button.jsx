@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { color } from '../variables';
+import { color } from '../foundation/colors';
 
 const Button = styled.button`
     color: ${color.base};
