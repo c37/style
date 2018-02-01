@@ -3,15 +3,15 @@
     "version": "4.0.0",
     "description": "My Universal React/Preact Style Guide",
     "main": "docs/index.html",
-    "homepage": "http://style.ciro-maciel.me",
+    "homepage": "http://ciro-maciel.me",
     "license": "CC-BY-SA-4.0",
     "author": {
         "name": "Ciro Cesar Maciel",
         "email": "ciro.maciel@c37.co"
     },
     "scripts": {
-        "start:dev": "start-storybook -p 9001 -c docs/storybook/.storybook",
-        "build:site": "build-storybook -c docs/storybook/.storybook -o docs",
+        "start:dev": "start-storybook -p 9001 -c storybook/.storybook",
+        "build:site": "build-storybook -c storybook/.storybook -o docs",
         "build:dist": "rimraf dist && babel src -d dist",
         "install": "yarn"
     },

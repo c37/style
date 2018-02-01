@@ -31,6 +31,10 @@ setDefaults({
         stylesheet.header.body.marginBottom = 0;
         
         stylesheet.infoStory.padding = '20';
+        stylesheet.infoStory.display = 'flex';
+        stylesheet.infoStory.alignItems = 'center';
+        stylesheet.infoStory.justifyContent = 'space-evenly';
+        stylesheet.infoStory.flexWrap = 'wrap';
 
         return stylesheet;
     }, // Overrides styles of addon
@@ -43,7 +47,7 @@ setDefaults({
 
 
 
-const context = require.context('../', true, /.story\.js$/);
+const context = require.context('../', true, /.story\.js|jsx$/);
 
 addDecorator(story => (
     // <div style={{ textAlign: 'left' }}>

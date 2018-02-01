@@ -19,9 +19,13 @@ My version of React/Preact Style Guide Boilerplate
 
 - ### References
 ### 2018.01.13
-- [MELHOR ESTRUTURA PARA 'styled-components'](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Alert.js)
-- [MELHOR ESTRUTURA PARA 'styled-components'](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js)
-- [https://gist.github.com/ciro-maciel/1a462999c1d86a48d93629dfc312f299](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js)- [Trend Micro Frontend](https://github.com/trendmicro-frontend)
+- [Estrutura](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Alert.js)
+- [Estrutura](https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js)
+- [Carbon Components](https://github.com/carbon-design-system/carbon-components-react)
+- [Trend Micro Frontend](https://github.com/trendmicro-frontend)
 
 ### 2018.01.30
 - [Exporting Storybook as a Static App](https://storybook.js.org/basics/exporting-storybook/)
+
+### 2018.01.31
+- [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
