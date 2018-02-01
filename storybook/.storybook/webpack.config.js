@@ -14,7 +14,7 @@ module.exports = (storybookBaseConfig, configType) => {
     });
 
     storybookBaseConfig.resolve.alias = {
-        'react-style-boilerplate': path.join(__dirname, '../../src')
+        '@ciro-maciel/style-guide': path.join(__dirname, '../../src')
     };
 
     return storybookBaseConfig;

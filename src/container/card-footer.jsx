@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { color } from '../variables';
-import { Button } from '../component/button';
 
 const Container = styled.div`
 	display: flex;

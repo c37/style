@@ -3,12 +3,17 @@ export {
     H2,
     H3
 }
-from './foundation/typography';
+from './foundation/typography.jsx';
+export {
+    Flex,
+    Box
+}
+from './foundation/grid.jsx';
 
 export {
     default as Button
 }
-from './component/button';
+from './component/button.jsx';
 
 export {
     default as Card
