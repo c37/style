@@ -14,6 +14,15 @@ export {
     default as Button
 }
 from './component/button.jsx';
+export {
+    default as Badge
+}
+from './component/badge.jsx';
+export {
+    default as Message, TYPES as MessageType
+}
+from './component/message.jsx';
+
 
 export {
     default as Card
