@@ -35,3 +35,6 @@ My version of React/Preact Style Guide Boilerplate
 
 ### 2018.02.02
 - [Atlaskit](https://ak-mk-2-prod.netlify.com/)
+
+### 2018.02.05
+- [Change style based on React state #431](https://github.com/styled-components/styled-components/issues/431)

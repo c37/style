@@ -27,3 +27,8 @@ export const shadowUp = "0 4px 8px 0 rgba(0, 0, 0, 0.1)";
 export const shadow = "0 1px 2px 0 rgba(0, 0, 0, 0.1)";
 
 export const borderColor = "#dfe3e6";
+
+
+
+// animation
+// https://codeburst.io/animating-react-components-with-css-and-styled-components-cc5a0585f105

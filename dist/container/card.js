@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n    display: flex;\n    box-orient: vertical;\n    box-direction: normal;\n\tflex-direction: column;\n\tmargin: 10px;\n    width: 12.5rem;\n    height: 15rem;\n    background-color: #fff;\n    border: 1px solid #dfe3e6;\n    &:focus {\n        outline: 1px solid #3d70b2;\n    }\n'], ['\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n    display: flex;\n    box-orient: vertical;\n    box-direction: normal;\n\tflex-direction: column;\n\tmargin: 10px;\n    width: 12.5rem;\n    height: 15rem;\n    background-color: #fff;\n    border: 1px solid #dfe3e6;\n    &:focus {\n        outline: 1px solid #3d70b2;\n    }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n    box-shadow: ', ';\n    display: flex;\n    box-orient: vertical;\n    box-direction: normal;\n\tflex-direction: column;\n    box-sizing: border-box;\n\tmargin: 10px;\n    width: 12.5rem;\n    height: 15rem;\n    background-color: #fff;\n    border: 1px solid #dfe3e6;\n    &:focus {\n        outline: 1px solid ', ';\n    }\n'], ['\n    box-shadow: ', ';\n    display: flex;\n    box-orient: vertical;\n    box-direction: normal;\n\tflex-direction: column;\n    box-sizing: border-box;\n\tmargin: 10px;\n    width: 12.5rem;\n    height: 15rem;\n    background-color: #fff;\n    border: 1px solid #dfe3e6;\n    &:focus {\n        outline: 1px solid ', ';\n    }\n']);
 
 var _react = require('react');
 
@@ -34,7 +34,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 // https://reactjs.org/docs/typechecking-with-proptypes.html
 // https://github.com/trendmicro-frontend
 
-var Container = _styledComponents2.default.div(_templateObject);
+var Container = _styledComponents2.default.div(_templateObject, _variables.shadow, _variables.color.outline);
 
 var Card = function Card(props) {
 	var _extends2;

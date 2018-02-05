@@ -8,6 +8,7 @@ import { color, fontFamily, shadowUp } from '../variables';
 
 
 const Container = styled.ul`
+    font-family: ${fontFamily};
     list-style: none;
     box-sizing: border-box;
     width: 100%;
@@ -17,58 +18,51 @@ const Container = styled.ul`
 export default class Accordion extends PureComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
-        className: PropTypes.string
+        className: PropTypes.string,
+        onChange: PropTypes.func
+    };
+
+    static defaultProps = {
+        onChange: () => { },
     };
 
     componentWillMount() {
         this.state = {
-            // ao iniciar o componente, salvo uma nova lista dos children com a nova referencia para o evento PAI
-            items: React.Children.map(this.props.children, (child, i) => {
-                return React.cloneElement(child, {
-                    onClick: this.handleClick,
-                    id: new Date().getTime() + i
-                })
-            })
+            itemActive: this.props.children.filter(function (item) {
+                return item.props.open
+            }).pop()
         };
     }
 
-    handleClick = (e) => {
+    // componentWillUpdate() {
+    //     console.log('render itens');
+    // }
 
-        // o target correto
-        const targetId = e.target.parentNode.parentNode.parentNode.parentNode.id || e.target.parentNode.parentNode.parentNode.id || e.target.parentNode.parentNode.id || e.target.parentNode.id;
+    updateState = (state) => {
+        this.setState(state);
+    }
+    getState = () => {
+        return this.state;
+    }
 
-        // Se nao tenho um item aberto ou o item selecionado sera diferente do aberto atualmente
-        if (!this.state.selectedItem || (String(targetId) !== String(this.state.selectedItem.props.id))) {
-
-            const items = React.Children.map(this.state.items, child => {
-
-
-                return React.cloneElement(child, {
-                    open: String(targetId) === String(child.props.id) ? true : false
-                })
-
-            });
-
-            const selectedItem = items.filter(function (item) {
-                return item.props.open
-            }).pop();
-
-            this.state = {
-                items,
-                selectedItem
-            };
-
-            this.props.onChange(selectedItem, e);
-
-            this.forceUpdate();
-        }
-
-    };
+    handleChange = (itemActive) => {
+        this.props.onChange(itemActive);
+    }
 
     render() {
+
+        // ao render do componente, criamos uma uma nova lista dos children com a nova referencia para o evento PAI
+        const items = React.Children.map(this.props.children, (child, i) => {
+            return React.cloneElement(child, {
+                onChange: this.handleChange,
+                updateState: this.updateState,
+                getState: this.getState
+            })
+        })
+
         return (
             <Container {...this.props}>
-                {this.state.items}
+                {items}
             </Container>
         );
     }
