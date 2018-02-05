@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
-import { color, fontFamily, shadow } from '../variables';
+import { color, fontFamily, shadowUp } from '../variables';
 
 
 const Container = styled.div`
     font-family: ${fontFamily};
     font-smoothing: antialiased;
-    box-shadow: ${shadow};
+    box-shadow: ${shadowUp};
     display: flex;
     box-pack: justify;
     flex-pack: justify;
+    box-sizing: border-box;
     justify-content: space-between;
-    width: 16.875rem;
+    width: 13.875rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: ${color.background};
     color: #152935;
@@ -36,9 +37,8 @@ const Button = styled.div`
     width: 12px;
     height: 12px;
     position: relative;
-
     &:focus{
-        outline: 1px solid #3d70b2;
+        outline: 1px solid ${color.outline};
     }
 `;
 
@@ -74,7 +74,7 @@ const Text = styled.div`
     line-height: 1;
 `;
 
-export const TYPES = {
+const TYPES = {
     error: 'error',
     success: 'success',
     info: 'info',

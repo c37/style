@@ -22,9 +22,7 @@ const Item = styled.div`
     box-align: center;
     font-size: 12px;
     flex-align: center;
-    align-items: center;
     display: flex;
-    justify-content: space-between;
     justify-content: space-between;
     padding: 0.6em 1em;
 

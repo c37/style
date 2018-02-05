@@ -11,21 +11,22 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
-import { color } from '../variables';
+import { color, shadow } from '../variables';
 
 const Container = styled.div`
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: ${shadow};
     display: flex;
     box-orient: vertical;
     box-direction: normal;
 	flex-direction: column;
+    box-sizing: border-box;
 	margin: 10px;
     width: 12.5rem;
     height: 15rem;
     background-color: #fff;
     border: 1px solid #dfe3e6;
     &:focus {
-        outline: 1px solid #3d70b2;
+        outline: 1px solid ${color.outline};
     }
 `;
 

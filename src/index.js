@@ -19,11 +19,19 @@ export {
 }
 from './component/badge.jsx';
 export {
-    default as Message, TYPES as MessageType
+    default as Message
 }
 from './component/message.jsx';
 
 
+export {
+    default as Accordion
+}
+from './container/accordion.jsx';
+export {
+    default as AccordionItem
+}
+from './container/accordion-item.jsx';
 export {
     default as Card
 }

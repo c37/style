@@ -10,12 +10,20 @@ export const fontFamilyMonospace = "Consolas, Monaco, 'Courier New', monospace !
 export const fontSize = "12px !important";
 
 
+// https://color.adobe.com/pt/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/d2393dcd-1291-4d99-b890-b1dcf2a6c35a/theme/bbffd845-4c22-4378-b706-56186c5cb876/
+// https://color.adobe.com/pt/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/d2393dcd-1291-4d99-b890-b1dcf2a6c35a/theme/a7fa351b-2e4e-41f1-9f36-83bd4ee07bf7/
+
 export const color = {
     error: "#EF6F56",
     success: "#3B9C55",
     info: "#76D6D2",
     warning: "#F9E270",
-    background: '#fff'
+    background: '#fff',
+    outline: '#3d70b2'
 }
 
-export const shadow = "0 4px 8px 0 rgba(0, 0, 0, 0.1)";
+
+export const shadowUp = "0 4px 8px 0 rgba(0, 0, 0, 0.1)";
+export const shadow = "0 1px 2px 0 rgba(0, 0, 0, 0.1)";
+
+export const borderColor = "#dfe3e6";
