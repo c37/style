@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
-import { color, fontFamily, borderColor } from '../variables';
+import { color, borderColor } from '../variables';
 
 
 const Container = styled.li`
@@ -59,7 +59,6 @@ const Button = styled.div`
     `}
     ${Header}:focus & {
         outline: 1px solid ${color.outline};
-        overflow: visible;
         outline-offset: -.5px;
     }    
 `;
@@ -102,7 +101,7 @@ export default class AccordionItem extends Component {
                 <Header onClick={(e) => {
                     this.props.updateState({ itemActive: this });
                     this.props.onChange(this);
-                }} tabIndex={0}>
+                }}>
                     <Button open={isOpen}>
                         <svg width="8" height="12" viewBox="0 0 8 12" fillRule="evenodd">
                             <polygon stroke="none" points="0 10.6 4.7 6 0 1.4 1.4 0 7.5 6 1.4 12"></polygon>

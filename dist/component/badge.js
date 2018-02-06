@@ -136,7 +136,7 @@ function getValue(value, max) {
     return String(value);
 }
 
-var Container = _styledComponents2.default.div(_templateObject, _variables.fontFamily, _variables.fontSize, backgroundColor, textColor);
+var Container = _styledComponents2.default.div(_templateObject, _variables.font.family, _variables.font.size.normal, backgroundColor, textColor);
 
 var Badge = function (_PureComponent) {
     _inherits(Badge, _PureComponent);

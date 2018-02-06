@@ -1,13 +1,54 @@
 // http://getbootstrap.com/docs/3.3/customize/
 
 
-// https://atlassian.design/guidelines/marketing/foundations/typography
-// export const fontFamily = "'lucida grande', tahoma, verdana, arial, sans-serif";
-// export const fontFamily = "apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif";
-export const fontFamily = '-apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important';
-export const fontFamilyMonospace = "Consolas, Monaco, 'Courier New', monospace !important";
 
-export const fontSize = "12px !important";
+export const page = {
+    size: {
+        large: '1440px',
+        big: '1024px',
+        medium: '768px',
+        small: '580px',
+        smaller: '360px'
+    },
+}
+
+// https://atlassian.design/guidelines/marketing/foundations/typography
+export const font = {
+    // family = "'lucida grande', tahoma, verdana, arial, sans-serif";
+    family: '-apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important',
+    monospace: "Consolas, Monaco, 'Courier New', monospace !important",
+    size: {
+        large: '18px',
+        big: '16px',
+        normal: '12px',
+        small: '10px',
+        smaller: '8px'
+    },
+    color: {
+        normal: '#666665',
+        hover: 'black'
+    }
+}
+
+export const heading = {
+    color: '#676b72',
+    font: {
+        title: '',
+        h1: '',
+        h2: '',
+        h3: '',
+        h4: '',
+        h5: '',
+    },
+    margin: {
+        top: {
+
+        },
+        bottom: {
+
+        }
+    }
+}
 
 
 // https://color.adobe.com/pt/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/d2393dcd-1291-4d99-b890-b1dcf2a6c35a/theme/bbffd845-4c22-4378-b706-56186c5cb876/
@@ -19,12 +60,23 @@ export const color = {
     info: "#76D6D2",
     warning: "#F9E270",
     background: '#fff',
-    outline: '#3d70b2'
+    outline: '#3d70b2',
+    hover: 'rgb(248, 248, 248)',
+    selected: 'rgb(248, 248, 248)',
+    disabled: '#FBFBFB',
+    border: '#c5c5c5',
 }
 
+export const padding = {
+    normal: '5px 15px',
+}
 
-export const shadowUp = "0 4px 8px 0 rgba(0, 0, 0, 0.1)";
-export const shadow = "0 1px 2px 0 rgba(0, 0, 0, 0.1)";
+export const shadow = {
+    up: "0 4px 8px 0 rgba(0, 0, 0, 0.1)",
+    normal: "0 1px 2px 0 rgba(0, 0, 0, 0.1)",
+    down: ''
+
+}
 
 export const borderColor = "#dfe3e6";
 

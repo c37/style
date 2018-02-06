@@ -60,12 +60,6 @@ const story = () => {
                 Removed (no theme change)
                 <Badge appearance="removed" />
             </Item>
-
-            {/* <Badge appearance="primary" value={-5} />
-            <Badge appearance="primaryInverted" value={-5} />
-            <Badge appearance="important" value={25} />
-            <Badge appearance="added" max={99} value={3000} />
-            <Badge appearance="removed" /> */}
         </div >;
 
     specs(() => describe('Hello World', function () {
@@ -78,5 +72,10 @@ const story = () => {
     return badge;
 };
 
-
-storiesOf('Component', module).add('Badge', withInfo("String or React Element with docs about my component")(() => story()));
+storiesOf('Component', module).add('Badge', withInfo({
+    text: `String or React Element with docs about my component`,
+    inline: true,
+    source: false,
+    // https://www.npmjs.com/package/@storybook/addon-info#options-and-defaults
+    propTablesExclude: [Item]
+})(() => story()));

@@ -90,7 +90,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     font-weight: bold;
 }
 
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800';
+/* @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800';
 body,
 div,
 p,
@@ -108,7 +108,39 @@ a:active,
 a:focus {
     text-decoration: none;
     color: #000;
+} */
+
+/* body,
+div,
+p,
+ul,
+li,
+a {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 12px;
+} */
+
+
+
+table {
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    border-collapse: collapse !important;
+    border-spacing: 0;
+    margin-top: 5px;
+    width: 100%;
 }
+
+thead > tr > th{
+    padding: 6px;
+}
+
+td {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 2px 6px;
+}
+
 
 a:hover {
     opacity: 0.7;

@@ -11,10 +11,13 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
-import { color, shadow } from '../variables';
+import { color, font, shadow } from '../variables';
 
 const Container = styled.div`
-    box-shadow: ${shadow};
+	font-family: ${font.family};
+	font-size: ${font.size.normal};
+	color: ${font.color.normal};
+	box-shadow: ${shadow.normal};
     display: flex;
     box-orient: vertical;
     box-direction: normal;

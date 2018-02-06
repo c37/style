@@ -7,6 +7,7 @@ import {
     setOptions
 } from '@storybook/addon-options';
 
+// https://storybook.js.org/configurations/default-config/#css-support
 import './style.css';
 
 

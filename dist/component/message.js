@@ -6,12 +6,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n    font-family: ', ';\n    font-smoothing: antialiased;\n    box-shadow: ', ';\n    display: flex;\n    box-pack: justify;\n    flex-pack: justify;\n    box-sizing: border-box;\n    justify-content: space-between;\n    width: 13.875rem;\n    padding: 0.5rem 1rem 0.5rem 1rem;\n    background-color: ', ';\n    color: #152935;\n    margin-top: 0.5rem;\n    margin-bottom: 0.5rem;\n    margin-right: 1rem;\n\n    ', '\n    ', '\n    ', '\n    ', '\n\n'], ['\n    font-family: ', ';\n    font-smoothing: antialiased;\n    box-shadow: ', ';\n    display: flex;\n    box-pack: justify;\n    flex-pack: justify;\n    box-sizing: border-box;\n    justify-content: space-between;\n    width: 13.875rem;\n    padding: 0.5rem 1rem 0.5rem 1rem;\n    background-color: ', ';\n    color: #152935;\n    margin-top: 0.5rem;\n    margin-bottom: 0.5rem;\n    margin-right: 1rem;\n\n    ', '\n    ', '\n    ', '\n    ', '\n\n']),
+var _templateObject = _taggedTemplateLiteral(['\n    font-family: ', ';\n    font-smoothing: antialiased;\n    box-shadow: ', ';\n    display: flex;\n    box-pack: justify;\n    flex-pack: justify;\n    box-sizing: border-box;\n    justify-content: space-between;\n    width: 13.875rem;\n    padding: 0.5rem 1rem 0.5rem 1rem;\n    background-color: ', ';\n    color: ', ';\n    margin-top: 0.5rem;\n    margin-bottom: 0.5rem;\n    margin-right: 1rem;\n\n    ', '\n    ', '\n    ', '\n    ', '\n\n'], ['\n    font-family: ', ';\n    font-smoothing: antialiased;\n    box-shadow: ', ';\n    display: flex;\n    box-pack: justify;\n    flex-pack: justify;\n    box-sizing: border-box;\n    justify-content: space-between;\n    width: 13.875rem;\n    padding: 0.5rem 1rem 0.5rem 1rem;\n    background-color: ', ';\n    color: ', ';\n    margin-top: 0.5rem;\n    margin-bottom: 0.5rem;\n    margin-right: 1rem;\n\n    ', '\n    ', '\n    ', '\n    ', '\n\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    border: none;\n    cursor: pointer;\n    margin: 0;\n    width: 12px;\n    height: 12px;\n    position: relative;\n    &:focus{\n        outline: 1px solid ', ';\n    }\n'], ['\n    border: none;\n    cursor: pointer;\n    margin: 0;\n    width: 12px;\n    height: 12px;\n    position: relative;\n    &:focus{\n        outline: 1px solid ', ';\n    }\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n    height: 10px;\n    width: 10px;\n    fill: #5a6872;\n    position: absolute;\n    top: -4px;\n    right: 1px;\n'], ['\n    height: 10px;\n    width: 10px;\n    fill: #5a6872;\n    position: absolute;\n    top: -4px;\n    right: 1px;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    font-size: 0.875rem;\n    font-weight: 600;\n    margin: 0;\n    letter-spacing: 0;\n    line-height: 1;\n    padding-bottom: 0.125rem;\n'], ['\n    font-size: 0.875rem;\n    font-weight: 600;\n    margin: 0;\n    letter-spacing: 0;\n    line-height: 1;\n    padding-bottom: 0.125rem;\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n    font-size: 0.75rem;\n    color: #5a6872;\n    margin-top: 0;\n    margin-bottom: 0.5rem;\n    line-height: 1.2;\n'], ['\n    font-size: 0.75rem;\n    color: #5a6872;\n    margin-top: 0;\n    margin-bottom: 0.5rem;\n    line-height: 1.2;\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n    font-size: 0.75rem;\n    color: #5a6872;\n    line-height: 1;\n'], ['\n    font-size: 0.75rem;\n    color: #5a6872;\n    line-height: 1;\n']);
+    _templateObject3 = _taggedTemplateLiteral(['\n    height: 10px;\n    width: 10px;\n    fill: #5a6872;\n    display: flex;\n    align-items: center;\n    justify-content: center;        \n    position: absolute;\n    top: 1px;\n    right: 1px;\n'], ['\n    height: 10px;\n    width: 10px;\n    fill: #5a6872;\n    display: flex;\n    align-items: center;\n    justify-content: center;        \n    position: absolute;\n    top: 1px;\n    right: 1px;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    font-size: 0.875rem;\n    color: ', ';\n    font-weight: 600;\n    margin: 0;\n    letter-spacing: 0;\n    line-height: 1;\n    padding-bottom: 0.125rem;\n'], ['\n    font-size: 0.875rem;\n    color: ', ';\n    font-weight: 600;\n    margin: 0;\n    letter-spacing: 0;\n    line-height: 1;\n    padding-bottom: 0.125rem;\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    font-size: 0.75rem;\n    margin-top: 0;\n    margin-bottom: 0.5rem;\n    line-height: 1.2;\n'], ['\n    font-size: 0.75rem;\n    margin-top: 0;\n    margin-bottom: 0.5rem;\n    line-height: 1.2;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    font-size: 0.75rem;\n    line-height: 1;\n'], ['\n    font-size: 0.75rem;\n    line-height: 1;\n']);
 
 var _react = require('react');
 
@@ -37,8 +37,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents2.default.div(_templateObject, _variables.fontFamily, _variables.shadowUp, _variables.color.background, function (props) {
-    return props.type === 'success' && ' border-left: 6px solid ' + _variables.color.success + ';';
+var Container = _styledComponents2.default.div(_templateObject, _variables.font.family, _variables.shadow.up, _variables.color.background, _variables.font.color, function (props) {
+    return props.type === TYPES.success && ' border-left: 6px solid ' + _variables.color.success + ';';
 }, function (props) {
     return props.type === 'info' && ' border-left: 6px solid ' + _variables.color.info + ';';
 }, function (props) {
@@ -51,10 +51,12 @@ var Button = _styledComponents2.default.div(_templateObject2, _variables.color.o
 
 var Icon = _styledComponents2.default.div(_templateObject3);
 
-var Title = _styledComponents2.default.h3(_templateObject4);
+var Title = _styledComponents2.default.h3(_templateObject4, _variables.heading.color);
 
+// color: #5a6872;
 var SubTitle = _styledComponents2.default.div(_templateObject5);
 
+// color: #5a6872;
 var Text = _styledComponents2.default.div(_templateObject6);
 
 var TYPES = {

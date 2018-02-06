@@ -36,7 +36,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents2.default.ul(_templateObject, _variables.fontFamily);
+var Container = _styledComponents2.default.ul(_templateObject, _variables.font.family);
 
 var Accordion = function (_PureComponent) {
     _inherits(Accordion, _PureComponent);

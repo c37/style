@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
-import { fontFamily, fontSize } from '../variables';
+import { font } from '../variables';
 
 // import { backgroundColor, textColor } from '../theme';
 
@@ -135,8 +135,8 @@ function getValue(value, max) {
 }
 
 const Container = styled.div`
-    font-family: ${fontFamily};
-    font-size:${fontSize};
+    font-family: ${font.family};
+    font-size:${font.size.normal};
     background-color: ${backgroundColor};
     border-radius: 2px;
     color: ${textColor};

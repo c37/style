@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
-import { color, fontFamily, shadowUp } from '../variables';
+import { color, font, shadow } from '../variables';
 
 
 const Container = styled.ul`
-    font-family: ${fontFamily};
+    font-family: ${font.family};
     list-style: none;
     box-sizing: border-box;
     width: 100%;

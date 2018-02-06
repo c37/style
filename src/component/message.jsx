@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
-import { color, fontFamily, shadowUp } from '../variables';
+import { color, font, shadow, heading } from '../variables';
 
 
 const Container = styled.div`
-    font-family: ${fontFamily};
+    font-family: ${font.family};
     font-smoothing: antialiased;
-    box-shadow: ${shadowUp};
+    box-shadow: ${shadow.up};
     display: flex;
     box-pack: justify;
     flex-pack: justify;
@@ -18,12 +18,12 @@ const Container = styled.div`
     width: 13.875rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: ${color.background};
-    color: #152935;
+    color: ${font.color};
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-right: 1rem;
 
-    ${props => props.type === 'success' && ` border-left: 6px solid ${color.success};`}
+    ${props => props.type === TYPES.success && ` border-left: 6px solid ${color.success};`}
     ${props => props.type === 'info' && ` border-left: 6px solid ${color.info};`}
     ${props => props.type === 'warning' && ` border-left: 6px solid ${color.warning};`}
     ${props => props.type === 'error' && ` border-left: 6px solid ${color.error};`}
@@ -46,13 +46,17 @@ const Icon = styled.div`
     height: 10px;
     width: 10px;
     fill: #5a6872;
+    display: flex;
+    align-items: center;
+    justify-content: center;        
     position: absolute;
-    top: -4px;
+    top: 1px;
     right: 1px;
 `;
 
 const Title = styled.h3`
     font-size: 0.875rem;
+    color: ${heading.color};
     font-weight: 600;
     margin: 0;
     letter-spacing: 0;
@@ -60,17 +64,17 @@ const Title = styled.h3`
     padding-bottom: 0.125rem;
 `;
 
+// color: #5a6872;
 const SubTitle = styled.div`
     font-size: 0.75rem;
-    color: #5a6872;
     margin-top: 0;
     margin-bottom: 0.5rem;
     line-height: 1.2;
 `;
 
+// color: #5a6872;
 const Text = styled.div`
     font-size: 0.75rem;
-    color: #5a6872;
     line-height: 1;
 `;
 
