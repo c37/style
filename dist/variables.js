@@ -29,23 +29,42 @@ var page = exports.page = {
     },
     color: {
         normal: '#666665',
-        hover: 'black'
+        hover: 'black',
+        heading: '#676b72'
     }
 };
 
 var heading = exports.heading = {
-    color: '#676b72',
-    font: {
-        title: '',
-        h1: '',
-        h2: '',
-        h3: '',
-        h4: '',
-        h5: ''
+    marginBottom: '10px',
+    title: {
+        size: '60px',
+        lineHeight: '64px',
+        marginTop: '42px'
     },
-    margin: {
-        top: {},
-        bottom: {}
+    h1: {
+        size: '48px',
+        lineHeight: '52px',
+        marginTop: '42px'
+    },
+    h2: {
+        size: '36px',
+        lineHeight: '40px',
+        marginTop: '30px'
+    },
+    h3: {
+        size: '24px',
+        lineHeight: '32px',
+        marginTop: '22px'
+    },
+    h4: {
+        size: '21px',
+        lineHeight: '30px',
+        marginTop: '20px'
+    },
+    h5: {
+        size: '18px',
+        lineHeight: '28px',
+        marginTop: '18px'
     }
 
     // https://color.adobe.com/pt/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/d2393dcd-1291-4d99-b890-b1dcf2a6c35a/theme/bbffd845-4c22-4378-b706-56186c5cb876/
@@ -65,7 +84,7 @@ var heading = exports.heading = {
 };
 
 var padding = exports.padding = {
-    normal: '5px 15px'
+    normal: '4px 15px'
 };
 
 var shadow = exports.shadow = {

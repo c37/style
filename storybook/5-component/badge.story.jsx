@@ -38,7 +38,7 @@ const story = () => {
         <div style={{ width: '100%' }} >
             <Item>
                 Default
-                <Badge value={5} />
+                <Badge value="I am Badge" />
             </Item>
             <Item>
                 Primary

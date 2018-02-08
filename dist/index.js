@@ -6,6 +6,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typography = require('./foundation/typography.jsx');
 
+Object.defineProperty(exports, 'Title', {
+    enumerable: true,
+    get: function get() {
+        return _typography.Title;
+    }
+});
 Object.defineProperty(exports, 'H1', {
     enumerable: true,
     get: function get() {
@@ -22,6 +28,30 @@ Object.defineProperty(exports, 'H3', {
     enumerable: true,
     get: function get() {
         return _typography.H3;
+    }
+});
+Object.defineProperty(exports, 'H4', {
+    enumerable: true,
+    get: function get() {
+        return _typography.H4;
+    }
+});
+Object.defineProperty(exports, 'H5', {
+    enumerable: true,
+    get: function get() {
+        return _typography.H5;
+    }
+});
+Object.defineProperty(exports, 'P', {
+    enumerable: true,
+    get: function get() {
+        return _typography.P;
+    }
+});
+Object.defineProperty(exports, 'Blockquote', {
+    enumerable: true,
+    get: function get() {
+        return _typography.Blockquote;
     }
 });
 

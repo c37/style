@@ -57,23 +57,3 @@ storiesOf('Foundation', module).add("Grid", withInfo(`
       );
     ~~~
 `)(() => story()));
-
-
-// storiesOf(
-//     'Button'
-// ).addWithInfo(
-//     'simple usage',
-//     'This is the basic usage with the button with providing a label to show the text.',
-//     () => (
-//         <div>
-//             <Button label="The Button" onClick={action('onClick')} />
-//             <br />
-//             <p>
-//                 Click the "?" mark at top-right to view the info.
-//         </p>
-//         </div>
-//     )
-//     );
-
-
-// storiesOf('Foundation', module).add(`Grid`, withInfo("Responsive React grid system built with styled-components - https://github.com/jxnblk/grid-styled")(() => story()));

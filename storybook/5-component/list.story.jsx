@@ -10,7 +10,7 @@ import { specs, describe, it } from 'storybook-addon-specifications';
 import { mount } from "enzyme";
 import expect from "expect";
 
-import { List, ListItem } from '@ciro-maciel/style-guide';
+import { List, ListItem, H3 } from '@ciro-maciel/style-guide';
 
 import styled from 'styled-components';
 
@@ -32,9 +32,9 @@ const story = () => {
     const list =
         <div style={{ width: '100%', display: 'flex', flexFlow: 'row wrap' }} >
             <Item w={1}>
-                <h3>
+                <H3>
                     Styled
-                </h3>
+                </H3>
             </Item>
             <Item w={1 - 2}>
                 <List orientation={List.orientation.vertical}>
@@ -55,9 +55,9 @@ const story = () => {
                 </List>
             </Item>
             <Item w={1}>
-                <h3>
+                <H3>
                     Unstyled
-                </h3>
+                </H3>
             </Item>
             <Item w={1 - 2}>
                 <List appearance={List.appearance.unstyled}>

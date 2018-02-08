@@ -26,27 +26,42 @@ export const font = {
     },
     color: {
         normal: '#666665',
-        hover: 'black'
+        hover: 'black',
+        heading: '#676b72'
     }
 }
 
 export const heading = {
-    color: '#676b72',
-    font: {
-        title: '',
-        h1: '',
-        h2: '',
-        h3: '',
-        h4: '',
-        h5: '',
+    marginBottom: '10px',
+    title: {
+        size: '60px',
+        lineHeight: '64px',
+        marginTop: '42px',
     },
-    margin: {
-        top: {
-
-        },
-        bottom: {
-
-        }
+    h1: {
+        size: '48px',
+        lineHeight: '52px',
+        marginTop: '42px',
+    },
+    h2: {
+        size: '36px',
+        lineHeight: '40px',
+        marginTop: '30px',
+    },
+    h3: {
+        size: '24px',
+        lineHeight: '32px',
+        marginTop: '22px',
+    },
+    h4: {
+        size: '21px',
+        lineHeight: '30px',
+        marginTop: '20px',
+    },
+    h5: {
+        size: '18px',
+        lineHeight: '28px',
+        marginTop: '18px',
     }
 }
 
@@ -68,7 +83,7 @@ export const color = {
 }
 
 export const padding = {
-    normal: '5px 15px',
+    normal: '4px 15px',
 }
 
 export const shadow = {

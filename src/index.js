@@ -1,7 +1,12 @@
 export {
+    Title,
     H1,
     H2,
-    H3
+    H3,
+    H4,
+    H5,
+    P,
+    Blockquote
 }
 from './foundation/typography.jsx';
 export {
