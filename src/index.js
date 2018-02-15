@@ -10,6 +10,10 @@ export {
 }
 from './foundation/typography.jsx';
 export {
+    default as Page 
+}
+from './foundation/page.jsx';
+export {
     Flex,
     Box
 }

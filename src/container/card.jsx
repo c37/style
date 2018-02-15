@@ -1,11 +1,3 @@
-// https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Alert.js
-// https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js
-// https://github.com/carbon-design-system/carbon-components-react/blob/master/src/components/Card/Card.js
-// http://www.carbondesignsystem.com/add-ons/card/code
-// https://github.com/carbon-design-system/carbon-components/blob/master/src/components/card/_card.scss
-// https://reactjs.org/docs/typechecking-with-proptypes.html
-// https://github.com/trendmicro-frontend
-
 import React from 'react';
 import PropTypes from 'prop-types';
 

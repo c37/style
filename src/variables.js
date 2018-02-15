@@ -2,12 +2,13 @@
 
 
 
+// https://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 export const page = {
     size: {
-        large: '1440px',
-        big: '1024px',
+        large: '1140px',
+        big: '960px',
         medium: '768px',
-        small: '580px',
+        small: '576px',
         smaller: '360px'
     },
 }
