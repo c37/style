@@ -22,6 +22,10 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _variables = require('../variables');
 
+var _listItem = require('./list-item');
+
+var _listItem2 = _interopRequireDefault(_listItem);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97,3 +101,4 @@ exports.default = List;
 
 List.orientation = ORIENTATION;
 List.appearance = APPEARANCE;
+List.Item = _listItem2.default;

@@ -50,16 +50,16 @@ var Content = _styledComponents2.default.div(_templateObject5, function (props) 
     return props.open && ' \n        height: auto;\n        visibility: visible;\n        opacity: 1;\n        transition: all 300ms cubic-bezier(0.25, 0, 1, 1);\n    ';
 });
 
-var AccordionItem = function (_Component) {
-    _inherits(AccordionItem, _Component);
+var Item = function (_Component) {
+    _inherits(Item, _Component);
 
-    function AccordionItem() {
-        _classCallCheck(this, AccordionItem);
+    function Item() {
+        _classCallCheck(this, Item);
 
-        return _possibleConstructorReturn(this, (AccordionItem.__proto__ || Object.getPrototypeOf(AccordionItem)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
     }
 
-    _createClass(AccordionItem, [{
+    _createClass(Item, [{
         key: 'render',
         value: function render() {
             var _this2 = this;
@@ -108,17 +108,17 @@ var AccordionItem = function (_Component) {
         }
     }]);
 
-    return AccordionItem;
+    return Item;
 }(_react.Component);
 
-AccordionItem.propTypes = {
+Item.propTypes = {
     children: _propTypes2.default.node.isRequired,
     className: _propTypes2.default.string,
     title: _propTypes2.default.string.isRequired,
     open: _propTypes2.default.bool.isRequired
 };
-AccordionItem.defaultProps = {
+Item.defaultProps = {
     title: 'Section',
     open: false
 };
-exports.default = AccordionItem;
+exports.default = Item;

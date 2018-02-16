@@ -78,7 +78,7 @@ const Content = styled.div`
     `}
 `;
 
-export default class AccordionItem extends Component {
+export default class Item extends Component {
     static propTypes = {
         children: PropTypes.node.isRequired,
         className: PropTypes.string,

@@ -5,6 +5,10 @@ import styled from 'styled-components';
 
 import { color, font, shadow } from '../variables';
 
+import CardBody from "./card-body";
+import CardFooter from "./card-footer";
+
+
 const Container = styled.div`
 	font-family: ${font.family};
 	font-size: ${font.size.normal};
@@ -65,5 +69,8 @@ Card.propTypes = {
 Card.defaultProps = {
 	tabIndex: 0,
 };
+
+Card.Body = CardBody;
+Card.Footer = CardFooter;
 
 export default Card;

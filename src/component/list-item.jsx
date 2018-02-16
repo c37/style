@@ -80,7 +80,7 @@ const TEXT_ALIGN = {
     right: 'right'
 }
 
-export default class ListItem extends PureComponent {
+export default class Item extends PureComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
         className: PropTypes.string,
@@ -107,4 +107,4 @@ export default class ListItem extends PureComponent {
     }
 }
 
-ListItem.textAlign = TEXT_ALIGN;
+Item.textAlign = TEXT_ALIGN;

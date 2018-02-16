@@ -10,7 +10,7 @@ import { specs, describe, it } from 'storybook-addon-specifications';
 import { mount } from "enzyme";
 import expect from "expect";
 
-import { List, ListItem, H3 } from '@ciro-maciel/style-guide';
+import { List, H3 } from '@ciro-maciel/style-guide';
 
 import styled from 'styled-components';
 
@@ -19,7 +19,7 @@ const Item = styled.div`
     ${props => props.w === 1 && `
         flex: 1 100%;
     `}
-    ${props => props.w === 1-2 && `
+    ${props => props.w === 1 - 2 && `
         flex: 1 50%;
     `}
     display: flex;
@@ -38,20 +38,20 @@ const story = () => {
             </Item>
             <Item w={1 - 2}>
                 <List orientation={List.orientation.vertical}>
-                    <ListItem selected>list item 001</ListItem>
-                    <ListItem>
+                    <List.Item selected>list item 001</List.Item>
+                    <List.Item>
                         <div>
                             list item 002 | list item 002
                         </div>
-                    </ListItem>
-                    <ListItem textAlign={ListItem.textAlign.center}>list item 003</ListItem>
+                    </List.Item>
+                    <List.Item textAlign={List.Item.textAlign.center}>list item 003</List.Item>
                 </List>
             </Item>
             <Item w={1 - 2}>
                 <List orientation={List.orientation.horizontal}>
-                    <ListItem>list item 001</ListItem>
-                    <ListItem disabled>list item 002</ListItem>
-                    <ListItem>list item 003</ListItem>
+                    <List.Item>list item 001</List.Item>
+                    <List.Item disabled>list item 002</List.Item>
+                    <List.Item>list item 003</List.Item>
                 </List>
             </Item>
             <Item w={1}>
@@ -61,20 +61,20 @@ const story = () => {
             </Item>
             <Item w={1 - 2}>
                 <List appearance={List.appearance.unstyled}>
-                    <ListItem>list item 001</ListItem>
-                    <ListItem selected>
+                    <List.Item>list item 001</List.Item>
+                    <List.Item selected>
                         <div>
                             list item 002 | list item 002
                         </div>
-                    </ListItem>
-                    <ListItem textAlign={ListItem.textAlign.center}>list item 003</ListItem>
+                    </List.Item>
+                    <List.Item textAlign={List.Item.textAlign.center}>list item 003</List.Item>
                 </List>
             </Item>
             <Item w={1 - 2}>
                 <List orientation={List.orientation.horizontal} appearance={List.appearance.unstyled}>
-                    <ListItem>list item 001</ListItem>
-                    <ListItem disabled>list item 002</ListItem>
-                    <ListItem>list item 003</ListItem>
+                    <List.Item>list item 001</List.Item>
+                    <List.Item disabled>list item 002</List.Item>
+                    <List.Item>list item 003</List.Item>
                 </List>
             </Item>
         </div >;

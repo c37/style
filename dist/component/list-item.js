@@ -60,16 +60,16 @@ var TEXT_ALIGN = {
     right: 'right'
 };
 
-var ListItem = function (_PureComponent) {
-    _inherits(ListItem, _PureComponent);
+var Item = function (_PureComponent) {
+    _inherits(Item, _PureComponent);
 
-    function ListItem() {
-        _classCallCheck(this, ListItem);
+    function Item() {
+        _classCallCheck(this, Item);
 
-        return _possibleConstructorReturn(this, (ListItem.__proto__ || Object.getPrototypeOf(ListItem)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
     }
 
-    _createClass(ListItem, [{
+    _createClass(Item, [{
         key: 'render',
         value: function render() {
             var children = this.props.children;
@@ -83,22 +83,22 @@ var ListItem = function (_PureComponent) {
         }
     }]);
 
-    return ListItem;
+    return Item;
 }(_react.PureComponent);
 
-ListItem.propTypes = {
+Item.propTypes = {
     children: _propTypes2.default.node.isRequired,
     className: _propTypes2.default.string,
     textAlign: _propTypes2.default.oneOf(Object.keys(TEXT_ALIGN)).isRequired,
     selected: _propTypes2.default.bool.isRequired,
     disabled: _propTypes2.default.bool.isRequired
 };
-ListItem.defaultProps = {
+Item.defaultProps = {
     textAlign: TEXT_ALIGN.left,
     selected: false,
     disabled: false
 };
-exports.default = ListItem;
+exports.default = Item;
 
 
-ListItem.textAlign = TEXT_ALIGN;
+Item.textAlign = TEXT_ALIGN;

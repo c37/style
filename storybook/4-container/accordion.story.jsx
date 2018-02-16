@@ -10,31 +10,31 @@ import { specs, describe, it } from 'storybook-addon-specifications';
 import { mount } from "enzyme";
 import expect from "expect";
 
-import { Accordion, AccordionItem } from '@ciro-maciel/style-guide';
+import { Accordion } from '@ciro-maciel/style-guide';
 
 const story = () => {
 
     const accordion =
         <div style={{ width: '100%' }} >
             <Accordion onChange={(item) => { action('onChange'); console.log(item); }}>
-                <AccordionItem id="item-1" title="Section 1">
+                <Accordion.Item id="item-1" title="Section 1">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </AccordionItem>
-                <AccordionItem id="item-2" title="Section 2" open={true}>
+                </Accordion.Item>
+                <Accordion.Item id="item-2" title="Section 2" open={true}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </AccordionItem>
-                <AccordionItem id="item-3" title="Section 3">
+                </Accordion.Item>
+                <Accordion.Item id="item-3" title="Section 3">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </AccordionItem>
+                </Accordion.Item>
             </Accordion>
         </div>;
 

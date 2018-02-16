@@ -26,6 +26,10 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _variables = require('../variables');
 
+var _accordionItem = require('./accordion-item');
+
+var _accordionItem2 = _interopRequireDefault(_accordionItem);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -109,3 +113,6 @@ Accordion.defaultProps = {
     onChange: function onChange() {}
 };
 exports.default = Accordion;
+
+
+Accordion.Item = _accordionItem2.default;

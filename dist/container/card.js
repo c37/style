@@ -22,17 +22,19 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _variables = require('../variables');
 
+var _cardBody = require('./card-body');
+
+var _cardBody2 = _interopRequireDefault(_cardBody);
+
+var _cardFooter = require('./card-footer');
+
+var _cardFooter2 = _interopRequireDefault(_cardFooter);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } // https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Alert.js
-// https://github.com/CompuIves/codesandbox-client/blob/master/packages/app/src/app/components/Switch.js
-// https://github.com/carbon-design-system/carbon-components-react/blob/master/src/components/Card/Card.js
-// http://www.carbondesignsystem.com/add-ons/card/code
-// https://github.com/carbon-design-system/carbon-components/blob/master/src/components/card/_card.scss
-// https://reactjs.org/docs/typechecking-with-proptypes.html
-// https://github.com/trendmicro-frontend
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var Container = _styledComponents2.default.div(_templateObject, _variables.font.family, _variables.font.size.normal, _variables.font.color.normal, _variables.shadow.normal, _variables.color.outline);
 
@@ -80,5 +82,8 @@ Card.propTypes = {
 Card.defaultProps = {
 	tabIndex: 0
 };
+
+Card.Body = _cardBody2.default;
+Card.Footer = _cardFooter2.default;
 
 exports.default = Card;

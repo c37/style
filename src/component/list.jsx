@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import { color, font } from '../variables';
 
+import ListItem from "./list-item";
+
 
 const Container = styled.ul`
     font-family: ${font.family};
@@ -63,3 +65,4 @@ export default class List extends PureComponent {
 
 List.orientation = ORIENTATION;
 List.appearance = APPEARANCE;
+List.Item = ListItem;

@@ -10,7 +10,7 @@ import { specs, describe, it } from 'storybook-addon-specifications';
 import { mount } from "enzyme";
 import expect from "expect";
 
-import { Button, Card, CardBody, CardFooter } from '@ciro-maciel/style-guide';
+import { Button, Card } from '@ciro-maciel/style-guide';
 
 const story = () => {
     const card =
@@ -21,10 +21,10 @@ const story = () => {
             onMouseEnter={(e) => action('onMouseEnter')}
             onMouseLeave={(e) => action('onMouseLeave')}
         >
-            <CardBody title="Web Server 001" info={['Web Server Information']} />
-            <CardFooter>
+            <Card.Body title="Web Server 001" info={['Web Server Information']} />
+            <Card.Footer>
                 <Button onClick={action('clicked')}>Hello World</Button>
-            </CardFooter>
+            </Card.Footer>
         </Card>,
         <Card
             onBlur={(e) => action('onBlur')}
@@ -33,10 +33,10 @@ const story = () => {
             onMouseEnter={(e) => action('onMouseEnter')}
             onMouseLeave={(e) => action('onMouseLeave')}
         >
-            <CardBody title="Mail Server 001" link={['http://mail.ciro-maciel.me']} />
-            <CardFooter>
+            <Card.Body title="Mail Server 001" link={['http://mail.ciro-maciel.me']} />
+            <Card.Footer>
                 <Button onClick={action('clicked')}>Hello World</Button>
-            </CardFooter>
+            </Card.Footer>
         </Card>,
         <Card
             onBlur={(e) => action('onBlur')}
@@ -45,10 +45,10 @@ const story = () => {
             onMouseEnter={(e) => action('onMouseEnter')}
             onMouseLeave={(e) => action('onMouseLeave')}
         >
-            <CardBody title="DB Server 001" info={['DB Server Information']} link={['http://db.ciro-maciel.me']} />
-            <CardFooter>
+            <Card.Body title="DB Server 001" info={['DB Server Information']} link={['http://db.ciro-maciel.me']} />
+            <Card.Footer>
                 <Button onClick={action('clicked')}>Hello World</Button>
-            </CardFooter>
+            </Card.Footer>
         </Card>];
 
     specs(() => describe('Hello World', function () {

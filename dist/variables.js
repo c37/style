@@ -6,12 +6,13 @@ Object.defineProperty(exports, "__esModule", {
 // http://getbootstrap.com/docs/3.3/customize/
 
 
+// https://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 var page = exports.page = {
     size: {
-        large: '1440px',
-        big: '1024px',
+        large: '1140px',
+        big: '960px',
         medium: '768px',
-        small: '580px',
+        small: '576px',
         smaller: '360px'
     }
 

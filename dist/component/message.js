@@ -38,7 +38,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var Container = _styledComponents2.default.div(_templateObject, _variables.font.family, _variables.shadow.up, _variables.color.background, _variables.font.color, function (props) {
-    return props.type === TYPES.success && 'border-left: 6px solid ' + _variables.color.success + ';';
+    return props.type === 'success' && 'border-left: 6px solid ' + _variables.color.success + ';';
 }, function (props) {
     return props.type === 'info' && 'border-left: 6px solid ' + _variables.color.info + ';';
 }, function (props) {

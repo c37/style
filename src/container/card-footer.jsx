@@ -19,7 +19,7 @@ const Container = styled.div`
 	padding-right: 1rem;
 `;
 
-const CardFooter = (props) => {
+const Footer = (props) => {
 
 	const { children } = props;
 
@@ -30,9 +30,9 @@ const CardFooter = (props) => {
 	)
 }
 
-CardFooter.propTypes = {
+Footer.propTypes = {
 	children: PropTypes.node,
 	className: PropTypes.string,
 };
 
-export default CardFooter;
+export default Footer;

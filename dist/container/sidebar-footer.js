@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n\n'], ['\n\n']);
+var _templateObject = _taggedTemplateLiteral(['\n    font-family: ', ';\n    font-size: ', ';\n\n    height:40px;\n\n    position:absolute;\n    left:0;\n    bottom:0;\n'], ['\n    font-family: ', ';\n    font-size: ', ';\n\n    height:40px;\n\n    position:absolute;\n    left:0;\n    bottom:0;\n']);
 
 var _react = require('react');
 
@@ -36,18 +36,27 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents2.default.div(_templateObject);
+var Container = _styledComponents2.default.nav(_templateObject, _variables.font.family, _variables.font.size.normal);
 
-var Box = function (_PureComponent) {
-    _inherits(Box, _PureComponent);
+var Footer = function (_PureComponent) {
+    _inherits(Footer, _PureComponent);
 
-    function Box() {
-        _classCallCheck(this, Box);
+    function Footer() {
+        _classCallCheck(this, Footer);
 
-        return _possibleConstructorReturn(this, (Box.__proto__ || Object.getPrototypeOf(Box)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
     }
 
-    _createClass(Box, [{
+    _createClass(Footer, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            // this.state = {
+            //     itemActive: this.props.children.filter(function (item) {
+            //         return item.props.open
+            //     }).pop()
+            // };
+        }
+    }, {
         key: 'render',
         value: function render() {
             var children = this.props.children;
@@ -55,16 +64,21 @@ var Box = function (_PureComponent) {
 
             return _react2.default.createElement(
                 Container,
-                this.props,
+                null,
                 children
             );
         }
     }]);
 
-    return Box;
+    return Footer;
 }(_react.PureComponent);
 
-Box.propTypes = {
-    children: _propTypes2.default.node.isRequired
+Footer.propTypes = {
+    children: _propTypes2.default.node.isRequired,
+    className: _propTypes2.default.string,
+    onChange: _propTypes2.default.func
 };
-exports.default = Box;
+Footer.defaultProps = {
+    onChange: function onChange() {}
+};
+exports.default = Footer;

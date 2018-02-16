@@ -55,6 +55,15 @@ Object.defineProperty(exports, 'Blockquote', {
     }
 });
 
+var _page = require('./foundation/page.jsx');
+
+Object.defineProperty(exports, 'Page', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_page).default;
+    }
+});
+
 var _grid = require('./foundation/grid.jsx');
 
 Object.defineProperty(exports, 'Flex', {
@@ -67,6 +76,33 @@ Object.defineProperty(exports, 'Box', {
     enumerable: true,
     get: function get() {
         return _grid.Box;
+    }
+});
+
+var _accordion = require('./container/accordion.jsx');
+
+Object.defineProperty(exports, 'Accordion', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_accordion).default;
+    }
+});
+
+var _card = require('./container/card.jsx');
+
+Object.defineProperty(exports, 'Card', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_card).default;
+    }
+});
+
+var _sidebar = require('./container/sidebar');
+
+Object.defineProperty(exports, 'SideBar', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_sidebar).default;
     }
 });
 
@@ -97,66 +133,12 @@ Object.defineProperty(exports, 'List', {
     }
 });
 
-var _listItem = require('./component/list-item.jsx');
-
-Object.defineProperty(exports, 'ListItem', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_listItem).default;
-    }
-});
-
 var _message = require('./component/message.jsx');
 
 Object.defineProperty(exports, 'Message', {
     enumerable: true,
     get: function get() {
         return _interopRequireDefault(_message).default;
-    }
-});
-
-var _accordion = require('./container/accordion.jsx');
-
-Object.defineProperty(exports, 'Accordion', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_accordion).default;
-    }
-});
-
-var _accordionItem = require('./container/accordion-item.jsx');
-
-Object.defineProperty(exports, 'AccordionItem', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_accordionItem).default;
-    }
-});
-
-var _card = require('./container/card.jsx');
-
-Object.defineProperty(exports, 'Card', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_card).default;
-    }
-});
-
-var _cardBody = require('./container/card-body.jsx');
-
-Object.defineProperty(exports, 'CardBody', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_cardBody).default;
-    }
-});
-
-var _cardFooter = require('./container/card-footer.jsx');
-
-Object.defineProperty(exports, 'CardFooter', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_cardFooter).default;
     }
 });
 

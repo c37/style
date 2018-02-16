@@ -6,6 +6,8 @@ import styled from 'styled-components';
 
 import { color, font, shadow } from '../variables';
 
+import AccordionItem from './accordion-item';
+
 
 const Container = styled.ul`
     font-family: ${font.family};
@@ -14,7 +16,7 @@ const Container = styled.ul`
     width: 100%;
     padding: 0;
 `;
-
+ 
 export default class Accordion extends PureComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
@@ -67,3 +69,5 @@ export default class Accordion extends PureComponent {
         );
     }
 }
+
+Accordion.Item = AccordionItem;

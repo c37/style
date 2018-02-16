@@ -15,10 +15,9 @@ const Container = styled.div`
 	padding-left: 1rem;
 	padding-top: 1rem;
 	padding-right: 1rem;
-	height: 12rem;
-`;
+    height: 12rem;
 
-const Body = styled.div`
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,8 +31,25 @@ const Body = styled.div`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 1rem;    
 `;
+
+// const Body = styled.div`
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-box-flex: 1;
+//     -ms-flex: 1;
+//     flex: 1;
+//     -webkit-box-orient: vertical;
+//     -webkit-box-direction: normal;
+//     -ms-flex-direction: column;
+//     flex-direction: column;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     align-items: center;
+//     padding-top: 1rem;
+// `;
 
 const Title = styled.div`
     font-weight: 400;
@@ -93,7 +109,7 @@ const Icon = styled.div`
 `;
 
 
-const CardBody = (props) => {
+const Body = (props) => {
 
     const { link, info, title, icon } = props;
 
@@ -119,21 +135,19 @@ const CardBody = (props) => {
     return (
         <Container {...props}>
             {props.children}
-            <Body>
-                <Icon />
-                <Title>
-                    <TitleName>
-                        {props.title}
-                    </TitleName>
-                    {cardLinkContentArray.map((info, key) => cardLinkContent[key])}
-                    {cardInfoContentArray.map((info, key) => cardInfoContent[key])}
-                </Title>
-            </Body>
+            <Icon />
+            <Title>
+                <TitleName>
+                    {props.title}
+                </TitleName>
+                {cardLinkContentArray.map((info, key) => cardLinkContent[key])}
+                {cardInfoContentArray.map((info, key) => cardInfoContent[key])}
+            </Title>
         </Container>
     )
 }
 
-CardBody.propTypes = {
+Body.propTypes = {
     children: PropTypes.node.isRequired,
     icon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
     title: PropTypes.string,
@@ -142,9 +156,9 @@ CardBody.propTypes = {
     className: PropTypes.string,
 };
 
-CardBody.defaultProps = {
+Body.defaultProps = {
     icon: '',
     title: '',
 };
 
-export default CardBody;
+export default Body;

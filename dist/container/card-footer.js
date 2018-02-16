@@ -26,7 +26,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Container = _styledComponents2.default.div(_templateObject);
 
-var CardFooter = function CardFooter(props) {
+var Footer = function Footer(props) {
 	var children = props.children;
 
 
@@ -37,9 +37,9 @@ var CardFooter = function CardFooter(props) {
 	);
 };
 
-CardFooter.propTypes = {
+Footer.propTypes = {
 	children: _propTypes2.default.node,
 	className: _propTypes2.default.string
 };
 
-exports.default = CardFooter;
+exports.default = Footer;

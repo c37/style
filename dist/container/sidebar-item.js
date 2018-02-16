@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n\n'], ['\n\n']);
+var _templateObject = _taggedTemplateLiteral(['\n    list-style: none;\n    width:250px;\n\n'], ['\n    list-style: none;\n    width:250px;\n\n']);
 
 var _react = require('react');
 
@@ -36,18 +36,27 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents2.default.div(_templateObject);
+var Container = _styledComponents2.default.li(_templateObject);
 
-var Box = function (_PureComponent) {
-    _inherits(Box, _PureComponent);
+var Item = function (_PureComponent) {
+    _inherits(Item, _PureComponent);
 
-    function Box() {
-        _classCallCheck(this, Box);
+    function Item() {
+        _classCallCheck(this, Item);
 
-        return _possibleConstructorReturn(this, (Box.__proto__ || Object.getPrototypeOf(Box)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).apply(this, arguments));
     }
 
-    _createClass(Box, [{
+    _createClass(Item, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            // this.state = {
+            //     itemActive: this.props.children.filter(function (item) {
+            //         return item.props.open
+            //     }).pop()
+            // };
+        }
+    }, {
         key: 'render',
         value: function render() {
             var children = this.props.children;
@@ -55,16 +64,21 @@ var Box = function (_PureComponent) {
 
             return _react2.default.createElement(
                 Container,
-                this.props,
+                null,
                 children
             );
         }
     }]);
 
-    return Box;
+    return Item;
 }(_react.PureComponent);
 
-Box.propTypes = {
-    children: _propTypes2.default.node.isRequired
+Item.propTypes = {
+    children: _propTypes2.default.node.isRequired,
+    className: _propTypes2.default.string,
+    onChange: _propTypes2.default.func
 };
-exports.default = Box;
+Item.defaultProps = {
+    onChange: function onChange() {}
+};
+exports.default = Item;

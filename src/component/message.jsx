@@ -23,7 +23,7 @@ const Container = styled.div`
     margin-bottom: 0.5rem;
     margin-right: 1rem;
 
-    ${props => props.type === TYPES.success && `border-left: 6px solid ${color.success};`}
+    ${props => props.type === 'success' && `border-left: 6px solid ${color.success};`}
     ${props => props.type === 'info' && `border-left: 6px solid ${color.info};`}
     ${props => props.type === 'warning' && `border-left: 6px solid ${color.warning};`}
     ${props => props.type === 'error' && `border-left: 6px solid ${color.error};`}
