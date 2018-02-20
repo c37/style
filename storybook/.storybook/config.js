@@ -62,7 +62,7 @@ addDecorator(story => (
 
 // https://github.com/storybooks/storybook/tree/master/addons/options
 setOptions({
-    name: 'cm Style Guide',
+    name: 'Style Guide',
     url: 'https://github.com/ciro-maciel/style-guide',
     goFullScreen: false,
     showLeftPanel: true,
