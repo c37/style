@@ -3,13 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.P = exports.ContainerP = exports.Blockquote = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.Title = undefined;
+exports.P = exports.PContainer = exports.Blockquote = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.Title = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n    font-family: ', ';\n    color: ', ';\n    font-size: ', ';\n    line-height: ', ';\n    margin-top: ', ';\n    margin-bottom: ', ';\n'], ['\n    font-family: ', ';\n    color: ', ';\n    font-size: ', ';\n    line-height: ', ';\n    margin-top: ', ';\n    margin-bottom: ', ';\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    font-family: ', ';\n    color: ', ';\n    font-size: ', ';\n    margin:0;\n    display: block;\n    padding-left: 1rem;\n    border-left: 4px solid rgba(0, 0, 0, .1);\n    font-style: italic;\n    & > p {\n        margin-bottom: 0;\n    }\n'], ['\n    font-family: ', ';\n    color: ', ';\n    font-size: ', ';\n    margin:0;\n    display: block;\n    padding-left: 1rem;\n    border-left: 4px solid rgba(0, 0, 0, .1);\n    font-style: italic;\n    & > p {\n        margin-bottom: 0;\n    }\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n    font-family: ', ';\n    color: ', ';\n    display: block;\n    ', '\n    ', '\n    ', '\n    ', '\n    ', '    \n'], ['\n    font-family: ', ';\n    color: ', ';\n    display: block;\n    ', '\n    ', '\n    ', '\n    ', '\n    ', '    \n']);
+    _templateObject3 = _taggedTemplateLiteral(['\n    font-family: ', ';\n    color: ', ';\n    display: block;\n    ', '\n    ', '\n    ', '\n    ', '\n    ', '\n\n    text-align: ', ';\n'], ['\n    font-family: ', ';\n    color: ', ';\n    display: block;\n    ', '\n    ', '\n    ', '\n    ', '\n    ', '\n\n    text-align: ', ';\n']);
 
 var _react = require('react');
 
@@ -49,24 +49,32 @@ var H5 = exports.H5 = _styledComponents2.default.h5(_templateObject, _variables.
 
 var Blockquote = exports.Blockquote = _styledComponents2.default.blockquote(_templateObject2, _variables.font.family, _variables.font.color.normal, _variables.font.size.normal);
 
-var ContainerP = exports.ContainerP = _styledComponents2.default.p(_templateObject3, _variables.font.family, _variables.font.color.normal, function (props) {
-    return props.size === SIZE_P.large && 'font-size: ' + _variables.font.size.large + ';';
+var PContainer = exports.PContainer = _styledComponents2.default.p(_templateObject3, _variables.font.family, _variables.font.color.normal, function (props) {
+    return props.size === P_SIZE.large && 'font-size: ' + _variables.font.size.large + ';';
 }, function (props) {
-    return props.size === SIZE_P.big && 'font-size: ' + _variables.font.size.big + ';';
+    return props.size === P_SIZE.big && 'font-size: ' + _variables.font.size.big + ';';
 }, function (props) {
-    return props.size === SIZE_P.normal && 'font-size: ' + _variables.font.size.normal + ';';
+    return props.size === P_SIZE.normal && 'font-size: ' + _variables.font.size.normal + ';';
 }, function (props) {
-    return props.size === SIZE_P.small && 'font-size: ' + _variables.font.size.small + ';';
+    return props.size === P_SIZE.small && 'font-size: ' + _variables.font.size.small + ';';
 }, function (props) {
-    return props.size === SIZE_P.smaller && 'font-size: ' + _variables.font.size.smaller + ';';
+    return props.size === P_SIZE.smaller && 'font-size: ' + _variables.font.size.smaller + ';';
+}, function (props) {
+    return props.textAlign;
 });
 
-var SIZE_P = {
+var P_SIZE = {
     large: 'large',
     big: 'big',
     normal: 'normal',
     small: 'small',
     smaller: 'smaller'
+};
+
+var P_TEXT_ALIGN = {
+    left: 'left',
+    center: 'center',
+    right: 'right'
 };
 
 var P = exports.P = function (_PureComponent) {
@@ -85,7 +93,7 @@ var P = exports.P = function (_PureComponent) {
 
 
             return _react2.default.createElement(
-                ContainerP,
+                PContainer,
                 this.props,
                 children
             );
@@ -96,11 +104,14 @@ var P = exports.P = function (_PureComponent) {
 }(_react.PureComponent);
 
 P.propTypes = {
-    size: _propTypes2.default.oneOf(Object.keys(SIZE_P)).isRequired
+    size: _propTypes2.default.oneOf(Object.keys(P_SIZE)).isRequired,
+    textAlign: _propTypes2.default.oneOf(Object.keys(P_TEXT_ALIGN)).isRequired
 };
 P.defaultProps = {
-    size: SIZE_P.normal
+    size: P_SIZE.normal,
+    textAlign: P_TEXT_ALIGN.left
 };
 
 
-P.size = SIZE_P;
+P.size = P_SIZE;
+P.textAlign = P_TEXT_ALIGN;

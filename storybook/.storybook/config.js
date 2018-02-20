@@ -1,3 +1,6 @@
+// Add option to set the main document title #812 - https://github.com/storybooks/storybook/issues/812
+
+
 import React from 'react';
 import {
     configure,
