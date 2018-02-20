@@ -76,18 +76,20 @@ export const Blockquote = styled.blockquote`
 
 
 
-export const ContainerP = styled.p`
+export const PContainer = styled.p`
     font-family: ${font.family};
     color: ${font.color.normal};
     display: block;
-    ${props => props.size === SIZE_P.large && `font-size: ${font.size.large};`}
-    ${props => props.size === SIZE_P.big && `font-size: ${font.size.big};`}
-    ${props => props.size === SIZE_P.normal && `font-size: ${font.size.normal};`}
-    ${props => props.size === SIZE_P.small && `font-size: ${font.size.small};`}
-    ${props => props.size === SIZE_P.smaller && `font-size: ${font.size.smaller};`}    
+    ${props => props.size === P_SIZE.large && `font-size: ${font.size.large};`}
+    ${props => props.size === P_SIZE.big && `font-size: ${font.size.big};`}
+    ${props => props.size === P_SIZE.normal && `font-size: ${font.size.normal};`}
+    ${props => props.size === P_SIZE.small && `font-size: ${font.size.small};`}
+    ${props => props.size === P_SIZE.smaller && `font-size: ${font.size.smaller};`}
+
+    text-align: ${props => props.textAlign};
 `;
 
-const SIZE_P = {
+const P_SIZE = {
     large: 'large',
     big: 'big',
     normal: 'normal',
@@ -95,13 +97,22 @@ const SIZE_P = {
     smaller: 'smaller'
 }
 
+const P_TEXT_ALIGN = {
+    left: 'left',
+    center: 'center',
+    right: 'right'
+}
+
+
 export class P extends PureComponent {
     static propTypes = {
-        size: PropTypes.oneOf(Object.keys(SIZE_P)).isRequired
+        size: PropTypes.oneOf(Object.keys(P_SIZE)).isRequired,
+        textAlign: PropTypes.oneOf(Object.keys(P_TEXT_ALIGN)).isRequired,
     };
 
     static defaultProps = {
-        size: SIZE_P.normal
+        size: P_SIZE.normal,
+        textAlign: P_TEXT_ALIGN.left
     }
 
     render() {
@@ -109,11 +120,12 @@ export class P extends PureComponent {
         const { children } = this.props;
 
         return (
-            <ContainerP {...this.props}>
+            <PContainer {...this.props}>
                 {children}
-            </ContainerP>
+            </PContainer>
         );
     }
 }
 
-P.size = SIZE_P;
+P.size = P_SIZE;
+P.textAlign = P_TEXT_ALIGN;

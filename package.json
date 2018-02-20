@@ -1,7 +1,7 @@
 {
     "name": "@ciro-maciel/style-guide",
     "version": "4.0.0",
-    "description": "My Universal React/Preact Style Guide",
+    "description": "React/Preact Style Guide",
     "main": "docs/index.html",
     "homepage": "http://ciro-maciel.me",
     "license": "CC-BY-SA-4.0",
