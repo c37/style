@@ -34,7 +34,7 @@ setDefaults({
         stylesheet.infoBody.marginTop = 0;
         stylesheet.header.body.marginBottom = 0;
         
-        stylesheet.infoStory.padding = '20';
+        stylesheet.infoStory.padding = '20px';
         stylesheet.infoStory.display = 'flex';
         stylesheet.infoStory.alignItems = 'center';
         stylesheet.infoStory.justifyContent = 'space-evenly';

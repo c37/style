@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Component } from 'react';
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
@@ -15,15 +15,6 @@ const SIZE = {
     small: 'small'
 }
 
-// export default Page = props => (
-//     <Flex
-//       {...props}
-//       mx={-3}
-//     />
-//   )
-
-
-
 export default class Page extends PureComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
@@ -32,55 +23,43 @@ export default class Page extends PureComponent {
     };
 
     static defaultProps = {
-        size: SIZE.big
+        size: SIZE.full
     }
 
     render() {
 
         const { children, size } = this.props;
-        let content = 
-            <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-                {children}
-            </Flex>
+        let content;
 
+        switch (size) {
+            case SIZE.big:
+                content =
+                    <Flex {...this.props} wrap width={960}>
+                        {children}
+                    </Flex>;
+                break;
+            case SIZE.medium:
+                content =
+                    <Flex  {...this.props} wrap width={768}>
+                        {children}
+                    </Flex>;
+                break;
+            case SIZE.small:
+                content =
+                    <Flex  {...this.props} wrap width={576}>
+                        {children}
+                    </Flex>;
+                break;
+            default:
+                content =
+                    <Flex {...this.props} wrap justify='center' style={{ height: '100%', width: '100%' }}>
+                        {children}
+                    </Flex>;
+                break;
+        }
 
-        // if (size === SIZE.full) {
-        //     content =
-        //         <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-        //             {children}
-        //         </Flex>
-        // } else {
-        //     content =
-        //         <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-        //             {children}
-        //         </Flex>
-        // }
-
-        //     <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-        //     (size === SIZE.big) &&
-        // <Flex wrap width={960}>
-        //         {children}
-        //     </Flex>
-        //     (size === SIZE.medium) &&
-        // <Flex wrap width={768}>
-        //         {children}
-        //     </Flex>
-        //     (size === SIZE.small) &&
-        // <Flex wrap width={576}>
-        //         {children}
-        //     </Flex>
-        // </Flex>
-
-
-        console.log(content);
-
-        return (
-            // {content}
-            <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-                {children}
-            </Flex>
-        );
+        return content;
     }
 }
 
-// Page.size = SIZE;
+Page.size = SIZE;
