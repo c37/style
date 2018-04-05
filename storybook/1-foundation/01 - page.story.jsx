@@ -14,38 +14,35 @@ import { Page, Flex, Box } from '@ciro-maciel/style-guide';
 
 const story = () => {
     const page =
-        <Page id="page-full">
-            <h1>
-                ;-)
-            </h1>
+        <Page id="page-content">
+            <Page>
+                <span>full</span>
+            </Page>
+            <Page size={Page.size.big}>
+                <span>big</span>
+            </Page>
+            <Page size={Page.size.medium}>
+                <span>medium</span>
+            </Page>
+            <Page size={Page.size.small}>
+                <span>small</span>
+            </Page>
         </Page>
 
-    // const page =
-    //     <Flex justify='center' w={1}>
-    //         <Flex wrap w={1024}>
-    //             <Box width={[1, 3 / 12]} p={[1, 2]}>
-    //                 menu
-    //         </Box>
-    //             <Box width={[1, 9 / 12]} p={[1, 2]}>
-    //                 content
-    //         </Box>
-    //         </Flex>
-    //     </Flex>
+    specs(() => describe('Hello World', function () {
+        it('Should have Hello World label', function () {
+            let output = mount(page);
+            // expect(output.text()).toContain('Hello World');
+            expect('Hello World').toContain('Hello World');
+        });
+    }));
 
-    // specs(() => describe('Hello World', function () {
-    //     it('Should have Hello World label', function () {
-    //         let output = mount(page);
-    //         // expect(output.text()).toContain('Hello World');
-    //         expect('Hello World').toContain('Hello World');
-    //     });
-    // }));
-
-    // setTimeout(() => {
-    //     // https://gist.github.com/lilo003/206a255c83cede34169c
-    //     [].forEach.call(document.getElementById('page-full').querySelectorAll("*"), function (a) {
-    //         a.style.outline = "1px solid #" + (~~(Math.random() * (1 << 24))).toString(16)
-    //     });
-    // });
+    setTimeout(() => {
+        // https://gist.github.com/lilo003/206a255c83cede34169c
+        [].forEach.call(document.getElementById('page-content').parentNode.querySelectorAll("*"), function (a) {
+            a.style.outline = "1px solid #" + (~~(Math.random() * (1 << 24))).toString(16)
+        });
+    });
 
     return page;
 }

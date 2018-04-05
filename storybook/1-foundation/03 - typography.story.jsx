@@ -141,7 +141,7 @@ const story = () => {
 
     specs(() => describe('Hello World', function () {
         it('Should have Hello World label', function () {
-            let output = mount(card);
+            let output = mount(typography);
             // expect(output.text()).toContain('Hello World');
             expect('Hello World').toContain('Hello World');
         });
