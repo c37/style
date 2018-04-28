@@ -16,7 +16,7 @@ const SIZE = {
     big: 'big',
     medium: 'medium',
     small: 'small',
-    smaller: 'smaller'
+    // smaller: 'smaller'
 }
 
 export default class Page extends PureComponent {
@@ -36,41 +36,44 @@ export default class Page extends PureComponent {
         let content;
 
         switch (size) {
+            case SIZE.full:
+                content =
+                    <Flex {...this.props} wrap style={{ height: '100%', width: '100%', flexFlow: 'row wrap', alignItems: 'center', justifyContent: 'center' }}>
+                        {children}
+                    </Flex>;
+                break;
             case SIZE.large:
                 content =
-                    <Flex {...this.props} width={page.size.large} style={{margin:'auto'}}>
+                    // <Flex {...this.props} wrap width={page.size.large}>
+                    <Flex {...this.props} style={{ width: page.size.large }}>
                         {children}
                     </Flex>;
                 break;
             case SIZE.big:
                 content =
-                    <Flex {...this.props} width={page.size.big} style={{margin:'auto'}}>
+                    <Flex {...this.props} wrap width={page.size.big}>
                         {children}
                     </Flex>;
                 break;
             case SIZE.medium:
                 content =
-                    <Flex  {...this.props} width={page.size.medium} style={{margin:'auto'}}>
+                    <Flex  {...this.props} wrap width={page.size.medium}>
                         {children}
                     </Flex>;
                 break;
             case SIZE.small:
                 content =
-                    <Flex {...this.props} width={page.size.small} style={{margin:'auto'}}>
+                    <Flex {...this.props} wrap width={page.size.small}>
                         {children}
                     </Flex>;
                 break;
-            case SIZE.smaller:
-                content =
-                    <Flex {...this.props} width={page.size.smaller} style={{margin:'auto'}}>
-                        {children}
-                    </Flex>;
-                break;
-            default: // full
-                content =
-                    <Flex {...this.props} style={{ height: '100%', width: '100%', flexDirection: 'column' }}>
-                        {children}
-                    </Flex>;
+            // case SIZE.smaller:
+            //     content =
+            //         <Flex {...this.props} wrap width={page.size.smaller} style={{ flex: -1 }}>
+            //             {children}
+            //         </Flex>;
+            //     break;
+            default:
                 break;
         }
 

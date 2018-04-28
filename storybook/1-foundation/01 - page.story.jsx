@@ -15,11 +15,8 @@ import { Page } from '@ciro-maciel/style-guide';
 const story = () => {
     const page =
         <Page id="page-content">
-            <Page>
-                <span>full</span>
-            </Page>
-            <Page size={Page.size.larger}>
-                <span>larger</span>
+            <Page size={Page.size.large}>
+                <span>large</span>
             </Page>
             <Page size={Page.size.big}>
                 <span>big</span>
@@ -30,9 +27,9 @@ const story = () => {
             <Page size={Page.size.small}>
                 <span>small</span>
             </Page>
-            <Page size={Page.size.smaller}>
+            {/* <Page size={Page.size.smaller}>
                 <span>smaller</span>
-            </Page>
+            </Page> */}
         </Page>
 
     specs(() => describe('Hello World', function () {
