@@ -10,13 +10,13 @@ import { specs, describe, it } from 'storybook-addon-specifications';
 import { mount } from "enzyme";
 import expect from "expect";
 
-import { Page, Flex, Box } from '@ciro-maciel/style-guide';
+import { Page } from '@ciro-maciel/style-guide';
 
 const story = () => {
     const page =
         <Page id="page-content">
-            <Page>
-                <span>full</span>
+            <Page size={Page.size.large}>
+                <span>large</span>
             </Page>
             <Page size={Page.size.big}>
                 <span>big</span>
@@ -27,6 +27,9 @@ const story = () => {
             <Page size={Page.size.small}>
                 <span>small</span>
             </Page>
+            {/* <Page size={Page.size.smaller}>
+                <span>smaller</span>
+            </Page> */}
         </Page>
 
     specs(() => describe('Hello World', function () {
