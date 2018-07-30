@@ -68,6 +68,7 @@ const Content = styled.div`
     padding: 0 1rem 0 1.5rem;
     height: 0;
     visibility: hidden;
+    font-size: 12px;
     border-top: 1px solid white;
     opacity: 0;
     ${props => props.open && ` 

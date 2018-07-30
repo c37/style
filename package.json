@@ -13,6 +13,7 @@
     "start:dev": "start-storybook -p 9001 -c storybook/.storybook",
     "build:site": "build-storybook -c storybook/.storybook -o docs",
     "build:dist": "rimraf dist && babel src -d dist",
+    "deploy": "npm publish --access public",
     "install": ""
   },
   "dependencies": {
