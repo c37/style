@@ -37,16 +37,8 @@ var SIZE = {
     big: 'big',
     medium: 'medium',
     small: 'small'
-
-    // export default Page = props => (
-    //     <Flex
-    //       {...props}
-    //       mx={-3}
-    //     />
-    //   )
-
-
 };
+
 var Page = function (_PureComponent) {
     _inherits(Page, _PureComponent);
 
@@ -63,58 +55,45 @@ var Page = function (_PureComponent) {
                 children = _props.children,
                 size = _props.size;
 
-            var content = _react2.default.createElement(
-                _gridStyled.Flex,
-                _extends({}, this.props, { justify: 'center', style: { height: '100%' } }),
-                children
-            );
+            var content = void 0;
 
-            // if (size === SIZE.full) {
-            //     content =
-            //         <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-            //             {children}
-            //         </Flex>
-            // } else {
-            //     content =
-            //         <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-            //             {children}
-            //         </Flex>
-            // }
+            switch (size) {
+                case SIZE.big:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, width: 960 }),
+                        children
+                    );
+                    break;
+                case SIZE.medium:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, width: 768 }),
+                        children
+                    );
+                    break;
+                case SIZE.small:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, width: 576 }),
+                        children
+                    );
+                    break;
+                default:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, justify: 'center', style: { height: '100%', width: '100%' } }),
+                        children
+                    );
+                    break;
+            }
 
-            //     <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-            //     (size === SIZE.big) &&
-            // <Flex wrap width={960}>
-            //         {children}
-            //     </Flex>
-            //     (size === SIZE.medium) &&
-            // <Flex wrap width={768}>
-            //         {children}
-            //     </Flex>
-            //     (size === SIZE.small) &&
-            // <Flex wrap width={576}>
-            //         {children}
-            //     </Flex>
-            // </Flex>
-
-
-            console.log(content);
-
-            return (
-                // {content}
-                _react2.default.createElement(
-                    _gridStyled.Flex,
-                    _extends({}, this.props, { justify: 'center', style: { height: '100%' } }),
-                    children
-                )
-            );
+            return content;
         }
     }]);
 
     return Page;
 }(_react.PureComponent);
-
-// Page.size = SIZE;
-
 
 Page.propTypes = {
     children: _propTypes2.default.node.isRequired,
@@ -122,6 +101,9 @@ Page.propTypes = {
     size: _propTypes2.default.oneOf(Object.keys(SIZE)).isRequired
 };
 Page.defaultProps = {
-    size: SIZE.big
+    size: SIZE.full
 };
 exports.default = Page;
+
+
+Page.size = SIZE;
