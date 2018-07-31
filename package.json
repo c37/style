@@ -1,6 +1,6 @@
 {
     "name": "@ciro-maciel/style-guide",
-    "version": "4.0.2",
+    "version": "4.0.7",
     "description": "React/Preact Style Guide",
     "main": "dist/index.js",
     "homepage": "http://ciro-maciel.me",

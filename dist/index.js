@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typography = require('./foundation/typography.jsx');
+var _typography = require('./foundation/typography.js');
 
 Object.defineProperty(exports, 'Title', {
     enumerable: true,
@@ -55,7 +55,7 @@ Object.defineProperty(exports, 'Blockquote', {
     }
 });
 
-var _page = require('./foundation/page.jsx');
+var _page = require('./foundation/page.js');
 
 Object.defineProperty(exports, 'Page', {
     enumerable: true,
@@ -64,7 +64,7 @@ Object.defineProperty(exports, 'Page', {
     }
 });
 
-var _grid = require('./foundation/grid.jsx');
+var _grid = require('./foundation/grid.js');
 
 Object.defineProperty(exports, 'Flex', {
     enumerable: true,
@@ -79,7 +79,7 @@ Object.defineProperty(exports, 'Box', {
     }
 });
 
-var _accordion = require('./container/accordion.jsx');
+var _accordion = require('./container/accordion.js');
 
 Object.defineProperty(exports, 'Accordion', {
     enumerable: true,
@@ -88,7 +88,7 @@ Object.defineProperty(exports, 'Accordion', {
     }
 });
 
-var _card = require('./container/card.jsx');
+var _card = require('./container/card.js');
 
 Object.defineProperty(exports, 'Card', {
     enumerable: true,
@@ -106,7 +106,7 @@ Object.defineProperty(exports, 'SideBar', {
     }
 });
 
-var _button = require('./component/button.jsx');
+var _button = require('./component/button.js');
 
 Object.defineProperty(exports, 'Button', {
     enumerable: true,
@@ -115,7 +115,7 @@ Object.defineProperty(exports, 'Button', {
     }
 });
 
-var _badge = require('./component/badge.jsx');
+var _badge = require('./component/badge.js');
 
 Object.defineProperty(exports, 'Badge', {
     enumerable: true,
@@ -124,7 +124,7 @@ Object.defineProperty(exports, 'Badge', {
     }
 });
 
-var _list = require('./component/list.jsx');
+var _list = require('./component/list.js');
 
 Object.defineProperty(exports, 'List', {
     enumerable: true,
@@ -133,7 +133,7 @@ Object.defineProperty(exports, 'List', {
     }
 });
 
-var _message = require('./component/message.jsx');
+var _message = require('./component/message.js');
 
 Object.defineProperty(exports, 'Message', {
     enumerable: true,
@@ -142,7 +142,7 @@ Object.defineProperty(exports, 'Message', {
     }
 });
 
-var _option = require('./component/option.jsx');
+var _option = require('./component/option.js');
 
 Object.defineProperty(exports, 'Option', {
     enumerable: true,
