@@ -9,11 +9,11 @@ Object.defineProperty(exports, "__esModule", {
 // https://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 var page = exports.page = {
     size: {
-        large: '1140px',
-        big: '960px',
-        medium: '768px',
-        small: '576px',
-        smaller: '360px'
+        large: 1140,
+        big: 960,
+        medium: 768,
+        small: 576,
+        smaller: 360
     }
 
     // https://atlassian.design/guidelines/marketing/foundations/typography

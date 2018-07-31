@@ -11,7 +11,7 @@ export {
 }
 from './foundation/typography.jsx';
 export {
-    default as Page 
+    default as Page
 }
 from './foundation/page.jsx';
 export {
@@ -59,4 +59,8 @@ export {
     default as Message
 }
 from './component/message.jsx';
+export {
+    default as Option
+}
+from './component/option.jsx';
 // component

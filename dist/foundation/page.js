@@ -30,23 +30,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+// https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+
 
 var SIZE = {
     full: 'full',
+    large: 'large',
     big: 'big',
     medium: 'medium',
     small: 'small'
-
-    // export default Page = props => (
-    //     <Flex
-    //       {...props}
-    //       mx={-3}
-    //     />
-    //   )
-
-
+    // smaller: 'smaller'
 };
+
 var Page = function (_PureComponent) {
     _inherits(Page, _PureComponent);
 
@@ -63,58 +59,62 @@ var Page = function (_PureComponent) {
                 children = _props.children,
                 size = _props.size;
 
-            var content = _react2.default.createElement(
-                _gridStyled.Flex,
-                _extends({}, this.props, { justify: 'center', style: { height: '100%' } }),
-                children
-            );
+            var content = void 0;
 
-            // if (size === SIZE.full) {
-            //     content =
-            //         <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-            //             {children}
-            //         </Flex>
-            // } else {
-            //     content =
-            //         <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-            //             {children}
-            //         </Flex>
-            // }
+            switch (size) {
+                case SIZE.full:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, style: { height: '100%', width: '100%', flexFlow: 'row wrap', alignItems: 'center', justifyContent: 'center' } }),
+                        children
+                    );
+                    break;
+                case SIZE.large:
+                    content =
+                    // <Flex {...this.props} wrap width={page.size.large}>
+                    _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { style: { width: _variables.page.size.large } }),
+                        children
+                    );
+                    break;
+                case SIZE.big:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, width: _variables.page.size.big }),
+                        children
+                    );
+                    break;
+                case SIZE.medium:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, width: _variables.page.size.medium }),
+                        children
+                    );
+                    break;
+                case SIZE.small:
+                    content = _react2.default.createElement(
+                        _gridStyled.Flex,
+                        _extends({}, this.props, { wrap: true, width: _variables.page.size.small }),
+                        children
+                    );
+                    break;
+                // case SIZE.smaller:
+                //     content =
+                //         <Flex {...this.props} wrap width={page.size.smaller} style={{ flex: -1 }}>
+                //             {children}
+                //         </Flex>;
+                //     break;
+                default:
+                    break;
+            }
 
-            //     <Flex {...this.props} justify='center' style={{ height: '100%' }}>
-            //     (size === SIZE.big) &&
-            // <Flex wrap width={960}>
-            //         {children}
-            //     </Flex>
-            //     (size === SIZE.medium) &&
-            // <Flex wrap width={768}>
-            //         {children}
-            //     </Flex>
-            //     (size === SIZE.small) &&
-            // <Flex wrap width={576}>
-            //         {children}
-            //     </Flex>
-            // </Flex>
-
-
-            console.log(content);
-
-            return (
-                // {content}
-                _react2.default.createElement(
-                    _gridStyled.Flex,
-                    _extends({}, this.props, { justify: 'center', style: { height: '100%' } }),
-                    children
-                )
-            );
+            return content;
         }
     }]);
 
     return Page;
 }(_react.PureComponent);
-
-// Page.size = SIZE;
-
 
 Page.propTypes = {
     children: _propTypes2.default.node.isRequired,
@@ -122,6 +122,9 @@ Page.propTypes = {
     size: _propTypes2.default.oneOf(Object.keys(SIZE)).isRequired
 };
 Page.defaultProps = {
-    size: SIZE.big
+    size: SIZE.full
 };
 exports.default = Page;
+
+
+Page.size = SIZE;
