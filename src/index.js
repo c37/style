@@ -9,16 +9,16 @@ export {
     P,
     Blockquote
 }
-from './foundation/typography.js';
+from './foundation/typography.jsx';
 export {
     default as Page
 }
-from './foundation/page.js';
+from './foundation/page.jsx';
 export {
     Flex,
     Box
 }
-from './foundation/grid.js';
+from './foundation/grid.jsx';
 // foundation
 
 // layout
@@ -31,11 +31,11 @@ from './foundation/grid.js';
 export {
     default as Accordion
 }
-from './container/accordion.js';
+from './container/accordion.jsx';
 export {
     default as Card
 }
-from './container/card.js';
+from './container/card.jsx';
 export {
     default as SideBar
 }
@@ -46,21 +46,21 @@ from './container/sidebar';
 export {
     default as Button
 }
-from './component/button.js';
+from './component/button.jsx';
 export {
     default as Badge
 }
-from './component/badge.js';
+from './component/badge.jsx';
 export {
     default as List
 }
-from './component/list.js';
+from './component/list.jsx';
 export {
     default as Message
 }
-from './component/message.js';
+from './component/message.jsx';
 export {
     default as Option
 }
-from './component/option.js';
+from './component/option.jsx';
 // component
